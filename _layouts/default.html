@@ -8,8 +8,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     /* PALETA OFICIAL CATPPUCCIN MOCHA */
     :root {
@@ -36,12 +35,18 @@
       color: #f5e0dc !important; /* Rosewater para títulos */
     }
 
+    /* ATENÇÃO: sem o !important no font-size para permitir o A+ e A- funcionar */
     .post-content, .post-content p {
       font-family: var(--fonte-corpo) !important;
-      font-size: 1.18rem !important;
       line-height: 2 !important;
       color: var(--texto-principal) !important;
     }
+  
+    /* CLASSES DE FONTES EXTRAS */
+    body.font-merriweather .post-content, body.font-merriweather .post-content p { font-family: 'Merriweather', serif !important; }
+    body.font-lora .post-content, body.font-lora .post-content p { font-family: 'Lora', serif !important; }
+    body.font-outfit .post-content, body.font-outfit .post-content p { font-family: 'Outfit', sans-serif !important; }
+    body.font-inter .post-content, body.font-inter .post-content p { font-family: 'Inter', sans-serif !important; }
 
     /* LINKS */
     a {
@@ -156,57 +161,68 @@
 
       <!-- CAIXA DE COMENTÁRIOS AUTOMÁTICA NOS CAPÍTULOS -->
       {% if page.layout == "post" %}
-        <!-- BARRA FLUTUANTE DE LEITURA -->
         <div class="reader-settings">
           <!-- Tamanho da Fonte -->
           <button class="reader-btn" onclick="adjustFontSize(-0.1)" title="Diminuir Fonte">A-</button>
           <button class="reader-btn" onclick="adjustFontSize(0.1)" title="Aumentar Fonte">A+</button>
           
-          <!-- Alternar Fonte -->
-          <button class="reader-btn" onclick="toggleFont()" id="btnFont">Sans</button>
+          <!-- Alternar entre as 4 Fontes -->
+          <button class="reader-btn" onclick="cycleFont()" id="btnFont" title="Mudar Fonte">Merriweather</button>
           
           <!-- Temas -->
           <button class="reader-btn" onclick="cycleTheme()" id="btnTheme" title="Mudar Tema">🎨</button>
         </div>
       
         <script>
-          // Configurações padrão
+          // Configurações padrão salvas
           let currentFontSize = parseFloat(localStorage.getItem('reader_font_size')) || 1.18;
-          let isSans = localStorage.getItem('reader_font_type') === 'sans';
+          let currentFont = localStorage.getItem('reader_font_family') || 'merriweather';
           let currentTheme = localStorage.getItem('reader_theme') || 'mocha';
       
-          // Aplica as preferências salvas
-          function applyReaderSettings() {
-            // Tamanho da fonte
-            const posts = document.querySelectorAll('.post-content, .post-content p');
-            posts.forEach(p => p.style.fontSize = currentFontSize + 'rem');
+          const fonts = [
+            { id: 'merriweather', name: 'Merriweather' },
+            { id: 'lora', name: 'Lora' },
+            { id: 'outfit', name: 'Outfit' },
+            { id: 'inter', name: 'Inter' }
+          ];
       
-            // Tipo de fonte
-            if (isSans) {
-              document.body.classList.add('font-sans');
-              document.getElementById('btnFont').innerText = 'Serif';
-            } else {
-              document.body.classList.remove('font-sans');
-              document.getElementById('btnFont').innerText = 'Sans';
+          function applyReaderSettings() {
+            // 1. Aplica o tamanho da fonte diretamente nos parágrafos do capítulo
+            const paragraphs = document.querySelectorAll('.post-content, .post-content p');
+            paragraphs.forEach(p => {
+              p.style.fontSize = currentFontSize + 'rem';
+            });
+      
+            // 2. Aplica a fonte selecionada no <body>
+            document.body.classList.remove('font-merriweather', 'font-lora', 'font-outfit', 'font-inter');
+            document.body.classList.add('font-' + currentFont);
+      
+            // Atualiza o texto do botão com o nome da fonte ativa
+            const fontObj = fonts.find(f => f.id === currentFont);
+            if (fontObj) {
+              document.getElementById('btnFont').innerText = fontObj.name;
             }
       
-            // Tema
+            // 3. Aplica o Tema
             document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light');
             if (currentTheme !== 'mocha') {
               document.body.classList.add('theme-' + currentTheme);
             }
           }
       
-          // Funções dos Botões
           function adjustFontSize(delta) {
             currentFontSize = Math.min(Math.max(currentFontSize + delta, 0.9), 1.8);
+            // Arredonda para evitar dízimas no CSS
+            currentFontSize = Math.round(currentFontSize * 100) / 100;
             localStorage.setItem('reader_font_size', currentFontSize);
             applyReaderSettings();
           }
       
-          function toggleFont() {
-            isSans = !isSans;
-            localStorage.setItem('reader_font_type', isSans ? 'sans' : 'serif');
+          function cycleFont() {
+            let fontIds = fonts.map(f => f.id);
+            let nextIndex = (fontIds.indexOf(currentFont) + 1) % fontIds.length;
+            currentFont = fontIds[nextIndex];
+            localStorage.setItem('reader_font_family', currentFont);
             applyReaderSettings();
           }
       
@@ -218,8 +234,10 @@
             applyReaderSettings();
           }
       
-          // Executa ao carregar a página
+          // Executa assim que o documento estiver pronto
           document.addEventListener('DOMContentLoaded', applyReaderSettings);
+          // Execução preventiva imediata
+          applyReaderSettings();
         </script>
         <hr style="border-color: #27272a; margin: 50px 0 30px 0;">
         
