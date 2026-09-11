@@ -77,6 +77,68 @@
     }
 
     .site-footer { display: none !important; }
+
+    /* PAINEL DE LEITURA FLUTUANTE (READER SETTINGS) */
+    .reader-settings {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--borda-suave);
+      border-radius: 30px;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    
+    .reader-btn {
+      background: transparent;
+      border: 1px solid var(--borda-suave);
+      color: var(--texto-principal);
+      padding: 4px 10px;
+      border-radius: 16px;
+      cursor: pointer;
+      font-family: var(--fonte-titulo);
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+    }
+    
+    .reader-btn:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--detalhe-accent);
+    }
+    
+    /* TEMAS PERSONALIZADOS PARA A LEITURA */
+    body.theme-dark-pure {
+      --bg-principal: #000000 !important;
+      --bg-card: #121212 !important;
+      --texto-principal: #e0e0e0 !important;
+    }
+    
+    body.theme-sepia {
+      --bg-principal: #f4ecd8 !important;
+      --bg-card: #e8dfca !important;
+      --texto-principal: #5b4636 !important;
+      --borda-suave: #d3c4a5 !important;
+      --detalhe-accent: #8c6d53 !important;
+    }
+    
+    body.theme-light {
+      --bg-principal: #eff1f5 !important;
+      --bg-card: #e6e9ef !important;
+      --texto-principal: #4c4f69 !important;
+      --borda-suave: #ccd0da !important;
+      --detalhe-accent: #8839ef !important;
+    }
+    
+    body.font-sans .post-content, body.font-sans .post-content p {
+      font-family: var(--fonte-titulo) !important;
+    }
+    
   </style>
 </head>
 <body>
@@ -94,6 +156,71 @@
 
       <!-- CAIXA DE COMENTÁRIOS AUTOMÁTICA NOS CAPÍTULOS -->
       {% if page.layout == "post" %}
+        <!-- BARRA FLUTUANTE DE LEITURA -->
+        <div class="reader-settings">
+          <!-- Tamanho da Fonte -->
+          <button class="reader-btn" onclick="adjustFontSize(-0.1)" title="Diminuir Fonte">A-</button>
+          <button class="reader-btn" onclick="adjustFontSize(0.1)" title="Aumentar Fonte">A+</button>
+          
+          <!-- Alternar Fonte -->
+          <button class="reader-btn" onclick="toggleFont()" id="btnFont">Sans</button>
+          
+          <!-- Temas -->
+          <button class="reader-btn" onclick="cycleTheme()" id="btnTheme" title="Mudar Tema">🎨</button>
+        </div>
+      
+        <script>
+          // Configurações padrão
+          let currentFontSize = parseFloat(localStorage.getItem('reader_font_size')) || 1.18;
+          let isSans = localStorage.getItem('reader_font_type') === 'sans';
+          let currentTheme = localStorage.getItem('reader_theme') || 'mocha';
+      
+          // Aplica as preferências salvas
+          function applyReaderSettings() {
+            // Tamanho da fonte
+            const posts = document.querySelectorAll('.post-content, .post-content p');
+            posts.forEach(p => p.style.fontSize = currentFontSize + 'rem');
+      
+            // Tipo de fonte
+            if (isSans) {
+              document.body.classList.add('font-sans');
+              document.getElementById('btnFont').innerText = 'Serif';
+            } else {
+              document.body.classList.remove('font-sans');
+              document.getElementById('btnFont').innerText = 'Sans';
+            }
+      
+            // Tema
+            document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light');
+            if (currentTheme !== 'mocha') {
+              document.body.classList.add('theme-' + currentTheme);
+            }
+          }
+      
+          // Funções dos Botões
+          function adjustFontSize(delta) {
+            currentFontSize = Math.min(Math.max(currentFontSize + delta, 0.9), 1.8);
+            localStorage.setItem('reader_font_size', currentFontSize);
+            applyReaderSettings();
+          }
+      
+          function toggleFont() {
+            isSans = !isSans;
+            localStorage.setItem('reader_font_type', isSans ? 'sans' : 'serif');
+            applyReaderSettings();
+          }
+      
+          function cycleTheme() {
+            const themes = ['mocha', 'dark-pure', 'sepia', 'light'];
+            let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
+            currentTheme = themes[nextIndex];
+            localStorage.setItem('reader_theme', currentTheme);
+            applyReaderSettings();
+          }
+      
+          // Executa ao carregar a página
+          document.addEventListener('DOMContentLoaded', applyReaderSettings);
+        </script>
         <hr style="border-color: #27272a; margin: 50px 0 30px 0;">
         
         <h3 style="font-family: var(--fonte-titulo); margin-bottom: 20px;">🗨 Comments</h3>
