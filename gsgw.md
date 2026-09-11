@@ -9,8 +9,8 @@ permalink: /gsgw/
 <div style="display: flex; gap: 30px; margin-bottom: 35px; flex-wrap: wrap; align-items: flex-start;">
   
   <div style="width: 260px; min-width: 260px; flex-shrink: 0;">
-    <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" 
-         alt="Capa Eoshinki" 
+    <img src="{{ '/assets/gsgw.jpg' | relative_url }}" 
+         alt="Capa Gsgw" 
          style="width: 100% !important; height: 370px !important; object-fit: cover !important; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.6); display: block;">
   </div>
 
