@@ -3,6 +3,62 @@ layout: page
 title: Library
 ---
 
+<style>
+  /* ORGANIZAÇÃO EM GRADE (LADO A LADO) */
+  .biblioteca-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+  }
+  
+  .card-historia {
+    background: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  
+  .card-historia:hover {
+    transform: translateY(-4px);
+    border-color: #8257e5 !important;
+  }
+
+  /* LIMITA O TAMANHO DA CAPA */
+  .capa-container {
+    height: 260px !important;
+    width: 100% !important;
+    background: #27272a;
+    overflow: hidden;
+  }
+
+  .capa-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  .conteudo-card {
+    padding: 12px !important;
+    text-align: center !important;
+  }
+
+  .titulo-historia {
+    font-size: 1rem !important;
+    margin: 0 !important;
+  }
+
+  .titulo-historia a {
+    text-decoration: none !important;
+    color: #f4f4f5 !important;
+    font-weight: bold !important;
+  }
+</style>
+
 <p>Webnovels translated by me! ^^</p>
 
 <div class="biblioteca-grid">
