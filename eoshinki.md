@@ -59,15 +59,31 @@ permalink: /eoshinki/
 
 ### ☰ Chapters
 
-<ul style="list-style: none; padding-left: 0;">
-  {% assign capitulos_existentes = site.categories.eoshinki | where_exp: "item", "item.capitulo != nil" %}
-  {% assign capitulos_ordenados = capitulos_existentes | sort: "capitulo" %}
-  
-  {% for post in capitulos_ordenados %}
-    <li style="padding: 12px 0; border-bottom: 1px solid var(--borda-suave);">
+<ul id="lista-capitulos" style="list-style: none; padding-left: 0;">
+  {% for post in site.categories.eoshinki %}
+    <li class="item-capitulo" data-ordem="{{ post.capitulo | default: 0 }}" style="padding: 12px 0; border-bottom: 1px solid var(--borda-suave);">
       <a href="{{ post.url | relative_url }}" style="font-size: 1.1rem; text-decoration: none;">
         🕮 {{ post.title }}
       </a>
     </li>
   {% endfor %}
 </ul>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const lista = document.getElementById("lista-capitulos");
+    if (!lista) return;
+
+    const itens = Array.from(lista.querySelectorAll(".item-capitulo"));
+
+    // Ordena os capítulos do menor número para o maior
+    itens.sort((a, b) => {
+      const ordemA = parseInt(a.getAttribute("data-ordem")) || 0;
+      const ordemB = parseInt(b.getAttribute("data-ordem")) || 0;
+      return ordemA - ordemB;
+    });
+
+    // Reinsere na lista em ordem correta
+    itens.forEach(item => lista.appendChild(item));
+  });
+</script>
