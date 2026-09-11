@@ -10,16 +10,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* PALETA OFICIAL CATPPUCCIN MOCHA */
+    /* PALETA E CONFIGURAÇÕES DE BASE (CATPPUCCIN MOCHA) */
     :root {
-      --bg-principal: #1e1e2e;       /* Base */
-      --bg-card: #181825;            /* Mantle */
-      --bg-card-hover: #313244;      /* Surface0 */
-      --borda-suave: #45475a;        /* Surface1 */
-      --texto-principal: #cdd6f4;    /* Text */
-      --texto-secundario: #a6adc8;   /* Subtext0 */
-      --detalhe-accent: #cba6f7;     /* Mauve */
-      --detalhe-hover: #b4befe;      /* Lavender */
+      --bg-principal: #1e1e2e;
+      --bg-card: #181825;
+      --bg-card-hover: #313244;
+      --borda-suave: #45475a;
+      --texto-principal: #cdd6f4;
+      --texto-secundario: #a6adc8;
+      --detalhe-accent: #cba6f7;
+      --detalhe-hover: #b4befe;
       --fonte-titulo: 'Outfit', sans-serif;
       --fonte-corpo: 'Merriweather', serif;
     }
@@ -27,28 +27,22 @@
     body {
       background-color: var(--bg-principal) !important;
       color: var(--texto-principal) !important;
+      margin: 0;
+      padding: 0;
     }
 
     /* TIPOGRAFIA */
     h1, h2, h3, h4 {
       font-family: var(--fonte-titulo) !important;
-      color: #f5e0dc !important; /* Rosewater para títulos */
+      color: #f5e0dc !important;
     }
 
-    /* ATENÇÃO: sem o !important no font-size para permitir o A+ e A- funcionar */
     .post-content, .post-content p {
       font-family: var(--fonte-corpo) !important;
       line-height: 2 !important;
       color: var(--texto-principal) !important;
     }
-  
-    /* CLASSES DE FONTES EXTRAS */
-    body.font-merriweather .post-content, body.font-merriweather .post-content p { font-family: 'Merriweather', serif !important; }
-    body.font-lora .post-content, body.font-lora .post-content p { font-family: 'Lora', serif !important; }
-    body.font-outfit .post-content, body.font-outfit .post-content p { font-family: 'Outfit', sans-serif !important; }
-    body.font-inter .post-content, body.font-inter .post-content p { font-family: 'Inter', sans-serif !important; }
 
-    /* LINKS */
     a {
       color: var(--detalhe-accent) !important;
       transition: color 0.2s ease;
@@ -57,7 +51,7 @@
       color: var(--detalhe-hover) !important;
     }
 
-    /* CABEÇALHO CATPPUCCIN */
+    /* CABEÇALHO */
     .site-header { 
       background-color: rgba(24, 24, 37, 0.9) !important;
       backdrop-filter: blur(8px);
@@ -70,7 +64,7 @@
       text-decoration: none !important;
     }
 
-    /* AJUSTES PARA A GRADE DE HISTÓRIAS (BIBLIOTECA) */
+    /* BIBLIOTECA */
     .card-historia {
       background: var(--bg-card) !important;
       border: 1px solid var(--borda-suave) !important;
@@ -81,9 +75,41 @@
       border-color: var(--detalhe-accent) !important;
     }
 
-    .site-footer { display: none !important; }
+    /* JANELA DO SISTEMA (Adaptável a Temas e Fontes) */
+    .system-window {
+      background: var(--bg-card) !important; /* Ajusta o fundo para o tema atual */
+      border: 1px solid var(--detalhe-accent);
+      border-left: 4px solid var(--detalhe-accent);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 25px 0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      text-align: center !important;
+      color: var(--texto-principal) !important;
+    }
 
-    /* PAINEL DE LEITURA FLUTUANTE (READER SETTINGS) */
+    .system-header {
+      font-family: var(--fonte-titulo) !important; /* Usa a fonte de título estilizada */
+      font-size: 0.95rem !important;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--detalhe-accent) !important;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .system-content {
+      font-family: 'Inter', sans-serif !important; /* Fonte moderna para o texto da caixa */
+      font-size: 1rem !important;
+      line-height: 1.6 !important;
+      color: var(--texto-principal) !important;
+    }
+
+    /* PAINEL DE LEITURA FLUTUANTE */
     .reader-settings {
       position: fixed;
       bottom: 20px;
@@ -94,12 +120,12 @@
       padding: 8px 16px;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
       z-index: 1000;
       backdrop-filter: blur(10px);
     }
-    
+
     .reader-btn {
       background: transparent;
       border: 1px solid var(--borda-suave);
@@ -109,77 +135,80 @@
       cursor: pointer;
       font-family: var(--fonte-titulo);
       font-size: 0.85rem;
-      transition: all 0.2s ease;
     }
-    
-    .reader-btn:hover {
-      background: var(--bg-card-hover);
-      border-color: var(--detalhe-accent);
-    }
-    
-    /* TEMAS PERSONALIZADOS PARA A LEITURA */
+
+    /* VARIÁVEIS DE TEMAS DE LEITURA */
     body.theme-dark-pure {
       --bg-principal: #000000 !important;
       --bg-card: #121212 !important;
+      --bg-card-hover: #1e1e1e !important;
       --texto-principal: #e0e0e0 !important;
+      --borda-suave: #2a2a2a !important;
     }
-    
+
     body.theme-sepia {
       --bg-principal: #f4ecd8 !important;
       --bg-card: #e8dfca !important;
-      --texto-principal: #5b4636 !important;
+      --bg-card-hover: #dfd4bc !important;
+      --texto-principal: #433422 !important;
       --borda-suave: #d3c4a5 !important;
-      --detalhe-accent: #8c6d53 !important;
+      --detalhe-accent: #8c5a2b !important;
+      --detalhe-hover: #6d441f !important;
     }
-    
+
     body.theme-light {
       --bg-principal: #eff1f5 !important;
       --bg-card: #e6e9ef !important;
+      --bg-card-hover: #dce0e8 !important;
       --texto-principal: #4c4f69 !important;
       --borda-suave: #ccd0da !important;
       --detalhe-accent: #8839ef !important;
+      --detalhe-hover: #7223e5 !important;
     }
-    
-    body.font-sans .post-content, body.font-sans .post-content p {
-      font-family: var(--fonte-titulo) !important;
+
+    /* VARIÁVEIS DE FONTES */
+    body.font-merriweather .post-content, body.font-merriweather .post-content p { font-family: 'Merriweather', serif !important; }
+    body.font-lora .post-content, body.font-lora .post-content p { font-family: 'Lora', serif !important; }
+    body.font-outfit .post-content, body.font-outfit .post-content p { font-family: 'Outfit', sans-serif !important; }
+    body.font-inter .post-content, body.font-inter .post-content p { font-family: 'Inter', sans-serif !important; }
+
+    /* =================================================== */
+    /* ADAPTAÇÃO PARA CELULARES (RESPONSIVIDADE MOBILE)    */
+    /* =================================================== */
+    @media (max-width: 768px) {
+      .wrapper {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      /* Reduz o tamanho das fontes e espaçamentos no celular */
+      .post-content, .post-content p {
+        line-height: 1.8 !important;
+      }
+
+      /* Ajusta a barra flutuante para o centro inferior em celulares */
+      .reader-settings {
+        bottom: 15px;
+        right: 50%;
+        transform: translateX(50%);
+        padding: 6px 12px;
+        gap: 6px;
+        width: max-content;
+      }
+
+      .reader-btn {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+      }
+
+      /* Garante que imagens e caixas do sistema não estourem a largura da tela */
+      img, .system-window {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
     }
-    
-        /* JANELA DO SISTEMA / STATUS WINDOW (LitRPG Style) */
-    .system-window {
-      background: rgba(24, 24, 37, 0.85); /* Fundo Mantle sutilmente transparente */
-      border: 1px solid var(--detalhe-accent); /* Borda Mauve/Roxa estilo holograma */
-      border-left: 4px solid var(--detalhe-accent); /* Destaque lateral mais espesso */
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin: 25px 0;
-      box-shadow: 0 4px 20px rgba(203, 166, 247, 0.15); /* Brilho holográfico */
-      font-family: 'Inter', sans-serif !important;
-    }
-    
-    .system-header {
-      font-family: var(--fonte-titulo) !important;
-      font-size: 0.9rem !important;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--detalhe-accent) !important;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    
-    .system-content {
-      font-size: 1rem !important;
-      line-height: 1.6 !important;
-      color: var(--texto-principal) !important;
-    }
-    
-    .system-content p {
-      margin: 6px 0 !important;
-      font-size: 1rem !important;
-    }
-    
+
+    .site-footer { display: none !important; }
   </style>
 </head>
 <body>
