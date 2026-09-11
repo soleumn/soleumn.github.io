@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  
+  <!-- REGRAS GLOBAIS PARA TODO O SITE -->
+  <style>
+    /* 1. Fundo escuro e fonte para TODAS as páginas */
+    body {
+      background-color: #121214 !important;
+      color: #e1e1e6 !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    
+    /* 2. Cabeçalho e Links */
+    .site-header {
+      background-color: #18181b !important;
+      border-bottom: 1px solid #27272a !important;
+    }
+    .page-link { color: #f4f4f5 !important; }
+    a { color: #8257e5 !important; }
+
+    /* 3. DESATIVA O CLIQUE DO TÍTULO EM TODO O SITE */
+    .site-title {
+      pointer-events: none !important;
+      cursor: default !important;
+      color: #f4f4f5 !important;
+    }
+
+    /* 4. ESCONDE O RODAPÉ EM TODO O SITE */
+    .site-footer {
+      display: none !important;
+    }
+
+    /* 5. Ajustes de texto para capítulos */
+    .post-title { color: #ffffff !important; }
+    .post-content { font-size: 1.15rem; line-height: 1.8; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="wrapper">
+      <span class="site-title">{{ site.title }}</span>
+      <nav class="site-nav">
+        <div class="trigger">
+          {% for path in page_paths %}
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page.title %}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+</body>
+</html>
