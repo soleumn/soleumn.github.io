@@ -62,7 +62,7 @@ permalink: /gsgw/
 ### ☰ Chapters
 
 <ul style="list-style: none; padding-left: 0;">
-  {% assign capitulos = site.categories.eoshinki | sort: 'ordem' %}
+  {% assign capitulos = site.categories.gsgw | sort: 'ordem' %}
   {% for post in capitulos %}
     <li style="padding: 12px 0; border-bottom: 1px solid var(--borda-suave);">
       <a href="{{ post.url | relative_url }}" style="font-size: 1.1rem; text-decoration: none;">
