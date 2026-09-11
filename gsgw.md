@@ -62,8 +62,9 @@ permalink: /gsgw/
 ### ☰ Chapters
 
 <ul style="list-style: none; padding-left: 0;">
-  {% for post in site.categories.gsgw %}
-    <li style="padding: 10px 0; border-bottom: 1px solid #27272a;">
+  {% assign capitulos_ordenados = site.categories.gsgw | sort: "path" %}
+  {% for post in capitulos_ordenados %}
+    <li style="padding: 12px 0; border-bottom: 1px solid var(--borda-suave);">
       <a href="{{ post.url | relative_url }}" style="font-size: 1.1rem; text-decoration: none;">
         🕮 {{ post.title }}
       </a>
