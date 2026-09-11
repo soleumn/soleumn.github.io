@@ -7,37 +7,70 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   
   <!-- REGRAS GLOBAIS PARA TODO O SITE -->
+  <!-- Importação de fontes modernas e confortáveis para leitura -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  
   <style>
-    /* 1. Fundo escuro e fonte para TODAS as páginas */
+    /* CONFIGURAÇÕES DE CORES E FONTES GLOBAIS */
+    :root {
+      --bg-principal: #0f0f12;
+      --bg-card: #18181c;
+      --detalhe-purple: #8b5cf6;
+      --detalhe-hover: #a78bfa;
+      --texto-principal: #f3f4f6;
+      --texto-suave: #9ca3af;
+      --fonte-titulo: 'Outfit', sans-serif;
+      --fonte-corpo: 'Merriweather', serif;
+    }
+  
     body {
-      background-color: #121214 !important;
-      color: #e1e1e6 !important;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-principal) !important;
+      color: var(--texto-principal) !important;
     }
-    
-    /* 2. Cabeçalho e Links */
+  
+    /* TIPOGRAFIA DIFERENCIADA */
+    h1, h2, h3, h4, .site-title, .page-link {
+      font-family: var(--fonte-titulo) !important;
+      letter-spacing: -0.02em;
+    }
+  
+    /* ESTILO ESPECÍFICO PARA O TEXTO DO CAPÍTULO */
+    .post-content, .post-content p {
+      font-family: var(--fonte-corpo) !important;
+      font-size: 1.18rem !important;
+      line-height: 2 !important;
+      color: #e5e7eb !important;
+    }
+  
+    /* LINKS COM EFEITO DE COR */
+    a {
+      color: var(--detalhe-purple) !important;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: var(--detalhe-hover) !important;
+    }
+  
+    /* CABEÇALHO ELEGANTE COM EFEITO DE VIDRO (BLUR) */
     .site-header {
-      background-color: #18181b !important;
+      background-color: rgba(24, 24, 28, 0.8) !important;
+      backdrop-filter: blur(8px);
       border-bottom: 1px solid #27272a !important;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    .page-link { color: #f4f4f5 !important; }
-    a { color: #8257e5 !important; }
-
-    /* 3. DESATIVA O CLIQUE DO TÍTULO EM TODO O SITE */
+  
     .site-title {
       pointer-events: none !important;
       cursor: default !important;
-      color: #f4f4f5 !important;
+      color: #ffffff !important;
+      font-weight: 700;
     }
-
-    /* 4. ESCONDE O RODAPÉ EM TODO O SITE */
-    .site-footer {
-      display: none !important;
-    }
-
-    /* 5. Ajustes de texto para capítulos */
-    .post-title { color: #ffffff !important; }
-    .post-content { font-size: 1.15rem; line-height: 1.8; }
+  
+    .site-footer { display: none !important; }
   </style>
 </head>
 <body>
