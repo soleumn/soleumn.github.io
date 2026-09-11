@@ -59,7 +59,7 @@ title: Koko's TL
   }
 </style>
 
-<p>Webnovels translated by me! ^^</p>
+<p>Webnovels translated by me! ^^<br>(pls gatekeep)</p>
 
 <div class="biblioteca-grid">
 
