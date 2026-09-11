@@ -17,17 +17,17 @@ permalink: /eoshinki/
     <h3>Summary</h3>
     <p>A former pro gamer who retired due to injury.
 
-<br>After retirement, he spent his life just playing games…
+<br><br>After retirement, he spent his life just playing games…
 
-<br>Then the game he used to play became reality.
+<br><br>Then the game he used to play became reality.
 
-<br>But he is not a player.
+<br><br>But he is not a player.
 
-<br>[You are the system of the planet “Earth.”]
+<br><br>[You are the system of the planet “Earth.”]
 
-<br>He’s told to register people as characters, but he has no idea what that means.
+<br><br>He’s told to register people as characters, but he has no idea what that means.
 
-<br>For now, he decides to clear the game first—because he knows everything about it.</p>
+<br><br>For now, he decides to clear the game first—because he knows everything about it.</p>
     <p><strong>Author:</strong> 강토공<br><strong>Status:</strong> On-Going</p>
   </div>
 </div>
@@ -37,7 +37,7 @@ permalink: /eoshinki/
 ### 📜 Chapters
 
 <ul style="list-style: none; padding-left: 0;">
-  {% for post in site.categories.historia-fantasia reverse %}
+  {% for post in site.categories.eoshinki reverse %}
     <li style="padding: 10px 0; border-bottom: 1px solid #27272a;">
       <a href="{{ post.url | relative_url }}" style="font-size: 1.1rem; text-decoration: none;">
         📖 {{ post.title }}
