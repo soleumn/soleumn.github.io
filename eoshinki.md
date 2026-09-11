@@ -5,9 +5,9 @@ permalink: /eoshinki/
 ---
 
 
-<div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap;">
+<div style="display: flex; gap: 25px; margin-bottom: 30px; flex-wrap: wrap; align-items: flex-start;">
   <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" style="width: 160px; height: 230px; object-fit: cover; border-radius: 8px;">
-  <div style="flex: 1; min-width: 200px;">
+  <div style="flex: 1; min-width: 250px;">
     <h3>Summary</h3>
     <p>A former pro gamer who retired due to injury.
 
