@@ -172,6 +172,11 @@
     body.font-outfit .post-content, body.font-outfit .post-content p { font-family: 'Outfit', sans-serif !important; }
     body.font-inter .post-content, body.font-inter .post-content p { font-family: 'Inter', sans-serif !important; }
 
+    /* VARIÁVEIS DE ESPAÇAMENTO ENTRE PARÁGRAFOS */
+    body.spacing-compact .post-content p { margin-bottom: 0.8rem !important; }
+    body.spacing-normal .post-content p { margin-bottom: 1.5rem !important; }
+    body.spacing-relaxed .post-content p { margin-bottom: 2.3rem !important; }
+
     /* =================================================== */
     /* ADAPTAÇÃO PARA CELULARES (RESPONSIVIDADE MOBILE)    */
     /* =================================================== */
@@ -226,13 +231,17 @@
 
       <!-- CAIXA DE COMENTÁRIOS AUTOMÁTICA NOS CAPÍTULOS -->
       {% if page.layout == "post" %}
+              <!-- BARRA FLUTUANTE DE LEITURA -->
         <div class="reader-settings">
           <!-- Tamanho da Fonte -->
           <button class="reader-btn" onclick="adjustFontSize(-0.1)" title="Diminuir Fonte">A-</button>
           <button class="reader-btn" onclick="adjustFontSize(0.1)" title="Aumentar Fonte">A+</button>
           
-          <!-- Alternar entre as 4 Fontes -->
+          <!-- Alternar Fontes -->
           <button class="reader-btn" onclick="cycleFont()" id="btnFont" title="Mudar Fonte">Merriweather</button>
+          
+          <!-- Espaçamento entre Parágrafos -->
+          <button class="reader-btn" onclick="cycleSpacing()" id="btnSpacing" title="Espaçamento de Parágrafos">↕️ Normal</button>
           
           <!-- Temas -->
           <button class="reader-btn" onclick="cycleTheme()" id="btnTheme" title="Mudar Tema">🎨</button>
@@ -242,6 +251,7 @@
           // Configurações padrão salvas
           let currentFontSize = parseFloat(localStorage.getItem('reader_font_size')) || 1.18;
           let currentFont = localStorage.getItem('reader_font_family') || 'merriweather';
+          let currentSpacing = localStorage.getItem('reader_spacing') || 'normal';
           let currentTheme = localStorage.getItem('reader_theme') || 'mocha';
       
           const fonts = [
@@ -251,24 +261,38 @@
             { id: 'inter', name: 'Inter' }
           ];
       
+          const spacings = [
+            { id: 'compact', name: '↕️ Justo' },
+            { id: 'normal', name: '↕️ Normal' },
+            { id: 'relaxed', name: '↕️ Amplo' }
+          ];
+      
           function applyReaderSettings() {
-            // 1. Aplica o tamanho da fonte diretamente nos parágrafos do capítulo
+            // 1. Tamanho da Fonte
             const paragraphs = document.querySelectorAll('.post-content, .post-content p');
             paragraphs.forEach(p => {
               p.style.fontSize = currentFontSize + 'rem';
             });
       
-            // 2. Aplica a fonte selecionada no <body>
+            // 2. Tipo de Fonte
             document.body.classList.remove('font-merriweather', 'font-lora', 'font-outfit', 'font-inter');
             document.body.classList.add('font-' + currentFont);
       
-            // Atualiza o texto do botão com o nome da fonte ativa
             const fontObj = fonts.find(f => f.id === currentFont);
             if (fontObj) {
               document.getElementById('btnFont').innerText = fontObj.name;
             }
       
-            // 3. Aplica o Tema
+            // 3. Espaçamento entre Parágrafos
+            document.body.classList.remove('spacing-compact', 'spacing-normal', 'spacing-relaxed');
+            document.body.classList.add('spacing-' + currentSpacing);
+      
+            const spaceObj = spacings.find(s => s.id === currentSpacing);
+            if (spaceObj) {
+              document.getElementById('btnSpacing').innerText = spaceObj.name;
+            }
+      
+            // 4. Tema de Cores
             document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light');
             if (currentTheme !== 'mocha') {
               document.body.classList.add('theme-' + currentTheme);
@@ -277,7 +301,6 @@
       
           function adjustFontSize(delta) {
             currentFontSize = Math.min(Math.max(currentFontSize + delta, 0.9), 1.8);
-            // Arredonda para evitar dízimas no CSS
             currentFontSize = Math.round(currentFontSize * 100) / 100;
             localStorage.setItem('reader_font_size', currentFontSize);
             applyReaderSettings();
@@ -291,6 +314,14 @@
             applyReaderSettings();
           }
       
+          function cycleSpacing() {
+            let spaceIds = spacings.map(s => s.id);
+            let nextIndex = (spaceIds.indexOf(currentSpacing) + 1) % spaceIds.length;
+            currentSpacing = spaceIds[nextIndex];
+            localStorage.setItem('reader_spacing', currentSpacing);
+            applyReaderSettings();
+          }
+      
           function cycleTheme() {
             const themes = ['mocha', 'dark-pure', 'sepia', 'light'];
             let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
@@ -299,29 +330,8 @@
             applyReaderSettings();
           }
       
-          // Executa assim que o documento estiver pronto
           document.addEventListener('DOMContentLoaded', applyReaderSettings);
-          // Execução preventiva imediata
           applyReaderSettings();
-        </script>
-        <hr style="border-color: #27272a; margin: 50px 0 30px 0;">
-        
-        <h3 style="font-family: var(--fonte-titulo); margin-bottom: 20px;">🗨 Comments</h3>
-
-        <script src="https://giscus.app/client.js"
-                data-repo="soleumn/soleumn.github.io"
-                data-repo-id="R_kgDOUW772g"
-                data-category="Announcements"
-                data-category-id="DIC_kwDOUW772s4DFZrd"
-                data-mapping="pathname"
-                data-strict="0"
-                data-reactions-enabled="1"
-                data-emit-metadata="0"
-                data-input-position="bottom"
-                data-theme="catppuccin_mocha"
-                data-lang="en"
-                crossorigin="anonymous"
-                async>
         </script>
       {% endif %}
     </div>
