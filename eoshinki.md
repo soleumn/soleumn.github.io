@@ -12,7 +12,7 @@ permalink: /eoshinki/
 </style>
 
 <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap;">
-  <img src="{{ '/assets/capa-reino.jpg' | relative_url }}" style="width: 160px; height: 230px; object-fit: cover; border-radius: 8px;">
+  <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" style="width: 160px; height: 230px; object-fit: cover; border-radius: 8px;">
   <div style="flex: 1; min-width: 200px;">
     <h3>Summary</h3>
     <p>A former pro gamer who retired due to injury.
