@@ -72,7 +72,7 @@ title: Koko's TL
     </a>
     <div class="conteudo-card">
       <h3 class="titulo-historia">
-        <a href="{{ '/eoshinki/' | relative_url }}">Eoshinke</a>
+        <a href="{{ '/eoshinki/' | relative_url }}">I'm a Young God, Won't You Raise Me?</a>
       </h3>
     </div>
   </div>
@@ -86,7 +86,7 @@ title: Koko's TL
     </a>
     <div class="conteudo-card">
       <h3 class="titulo-historia">
-        <a href="{{ '/gsgw/' | relative_url }}">Gdgk</a>
+        <a href="{{ '/gsgw/' | relative_url }}">Got Dropped Into a Ghost Story, Still Gotta Work</a>
       </h3>
     </div>
   </div>
