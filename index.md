@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Biblioteca
+title: Library
 ---
 
 <style>
@@ -70,7 +70,7 @@ title: Biblioteca
   }
 </style>
 
-<p>Escolha uma obra abaixo para ver os capítulos:</p>
+<p>Webnovels translated by me! ^^</p>
 
 <div class="biblioteca-grid">
 
