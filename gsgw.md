@@ -62,7 +62,7 @@ permalink: /gsgw/
 ### ☰ Chapters
 
 <ul style="list-style: none; padding-left: 0;">
-  {% for post in site.categories.gsgw reverse %}
+  {% for post in site.categories.gsgw %}
     <li style="padding: 10px 0; border-bottom: 1px solid #27272a;">
       <a href="{{ post.url | relative_url }}" style="font-size: 1.1rem; text-decoration: none;">
         🕮 {{ post.title }}
