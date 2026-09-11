@@ -11,7 +11,7 @@ Bem-vindo à minha biblioteca! Escolha uma história abaixo para começar a ler:
 *Uma história cheia de magia e aventuras.*
 
 <ul>
-  {% for post in site.categories.historia-fantasia reverse %}
+  {% for post in site.categories.eoshinki reverse %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
