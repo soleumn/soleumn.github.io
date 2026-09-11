@@ -1,0 +1,435 @@
+---
+layout: post
+title: "Chapter 113"
+categories: eoshinki
+---
+
+To think CEO Cha was the Warden.
+
+It was completely unexpected, and I couldn't hide my astonishment.
+
+This was because the probability of being assigned the Warden role was abysmally low.
+
+In The Cell X, I had only played as the Warden a single-digit number of times.
+
+While the Medical Officer role also had low odds, the Warden was practically a non-existent role, as it was almost never assigned.
+
+Even when I managed to get it, since it was a role that required commanding the prison, nothing but unpleasant events happened throughout the gameplay.
+
+The setting was that the previous Warden had retired and a new one had been appointed, which meant I had to engage in power struggles with the prison guards—including the Security Chief—or commit massacres of creatures.
+
+Since it wasn't my taste at all, I had only played the role enough to collect all the endings available to the Warden.
+
+And yet, CEO Cha had become the Warden.
+
+While I stood there with my mouth agape, the guards who had dragged me in pressed down on my shoulders.
+
+I was forced to kneel on the hard floor.
+
+The Security Chief reported to CEO Cha, the Warden.
+
+"I have a report regarding Medical Officer Lamb. There are suspicions that the Medical Officer was involved in the recent creature breakout."
+
+CEO Cha's gaze was fixed not on the reporting Security Chief, but on me.
+
+As he stared silently with the only visible part of his mask—his eyes—I felt cold sweat trickling down my back.
+
+The mercenaries of Paseong, a private military company, were famous for their exceptional clear rates and their exorbitant fees.
+
+With Trials continuing to hatch all over the world, there was always a shortage of suitable candidates capable of clearing them, so it was only natural.
+
+The side income gained from Trial items was also immense, allowing Paseong to rake in a terrifying amount of money.
+
+Even within Paseong, CEO Cha was the most expensive and busiest man.
+
+Countless people, not only in Korea but overseas, desired CEO Cha's dispatch, and many offered him blank checks.
+
+And such a man had spent his time because of me.
+
+Even entering a Trial where no proper compensation had been promised.
+
+Just how much loss had CEO Cha suffered because of me?
+
+Even a rough guess suggested it would exceed ten digits.
+
+Perhaps it was eleven.
+
+*'Wait. If I include the consumables he used to terrorize the Era Administration Office...'*
+
+Adding the price of the consumables, it definitely hit eleven digits.
+
+The cold sweat running down my spine became even more pronounced.
+
+I felt that if I closed The Cell X and left, the directors of Paseong would not leave me alone.
+
+No, before that, I had a feeling CEO Cha would squeeze me dry.
+
+An extreme efficiency-ist, he would likely try to extract more profit from me than what he had lost.
+
+Thinking this, I felt that simply kneeling wasn't enough; I needed to do something.
+
+While I trembled at a future of being squeezed by CEO Cha, the Security Chief continued his report.
+
+"According to protocol, he should be executed, but since he is the only Medical Officer in the prison, I intend to use a different method."
+
+He spoke in a polite tone.
+
+"Please authorize the use of Neo on Medical Officer Lamb."
+
+I shuddered inwardly.
+
+The Security Chief still hadn't given up. It seemed he wanted to make me his ally by any means necessary.
+
+*'He wasn't this persistent in the game.'*
+
+In the game, if you escape from the rookie guard training center, the Security Chief's affinity level drops drastically.
+
+From that point on, he stops suggesting you become a guard and simply looks for any opportunity to kill you.
+
+In the game, I had worked hard not to be executed by the Security Chief.
+
+However, the real-life Security Chief still maintained a high affinity for me and wanted to recruit me as a colleague.
+
+*'What does the Security Chief want?'*
+
+Since he was an NPC who occupied an important position within the prison, I needed to figure him out.
+
+While trying to guess his ulterior motives, I sent desperate looks toward CEO Cha.
+
+It was a look pleading with him not to authorize the use of Neo.
+
+I had barely escaped the rookie guard training center; if I drank Neo again, I might actually become a guard for good this time.
+
+Despite my desperate gaze, CEO Cha did not react.
+
+He simply scanned me from head to toe in silence.
+
+I realized that my current appearance was a sight to behold.
+
+The fact that I was a Medical Officer wearing a guard's uniform was already a mess, and because I had been grabbed by the back and tossed
+
+around, scraping against stems, I looked completely bedraggled.
+
+Sympathy... there was no way CEO Cha had any, but I put on the most pitiful expression I could manage.
+
+After staring at me for a long time, CEO Cha finally spoke.
+
+"I will handle the Medical Officer's punishment myself."
+
+Punishment...
+
+We were in a relationship bound by a 20+2 contract, so while I believed he wouldn't actually punish me, I still felt anxious.
+
+It was because I couldn't trust CEO Cha's personality.
+
+CEO Cha spoke as if he had been the Warden from the start.
+
+"Have all the escaped creatures been suppressed?"
+
+"All have been suppressed, except for creatures number 1, 6, and 13."
+
+Number 1 and 6 were with me, and number 13 was Je Hyun-oh, so in effect, all creatures had been suppressed.
+
+It was a disastrous failure of the quest.
+
+This was the first time I had experienced such a failure while tackling a Trial.
+
+If things proceeded according to my plan, there should be no problem reaching the True Ending, but a failure was still a failure.
+
+Then, one of the guards who had brought me in spoke in a somewhat excited voice.
+
+"There really was a creature at the location you specified, Warden. Thanks to your clear instructions, suppression was easy."
+
+*'CEO Cha gave them the locations?'*
+
+I struggled not to let my shock show on my face.
+
+CEO Cha had used the Warden's ability.
+
+Just as a Medical Officer can check the affinity and suspicion levels of others, the Warden is also given specific abilities.
+
+As a hidden role with an abysmal assignment rate, two abilities are granted. The first is Prison Control.
+
+The Warden can control all areas of the prison at will.
+
+The lockdown and area closures during the Code Black must have been the result of the Warden's ability.
+
+And the second is Creature Identification.
+
+The Warden can check the total amount of Neo that can be produced from a creature.
+
+Furthermore, he can track the current location of creatures, fundamentally blocking their escape from the prison.
+
+However, Creature Identification was not an ability given from the start.
+
+It could only be obtained by completing a complex, Warden-exclusive quest, yet he had obtained it on the very first day upon entry.
+
+In a Trial where there was no prior information.
+
+*'As expected of CEO Cha.'*
+
+He certainly knew how to clear a game.
+
+The guards also showed a sense of respect toward CEO Cha.
+
+They repeatedly praised him, saying that without the Warden's quick judgment, suppressing the escaped creatures would not have been easy.
+
+Originally, guards are not very friendly toward the Warden.
+
+They often ignore them, but now, perhaps because CEO Cha had demonstrated his ability, it felt as though the hierarchy had been established.
+
+The Security Chief suggested to CEO Cha in a polite manner.
+
+"The individuals we have not yet suppressed are those who have had various problems in the past. To set an example for the breakout, how about we execute them immediately upon capture?"
+
+I was speechless at the lie he told without blinking an eye.
+
+*'Number 1 is so timid!'*
+
+There was no plant creature more docile than that one.
+
+Of course, number 6, Orca... and number 13, Je Hyun-oh, might have resisted a bit...
+
+Regardless, execution was absolutely out of the question.
+
+Once again, I sent a desperate look to CEO Cha.
+
+I hoped he would understand my intent, but it seemed the transmission failed.
+
+"Execute them."
+
+"Yes, Warden."
+
+The Security Chief smiled at CEO Cha's permission.
+
+I shouted urgently.
+
+"Cha—no, Warden!"
+
+"This brat."
+
+The guard right next to me raised his hand.
+
+It was a gesture intended to smack me across the head, but he failed to achieve his goal.
+
+*Thump!*
+
+A dull sound echoed. It was the sound of the guard flying through the air and hitting the wall.
+
+I shifted my gaze upward. CEO Cha was already standing in front of me.
+
+He walked slowly toward the guard slammed against the wall.
+
+Then, a rhythmic sound followed.
+
+It was the sound of CEO Cha kicking the guard.
+
+"Gah, Wa... Warden..."
+
+The guard, who possessed an enhanced body, curled up with a groan of pain.
+
+Then, CEO Cha stepped precisely on the mouth revealed beneath the metal mask with his combat boot.
+
+The guard collapsed, vomiting a neon-green liquid, and soon became unable to move.
+
+Leaving the motionless guard sprawled on the floor, CEO Cha spat out irritably.
+
+"Why raise your hand? You should have used words."
+
+I think I understood how CEO Cha had established the hierarchy as the Warden.
+
+He was utilizing the logic of power that dominates the prison better than anyone.
+
+For the record, CEO Cha hadn't used words either; he had gone straight to the kicking, but no one dared to protest.
+
+"I think he would serve his master well if kept as a subordinate, Mr. Roasted Chestnut."
+
+Only Dominic would have liked CEO Cha's temperament.
+
+The role of Warden seemed to suit CEO Cha well.
+
+CEO Cha turned around, shoved his hands into his uniform pockets, and tilted his head toward me.
+
+"Speak."
+
+I had been given a chance to speak, but I felt that if I messed up, I might be kicked across the room too.
+
+I quickly told him only the core point.
+
+"Could you please rescind the execution order for creatures that return on their own?"
+
+If it was CEO Cha, he would immediately realize that this was related to the Trial's strategy.
+
+As expected, CEO Cha accepted my suggestion.
+
+"For now, do not execute the creatures; just suppress them."
+
+"Yes, Warden."
+
+The remaining guard answered promptly.
+
+I enjoyed a brief taste of power.
+
+Having the Warden as a player made things this convenient.
+
+The problem was the Security Chief.
+
+Despite the Warden's order, he did not answer.
+
+A long silence followed, and a chilly atmosphere filled the room.
+
+CEO Cha called the Security Chief's name.
+
+"Security Chief."
+
+"...Yes, sir."
+
+"It seems you wish to disobey my order."
+
+"No, sir. I will have the creatures suppressed and placed in Sector X."
+
+Just as I was feeling happy that things were going smoothly for once.
+
+"In exchange, I would like you to grant me the authority to punish the Medical Officer."
+
+At the Security Chief's request, the atmosphere shifted from chilly to walking on thin ice.
+
+A short, dry laugh escaped CEO Cha.
+
+Letting out a sneer, CEO Cha arrogantly tilted his chin back.
+
+"If you want to negotiate with me, bring something proper."
+
+The mechanical voice mocked the Security Chief.
+
+"Not something you've already caught."
+
+A sharp silence followed.
+
+Positioned exactly between them, I swallowed hard.
+
+I wondered if they were going to have a huge fight right here, but surprisingly, the Security Chief backed down first.
+
+The lips beneath the mask slowly curved.
+
+He replied with a smooth smile.
+
+"I shall proceed as the Warden wishes."
+
+As soon as the Security Chief's surrender was declared, CEO Cha gestured dismissively.
+
+"Everyone, get out."
+
+The Security Chief left first, and the remaining guard dragged the unconscious one out.
+
+As I tried to awkwardly stand up, sharp words flew my way.
+
+"You stay."
+
+I politely knelt again.
+
+The guards all exited, and the door closed.
+
+I kept my hands neatly folded and looked up at CEO Cha to greet him.
+
+"CEO Cha. Hello. The uniform suits you very well. As a fan, I am delighted to see another side of you in this Trial."
+
+It was a habitual flatter, but it was 90% sincere.
+
+The uniform really did suit CEO Cha.
+
+The white Daeil Yeorae fastened to his waist was exceptionally vivid against the black uniform.
+
+Fitting for the title of Warden, there was a medal on his chest, making him look even more radiant.
+
+"Han Goyo."
+
+CEO Cha spoke slowly.
+
+"You sign a contract and then bolt into a Trial?"
+
+"No, it's not like that."
+
+He must know well that I had entered The Cell X like a natural disaster, yet he spoke to me like that.
+
+It was truly typical of CEO Cha.
+
+Admiring his personality once again, I quickly got to the point.
+
+"CEO Cha. This Trial, I will clear it with the True Ending. Please help me."
+
+I was about to explain earnestly why the creatures must not be killed, but CEO Cha brought up a completely different topic.
+
+"Why do you look like that?"
+
+He stared down at me openly.
+
+"...Ah, I'm sorry."
+
+Feeling strange, I answered a bit late.
+
+"Why do you look like that?"
+
+"Don't tell me... you thought I would die? This is absurd."
+
+It was because memories of playing with CEO Cha in the game had surfaced.
+
+The reason I came to like CEO Cha wasn't just because of his outstanding abilities or unique setting.
+
+Rather, while playing the Archive's game, I hadn't thought much of him.
+
+I neither hated nor liked him. I simply had the simple impression that he was a capable character.
+
+Since there weren't many opportunities to interact with him in the game, I had regarded him as just one of the NPCs.
+
+But the time I spent with CEO Cha made me like him.
+
+There was only one ending to the game I played with him.
+
+And to see that ending, I had to repeat countless regressions.
+
+A thousand times.
+
+
+<!-- COLE OS BOTÕES DE NAVEGAÇÃO E O BOTÃO DE SALVAR AQUI NO FINAL: -->
+<hr style="border-color: #27272a; margin: 40px 0;">
+<!-- Botões Anterior e Próximo -->
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}" style="padding: 10px 18px; background: #18181c; border: 1px solid #27272a; border-radius: 6px; text-decoration: none;">
+      ↩ Previous chapter
+    </a>
+  {% else %}
+    <span></span>
+  {% endif %}
+
+  <a href="{{ '/eoshinki/' | relative_url }}" style="padding: 10px 18px; background: #18181c; border: 1px solid #27272a; border-radius: 6px; text-decoration: none;">
+    Table of Contents
+  </a>
+
+  {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}" style="padding: 12px 20px; background: #8b5cf6; color: white !important; border-radius: 6px; text-decoration: none; font-weight: bold;">
+      Next chapter ᯓ➤
+    </a>
+  {% endif %}
+</div>
+
+
+<!-- Botão Salvar Progresso -->
+<div style="margin-top: 30px; text-align: center;">
+  <button id="btnSalvar" onclick="salvarProgresso()" style="padding: 10px 20px; background: #27272a; color: #f3f4f6; border: 1px solid #3f3f46; border-radius: 20px; cursor: pointer;">
+    Save Progress
+  </button>
+  <p id="mensagemSalvo" style="color: #10b981; font-size: 0.9rem; margin-top: 8px; display: none;">Progress successfully saved!</p>
+</div>
+
+<script>
+  function salvarProgresso() {
+    // Salva o link do capítulo atual no navegador do leitor
+    localStorage.setItem('ultimoCapitulo', window.location.href);
+    
+    var msg = document.getElementById('mensagemSalvo');
+    msg.style.display = 'block';
+    setTimeout(function() { msg.style.display = 'none'; }, 3000);
+  }
+</script>
