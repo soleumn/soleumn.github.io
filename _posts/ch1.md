@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 112"
 categories: eoshinki
+ordem: 1
 ---
 
 It was a title that flowed from the lips of someone I never expected, at a moment I hadn't anticipated at all.
