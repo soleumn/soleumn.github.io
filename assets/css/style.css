@@ -1,0 +1,13 @@
+---
+---
+
+/* Esconde o rodapé em TODO o site */
+.site-footer {
+  display: none !important;
+}
+
+/* Desativa o clique no título do topo em TODO o site */
+.site-title {
+  pointer-events: none !important;
+  cursor: default !important;
+}
