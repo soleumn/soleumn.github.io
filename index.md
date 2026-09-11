@@ -4,26 +4,41 @@ title: Biblioteca
 ---
 
 <style>
+  /* TEMA ESCURO PARA A PÁGINA */
+  body {
+    background-color: #121214 !important;
+    color: #e1e1e6 !important;
+  }
+  .site-header, .site-footer {
+    background-color: #18181b !important;
+    border-color: #27272a !important;
+  }
+  .site-title, .page-link {
+    color: #f4f4f5 !important;
+  }
+  
+  /* GRID DE HISTÓRIAS (ESTILO WEBNOVEL) */
   .biblioteca-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
     margin-top: 20px;
   }
   .card-historia {
-    border: 1px solid #e1e4e8;
-    border-radius: 12px;
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
     overflow: hidden;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .card-historia:hover {
+    transform: translateY(-4px);
+    border-color: #8257e5;
   }
   .capa-container {
+    height: 280px;
     width: 100%;
-    height: 320px;
-    overflow: hidden;
-    background: #f0f0f0;
+    background: #27272a;
   }
   .capa-img {
     width: 100%;
@@ -31,102 +46,49 @@ title: Biblioteca
     object-fit: cover;
   }
   .conteudo-card {
-    padding: 18px;
-    flex-grow: 1;
+    padding: 12px;
+    text-align: center;
   }
   .titulo-historia {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 1.25rem;
-    color: #24292e;
+    font-size: 1rem;
+    margin: 0;
   }
-  .sinopse {
-    font-size: 0.9rem;
-    color: #586069;
-    margin-bottom: 15px;
-  }
-  .lista-capitulos {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  .lista-capitulos li {
-    padding: 6px 0;
-    border-top: 1px solid #f0f0f0;
-  }
-  .lista-capitulos a {
+  .titulo-historia a {
     text-decoration: none;
-    font-weight: 500;
-    color: #0366d6;
-  }
-  .lista-capitulos a:hover {
-    text-decoration: underline;
+    color: #f4f4f5 !important;
+    font-weight: bold;
   }
 </style>
 
-Escolha uma história abaixo para começar a leitura:
+<p>Escolha uma obra abaixo para ver os capítulos:</p>
 
 <div class="biblioteca-grid">
 
-  <!-- CARD HISTÓRIA 1 -->
+  <!-- HISTÓRIA 1 -->
   <div class="card-historia">
-    <div class="capa-container">
-      <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" alt="Capa Eoshinki" class="capa-img">
-    </div>
+    <a href="{{ '/eoshinki/' | relative_url }}">
+      <div class="capa-container">
+        <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" alt="Capa Eoshinki" class="capa-img">
+      </div>
+    </a>
     <div class="conteudo-card">
-      <h3 class="titulo-historia">I'm a Young God, Won't You Raise Me?</h3>
-      <p class="sinopse">A former pro gamer who retired due to injury.
-
-After retirement, he spent his life just playing games…
-
-<br>Then the game he used to play became reality.
-
-<br>But he is not a player.
-
-<br>[You are the system of the planet “Earth.”]
-
-<br>He’s told to register people as characters, but he has no idea what that means.
-
-<br>For now, he decides to clear the game first—because he knows everything about it.</p>
-      
-      <strong>Capítulos:</strong>
-      <ul class="lista-capitulos">
-        {% for post in site.categories.eoshinki reverse %}
-          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
+      <h3 class="titulo-historia">
+        <a href="{{ '/eoshinki/' | relative_url }}">I'm a Young God, Won't You Raise Me?</a>
+      </h3>
     </div>
   </div>
 
-  <!-- CARD HISTÓRIA 2 -->
+  <!-- HISTÓRIA 2 -->
   <div class="card-historia">
-    <div class="capa-container">
-      <img src="{{ '/assets/gsgw.jpg' | relative_url }}" alt="Capa Amor em Paris" class="capa-img">
-    </div>
+    <a href="{{ '/gsgw/' | relative_url }}">
+      <div class="capa-container">
+        <img src="{{ '/assets/gsgw.jpg' | relative_url }}" alt="Capa Gsgw" class="capa-img">
+      </div>
+    </a>
     <div class="conteudo-card">
-      <h3 class="titulo-historia">Got Dropped Into a Ghost Story, Still Gotta Work</h3>
-      <p class="sinopse">A pop-up event for "A Certain Modern Fantasy," a novel I loved so much I even used my precious vacation days to go.
-
-<br>And that day, I was transported into that very modern fantasy.
-
-<br>As a newly hired employee at a famous conglomerate, no less!
-
-<br>Good benefits, good salary, and even my direct superiors are kind and competent—it's a dream job.
-
-<br>Using the knowledge of the world that only I possess, I'm rapidly climbing the corporate ladder!
-
-<br>Am I happy?
-
-<br>Please, just send me home.
-
-<br>※Special Note: The genre is horror.</p>
-      
-      <strong>Capítulos:</strong>
-      <ul class="lista-capitulos">
-        {% for post in site.categories.gsgw reverse %}
-          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
+      <h3 class="titulo-historia">
+        <a href="{{ '/gsgw/' | relative_url }}">Got Dropped Into a Ghost Story, Still Gotta Work</a>
+      </h3>
     </div>
   </div>
 
