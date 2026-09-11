@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 113"
 categories: eoshinki
+ordem: 2
 ---
 
 To think CEO Cha was the Warden.
