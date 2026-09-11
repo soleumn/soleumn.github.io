@@ -6,86 +6,55 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   
-  <!-- REGRAS GLOBAIS PARA TODO O SITE -->
-  <!-- Importação de fontes modernas e confortáveis para leitura -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-  
+
   <style>
-    /* CONFIGURAÇÕES DE CORES E FONTES GLOBAIS */
     :root {
       --bg-principal: #0f0f12;
       --bg-card: #18181c;
       --detalhe-purple: #8b5cf6;
       --detalhe-hover: #a78bfa;
       --texto-principal: #f3f4f6;
-      --texto-suave: #9ca3af;
       --fonte-titulo: 'Outfit', sans-serif;
       --fonte-corpo: 'Merriweather', serif;
     }
-  
-    body {
-      background-color: var(--bg-principal) !important;
-      color: var(--texto-principal) !important;
+    body { background-color: var(--bg-principal) !important; color: var(--texto-principal) !important; }
+    h1, h2, h3, h4 { font-family: var(--fonte-titulo) !important; }
+    .post-content, .post-content p { font-family: var(--fonte-corpo) !important; font-size: 1.18rem !important; line-height: 2 !important; }
+    a { color: var(--detalhe-purple) !important; }
+    
+    /* CABEÇALHO CORRIGIDO */
+    .site-header { 
+      background-color: rgba(24, 24, 28, 0.95) !important; 
+      border-bottom: 1px solid #27272a !important; 
     }
-  
-    /* TIPOGRAFIA DIFERENCIADA */
-    h1, h2, h3, h4, .site-title, .page-link {
-      font-family: var(--fonte-titulo) !important;
-      letter-spacing: -0.02em;
-    }
-  
-    /* ESTILO ESPECÍFICO PARA O TEXTO DO CAPÍTULO */
-    .post-content, .post-content p {
-      font-family: var(--fonte-corpo) !important;
-      font-size: 1.18rem !important;
-      line-height: 2 !important;
-      color: #e5e7eb !important;
-    }
-  
-    /* LINKS COM EFEITO DE COR */
-    a {
-      color: var(--detalhe-purple) !important;
-      transition: color 0.2s ease;
-    }
-    a:hover {
-      color: var(--detalhe-hover) !important;
-    }
-  
-    /* CABEÇALHO ELEGANTE COM EFEITO DE VIDRO (BLUR) */
-    .site-header {
-      background-color: rgba(24, 24, 28, 0.8) !important;
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid #27272a !important;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-  
-    .site-title {
-      pointer-events: none !important;
-      cursor: default !important;
-      color: #ffffff !important;
+    .site-title, .site-title:visited { 
+      color: #ffffff !important; 
       font-weight: 700;
+      font-family: var(--fonte-titulo) !important;
+      text-decoration: none !important;
     }
-  
+    .page-link { 
+      color: #f4f4f5 !important; 
+      font-family: var(--fonte-titulo) !important;
+      font-weight: 600;
+    }
     .site-footer { display: none !important; }
   </style>
 </head>
 <body>
 
   <header class="site-header" role="banner">
-    <div class="wrapper">
-      <span class="site-title">{{ site.title }}</span>
+    <div class="wrapper" style="display: flex; justify-content: space-between; align-items: center;">
+      <!-- O título 'Minhas Histórias' volta a ser clicável para ir para a página inicial -->
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      
+      <!-- Link 'Biblioteca' visível no topo -->
       <nav class="site-nav">
         <div class="trigger">
-          {% for path in page_paths %}
-            {% assign my_page = site.pages | where: "path", path | first %}
-            {% if my_page.title %}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% endif %}
-          {% endfor %}
+          <a class="page-link" href="{{ "/" | relative_url }}">Library</a>
         </div>
       </nav>
     </div>
