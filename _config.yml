@@ -1,7 +1,6 @@
 title: Webnovels
 description: Read peak webnovels translated by me!
 theme: minima
-
 # Isso força o menu do topo a mostrar APENAS o link da Biblioteca:
-header_pages: []
+header_pages:
   - index.md
