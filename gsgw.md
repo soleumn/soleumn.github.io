@@ -9,6 +9,12 @@ permalink: /gsgw/
   .site-header, .site-footer { background-color: #18181b !important; border-color: #27272a !important; }
   .site-title, .page-link { color: #f4f4f5 !important; }
   a { color: #8257e5 !important; }
+
+  /* Desativa clique no título do topo */
+  .site-title { pointer-events: none !important; cursor: default !important; }
+
+  /* Esconde o rodapé */
+  .site-footer { display: none !important; }
 </style>
 
 <div style="display: flex; gap: 20px; margin-bottom: 25px; flex-wrap: wrap;">
