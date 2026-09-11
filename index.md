@@ -4,6 +4,16 @@ title: Biblioteca
 ---
 
 <style>
+  /* 1. Remove o clique do título "Minhas Histórias" no topo e altera o cursor */
+  .site-title {
+    pointer-events: none !important;
+    cursor: default !important;
+  }
+
+  /* 2. Oculta o rodapé padrão repetitivo no final da página */
+  .site-footer {
+    display: none !important;
+  }
   /* TEMA ESCURO PARA A PÁGINA */
   body {
     background-color: #121214 !important;
