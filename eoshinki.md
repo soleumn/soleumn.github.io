@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Eoshinke"
+title: "I'm a Young God, Won't You Raise Me?"
 permalink: /eoshinki/
 ---
 
