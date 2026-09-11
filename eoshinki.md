@@ -26,6 +26,22 @@ permalink: /eoshinki/
   </div>
 </div>
 
+<!-- COLE O BOTÃO "CONTINUAR" AQUI, ANTES DA LISTA DE CAPÍTULOS: -->
+<div style="margin-bottom: 20px;">
+  <a id="btnContinuar" href="#" style="display: none; padding: 12px 20px; background: #10b981; color: white !important; font-weight: bold; border-radius: 6px; text-decoration: none;">
+    ▶️ Continuar de Onde Parou
+  </a>
+</div>
+
+<script>
+  var ultimoCapitulo = localStorage.getItem('ultimoCapitulo');
+  if (ultimoCapitulo) {
+    var btn = document.getElementById('btnContinuar');
+    btn.href = ultimoCapitulo;
+    btn.style.display = 'inline-block';
+  }
+</script>
+
 ---
 
 ### 📜 Chapters
