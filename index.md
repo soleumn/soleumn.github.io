@@ -79,15 +79,15 @@ Escolha uma história abaixo para começar a leitura:
 
 After retirement, he spent his life just playing games…
 
-Then the game he used to play became reality.
+<br>Then the game he used to play became reality.
 
-But he is not a player.
+<br>But he is not a player.
 
-[You are the system of the planet “Earth.”]
+<br>[You are the system of the planet “Earth.”]
 
-He’s told to register people as characters, but he has no idea what that means.
+<br>He’s told to register people as characters, but he has no idea what that means.
 
-For now, he decides to clear the game first—because he knows everything about it.</p>
+<br>For now, he decides to clear the game first—because he knows everything about it.</p>
       
       <strong>Capítulos:</strong>
       <ul class="lista-capitulos">
@@ -107,19 +107,19 @@ For now, he decides to clear the game first—because he knows everything about 
       <h3 class="titulo-historia">Got Dropped Into a Ghost Story, Still Gotta Work</h3>
       <p class="sinopse">A pop-up event for "A Certain Modern Fantasy," a novel I loved so much I even used my precious vacation days to go.
 
-And that day, I was transported into that very modern fantasy.
+<br>And that day, I was transported into that very modern fantasy.
 
-As a newly hired employee at a famous conglomerate, no less!
+<br>As a newly hired employee at a famous conglomerate, no less!
 
-Good benefits, good salary, and even my direct superiors are kind and competent—it's a dream job.
+<br>Good benefits, good salary, and even my direct superiors are kind and competent—it's a dream job.
 
-Using the knowledge of the world that only I possess, I'm rapidly climbing the corporate ladder!
+<br>Using the knowledge of the world that only I possess, I'm rapidly climbing the corporate ladder!
 
-Am I happy?
+<br>Am I happy?
 
-Please, just send me home.
+<br>Please, just send me home.
 
-※Special Note: The genre is horror.</p>
+<br>※Special Note: The genre is horror.</p>
       
       <strong>Capítulos:</strong>
       <ul class="lista-capitulos">
