@@ -28,7 +28,7 @@ permalink: /eoshinki/
 
 <!-- COLE O BOTÃO "CONTINUAR" AQUI, ANTES DA LISTA DE CAPÍTULOS: -->
 <div style="margin-bottom: 20px;">
-  <a id="btnContinuar" href="#" style="display: none; padding: 12px 20px; background: #10b981; color: white !important; font-weight: bold; border-radius: 6px; text-decoration: none;">
+  <a id="btnContinuar" href="#" style="display: none; padding: 12px 20px; background: #380928; color: white !important; font-weight: bold; border-radius: 6px; text-decoration: none;">
     ➠ Continue from where you left off
   </a>
 </div>
