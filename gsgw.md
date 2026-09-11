@@ -5,11 +5,19 @@ permalink: /gsgw/
 ---
 
 
-<div style="display: flex; gap: 25px; margin-bottom: 30px; flex-wrap: wrap; align-items: flex-start;">
-  <img src="{{ '/assets/gsgw.jpg' | relative_url }}" style="width: 160px; height: 230px; object-fit: cover; border-radius: 8px;">
-  <div style="flex: 1; min-width: 250px;">
-    <h3>Summary</h3>
-    <p>A pop-up event for "A Certain Modern Fantasy," a novel I loved so much I even used my precious vacation days to go.
+<!-- BLOCO DA CAPA E SINOPSE COM TAMANHO FORÇADO -->
+<div style="display: flex; gap: 30px; margin-bottom: 35px; flex-wrap: wrap; align-items: flex-start;">
+  
+  <div style="width: 260px; min-width: 260px; flex-shrink: 0;">
+    <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" 
+         alt="Capa Eoshinki" 
+         style="width: 100% !important; height: 370px !important; object-fit: cover !important; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.6); display: block;">
+  </div>
+
+  <div style="flex: 1; min-width: 280px;">
+    <h2 style="margin-top: 0; font-size: 1.8rem;">Summary</h2>
+    <p style="font-size: 1.1rem; line-height: 1.7; color: #d1d5db;">
+      A pop-up event for "A Certain Modern Fantasy," a novel I loved so much I even used my precious vacation days to go.
 
 <br><br>And that day, I was transported into that very modern fantasy.
 
@@ -24,8 +32,13 @@ permalink: /gsgw/
 <br><br>Please, just send me home.
 
 <br><br>※Special Note: The genre is horror.</p>
-    <p><strong>Author:</strong> 백덕수<br><strong>Status:</strong> Hiatus</p>
+    <hr style="border-color: #27272a; margin: 20px 0;">
+    <p style="font-size: 1rem; color: #9ca3af;">
+      <strong>Author:</strong> 백덕수<br>
+      <strong>Status:</strong> Hiatus
+    </p>
   </div>
+
 </div>
 
 <!-- COLE O BOTÃO "CONTINUAR" AQUI, ANTES DA LISTA DE CAPÍTULOS: -->
