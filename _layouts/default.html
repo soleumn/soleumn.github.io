@@ -64,15 +64,15 @@
       text-decoration: none !important;
     }
 
-    /* BIBLIOTECA */
-    .card-historia {
-      background: var(--bg-card) !important;
-      border: 1px solid var(--borda-suave) !important;
-      border-radius: 12px !important;
-    }
-    .card-historia:hover {
-      background: var(--bg-card-hover) !important;
-      border-color: var(--detalhe-accent) !important;
+    /* AJUSTE DAS CAPAS DE OBRAS (BIBLIOTECA) */
+    .card-historia img, 
+    .capa-obra {
+      width: 100% !important;
+      height: auto !important;
+      max-height: 380px;
+      object-fit: contain !important; /* Mostra a capa inteira sem cortar as bordas */
+      border-radius: 8px 8px 0 0;
+      display: block;
     }
 
     /* JANELA DO SISTEMA (Adaptável a Temas e Fontes) */
@@ -210,6 +210,21 @@
       img, .system-window {
         max-width: 100% !important;
         box-sizing: border-box !important;
+      }
+          /* AJUSTE DAS CAPAS NO CELULAR */
+      .grid-biblioteca,
+      .biblioteca-container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+      }
+    
+      .card-historia img,
+      .capa-obra {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 280px !important;
+        object-fit: contain !important;
       }
     }
 
