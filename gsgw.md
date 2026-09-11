@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Got Dropped Into a Ghost Story, Still Gotta Work"
+title: "Gdgk"
 permalink: /gsgw/
 ---
 
