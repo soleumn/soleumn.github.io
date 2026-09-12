@@ -138,12 +138,23 @@
     }
 
     /* BOTOES DE NAVEGACAO DO CAPITULO (Table of Contents, Save Progress, Next Chapter) */
-      .nav-capitulo-container {
+    .nav-capitulo-container {
       display: flex !important;
-      justify-content: space-between !important; /* Empurra o Índice para a extrema esquerda e o Próximo para a direita */
+      justify-content: space-between !important; /* Separa a esquerda da direita */
       align-items: center !important;
       margin: 40px 0 !important;
       width: 100% !important;
+    }
+    
+    .nav-grupo-esquerda {
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important; /* Espaçamento entre "Previous chapter" e "Table of Contents" */
+    }
+    
+    .nav-grupo-direita {
+      display: flex !important;
+      align-items: center !important;
     }
 
     .btn-nav {
