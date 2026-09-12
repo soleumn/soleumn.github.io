@@ -41,7 +41,7 @@ permalink: /eoshinki/
 
 <!-- BOTÃO DE CONTINUAR LENDO DINÂMICO -->
 <div style="margin-top: 15px;">
-  <a id="btn-continuar-lendo" href="{{ '/_posts/2026-09-01-ch1.md/' | relative_url }}" class="btn-nav" style="display: inline-block; width: 100%; text-align: center; background-color: var(--detalhe-accent); color: #11111b; font-weight: bold; text-decoration: none; padding: 12px 0; border-radius: 8px;">
+  <a id="btn-continuar-lendo" href="{{ '/eoshinki/2026/09/01/ch1.html' | relative_url }}" class="btn-nav" style="display: inline-block; width: 100%; text-align: center; background-color: var(--detalhe-accent); color: #11111b; font-weight: bold; text-decoration: none; padding: 12px 0; border-radius: 8px;">
     🕮 Start Reading
   </a>
 </div>
