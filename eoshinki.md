@@ -39,20 +39,31 @@ permalink: /eoshinki/
 
 </div>
 
-<!-- COLE O BOTÃO "CONTINUAR" AQUI, ANTES DA LISTA DE CAPÍTULOS: -->
-<div style="margin-bottom: 20px;">
-  <a id="btnContinuar" href="#" style="display: none; padding: 12px 20px; background: #380928; color: white !important; font-weight: bold; border-radius: 6px; text-decoration: none;">
-    ➠ Continue from where you left off
+<!-- BOTÃO DE CONTINUAR LENDO DINÂMICO -->
+<div style="margin-top: 15px;">
+  <a id="btn-continuar-lendo" href="{{ '/capitulo-1/' | relative_url }}" class="btn-nav" style="display: inline-block; width: 100%; text-align: center; background-color: var(--detalhe-accent); color: #11111b; font-weight: bold; text-decoration: none; padding: 12px 0; border-radius: 8px;">
+    🕮 Start Reading (Chapter 1)
   </a>
 </div>
 
 <script>
-  var ultimoCapitulo = localStorage.getItem('ultimoCapitulo');
-  if (ultimoCapitulo) {
-    var btn = document.getElementById('btnContinuar');
-    btn.href = ultimoCapitulo;
-    btn.style.display = 'inline-block';
-  }
+  document.addEventListener("DOMContentLoaded", function () {
+    const urlSalva = localStorage.getItem('eoshinki_progresso_url');
+    const tituloSalvo = localStorage.getItem('eoshinki_progresso_titulo');
+    const btnContinuar = document.getElementById('btn-continuar-lendo');
+
+    if (urlSalva && btnContinuar) {
+      // Atualiza o link do botão para a URL que foi salva anteriormente
+      btnContinuar.href = urlSalva;
+      
+      // Atualiza o texto do botão para mostrar onde o leitor parou
+      if (tituloSalvo) {
+        btnContinuar.innerHTML = 'Continue Reading: ' + tituloSalvo;
+      } else {
+        btnContinuar.innerHTML = 'Continue Reading';
+      }
+    }
+  });
 </script>
 
 ---
