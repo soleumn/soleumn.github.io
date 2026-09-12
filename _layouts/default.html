@@ -137,6 +137,55 @@
       font-size: 0.85rem;
     }
 
+    /* BOTOES DE NAVEGACAO DO CAPITULO (Table of Contents, Save Progress, Next Chapter) */
+    .nav-capitulo-container {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      gap: 12px !important;
+      margin: 40px 0 !important;
+      width: 100% !important;
+    }
+
+    .btn-nav {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 10px 18px !important;
+      border-radius: 8px !important;
+      font-family: var(--fonte-titulo) !important;
+      font-size: 0.95rem !important;
+      font-weight: 600 !important;
+      text-decoration: none !important;
+      background-color: var(--bg-card) !important;
+      color: var(--texto-principal) !important;
+      border: 1px solid var(--borda-suave) !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+      box-sizing: border-box !important;
+    }
+
+    .btn-nav:hover {
+      background-color: var(--bg-card-hover) !important;
+      color: #ffffff !important;
+      transform: translateY(-2px);
+    }
+
+    .btn-next {
+      background-color: var(--detalhe-accent) !important;
+      color: #11111b !important;
+      border: none !important;
+    }
+
+    .btn-next:hover {
+      background-color: var(--detalhe-hover) !important;
+      color: #11111b !important;
+    }
+
+    .espacador-nav {
+      flex: 1;
+    }
+
     /* VARIÁVEIS DE TEMAS DE LEITURA */
     body.theme-dark-pure {
       --bg-principal: #000000 !important;
@@ -211,14 +260,15 @@
         max-width: 100% !important;
         box-sizing: border-box !important;
       }
-          /* AJUSTE DAS CAPAS NO CELULAR */
+
+      /* AJUSTE DAS CAPAS NO CELULAR */
       .grid-biblioteca,
       .biblioteca-container {
         display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 20px !important;
       }
-    
+
       .card-historia img,
       .capa-obra {
         width: 100% !important;
@@ -226,10 +276,25 @@
         max-height: 280px !important;
         object-fit: contain !important;
       }
+
+      /* AJUSTE DOS BOTEOS NO CELULAR (Empilha verticalmente para toque fácil) */
+      .nav-capitulo-container {
+        flex-direction: column !important;
+        gap: 10px !important;
+      }
+
+      .btn-nav {
+        width: 100% !important;
+        text-align: center !important;
+      }
+
+      .espacador-nav {
+        display: none !important;
+      }
     }
 
     .site-footer { display: none !important; }
-  </style>
+</style>
 </head>
 <body>
 
