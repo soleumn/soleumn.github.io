@@ -130,6 +130,18 @@
       overflow-x: auto;
     }
 
+    /* REGRAS DE OCULTAÇÃO SUAVE */
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    
+    /* CLASSE QUE APLICA A VISIBILIDADE QUANDO ESTIVER NO TEXTO */
+    .reader-settings.is-visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
     .reader-btn {
       background: transparent;
       border: 1px solid var(--borda-suave);
