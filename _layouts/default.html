@@ -128,20 +128,21 @@
       backdrop-filter: blur(10px);
       max-width: 95vw;
       overflow-x: auto;
-    }
-
-    /* REGRAS DE OCULTAÇÃO SUAVE */
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
+      
+      /* ESCONDE A BARRA POR PADRÃO */
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+      transition: opacity 0.3s ease, visibility 0.3s ease !important;
     }
     
-    /* CLASSE QUE APLICA A VISIBILIDADE QUANDO ESTIVER NO TEXTO */
+    /* CLASSE QUE MOSTRA A BARRA APENAS NO TEXTO */
     .reader-settings.is-visible {
-      opacity: 1;
-      visibility: visible;
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
     }
-    
+        
     .reader-btn {
       background: transparent;
       border: 1px solid var(--borda-suave);
