@@ -68,13 +68,13 @@ permalink: /eoshinki/
 
 ---
 
-### ☰ Chapters
+### ⫶☰ Chapters
 
 <ul id="lista-capitulos" style="list-style: none; padding-left: 0;">
   {% for post in site.categories.eoshinki %}
     <li class="item-capitulo" data-ordem="{{ post.capitulo | default: 0 }}" style="padding: 12px 0; border-bottom: 1px solid var(--borda-suave);">
       <a href="{{ post.url | relative_url }}" style="font-size: 1.1rem; text-decoration: none;">
-        🕮 {{ post.title }}
+        ❏ {{ post.title }}
       </a>
     </li>
   {% endfor %}
