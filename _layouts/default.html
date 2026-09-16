@@ -291,43 +291,61 @@
     body.spacing-normal .post-content p { margin-bottom: 1.5rem !important; }
     body.spacing-relaxed .post-content p { margin-bottom: 2.3rem !important; }
 
-    /* RESPONSIVIDADE MOBILE */
+     /* RESPONSIVIDADE MOBILE */
     @media (max-width: 768px) {
       .wrapper {
         padding-left: 15px !important;
         padding-right: 15px !important;
       }
-
+  
       .post-content, .post-content p {
         line-height: 1.8 !important;
       }
-
+  
+      /* BARRA FLUTUANTE COMPACTA & SEM SCROLLBAR VISÍVEL */
       .reader-settings {
-        bottom: 10px;
-        padding: 6px 10px;
-        gap: 5px;
+        bottom: 10px !important;
+        padding: 4px 8px !important;
+        gap: 4px !important;
+        max-width: 92vw !important;
+        border-radius: 20px !important;
+        -ms-overflow-style: none;  /* IE/Edge */
+        scrollbar-width: none;  /* Firefox */
       }
-
+  
+      .reader-settings::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+      }
+  
       .reader-btn {
-        padding: 3px 6px;
-        font-size: 0.75rem;
-      }
-
-      .select-capitulo-flutuante {
-        max-width: 100px !important;
+        padding: 3px 6px !important;
         font-size: 0.75rem !important;
+        border-radius: 12px !important;
       }
-
+  
+      .select-capitulo-flutuante {
+        max-width: 85px !important;
+        font-size: 0.75rem !important;
+        padding: 2px 4px !important;
+        border-radius: 12px !important;
+      }
+  
+      .btn-floating {
+        padding: 2px 6px !important;
+        font-size: 0.75rem !important;
+        border-radius: 12px !important;
+      }
+  
       img, .system-window {
         max-width: 100% !important;
         box-sizing: border-box !important;
       }
-
+  
       .nav-capitulo-container {
         flex-direction: column !important;
         gap: 10px !important;
       }
-
+  
       .btn-nav {
         width: 100% !important;
         text-align: center !important;
