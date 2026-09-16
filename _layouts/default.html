@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* PALETA E CONFIGURAÇÕES DE BASE (CATPPUCCIN MOCHA) */
     /* CONFIGURAÇÃO BASE (CATPPUCCIN MOCHA - DARK) */
     :root {
       --bg-principal: #1e1e2e;
@@ -18,12 +17,13 @@
       --bg-card-hover: #313244;
       --borda-suave: #45475a;
       --texto-principal: #cdd6f4;
-      --texto-titulo: #f5e0dc; /* Cor rosa/creme clara para o fundo escuro */
+      --texto-titulo: #f5e0dc;
       --texto-secundario: #a6adc8;
       --detalhe-accent: #cba6f7;
       --detalhe-hover: #b4befe;
       --fonte-titulo: 'Outfit', sans-serif;
       --fonte-corpo: 'Merriweather', serif;
+      --cor-sistema: #89b4fa;
     }
     body {
       background-color: var(--bg-principal) !important;
@@ -65,36 +65,18 @@
       text-decoration: none !important;
     }
 
-    /* AJUSTE DAS CAPAS DE OBRAS (BIBLIOTECA) */
+    /* CAPAS DE OBRAS */
     .card-historia img, 
     .capa-obra {
       width: 100% !important;
       height: auto !important;
       max-height: 380px;
-      object-fit: contain !important; /* Mostra a capa inteira sem cortar as bordas */
+      object-fit: contain !important;
       border-radius: 8px 8px 0 0;
       display: block;
     }
-
-        /* MOCHA (Escuro) */
-    :root {
-      /* ... suas variáveis anteriores ... */
-      --cor-sistema: #89b4fa; /* Azul pastel */
-    }
     
-    /* SÉPIA */
-    body.theme-sepia {
-      /* ... suas variáveis anteriores ... */
-      --cor-sistema: #8c5a2b; /* Castanho/Dourado escuro */
-    }
-    
-    /* LIGHT (Claro) */
-    body.theme-light {
-      /* ... suas variáveis anteriores ... */
-      --cor-sistema: #1e66f5; /* Azul elétrico vibrante */
-    }
-    
-    /* JANELA DO SISTEMA (Adaptável a Temas e Fontes) */
+    /* JANELA DO SISTEMA */
     .system-window {
       background: var(--bg-card) !important;
       border: 1px solid var(--cor-sistema) !important;
@@ -122,7 +104,7 @@
     }
 
     .system-content {
-      font-family: 'Lora', sans-serif !important; /* Fonte moderna para o texto da caixa */
+      font-family: 'Lora', sans-serif !important;
       font-size: 1rem !important;
       line-height: 1.6 !important;
       color: var(--texto-principal) !important;
@@ -132,17 +114,20 @@
     .reader-settings {
       position: fixed;
       bottom: 20px;
-      right: 20px;
+      left: 50%;
+      transform: translateX(-50%);
       background-color: var(--bg-card);
       border: 1px solid var(--borda-suave);
       border-radius: 30px;
       padding: 8px 16px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
       z-index: 1000;
       backdrop-filter: blur(10px);
+      max-width: 95vw;
+      overflow-x: auto;
     }
 
     .reader-btn {
@@ -154,12 +139,49 @@
       cursor: pointer;
       font-family: var(--fonte-titulo);
       font-size: 0.85rem;
+      white-space: nowrap;
     }
 
-    /* BOTOES DE NAVEGACAO DO CAPITULO (Table of Contents, Save Progress, Next Chapter) */
+    .select-capitulo-flutuante {
+      background-color: var(--bg-card) !important;
+      color: var(--texto-principal) !important;
+      border: 1px solid var(--borda-suave) !important;
+      border-radius: 16px !important;
+      padding: 4px 10px !important;
+      font-size: 0.85rem !important;
+      outline: none !important;
+      cursor: pointer !important;
+      max-width: 130px !important;
+      text-overflow: ellipsis !important;
+    }
+    
+    .select-capitulo-flutuante option {
+      background-color: var(--bg-card) !important;
+      color: var(--texto-principal) !important;
+    }
+    
+    .btn-floating {
+      background-color: transparent !important;
+      color: var(--texto-principal) !important;
+      border: 1px solid var(--borda-suave) !important;
+      padding: 4px 10px !important;
+      border-radius: 16px !important;
+      text-decoration: none !important;
+      font-size: 0.8rem !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    
+    .btn-floating:hover {
+      border-color: var(--detalhe-accent) !important;
+      color: var(--detalhe-accent) !important;
+    }
+
+    /* BOTOES DE NAVEGACAO DO CAPITULO */
     .nav-capitulo-container {
       display: flex !important;
-      justify-content: space-between !important; /* Separa a esquerda da direita */
+      justify-content: space-between !important;
       align-items: center !important;
       margin: 40px 0 !important;
       width: 100% !important;
@@ -168,7 +190,7 @@
     .nav-grupo-esquerda {
       display: flex !important;
       align-items: center !important;
-      gap: 10px !important; /* Espaçamento entre "Previous chapter" e "Table of Contents" */
+      gap: 10px !important;
     }
     
     .nav-grupo-direita {
@@ -211,11 +233,7 @@
       color: #11111b !important;
     }
 
-    .espacador-nav {
-      flex: 1;
-    }
-
-    /* VARIÁVEIS DE TEMAS DE LEITURA */
+    /* TEMAS DE LEITURA */
     body.theme-dark-pure {
       --bg-principal: #000000 !important;
       --bg-card: #121212 !important;
@@ -223,6 +241,7 @@
       --texto-principal: #e0e0e0 !important;
       --texto-titulo: #ffffff !important;
       --borda-suave: #2a2a2a !important;
+      --cor-sistema: #ffffff !important;
     }
 
     body.theme-sepia {
@@ -230,10 +249,11 @@
       --bg-card: #e8dfca !important;
       --bg-card-hover: #dfd4bc !important;
       --texto-principal: #433422 !important;
-      --texto-titulo: #2c1d11 !important; /* Castanho escuro para alto contraste */
+      --texto-titulo: #2c1d11 !important;
       --borda-suave: #d3c4a5 !important;
       --detalhe-accent: #8c5a2b !important;
       --detalhe-hover: #6d441f !important;
+      --cor-sistema: #8c5a2b !important;
     }
 
     body.theme-light {
@@ -241,111 +261,55 @@
       --bg-card: #e6e9ef !important;
       --bg-card-hover: #dce0e8 !important;
       --texto-principal: #4c4f69 !important;
-      --texto-titulo: #1e1e2e !important; /* Azul escuro/grafite para fundo claro */
+      --texto-titulo: #1e1e2e !important;
       --borda-suave: #ccd0da !important;
       --detalhe-accent: #8839ef !important;
       --detalhe-hover: #7223e5 !important;
+      --cor-sistema: #1e66f5 !important;
     }
 
-    /* VARIÁVEIS DE FONTES */
+    /* FONTES E ESPAÇAMENTOS */
     body.font-merriweather .post-content, body.font-merriweather .post-content p { font-family: 'Merriweather', serif !important; }
     body.font-lora .post-content, body.font-lora .post-content p { font-family: 'Lora', serif !important; }
     body.font-outfit .post-content, body.font-outfit .post-content p { font-family: 'Outfit', sans-serif !important; }
     body.font-inter .post-content, body.font-inter .post-content p { font-family: 'Inter', sans-serif !important; }
 
-    /* VARIÁVEIS DE ESPAÇAMENTO ENTRE PARÁGRAFOS */
     body.spacing-compact .post-content p { margin-bottom: 0.8rem !important; }
     body.spacing-normal .post-content p { margin-bottom: 1.5rem !important; }
     body.spacing-relaxed .post-content p { margin-bottom: 2.3rem !important; }
 
-      .select-capitulo-flutuante {
-        background-color: var(--bg-card) !important;
-        color: var(--texto-principal) !important;
-        border: 1px solid var(--borda-suave) !important;
-        border-radius: 6px !important;
-        padding: 6px 10px !important;
-        font-size: 0.85rem !important;
-        outline: none !important;
-        cursor: pointer !important;
-        max-width: 160px !important;
-        text-overflow: ellipsis !important;
-      }
-      
-      .select-capitulo-flutuante option {
-        background-color: var(--bg-card) !important;
-        color: var(--texto-principal) !important;
-      }
-      
-      .btn-floating {
-        background-color: var(--bg-card) !important;
-        color: var(--texto-principal) !important;
-        border: 1px solid var(--borda-suave) !important;
-        padding: 6px 12px !important;
-        border-radius: 6px !important;
-        text-decoration: none !important;
-        font-weight: bold !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-      }
-      
-      .btn-floating:hover {
-        border-color: var(--detalhe-accent) !important;
-        color: var(--detalhe-accent) !important;
-      }
-
-    /* =================================================== */
-    /* ADAPTAÇÃO PARA CELULARES (RESPONSIVIDADE MOBILE)    */
-    /* =================================================== */
+    /* RESPONSIVIDADE MOBILE */
     @media (max-width: 768px) {
       .wrapper {
         padding-left: 15px !important;
         padding-right: 15px !important;
       }
 
-      /* Reduz o tamanho das fontes e espaçamentos no celular */
       .post-content, .post-content p {
         line-height: 1.8 !important;
       }
 
-      /* Ajusta a barra flutuante para o centro inferior em celulares */
       .reader-settings {
-        bottom: 15px;
-        right: 50%;
-        transform: translateX(50%);
-        padding: 6px 12px;
-        gap: 6px;
-        width: max-content;
+        bottom: 10px;
+        padding: 6px 10px;
+        gap: 5px;
       }
 
       .reader-btn {
-        padding: 4px 8px;
-        font-size: 0.8rem;
+        padding: 3px 6px;
+        font-size: 0.75rem;
       }
 
-      /* Garante que imagens e caixas do sistema não estourem a largura da tela */
+      .select-capitulo-flutuante {
+        max-width: 100px !important;
+        font-size: 0.75rem !important;
+      }
+
       img, .system-window {
         max-width: 100% !important;
         box-sizing: border-box !important;
       }
 
-      /* AJUSTE DAS CAPAS NO CELULAR */
-      .grid-biblioteca,
-      .biblioteca-container {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
-      }
-
-      .card-historia img,
-      .capa-obra {
-        width: 100% !important;
-        height: auto !important;
-        max-height: 280px !important;
-        object-fit: contain !important;
-      }
-
-      /* AJUSTE DOS BOTEOS NO CELULAR (Empilha verticalmente para toque fácil) */
       .nav-capitulo-container {
         flex-direction: column !important;
         gap: 10px !important;
@@ -355,25 +319,19 @@
         width: 100% !important;
         text-align: center !important;
       }
-
-      .espacador-nav {
-        display: none !important;
-      }
     }
 
     .site-footer { display: none !important; }
 
-        /* Esconde qualquer data e meta-informação do topo dos posts */
     .post-meta, time, [itemprop="datePublished"] {
       display: none !important;
     }
-</style>
+  </style>
 </head>
 <body>
 
   <header class="site-header" role="banner">
     <div class="wrapper" style="display: flex; justify-content: space-between; align-items: center;">
-      <!-- O título 'Minhas Histórias' volta a ser clicável para ir para a página inicial -->
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     </div>
   </header>
@@ -382,112 +340,8 @@
     <div class="wrapper">
       {{ content }}
 
-      <!-- CAIXA DE COMENTÁRIOS AUTOMÁTICA NOS CAPÍTULOS -->
       {% if page.layout == "post" %}
-              <!-- BARRA FLUTUANTE DE LEITURA -->
-        <div class="reader-settings">
-          <!-- Tamanho da Fonte -->
-          <button class="reader-btn" onclick="adjustFontSize(-0.1)" title="Diminuir Fonte">A-</button>
-          <button class="reader-btn" onclick="adjustFontSize(0.1)" title="Aumentar Fonte">A+</button>
-          
-          <!-- Alternar Fontes -->
-          <button class="reader-btn" onclick="cycleFont()" id="btnFont" title="Mudar Fonte">Merriweather</button>
-          
-          <!-- Espaçamento entre Parágrafos -->
-          <button class="reader-btn" onclick="cycleSpacing()" id="btnSpacing" title="Espaçamento de Parágrafos">⬍ Normal</button>
-          
-          <!-- Temas -->
-          <button class="reader-btn" onclick="cycleTheme()" id="btnTheme" title="Mudar Tema">🎨</button>
-        </div>
-      
-        <script>
-          // Configurações padrão salvas
-          let currentFontSize = parseFloat(localStorage.getItem('reader_font_size')) || 1.18;
-          let currentFont = localStorage.getItem('reader_font_family') || 'merriweather';
-          let currentSpacing = localStorage.getItem('reader_spacing') || 'normal';
-          let currentTheme = localStorage.getItem('reader_theme') || 'mocha';
-      
-          const fonts = [
-            { id: 'merriweather', name: 'Merriweather' },
-            { id: 'lora', name: 'Lora' },
-            { id: 'outfit', name: 'Outfit' },
-            { id: 'inter', name: 'Inter' }
-          ];
-      
-          const spacings = [
-            { id: 'compact', name: '⬍ Fair' },
-            { id: 'normal', name: '⬍ Normal' },
-            { id: 'relaxed', name: '⬍ Wide' }
-          ];
-      
-          function applyReaderSettings() {
-            // 1. Tamanho da Fonte
-            const paragraphs = document.querySelectorAll('.post-content, .post-content p');
-            paragraphs.forEach(p => {
-              p.style.fontSize = currentFontSize + 'rem';
-            });
-      
-            // 2. Tipo de Fonte
-            document.body.classList.remove('font-merriweather', 'font-lora', 'font-outfit', 'font-inter');
-            document.body.classList.add('font-' + currentFont);
-      
-            const fontObj = fonts.find(f => f.id === currentFont);
-            if (fontObj) {
-              document.getElementById('btnFont').innerText = fontObj.name;
-            }
-      
-            // 3. Espaçamento entre Parágrafos
-            document.body.classList.remove('spacing-compact', 'spacing-normal', 'spacing-relaxed');
-            document.body.classList.add('spacing-' + currentSpacing);
-      
-            const spaceObj = spacings.find(s => s.id === currentSpacing);
-            if (spaceObj) {
-              document.getElementById('btnSpacing').innerText = spaceObj.name;
-            }
-      
-            // 4. Tema de Cores
-            document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light');
-            if (currentTheme !== 'mocha') {
-              document.body.classList.add('theme-' + currentTheme);
-            }
-          }
-      
-          function adjustFontSize(delta) {
-            currentFontSize = Math.min(Math.max(currentFontSize + delta, 0.9), 1.8);
-            currentFontSize = Math.round(currentFontSize * 100) / 100;
-            localStorage.setItem('reader_font_size', currentFontSize);
-            applyReaderSettings();
-          }
-      
-          function cycleFont() {
-            let fontIds = fonts.map(f => f.id);
-            let nextIndex = (fontIds.indexOf(currentFont) + 1) % fontIds.length;
-            currentFont = fontIds[nextIndex];
-            localStorage.setItem('reader_font_family', currentFont);
-            applyReaderSettings();
-          }
-      
-          function cycleSpacing() {
-            let spaceIds = spacings.map(s => s.id);
-            let nextIndex = (spaceIds.indexOf(currentSpacing) + 1) % spaceIds.length;
-            currentSpacing = spaceIds[nextIndex];
-            localStorage.setItem('reader_spacing', currentSpacing);
-            applyReaderSettings();
-          }
-      
-          function cycleTheme() {
-            const themes = ['mocha', 'dark-pure', 'sepia', 'light'];
-            let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
-            currentTheme = themes[nextIndex];
-            localStorage.setItem('reader_theme', currentTheme);
-            applyReaderSettings();
-          }
-      
-          document.addEventListener('DOMContentLoaded', applyReaderSettings);
-          applyReaderSettings();
-
-        </script>
-            <!-- SEÇÃO DE COMENTÁRIOS (GISCUS) -->
+        <!-- SEÇÃO DE COMENTÁRIOS (GISCUS) -->
         <section style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--borda-suave);">
           <h3 style="font-family: var(--fonte-titulo); color: var(--detalhe-accent); margin-bottom: 20px;">
             🗨 Comments
@@ -514,6 +368,90 @@
       {% endif %}
     </div>
   </main>
+
+  <!-- SCRIPT GLOBAL DO LEITOR (MUDANÇA DE TEMA/FONTE/ESPAÇAMENTO) -->
+  <script>
+    let currentFontSize = parseFloat(localStorage.getItem('reader_font_size')) || 1.18;
+    let currentFont = localStorage.getItem('reader_font_family') || 'merriweather';
+    let currentSpacing = localStorage.getItem('reader_spacing') || 'normal';
+    let currentTheme = localStorage.getItem('reader_theme') || 'mocha';
+
+    const fonts = [
+      { id: 'merriweather', name: 'Merriweather' },
+      { id: 'lora', name: 'Lora' },
+      { id: 'outfit', name: 'Outfit' },
+      { id: 'inter', name: 'Inter' }
+    ];
+
+    const spacings = [
+      { id: 'compact', name: '⬍ Fair' },
+      { id: 'normal', name: '⬍ Normal' },
+      { id: 'relaxed', name: '⬍ Wide' }
+    ];
+
+    function applyReaderSettings() {
+      const paragraphs = document.querySelectorAll('.post-content, .post-content p');
+      paragraphs.forEach(p => {
+        p.style.fontSize = currentFontSize + 'rem';
+      });
+
+      document.body.classList.remove('font-merriweather', 'font-lora', 'font-outfit', 'font-inter');
+      document.body.classList.add('font-' + currentFont);
+
+      const btnFont = document.getElementById('btnFont');
+      const fontObj = fonts.find(f => f.id === currentFont);
+      if (btnFont && fontObj) {
+        btnFont.innerText = fontObj.name;
+      }
+
+      document.body.classList.remove('spacing-compact', 'spacing-normal', 'spacing-relaxed');
+      document.body.classList.add('spacing-' + currentSpacing);
+
+      const btnSpacing = document.getElementById('btnSpacing');
+      const spaceObj = spacings.find(s => s.id === currentSpacing);
+      if (btnSpacing && spaceObj) {
+        btnSpacing.innerText = spaceObj.name;
+      }
+
+      document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light');
+      if (currentTheme !== 'mocha') {
+        document.body.classList.add('theme-' + currentTheme);
+      }
+    }
+
+    function adjustFontSize(delta) {
+      currentFontSize = Math.min(Math.max(currentFontSize + delta, 0.9), 1.8);
+      currentFontSize = Math.round(currentFontSize * 100) / 100;
+      localStorage.setItem('reader_font_size', currentFontSize);
+      applyReaderSettings();
+    }
+
+    function cycleFont() {
+      let fontIds = fonts.map(f => f.id);
+      let nextIndex = (fontIds.indexOf(currentFont) + 1) % fontIds.length;
+      currentFont = fontIds[nextIndex];
+      localStorage.setItem('reader_font_family', currentFont);
+      applyReaderSettings();
+    }
+
+    function cycleSpacing() {
+      let spaceIds = spacings.map(s => s.id);
+      let nextIndex = (spaceIds.indexOf(currentSpacing) + 1) % spaceIds.length;
+      currentSpacing = spaceIds[nextIndex];
+      localStorage.setItem('reader_spacing', currentSpacing);
+      applyReaderSettings();
+    }
+
+    function cycleTheme() {
+      const themes = ['mocha', 'dark-pure', 'sepia', 'light'];
+      let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
+      currentTheme = themes[nextIndex];
+      localStorage.setItem('reader_theme', currentTheme);
+      applyReaderSettings();
+    }
+
+    document.addEventListener('DOMContentLoaded', applyReaderSettings);
+  </script>
 
 </body>
 </html>
