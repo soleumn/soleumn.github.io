@@ -110,6 +110,19 @@
       color: var(--texto-principal) !important;
     }
 
+    /* GARANTE QUE O CONTEÚDO FIQUE SEMPRE CENTRALIZADO E LIMPANDO OVERFLOW */
+    .wrapper, .page-content {
+      overflow-x: hidden !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    
+    .post-content {
+      width: 100% !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+    
     /* PAINEL DE LEITURA FLUTUANTE */
     .reader-settings {
       position: fixed;
