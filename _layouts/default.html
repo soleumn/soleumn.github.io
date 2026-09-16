@@ -76,11 +76,29 @@
       display: block;
     }
 
+        /* MOCHA (Escuro) */
+    :root {
+      /* ... suas variáveis anteriores ... */
+      --cor-sistema: #89b4fa; /* Azul pastel */
+    }
+    
+    /* SÉPIA */
+    body.theme-sepia {
+      /* ... suas variáveis anteriores ... */
+      --cor-sistema: #8c5a2b; /* Castanho/Dourado escuro */
+    }
+    
+    /* LIGHT (Claro) */
+    body.theme-light {
+      /* ... suas variáveis anteriores ... */
+      --cor-sistema: #1e66f5; /* Azul elétrico vibrante */
+    }
+    
     /* JANELA DO SISTEMA (Adaptável a Temas e Fontes) */
     .system-window {
-      background: var(--bg-card) !important; /* Ajusta o fundo para o tema atual */
-      border: 1px solid var(--detalhe-accent);
-      border-left: 4px solid var(--detalhe-accent);
+      background: var(--bg-card) !important;
+      border: 1px solid var(--cor-sistema) !important;
+      border-left: 4px solid var(--cor-sistema) !important;
       border-radius: 8px;
       padding: 16px 20px;
       margin: 25px 0;
@@ -90,12 +108,12 @@
     }
 
     .system-header {
-      font-family: var(--fonte-titulo) !important; /* Usa a fonte de título estilizada */
+      font-family: var(--fonte-titulo) !important;
       font-size: 0.95rem !important;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: var(--detalhe-accent) !important;
+      color: var(--cor-sistema) !important;
       margin-bottom: 10px;
       display: flex;
       align-items: center;
