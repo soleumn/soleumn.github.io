@@ -349,9 +349,19 @@
         gap: 10px !important;
       }
   
+      /* CORREÇÃO DO ALINHAMENTO DOS BOTÕES DE NAVEGAÇÃO NO MOBILE */
+      .nav-grupo-esquerda,
+      .nav-grupo-direita {
+        width: 100% !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+      }
+  
       .btn-nav {
         width: 100% !important;
         text-align: center !important;
+        white-space: nowrap !important; /* Impede que o texto quebre em duas linhas */
+        padding: 12px 10px !important;
       }
     }
 
