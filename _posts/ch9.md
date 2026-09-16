@@ -203,7 +203,7 @@ It seemed I was completely ruined.
 
 With eyes full of laughter, he spoke with utmost pleasure.
 
-“Let's enter <Zero> together.”
+“Let's enter &lt;Zero&gt; together.”
 
 &lt;The Cell Block X&gt; was the first new trial meteor to fall since that day four years ago.
 
