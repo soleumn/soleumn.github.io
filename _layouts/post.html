@@ -86,7 +86,7 @@ layout: default
 <!-- BARRA FLUTUANTE -->
 <div class="reader-settings">
   {% if prev_post %}
-    <a href="{{ prev_post.url | relative_url }}" class="btn-floating" title="Capítulo Anterior">⬅</a>
+    <a href="{{ prev_post.url | relative_url }}" class="btn-floating" title="Capítulo Anterior">❮❮</a>
   {% endif %}
 
   <select onchange="if (this.value) window.location.href = this.value;" class="select-capitulo-flutuante">
@@ -99,7 +99,7 @@ layout: default
   </select>
 
   {% if next_post %}
-    <a href="{{ next_post.url | relative_url }}" class="btn-floating" title="Próximo Capítulo">⮕</a>
+    <a href="{{ next_post.url | relative_url }}" class="btn-floating" title="Próximo Capítulo">❯❯</a>
   {% endif %}
 
   <span style="border-right: 1px solid var(--borda-suave); height: 18px; margin: 0 2px;"></span>
