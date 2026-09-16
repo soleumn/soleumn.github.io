@@ -1,0 +1,342 @@
+---
+layout: post
+title: "Chapter 120"
+categories: eoshinki
+capitulo: 9
+---
+
+I had never once mentioned god.
+
+Even to Kwak Hanmuk, I had only explained it in a way that suggested I seemed to be connected to a system.
+
+Other than that, I hadn't made any remarks even remotely similar to mentioning a god.
+
+It was only natural.
+
+Who would I tell? I'd be treated as a lunatic the moment I spoke.
+
+And yet now… Je Hyeon-oh asked me if I was a god.
+
+Not a system, but specifically referring to me as a 'god.'
+
+I should have played dumb and denied it immediately, but I couldn't.
+
+I had no choice.
+
+Je Hyeon-oh's question wasn't a question.
+
+It was a notification that he knew my identity.
+
+The veil of protection, its time having run out, crumbled into golden dust.
+
+Beneath the shattering golden fragments, Je Hyeon-oh looked as if he were enveloped in a cluster of stars.
+
+He took off his goggles. Dark purple eyes with golden pupils were revealed.
+
+“There's something I'm looking for.”
+
+His metallic hand reached toward me.
+
+I tensed up, but the metallic hand didn't touch me.
+
+It simply stopped right in front of my chest, maintaining a tiny gap.
+
+Keeping that almost-touching distance, Je Hyeon-oh slowly moved his fingers.
+
+The metallic hand, positioned where it could pierce my heart at any moment, drifted as if caressing the air.
+
+“I think it's connected to you.”
+
+His long, horizontal eyes curved very softly.
+
+A beast's voice, mismatched with that feather-light, ticklish smile, questioned me.
+
+“Do you know anything?”
+
+I barely managed to part my lips.
+
+“What… are you looking for?”
+
+“god.”
+
+My breath hitched at the one-word answer.
+
+Je Hyeon-oh is looking for a god?
+
+No, before that.
+
+Which god…?
+
+Just as I stood frozen in incomprehensible bewilderment.
+
+Dominic, perched on my shoulder, made a humming sound.
+
+“As I mentioned before, the master of this place is an incredibly rude individual.”
+
+He looked at Je Hyeon-oh intently.
+
+“In the training center, he created an illusion by mimicking Mr. Roasted Chestnut's subordinate, and as if that weren't enough, he has now taken the liberty of making contact. It seems he was checking to see if he could make you his subordinate.”
+
+Already in shock, I became even more confused by Dominic's words.
+
+The god existing in The Cell-X tried to make Je Hyeon-oh its subordinate?
+
+*'That octopus leg?'*
+
+Was that why Je Hyeon-oh was completely drenched in seawater?
+
+A low voice lingered in my ear.
+
+“No matter how young Mr. Roasted Chestnut is, to commit such rudeness.”
+
+I… felt strange.
+
+From the moment Je Hyeon-oh said he was looking for a god, I had been swept up in a peculiar mood.
+
+But after hearing that the octopus leg had contacted him and tried to make him a subordinate…
+
+He's my subordinate.
+
+My eyes felt hot as if they were burning, my heart raced, and a warm energy surged through my veins.
+
+In truth, in this situation, I should have felt surprised or flustered.
+
+But for some reason, I was seething.
+
+*'Why am I so angry?'*
+
+Without knowing the reason, I first tried to calm my emotions.
+
+However, the heat continued to surge, to the point where my vision began to blur.
+
+“Goyo.”
+
+At the sound of the voice, I parted my lips slightly with an 'ah.'
+
+Je Hyeon-oh's eyes had narrowed slightly.
+
+“Get a grip.”
+
+In a slightly dazed state, I murmured a belated answer.
+
+“That… you might not believe me, but I don't know anything, I don't know any gods…”
+
+I really didn't know much.
+
+The title was just *'god.'*
+
+Even then, it was only when another being referred to me as such that I'd think, *'Ah, right, I was a god.'*
+
+In a state where I didn't even have a proper sense of self-awareness, there was no way I possessed great knowledge.
+
+“But… Lieutenant Colonel…”
+
+My head wasn't working straight.
+
+Disjointed thoughts surfaced, but even those didn't connect and kept snapping off.
+
+I looked up at Je Hyeon-oh blankly.
+
+Unable to withstand the soaring heat, I blurted out the words lingering in my mouth.
+
+“Why did you meet another god…?”
+
+At the gaze looking back at me, a warning alarm rang in my head.
+
+It was a warning that I shouldn't say any more, but my mouth moved on its own.
+
+I took a step closer to Je Hyeon-oh.
+
+The metallic hand, which had been maintaining a precarious distance, tapped against my chest.
+
+Immediately, my clothes tore open by about a span.
+
+If Je Hyeon-oh hadn't swiftly withdrawn his hand, my skin would have been torn as well.
+
+But I didn't care.
+
+As the metallic hand moved away, I stepped closer to Je Hyeon-oh as if I had been waiting.
+
+I wanted to look inside.
+
+“Was the despair… also caused by another god…?”
+
+The light emanating from my eyes grew brighter.
+
+The Cell-X was a place always covered in a sliver of darkness.
+
+Light dwelled in a space that remained gloomy and overcast even in broad daylight.
+
+Eyes sparkling gold like stars stared directly at Je Hyeon-oh.
+
+“My subordinate…?”
+
+At that moment, Je Hyeon-oh burst into laughter.
+
+At the low-pitched sound that could not be called human, my reason snapped back into place with a start.
+
+*'Crazy.'*
+
+As I recalled what I had just been saying, goosebumps broke out all over.
+
+*'I messed up.'*
+
+No matter if the opponent was Je Hyeon-oh, the things I had said were too abnormal.
+
+I had no idea how to clean this up.
+
+“Lieutenant Colonel, I-I'm sorry, I just for a moment.”
+
+He cut off my stuttering apology.
+
+“What are you sorry for?”
+
+“…….”
+
+I felt even more chilled by the question that seemed to mimic kindness.
+
+It seemed I was completely ruined.
+
+“Goyo.”
+
+“Yes…?”
+
+With eyes full of laughter, he spoke with utmost pleasure.
+
+“Let's enter <Zero> together.”
+
+<The Cell Block X> was the first new trial meteor to fall since that day four years ago.
+
+The heads of trial response agencies from the 20 major countries participated in this international conference.
+
+The remote video conference provided perfect real-time translation using Samra's technology.
+
+The speaker's voice was heard in the language of the set country exactly as it was spoken, and the quality of the translation was beyond reproach.
+
+Since it even reflected cultural differences between nations, the assistance of a veteran translator was unnecessary.
+
+Looking at the screen divided into 19 sections, Jang Seok-yoon spoke.
+
+“I am Jang Seok-yoon, Commissioner of the Trial Response Agency.”
+
+Samra, who was seated with him, also spoke.
+
+“I am Samra Mansang of the Trial Response Agency.”
+
+The chest that held no breath did not move an inch, and the emotionless gaze remained fixed forward without a single blink.
+
+It was an appearance where the organic traces that life should naturally possess had completely vanished.
+
+A slight stir occurred among those on the video conference screens due to the alien presence that did not hide the fact that it was an AI android.
+
+When the Agency attempted to create an AI android using an item acquired from a near-future setting trial, the vast majority predicted failure.
+
+Even the Agency attempting the creation was skeptical.
+
+It was only natural, as an enormous budget had to be invested while the probability of success was extremely slim.
+
+Intense conflicts of opinion had even broken out internally over this.
+
+Lieutenant Colonel Je Hyeon-oh, who demanded the creation of the android, ended the heated debate over the item he had brought with a single sentence.
+
+“I'll discharge from the military.”
+
+He had simply notified them that he would leave the service if they didn't build it.
+
+No matter how much the budget cost, it was nothing compared to Je Hyeon-oh.
+
+To avoid losing him, the Agency had no choice but to immediately begin the android's production.
+
+However, it was ambiguous to say that the Agency had entirely created Samra.
+
+Not only the Agency, but the most outstanding researchers from private companies were mobilized to create the android, but current technology was insufficient.
+
+Ultimately, the robot produced as a humanoid was a form where several deficiencies were felt.
+
+But Je Hyeon-oh said this was enough.
+
+The researchers didn't know, but the item used as the core contained over-technology software.
+
+Using the crude humanoid robot body as a base, it modified, restructured, and evolved itself.
+
+It didn't take long to achieve its current form.
+
+Other countries that had mocked the creation of the android belatedly began striving to receive Samra's help.
+
+There were various debates regarding Samra in the international community, but eventually, it was accepted as a being for the sake of humanity.
+
+While placing South Korea as the first priority, Samra moved in accordance with the purpose of serving 'humanity.'
+
+It had become an indispensable existence in the defense of trials hatching worldwide.
+
+“The Trial Response Agency currently estimates the grade of the trial in question as four stars, Grade A by international trial standards.”
+
+Simultaneously with Jang Seok-yoon's statement, Samra collected every emotional change appearing on the faces of those on the screen.
+
+Jang Seok-yoon's statement was a lie.
+
+Based on the information shared in communication with Han Goyo, Samra estimated the grade of the trial to be at least five stars.
+
+However, Jang Seok-yoon intentionally announced a lower grade for the trial.
+
+Until Han Goyo appeared, there had been 9 cases of trials being closed worldwide.
+
+Among them, there was only 1 case from South Korea, closed by Captain Kwak Hanmuk of the current Trial Response Agency's Field Response Headquarters.
+
+It was South Korea's one and only closure, accompanied by great losses.
+
+Yet, Han Goyo already had 4 cases of closure.
+
+Including the unofficial closure of <Call of Void>, it was a total of 5 cases—truly an unbelievable ability.
+
+According to international treaties, the status of trials worldwide had to be shared in real-time.
+
+It was impossible to hide that trials were being closed consecutively in South Korea.
+
+Of course, it wasn't impossible with Samra's abilities, but that too was merely a temporary measure.
+
+A being like Han Goyo was bound to be revealed eventually, no matter how much one tried to hide it.
+
+It was the same reason the Agency did not hide the success of Samra's creation.
+
+“Currently, there are a total of 5 personnel entered, 4 of whom are soldiers belonging to the Agency.”
+
+Naturally grouping Han Goyo as belonging to the Agency, Jang Seok-yoon continued.
+
+“And CEO Cha of Paseong has also entered.”
+
+As soon as he finished speaking, notifications requesting to speak popped up all over the screen.
+
+Jang Seok-yoon ignored these and continued.
+
+“Under the cooperation of Lieutenant Colonel Je Hyeon-oh and CEO Cha, the clearing of the trial is expected to proceed smoothly. We will release the related data after the clear. I will now take questions.”
+
+Standing beside Jang Seok-yoon, Samra gave the opportunity to question to the person who would be most beneficial to speak first, considering the international situation and various other factors.
+
+On the surface, it looked as if Jang Seok-yoon had chosen, but in reality, Samra had selected the speaker.
+
+The person who got the chance asked abruptly.
+
+“I understand that a specific soldier in South Korea has recently closed trials consecutively.”
+
+“Please limit your inquiries to the current trial.”
+
+Jang Seok-yoon cut them off sharply and tried to pass the speaking right to the next person immediately.
+
+However, before the Commissioner of the Agency could open his mouth, Samra spoke first.
+
+“Due to the meteor that fell today, a significant fluctuation in BT values has occurred worldwide.”
+
+A great commotion erupted across the 19 screens.
+
+The attention that had been focused on Han Goyo until a moment ago immediately shifted to Samra's statement.
+
+After confirming that enough people's attention was gathered, Samra spoke.
+
+“As a result of observational data analysis, 128 meteors will hatch within 7 days. Additionally, within 9 days.”
+
+The dry tone continued.
+
+“34 trials will explode.”
+
+
