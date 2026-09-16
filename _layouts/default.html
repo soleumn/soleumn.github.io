@@ -104,7 +104,7 @@
     }
 
     .system-content {
-      font-family: 'Lora', sans-serif !important;
+      font-family: inherit;
       font-size: 1rem !important;
       line-height: 1.6 !important;
       color: var(--texto-principal) !important;
@@ -315,6 +315,7 @@
     body.font-lora .post-content, body.font-lora .post-content p { font-family: 'Lora', serif !important; }
     body.font-outfit .post-content, body.font-outfit .post-content p { font-family: 'Outfit', sans-serif !important; }
     body.font-inter .post-content, body.font-inter .post-content p { font-family: 'Inter', sans-serif !important; }
+    body.font-inter .post-content, body.font-inter .post-content p { font-family: 'Georgia', serif !important; }
 
     body.spacing-compact .post-content p { margin-bottom: 0.8rem !important; }
     body.spacing-normal .post-content p { margin-bottom: 1.5rem !important; }
@@ -450,6 +451,7 @@
     let currentTheme = localStorage.getItem('reader_theme') || 'mocha';
 
     const fonts = [
+      { id: 'georgia', name: 'Georgia' },
       { id: 'merriweather', name: 'Merriweather' },
       { id: 'lora', name: 'Lora' },
       { id: 'outfit', name: 'Outfit' },
@@ -468,7 +470,7 @@
         p.style.fontSize = currentFontSize + 'rem';
       });
 
-      document.body.classList.remove('font-merriweather', 'font-lora', 'font-outfit', 'font-inter');
+      document.body.classList.remove('font-georgia', 'font-merriweather', 'font-lora', 'font-outfit', 'font-inter');
       document.body.classList.add('font-' + currentFont);
 
       const btnFont = document.getElementById('btnFont');
