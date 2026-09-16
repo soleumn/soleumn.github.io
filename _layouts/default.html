@@ -399,35 +399,6 @@
           <!-- Temas -->
           <button class="reader-btn" onclick="cycleTheme()" id="btnTheme" title="Mudar Tema">🎨</button>
         </div>
-
-              <!-- CONTROLES DE CAPÍTULO NA BARRA FLUTUANTE -->
-        <div class="barra-flutuante-nav" style="display: flex; align-items: center; gap: 8px;">
-        
-          <!-- Botão Anterior -->
-          {% if prev_post %}
-            <a href="{{ prev_post.url | relative_url }}" class="btn-floating" title="Capítulo Anterior">
-              ◀
-            </a>
-          {% endif %}
-        
-          <!-- Lista Suspensa de Capítulos -->
-          <select onchange="if (this.value) window.location.href = this.value;" class="select-capitulo-flutuante">
-            <option value="" disabled selected>Capítulos...</option>
-            {% for post in obra_posts %}
-              <option value="{{ post.url | relative_url }}" {% if post.url == page.url %}selected{% endif %}>
-                Cap. {{ post.capitulo }} - {{ post.title }}
-              </option>
-            {% endfor %}
-          </select>
-        
-          <!-- Botão Próximo -->
-          {% if next_post %}
-            <a href="{{ next_post.url | relative_url }}" class="btn-floating" title="Próximo Capítulo">
-              ▶
-            </a>
-          {% endif %}
-        
-        </div>
       
         <script>
           // Configurações padrão salvas
