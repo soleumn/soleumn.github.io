@@ -205,7 +205,7 @@ With eyes full of laughter, he spoke with utmost pleasure.
 
 “Let's enter <Zero> together.”
 
-<The Cell Block X> was the first new trial meteor to fall since that day four years ago.
+&lt;The Cell Block X&gt; was the first new trial meteor to fall since that day four years ago.
 
 The heads of trial response agencies from the 20 major countries participated in this international conference.
 
@@ -287,7 +287,7 @@ It was South Korea's one and only closure, accompanied by great losses.
 
 Yet, Han Goyo already had 4 cases of closure.
 
-Including the unofficial closure of <Call of Void>, it was a total of 5 cases—truly an unbelievable ability.
+Including the unofficial closure of &lt;Call of Void&gt;, it was a total of 5 cases—truly an unbelievable ability.
 
 According to international treaties, the status of trials worldwide had to be shared in real-time.
 
