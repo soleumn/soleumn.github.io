@@ -11,19 +11,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     /* PALETA E CONFIGURAÇÕES DE BASE (CATPPUCCIN MOCHA) */
+    /* CONFIGURAÇÃO BASE (CATPPUCCIN MOCHA - DARK) */
     :root {
       --bg-principal: #1e1e2e;
       --bg-card: #181825;
       --bg-card-hover: #313244;
       --borda-suave: #45475a;
       --texto-principal: #cdd6f4;
+      --texto-titulo: #f5e0dc; /* Cor rosa/creme clara para o fundo escuro */
       --texto-secundario: #a6adc8;
       --detalhe-accent: #cba6f7;
       --detalhe-hover: #b4befe;
       --fonte-titulo: 'Outfit', sans-serif;
       --fonte-corpo: 'Merriweather', serif;
     }
-
     body {
       background-color: var(--bg-principal) !important;
       color: var(--texto-principal) !important;
@@ -34,7 +35,7 @@
     /* TIPOGRAFIA */
     h1, h2, h3, h4 {
       font-family: var(--fonte-titulo) !important;
-      color: #f5e0dc !important;
+      color: var(--texto-titulo) !important;
     }
 
     .post-content, .post-content p {
@@ -202,6 +203,7 @@
       --bg-card: #121212 !important;
       --bg-card-hover: #1e1e1e !important;
       --texto-principal: #e0e0e0 !important;
+      --texto-titulo: #ffffff !important;
       --borda-suave: #2a2a2a !important;
     }
 
@@ -210,6 +212,7 @@
       --bg-card: #e8dfca !important;
       --bg-card-hover: #dfd4bc !important;
       --texto-principal: #433422 !important;
+      --texto-titulo: #2c1d11 !important; /* Castanho escuro para alto contraste */
       --borda-suave: #d3c4a5 !important;
       --detalhe-accent: #8c5a2b !important;
       --detalhe-hover: #6d441f !important;
@@ -220,6 +223,7 @@
       --bg-card: #e6e9ef !important;
       --bg-card-hover: #dce0e8 !important;
       --texto-principal: #4c4f69 !important;
+      --texto-titulo: #1e1e2e !important; /* Azul escuro/grafite para fundo claro */
       --borda-suave: #ccd0da !important;
       --detalhe-accent: #8839ef !important;
       --detalhe-hover: #7223e5 !important;
