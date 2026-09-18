@@ -472,6 +472,20 @@
       90% { clip: rect(95px, 9999px, 5px, 0); transform: translate(-1px, -2px); }
       100% { clip: rect(20px, 9999px, 75px, 0); transform: translate(0, 0); }
     }
+    
+        /* EFEITO GLITCH ESTÁTICO */
+    .glitch-static {
+      position: relative;
+      display: inline-block;
+      font-weight: bold;
+      color: var(--texto-principal);
+      /* Duas sombras desalinhadas: uma rosa/vermelha à esquerda e uma ciano à direita */
+      text-shadow: 
+        -2px 0 #ff0055, 
+         2px 0 #00e5ff;
+      /* Uma leve deformação fixa no texto */
+      transform: skew(-3deg);
+    }
   </style>
 </head>
 <body>
