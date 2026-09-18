@@ -473,18 +473,29 @@
       100% { clip: rect(20px, 9999px, 75px, 0); transform: translate(0, 0); }
     }
     
-        /* EFEITO GLITCH ESTÁTICO */
+           /* EFEITO GLITCH ESTÁTICO COM TREMOR LEVE */
     .glitch-static {
       position: relative;
       display: inline-block;
       font-weight: bold;
       color: var(--texto-principal);
-      /* Duas sombras desalinhadas: uma rosa/vermelha à esquerda e uma ciano à direita */
+      /* Sombra fixa RGB Shift */
       text-shadow: 
         -2px 0 #ff0055, 
          2px 0 #00e5ff;
-      /* Uma leve deformação fixa no texto */
-      transform: skew(-3deg);
+      /* Inclinação fixa */
+      transform: skew(-2deg);
+      /* Adiciona a animação de tremor (vibration) */
+      animation: glitch-vibration 0.3s infinite linear;
+    }
+    
+    /* Animação de tremor sutil nos eixos X, Y e leve rotação */
+    @keyframes glitch-vibration {
+      0%   { transform: translate(0, 0) skew(-2deg); }
+      25%  { transform: translate(0.5px, -0.5px) skew(-1deg); }
+      50%  { transform: translate(-0.5px, 0.5px) skew(-2.5deg); }
+      75%  { transform: translate(0.5px, 0.5px) skew(-1.5deg); }
+      100% { transform: translate(-0.5px, -0.5px) skew(-2deg); }
     }
   </style>
 </head>
