@@ -481,7 +481,7 @@
       color: var(--texto-principal);
     }
     
-    /* Camada Rosa (Esquerda) */
+        /* Camada Rosa (Esquerda) */
     .glitch-static::before {
       content: attr(data-text);
       position: absolute;
@@ -492,7 +492,8 @@
       color: var(--texto-principal);
       text-shadow: -2px 0 #ff0055;
       clip-path: inset(0 0 0 0);
-      animation: glitch-color-1 1.5s infinite ease-in-out alternate;
+      /* Alterado de 1.5s para 0.2s */
+      animation: glitch-color-1 0.2s infinite ease-in-out alternate;
       pointer-events: none;
     }
     
@@ -507,7 +508,8 @@
       color: var(--texto-principal);
       text-shadow: 2px 0 #00e5ff;
       clip-path: inset(0 0 0 0);
-      animation: glitch-color-2 2s infinite ease-in-out alternate;
+      /* Alterado de 2s para 0.15s */
+      animation: glitch-color-2 0.15s infinite ease-in-out alternate;
       pointer-events: none;
     }
     
