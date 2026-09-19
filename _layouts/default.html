@@ -600,6 +600,100 @@
     .btn-toggle-synopsis:hover {
       background-color: rgba(255, 255, 255, 0.08);
     }
+
+        /* ==========================================
+       ESTILOS ESPECIAIS PARA CAPÍTULOS
+       ========================================== */
+    
+    /* 1. CAIXA DE DM / CHAT */
+    .chat-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background-color: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 20px 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    
+    /* Balão da Mensagem Recebida (Esquerda) */
+    .chat-msg {
+      max-width: 75%;
+      padding: 10px 14px;
+      border-radius: 18px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      word-wrap: break-word;
+    }
+    
+    .chat-msg.received {
+      align-self: flex-start;
+      background-color: #27272a;
+      color: #f4f4f5;
+      border-bottom-left-radius: 4px;
+    }
+    
+    /* Balão da Mensagem Enviada (Direita) */
+    .chat-msg.sent {
+      align-self: flex-end;
+      background-color: #2563eb; /* Azul estilo DM/Messenger */
+      color: #ffffff;
+      border-bottom-right-radius: 4px;
+    }
+    
+    .chat-author {
+      font-size: 0.75rem;
+      opacity: 0.7;
+      margin-bottom: 3px;
+      display: block;
+    }
+    
+    
+    /* 2. CAIXA DE TEXTO CENTRALIZADA SIMPLES (Placas, Avisos) */
+    .sign-box {
+      text-align: center;
+      border: 1px dashed #52525b;
+      border-radius: 8px;
+      padding: 14px 20px;
+      margin: 20px auto;
+      max-width: 85%;
+      font-weight: 500;
+      color: #e4e4e7;
+    }
+    
+    
+    /* 3. CAIXA CENTRALIZADA COM COR DE FUNDO ESPECÍFICA */
+    .highlight-box {
+      text-align: center;
+      background-color: #2e1065; /* Exemplo: Roxo escuro (mude a cor se quiser) */
+      border-left: 4px solid #a855f7; /* Detalhe lateral elegante */
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      color: #f3e8ff;
+    }
+    
+    
+    /* 4. PARÁGRAFOS COM FONTES ESPECÍFICAS */
+    /* Exemplo A: Fonte estilo Manuscrito/Diário */
+    .font-handwriting {
+      font-family: 'Courier New', Courier, monospace; /* Ou importe uma fonte como 'Caveat' */
+      font-style: italic;
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    
+    /* Exemplo B: Fonte estilo Sistema/Interface Hacker */
+    .font-system {
+      font-family: 'Consolas', 'Monaco', monospace;
+      color: #4ade80; /* Verde neon */
+      background-color: #052e16;
+      padding: 10px 14px;
+      border-radius: 6px;
+    }
   </style>
 </head>
 <body>
