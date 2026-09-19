@@ -34,6 +34,7 @@ permalink: /eoshinki/
     <p style="font-size: 1rem; color: #9ca3af;">
       <strong>Author:</strong> 강토공<br>
       <strong>Status:</strong> On-Going
+      <strong>Chapters:</strong> 112+
     </p>
   </div>
 
