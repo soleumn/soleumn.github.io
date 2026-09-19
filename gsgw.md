@@ -35,7 +35,8 @@ permalink: /gsgw/
     <hr style="border-color: #27272a; margin: 20px 0;">
     <p style="font-size: 1rem; color: #9ca3af;">
       <strong>Author:</strong> 백덕수<br>
-      <strong>Status:</strong> Hiatus
+      <strong>Status:</strong> Hiatus<br>
+      <strong>Chapters:</strong> 372+ (full part 3)
     </p>
   </div>
 
