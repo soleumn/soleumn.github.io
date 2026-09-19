@@ -526,6 +526,56 @@
       50%  { text-shadow: 2px 0 #00e5ff; opacity: 0.7; }
       100% { text-shadow: 1px 0 #00e5ff; opacity: 0.4; }
     }
+
+        /* CONTAINER COM ROLAGEM PARA LISTA DE CAPÍTULOS */
+    .chapter-scrollbox {
+      max-height: 420px; /* Ajuste a altura máxima desejada */
+      overflow-y: auto;  /* Adiciona a barra de rolagem quando ultrapassar a altura */
+      padding-right: 8px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    /* ESTILIZAÇÃO DOS CARDS DE CAPÍTULO (SEMELHANTE À IMAGEM) */
+    .chapter-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: var(--texto-principal);
+      transition: border-color 0.2s ease, transform 0.1s ease;
+    }
+    
+    .chapter-card:hover {
+      border-color: var(--cor-sistema, #ff0055);
+      transform: translateX(4px);
+    }
+    
+    .chapter-date {
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+    
+    /* Personalização da barra de rolagem interna */
+    .chapter-scrollbox::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    .chapter-scrollbox::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+    
+    .chapter-scrollbox::-webkit-scrollbar-thumb {
+      background: var(--cor-sistema, #555);
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
