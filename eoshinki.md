@@ -33,7 +33,7 @@ permalink: /eoshinki/
     <hr style="border-color: #27272a; margin: 20px 0;">
     <p style="font-size: 1rem; color: #9ca3af;">
       <strong>Author:</strong> 강토공<br>
-      <strong>Status:</strong> On-Going
+      <strong>Status:</strong> On-Going<br>
       <strong>Chapters:</strong> 112+
     </p>
   </div>
