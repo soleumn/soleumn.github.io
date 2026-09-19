@@ -70,15 +70,18 @@ permalink: /eoshinki/
 
 ### ⫶☰ Chapters
 
-<ul id="lista-capitulos" style="list-style: none; padding-left: 0;">
-  {% for post in site.categories.eoshinki %}
-    <li class="item-capitulo" data-ordem="{{ post.capitulo | default: 0 }}" style="padding: 12px 0; border-bottom: 1px solid var(--borda-suave);">
-      <a href="{{ post.url | relative_url }}" style="font-size: 1.1rem; text-decoration: none;">
-        ❏ {{ post.title }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+<!-- Adicionamos a div wrapper ao redor da ul para criar a caixa com scroll -->
+<div class="chapter-scrollbox">
+  <ul id="lista-capitulos" style="list-style: none; padding-left: 0; margin: 0;">
+    {% for post in site.categories.eoshinki %}
+      <li class="item-capitulo" data-ordem="{{ post.capitulo | default: 0 }}" style="padding: 12px 0; border-bottom: 1px solid var(--borda-suave);">
+        <a href="{{ post.url | relative_url }}" style="font-size: 1.1rem; text-decoration: none;">
+          ❏ {{ post.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
