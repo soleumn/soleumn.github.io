@@ -591,7 +591,7 @@
     </div>
   </main>
 
-  <!-- SCRIPT GLOBAL DO LEITOR (MUDANÇA DE TEMA/FONTE/ESPAÇAMENTO) -->
+<!-- SCRIPT GLOBAL DO LEITOR (MUDANÇA DE TEMA/FONTE/ESPAÇAMENTO/GISCUS) -->
   <script>
     let currentFontSize = parseFloat(localStorage.getItem('reader_font_size')) || 1.18;
     let currentFont = localStorage.getItem('reader_font_family') || 'merriweather';
@@ -611,6 +611,33 @@
       { id: 'normal', name: '⬍ Normal' },
       { id: 'relaxed', name: '⬍ Wide' }
     ];
+
+    /* FUNÇÃO PARA ATUALIZAR O TEMA DO GISCUS VIA POSTMESSAGE */
+    function updateGiscusTheme(siteTheme) {
+      // Mapeamento dos temas do seu site para temas compatíveis com o Giscus
+      const giscusThemeMap = {
+        'mocha': 'catppuccin_mocha',
+        'dark-pure': 'dark_dimmed',
+        'sepia': 'light_high_contrast',
+        'light': 'light'
+      };
+
+      const targetGiscusTheme = giscusThemeMap[siteTheme] || 'catppuccin_mocha';
+      const iframe = document.querySelector('iframe.giscus-frame');
+      
+      if (!iframe) return;
+
+      iframe.contentWindow.postMessage(
+        {
+          giscus: {
+            setConfig: {
+              theme: targetGiscusTheme
+            }
+          }
+        },
+        'https://giscus.app'
+      );
+    }
 
     function applyReaderSettings() {
       const paragraphs = document.querySelectorAll('.post-content, .post-content p, .system-window, .system-content');
@@ -640,6 +667,9 @@
       if (currentTheme !== 'mocha') {
         document.body.classList.add('theme-' + currentTheme);
       }
+
+      // Atualiza o tema dos comentários
+      updateGiscusTheme(currentTheme);
     }
 
     function adjustFontSize(delta) {
@@ -674,7 +704,15 @@
     }
 
     document.addEventListener('DOMContentLoaded', applyReaderSettings);
-  </script>
 
+    // Garante a troca do tema do Giscus assim que o iframe terminar de carregar na tela
+    window.addEventListener('message', function(event) {
+      if (event.origin !== 'https://giscus.app') return;
+      if (!(typeof event.data === 'object' && event.data.giscus)) return;
+      
+      updateGiscusTheme(currentTheme);
+    });
+  </script>
+  
 </body>
 </html>
