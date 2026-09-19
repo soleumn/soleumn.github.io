@@ -7,17 +7,20 @@ permalink: /eoshinki/
 
 <!-- BLOCO DA CAPA E SINOPSE COM TAMANHO FORÇADO -->
 <div style="display: flex; gap: 30px; margin-bottom: 35px; flex-wrap: wrap; align-items: flex-start;">
-  
+
   <div style="width: 260px; min-width: 260px; flex-shrink: 0;">
-    <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" 
-         alt="Capa Eoshinki" 
+    <img src="{{ '/assets/eoshinki.jpg' | relative_url }}"
+         alt="Capa Eoshinki"
          style="width: 100% !important; height: 370px !important; object-fit: cover !important; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.6); display: block;">
   </div>
 
   <div style="flex: 1; min-width: 280px;">
     <h2 style="margin-top: 0; font-size: 1.8rem;">Summary</h2>
-    <p style="font-size: 1.1rem; line-height: 1.7; color: #d1d5db;">
-      A former pro gamer who retired due to injury.
+    
+    <!-- INÍCIO DA CAIXA DE SINOPSE EXPANSÍVEL -->
+    <div id="synopsisBox" class="synopsis-container">
+      <p style="font-size: 1.1rem; line-height: 1.7; margin: 0;">
+        A former pro gamer who retired due to injury.
 
 <br><br>After retirement, he spent his life just playing games…
 
@@ -29,8 +32,17 @@ permalink: /eoshinki/
 
 <br><br>He’s told to register people as characters, but he has no idea what that means.
 
-<br><br>For now, he decides to clear the game first—because he knows everything about it.</p>
+<br><br>For now, he decides to clear the game first—because he knows everything about it.
+      </p>
+    </div>
+
+    <button id="btnSynopsis" class="btn-toggle-synopsis" onclick="toggleSynopsis()" style="margin-bottom: 15px;">
+      Read More...
+    </button>
+    <!-- FIM DA CAIXA DE SINOPSE -->
+
     <hr style="border-color: #27272a; margin: 20px 0;">
+    
     <p style="font-size: 1rem; color: #9ca3af;">
       <strong>Author:</strong> 강토공<br>
       <strong>Status:</strong> On-Going<br>
@@ -39,6 +51,22 @@ permalink: /eoshinki/
   </div>
 
 </div>
+
+<!-- SCRIPT PARA FUNCIONAR O BOTÃO DE ABRIR/FECHAR -->
+<script>
+  function toggleSynopsis() {
+    const box = document.getElementById('synopsisBox');
+    const btn = document.getElementById('btnSynopsis');
+    
+    box.classList.toggle('expanded');
+    
+    if (box.classList.contains('expanded')) {
+      btn.innerText = 'Read Less...';
+    } else {
+      btn.innerText = 'Read More...';
+    }
+  }
+</script>
 
 <!-- BOTÃO DE CONTINUAR LENDO DINÂMICO -->
 <div style="margin-top: 15px;">
