@@ -20,19 +20,19 @@ permalink: /gsgw/
     <!-- INÍCIO DA CAIXA DE SINOPSE EXPANSÍVEL -->
     <div id="synopsisBox" class="synopsis-container">
       <p style="font-size: 1.1rem; line-height: 1.7; margin: 0;">
-        A pop-up event for "A Certain Modern Fantasy," a novel I loved so much I even used my precious vacation days to go.
-
+        A pop-up event for some ‘modern fantasy’ media I loved so much that I even took a precious day off work to attend.
+        
 <br><br>And that day, I was transported into that very modern fantasy.
 
-<br><br>As a newly hired employee at a famous conglomerate, no less!
+<br><br>As a newly hired employee at a famous large corporation, no less!
 
-<br><br>Good benefits, good salary, and even my direct superiors are kind and competent—it's a dream job.
+<br><br>Good benefits, good salary, and even kind and competent bosses—it's a dream job.
 
 <br><br>Using the knowledge of the world that only I possess, I'm rapidly climbing the corporate ladder!
 
-<br><br>Am I happy?
+<br><br>Am I happy, you ask?
 
-<br><br>Please, just send me home.
+<br><br>Please, just let me go home. I’m begging you.
 
 <br><br>※Special Note: The genre is horror.
       </p>
