@@ -606,12 +606,13 @@
        ========================================== */
     
     /* 1. CAIXA DE DM / CHAT */
-    .chat-container {
+        .chat-container {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      background-color: #18181b;
-      border: 1px solid #27272a;
+      /* Utiliza o fundo de card e borda do tema ativo */
+      background-color: var(--bg-card);
+      border: 1px solid var(--borda-suave, rgba(255, 255, 255, 0.1));
       border-radius: 12px;
       padding: 16px;
       margin: 20px 0;
@@ -630,26 +631,27 @@
     
     .chat-msg.received {
       align-self: flex-start;
-      background-color: #27272a;
-      color: #f4f4f5;
+      /* Adapta o fundo do balão e o texto de acordo com o tema */
+      background-color: var(--borda-suave, rgba(255, 255, 255, 0.08));
+      color: var(--texto-principal);
       border-bottom-left-radius: 4px;
     }
     
     /* Balão da Mensagem Enviada (Direita) */
     .chat-msg.sent {
       align-self: flex-end;
-      background-color: #2563eb; /* Azul estilo DM/Messenger */
+      /* Usa a cor de destaque do tema (accent) para o balão do leitor/remetente */
+      background-color: var(--detalhe-accent, #2563eb);
       color: #ffffff;
       border-bottom-right-radius: 4px;
     }
     
     .chat-author {
       font-size: 0.75rem;
-      opacity: 0.7;
+      opacity: 0.75;
       margin-bottom: 3px;
       display: block;
     }
-    
     
     /* 2. CAIXA DE TEXTO CENTRALIZADA SIMPLES (Placas, Avisos) */
     .sign-box {
