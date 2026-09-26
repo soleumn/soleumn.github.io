@@ -755,25 +755,31 @@
       border-bottom: 2px dotted var(--detalhe-accent);
     }
     
-    .tooltip-text {
+        .tooltip-text {
       visibility: hidden;
-      width: 180px;
+      /* Define largura máxima adaptável para telas pequenas */
+      width: max-content;
+      max-width: 220px; 
       background-color: var(--bg-card);
       color: var(--texto-principal);
       text-align: center;
       border: 1px solid var(--detalhe-accent);
       border-radius: 6px;
-      padding: 6px 8px;
+      padding: 8px 10px;
       position: absolute;
-      z-index: 10;
-      bottom: 125%;
+      z-index: 99;
+      bottom: 130%;
       left: 50%;
       transform: translateX(-50%);
       font-size: 0.8rem;
       font-weight: normal;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
       opacity: 0;
-      transition: opacity 0.2s;
+      transition: opacity 0.2s ease-in-out;
+    
+      /* IMPORTANTE: Evita que o texto quebre ou transborde a tela */
+      white-space: normal;
+      word-wrap: break-word;
     }
     
     .tooltip-container:hover .tooltip-text,
