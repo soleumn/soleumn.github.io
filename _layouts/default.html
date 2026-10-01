@@ -204,123 +204,103 @@
     }
     
     /* ============================================================
-       1. PAINEL DE LEITURA FLUTUANTE (ANIMAÇÃO DÉ HIDE/SHOW RESTAURADA)
+       ESTILIZAÇÃO DA BARRA DE LEITURA (NAVBAR DO TOPO)
        ============================================================ */
-    .reader-settings {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: var(--bg-card, #18181b);
-      border: 1px solid var(--borda-suave, #27272a);
-      border-radius: 30px;
-      padding: 8px 16px;
+    
+    .reader-navbar {
       display: flex !important;
       flex-direction: row !important;
       align-items: center !important;
-      justify-content: center !important;
+      justify-content: space-between !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      padding: 8px 16px !important;
+      background-color: var(--bg-card, #18181b) !important;
+      border-bottom: 1px solid var(--borda-suave, #27272a) !important;
+      gap: 12px !important;
+    }
+    
+    /* GRUPOS INTERNOS (ESQUERDA, CENTRO, DIREITA) */
+    .nav-group {
+      display: flex !important;
+      align-items: center !important;
       gap: 8px !important;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-      z-index: 1000;
-      backdrop-filter: blur(10px);
-      max-width: 95vw;
-      white-space: nowrap;
-      
-      /* CONTROLE DE VISIBILIDADE / SCROLL */
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease !important;
     }
     
-    /* CLASSE QUE SEU SCRIPT USA PARA MOSTRAR A BARRA */
-    .reader-settings.is-visible {
-      opacity: 1 !important;
-      visibility: visible !important;
-      pointer-events: auto !important;
+    .left-group {
+      justify-content: flex-start !important;
     }
     
-    /* ESTILO DOS BOTÕES DA BARRA FLUTUANTE */
-    .reader-btn,
-    .btn-floating {
+    .center-group {
+      justify-content: center !important;
+    }
+    
+    .right-group {
+      justify-content: flex-end !important;
+    }
+    
+    /* BOTÕES DE NAVEGAÇÃO DA BARRA (HOME / STORY) */
+    .reader-navbar .btn-nav {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
       background: transparent !important;
       border: 1px solid var(--borda-suave, #27272a) !important;
       color: var(--texto-principal, #f4f4f5) !important;
       padding: 6px 12px !important;
-      border-radius: 16px !important;
-      cursor: pointer !important;
-      font-family: var(--fonte-titulo, inherit) !important;
+      border-radius: 8px !important;
       font-size: 0.85rem !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      gap: 6px !important;
       text-decoration: none !important;
       transition: all 0.2s ease !important;
+      white-space: nowrap !important;
     }
     
-    .reader-btn:hover,
-    .btn-floating:hover {
+    .reader-navbar .btn-nav:hover {
       border-color: var(--detalhe-accent, #8257e5) !important;
       color: var(--detalhe-accent, #8257e5) !important;
     }
     
-    .select-capitulo-flutuante {
+    /* SELETOR DE CAPÍTULOS E SETAS */
+    .reader-navbar .btn-icon {
+      color: var(--texto-secundario, #a1a1aa) !important;
+      text-decoration: none !important;
+      font-size: 1.1rem !important;
+      padding: 2px 6px !important;
+      transition: color 0.2s ease !important;
+    }
+    
+    .reader-navbar .btn-icon:hover {
+      color: var(--detalhe-accent, #8257e5) !important;
+    }
+    
+    .reader-navbar .chapter-select {
       background-color: var(--bg-card, #18181b) !important;
       color: var(--texto-principal, #f4f4f5) !important;
       border: 1px solid var(--borda-suave, #27272a) !important;
-      border-radius: 16px !important;
-      padding: 5px 10px !important;
+      padding: 6px 10px !important;
+      border-radius: 8px !important;
       font-size: 0.85rem !important;
       outline: none !important;
       cursor: pointer !important;
-      max-width: 140px !important;
-      text-overflow: ellipsis !important;
+      max-width: 150px !important;
     }
     
-    .select-capitulo-flutuante option {
-      background-color: var(--bg-card, #18181b) !important;
-      color: var(--texto-principal, #f4f4f5) !important;
-    }
-    
-    /* ============================================================
-       2. BOTÕES DE NAVEGAÇÃO DE CAPÍTULO (NO FIM DA PÁGINA)
-       ============================================================ */
-    .nav-capitulo-container {
-      display: flex !important;
-      justify-content: space-between !important;
-      align-items: center !important;
-      margin: 40px 0 !important;
-      width: 100% !important;
-      gap: 12px !important;
-    }
-    
-    .btn-nav {
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      padding: 10px 18px !important;
-      border-radius: 8px !important;
-      font-family: var(--fonte-titulo, inherit) !important;
-      font-size: 0.95rem !important;
-      font-weight: 600 !important;
-      text-decoration: none !important;
-      background-color: var(--bg-card, #18181b) !important;
-      color: var(--texto-principal, #f4f4f5) !important;
-      border: 1px solid var(--borda-suave, #27272a) !important;
-      cursor: pointer !important;
-      transition: all 0.2s ease !important;
-    }
-    
-    .btn-nav:hover {
-      background-color: #27272a !important;
-      border-color: var(--detalhe-accent, #8257e5) !important;
-      color: #ffffff !important;
-    }
-    
-    .btn-next {
-      background-color: var(--detalhe-accent, #8257e5) !important;
-      color: #ffffff !important;
+    /* BOTÃO FORMATTING DE DESTAQUE */
+    .btn-formatting {
+      background-color: var(--detalhe-accent, #c084fc) !important;
+      color: #121215 !important;
       border: none !important;
+      padding: 6px 14px !important;
+      border-radius: 8px !important;
+      font-weight: 600 !important;
+      font-size: 0.85rem !important;
+      cursor: pointer !important;
+      transition: opacity 0.2s ease !important;
+      white-space: nowrap !important;
+    }
+    
+    .btn-formatting:hover {
+      opacity: 0.9 !important;
     }
     
     /* TEMAS DE LEITURA */
@@ -404,52 +384,33 @@
     body.spacing-relaxed .post-content p { margin-bottom: 2.3rem !important; }
 
     /* ============================================================
-       3. RESPONSIVIDADE PARA CELULAR
+       RESPONSIVIDADE PARA CELULAR (MOBILE)
        ============================================================ */
-    @media (max-width: 768px) {
-      .wrapper {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+    @media (max-width: 640px) {
+      .reader-navbar {
+        padding: 6px 8px !important;
+        gap: 4px !important;
       }
     
-      .post-content, .post-content p {
-        line-height: 1.8 !important;
+      /* Oculta o texto "Home" e "Story" no celular mantendo apenas os íconesSVG */
+      .reader-navbar .btn-text {
+        display: none !important;
       }
     
-      /* BARRA FLUTUANTE ENXUTA NO CELULAR */
-      .reader-settings {
-        bottom: 12px !important;
-        padding: 6px 10px !important;
-        gap: 6px !important;
-        max-width: 95vw !important;
+      .reader-navbar .btn-nav {
+        padding: 6px 8px !important;
       }
     
-      .reader-btn,
-      .btn-floating,
-      .select-capitulo-flutuante {
-        padding: 4px 8px !important;
+      .reader-navbar .chapter-select {
+        max-width: 100px !important;
+        font-size: 0.78rem !important;
+        padding: 4px 6px !important;
+      }
+    
+      .btn-formatting {
+        padding: 6px 8px !important;
         font-size: 0.78rem !important;
       }
-    
-      .select-capitulo-flutuante {
-        max-width: 95px !important;
-      }
-    
-      /* BOTÕES DO RODAPÉ NO CELULAR LADO A LADO */
-      .nav-capitulo-container {
-        flex-direction: row !important;
-      }
-    
-      .btn-nav {
-        flex: 1 !important;
-        padding: 10px 6px !important;
-        font-size: 0.85rem !important;
-      }
-    }
-    
-    /* OCULTA O FOOTER E METADADOS NATIVOS NA LEITURA */
-    .site-footer, .post-meta, time, [itemprop="datePublished"] {
-      display: none !important;
     }
     
         /* AJUSTE PARA CÓDIGO INLINE (CRASES ` `) ADAPTÁVEL AOS TEMAS */
