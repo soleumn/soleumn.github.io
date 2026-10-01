@@ -313,6 +313,32 @@
       --cor-sistema: #1e66f5 !important;
     }
 
+        /* --- TEMA NORDIC --- */
+    body.theme-nordic {
+      --bg-principal: #0f172a !important;
+      --bg-card: #1e293b !important;
+      --texto-principal: #e2e8f0 !important;
+      --texto-secundario: #BAC4D1 !important;
+      --card-border: #334155 !important;
+      --detalhe-accent: #38bdf8 !important;
+      --borda-suave: #334155 !important;
+      background-color: var(--bg-principal);
+      color: var(--texto-principal);
+    }
+    
+    /* --- TEMA EMERALD --- */
+    body.theme-emerald {
+      --bg-principal: #061e19 !important;
+      --bg-card: #0b2d26 !important;
+      --texto-principal: #e0f2fe !important;
+      --texto-secundario: #B6C5D1 !important;
+      --card-border: #154d41 !important;
+      --detalhe-accent: #10b981 !important;
+      --borda-suave: #154d41 !important;
+      background-color: var(--bg-principal);
+      color: var(--texto-principal);
+    }
+
     /* FONTES E ESPAÇAMENTOS */
     body.font-merriweather .post-content, body.font-merriweather .post-content p, body.font-merriweather .system-window { font-family: 'Merriweather', serif !important; }
     body.font-lora .post-content, body.font-lora .post-content p, body.font-lora .system-window { font-family: 'Lora', serif !important; }
@@ -1009,41 +1035,56 @@
       paragraphs.forEach(p => {
         p.style.fontSize = currentFontSize + 'rem';
       });
-
+    
       document.body.classList.remove('font-georgia', 'font-merriweather', 'font-lora', 'font-outfit', 'font-inter');
       document.body.classList.add('font-' + currentFont);
-
+    
       const btnFont = document.getElementById('btnFont');
       const fontObj = fonts.find(f => f.id === currentFont);
       if (btnFont && fontObj) {
         btnFont.innerText = fontObj.name;
       }
-
+    
       document.body.classList.remove('spacing-compact', 'spacing-normal', 'spacing-relaxed');
       document.body.classList.add('spacing-' + currentSpacing);
-
+    
       const btnSpacing = document.getElementById('btnSpacing');
       const spaceObj = spacings.find(s => s.id === currentSpacing);
       if (btnSpacing && spaceObj) {
         btnSpacing.innerText = spaceObj.name;
       }
-
-      document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light');
+    
+      // Remove todas as classes de temas anteriores (incluindo os novos)
+      document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light', 'theme-nordic', 'theme-emerald');
       if (currentTheme !== 'mocha') {
         document.body.classList.add('theme-' + currentTheme);
       }
-
+    
+      // Atualiza o texto do botão "btnTheme" no modal de formatação
+      const btnTheme = document.getElementById('btnTheme');
+      if (btnTheme) {
+        const themeNames = {
+          'mocha': '☕ Mocha',
+          'dark-pure': '🌙 Dark',
+          'sepia': '📜 Sepia',
+          'light': '☀️ Light',
+          'nordic': '❄️️ Nordic',
+          'emerald': '🍀 Emerald'
+        };
+        btnTheme.innerText = themeNames[currentTheme] || '🎨 Theme';
+      }
+    
       // Atualiza o tema dos comentários
       updateGiscusTheme(currentTheme);
     }
-
+    
     function adjustFontSize(delta) {
       currentFontSize = Math.min(Math.max(currentFontSize + delta, 0.9), 1.8);
       currentFontSize = Math.round(currentFontSize * 100) / 100;
       localStorage.setItem('reader_font_size', currentFontSize);
       applyReaderSettings();
     }
-
+    
     function cycleFont() {
       let fontIds = fonts.map(f => f.id);
       let nextIndex = (fontIds.indexOf(currentFont) + 1) % fontIds.length;
@@ -1051,7 +1092,7 @@
       localStorage.setItem('reader_font_family', currentFont);
       applyReaderSettings();
     }
-
+    
     function cycleSpacing() {
       let spaceIds = spacings.map(s => s.id);
       let nextIndex = (spaceIds.indexOf(currentSpacing) + 1) % spaceIds.length;
@@ -1059,17 +1100,18 @@
       localStorage.setItem('reader_spacing', currentSpacing);
       applyReaderSettings();
     }
-
+    
     function cycleTheme() {
-      const themes = ['mocha', 'dark-pure', 'sepia', 'light'];
+      // Inclui os dois novos temas na rotação
+      const themes = ['mocha', 'dark-pure', 'sepia', 'light', 'nordic', 'emerald'];
       let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
       currentTheme = themes[nextIndex];
       localStorage.setItem('reader_theme', currentTheme);
       applyReaderSettings();
     }
-
+    
     document.addEventListener('DOMContentLoaded', applyReaderSettings);
-
+    
     // Garante a troca do tema do Giscus assim que o iframe terminar de carregar na tela
     window.addEventListener('message', function(event) {
       if (event.origin !== 'https://giscus.app') return;
