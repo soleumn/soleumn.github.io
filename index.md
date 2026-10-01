@@ -127,6 +127,35 @@ title: Koko's TL
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
+    /* ELIMINA A LINHA DE FOCO/CLIQUE DO NAVEGADOR */
+  a.card-historia-link,
+  a.card-historia-link:focus,
+  a.card-historia-link:active,
+  a.card-historia-link:hover,
+  .card-historia,
+  .capa-container {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+  
+  /* DESATIVE A BORDA DE FOCO AUTOMÁTICA EM NAVEGADORES MODERNOS */
+  a.card-historia-link:focus-visible {
+    outline: none !important;
+  }
+  
+  /* SOBREPOSIÇÃO SUAVE PARA TAMPAR A JUNÇÃO EXATA (GARANTIA TOTAL) */
+  .capa-container::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #18181b;
+    z-index: 2;
+    pointer-events: none;
+  }
 </style>
 
 <div class="intro-text">
