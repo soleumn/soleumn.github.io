@@ -52,30 +52,88 @@
       color: var(--detalhe-hover) !important;
     }
 
-    /* CABEÇALHO */
+    /* --- CABEÇALHO --- */
     .site-header { 
-      background-color: rgba(24, 24, 37, 0.9) !important;
-      backdrop-filter: blur(8px);
+      background-color: rgba(24, 24, 37, 0.85) !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--borda-suave) !important; 
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
+    
     .site-title, .site-title:visited { 
       color: #f5e0dc !important; 
       font-weight: 700;
       font-family: var(--fonte-titulo) !important;
       text-decoration: none !important;
+      transition: opacity 0.2s ease;
     }
-
-    /* CAPAS DE OBRAS */
+    
+    .site-title:hover {
+      opacity: 0.85;
+    }
+    
+    /* --- GRID E CARDS DE OBRAS --- */
+    
+    /* Card Container da Obra */
+    .card-historia {
+      background-color: var(--bg-card) !important;
+      border: 1px solid var(--borda-suave) !important;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                  box-shadow 0.3s cubic-bezier(0.2, 0.8, 0.2, 1),
+                  border-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    
+    /* Efeito ao passar o mouse / Selecionar */
+    .card-historia:hover {
+      transform: translateY(-6px);
+      border-color: var(--detalhe-accent) !important;
+      box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.5), 
+                  0 0 15px -3px var(--detalhe-accent);
+    }
+    
+    /* Capa da Obra Padronizada (Formato de Livro 2:3) */
     .card-historia img, 
     .capa-obra {
       width: 100% !important;
-      height: auto !important;
-      max-height: 380px;
-      object-fit: contain !important;
-      border-radius: 8px 8px 0 0;
+      aspect-ratio: 2 / 3; /* Mantém a proporção exata de capa de livro */
+      object-fit: cover !important; /* Preenche o card sem esticar ou deformar */
+      border-radius: 0;
       display: block;
+      transition: transform 0.5s ease;
     }
     
+    /* Zoom suave na capa ao passar o mouse */
+    .card-historia:hover img,
+    .card-historia:hover .capa-obra {
+      transform: scale(1.04);
+    }
+    
+    /* Container da imagem para efeito de gradiente e zoom */
+    .capa-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    /* Sombreamento degradê na base da imagem */
+    .capa-container::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background: linear-gradient(to top, var(--bg-card), transparent);
+      pointer-events: none;
+    }
     /* JANELA DO SISTEMA */
     .system-window {
       background: var(--bg-card) !important;
@@ -355,19 +413,23 @@
     body.spacing-normal .post-content p { margin-bottom: 1.5rem !important; }
     body.spacing-relaxed .post-content p { margin-bottom: 2.3rem !important; }
 
-     /* RESPONSIVIDADE MOBILE */
-    @media (max-width: 768px) {
-      .wrapper {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-      }
-  
-      .post-content, .post-content p {
-        line-height: 1.8 !important;
-      }
-  /* Esconde o texto do espaçamento para economizar espaço */
-      #btnSpacing {
-        font-size: 0.7rem !important;
+      /* RESPONSIVIDADE MOBILE */
+      @media (max-width: 768px) {
+        /* Margens laterais para a leitura não colar nas bordas do celular */
+        .wrapper {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+      
+        /* Altura de linha confortável para o texto no celular */
+        .post-content, .post-content p {
+          line-height: 1.8 !important;
+        }
+      
+        /* Ajuste do efeito hover dos cards de obras no touch */
+        .card-historia:hover {
+          transform: translateY(-2px);
+        }
       }
       /* BARRA FLUTUANTE COMPACTA & SEM SCROLLBAR VISÍVEL */
       .reader-settings {
