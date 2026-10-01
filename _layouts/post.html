@@ -33,34 +33,37 @@ layout: default
       <span class="btn-text">Home</span>
     </a>
     
-    <!-- Altere o href para a página principal da sua obra se tiver variável, ou use {{ page.novel_url }} -->
     <a href="{{ page.novel_url | default: '/stories' | relative_url }}" class="btn-nav" title="Voltar à Obra">
       <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
       <span class="btn-text">Story</span>
     </a>
   </div>
 
-  <!-- CENTRO: Navegação entre capítulos -->
+  <!-- CENTRO: Navegação entre capítulos corrigida -->
   <div class="nav-group center-group">
-    {% if page.previous_chapter %}
-      <a href="{{ page.previous_chapter | relative_url }}" class="btn-icon" title="Capítulo Anterior">←</a>
+    {% if prev_post %}
+      <a href="{{ prev_post.url | relative_url }}" class="btn-icon" title="Capítulo Anterior">←</a>
     {% endif %}
 
     <div class="select-wrapper">
       <select onchange="location = this.value;" class="chapter-select">
-        <option selected disabled>Chapter...</option>
-        <!-- Seus options do Jekyll entram aqui -->
+        <option disabled selected>Capítulos</option>
+        {% for cap in obra_posts %}
+          <option value="{{ cap.url | relative_url }}" {% if cap.url == page.url %}selected{% endif %}>
+            {{ cap.title }}
+          </option>
+        {% endfor %}
       </select>
     </div>
 
-    {% if page.next_chapter %}
-      <a href="{{ page.next_chapter | relative_url }}" class="btn-icon" title="Próximo Capítulo">→</a>
+    {% if next_post %}
+      <a href="{{ next_post.url | relative_url }}" class="btn-icon" title="Próximo Capítulo">→</a>
     {% endif %}
   </div>
 
   <!-- LADO DIREITO: Formatação -->
   <div class="nav-group right-group">
-    <button id="btnFormatting" class="btn-formatting">
+    <button id="btnFormatting" class="btn-formatting" onclick="toggleFormatMenu()">
       Formatting
     </button>
   </div>
@@ -117,7 +120,7 @@ layout: default
     <div style="flex: 1 1 0; min-width: 0;"></div>
   {% endif %}
 
-  <a href="{{ '/' | append: page.categories[0] | append: '/' | relative_url }}" class="btn-nav" style="flex: 1 1 0; min-width: 0; padding: 10px 4px; font-size: 0.85rem; text-align: center;">
+  <a href="{{ page.novel_url | default: '/stories' | relative_url }}" class="btn-nav" style="flex: 1 1 0; min-width: 0; padding: 10px 4px; font-size: 0.85rem; text-align: center;" title="Ver todos os capítulos">
     ☰
   </a>
 
@@ -156,29 +159,31 @@ layout: default
   // Lógica de Abrir/Fechar o Menu de Formatação
   function toggleFormatMenu() {
     const modal = document.getElementById('formatModal');
-    modal.classList.toggle('active');
+    if (modal) modal.classList.toggle('active');
   }
 
   // Esconder a barra ao rolar no celular
   let lastScrollTop = 0;
-  const navbar = document.getElementById('.reader-navbar');
+  const navbar = document.querySelector('.reader-navbar');
   const formatModal = document.getElementById('formatModal');
   const scrollThreshold = 10;
 
   window.addEventListener('scroll', function() {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
+    if (currentScroll < 0) currentScroll = 0;
+
     if (window.innerWidth <= 768) {
       if (Math.abs(lastScrollTop - currentScroll) <= scrollThreshold) return;
 
       if (currentScroll > lastScrollTop && currentScroll > 55) {
-        navbar.classList.add('nav-hidden');
-        formatModal.classList.remove('active'); // Fecha o modal se o leitor rolar a página
+        if (navbar) navbar.classList.add('nav-hidden');
+        if (formatModal) formatModal.classList.remove('active');
       } else {
-        navbar.classList.remove('nav-hidden');
+        if (navbar) navbar.classList.remove('nav-hidden');
       }
     } else {
-      navbar.classList.remove('nav-hidden');
+      if (navbar) navbar.classList.remove('nav-hidden');
     }
 
     lastScrollTop = currentScroll;
