@@ -1,38 +1,60 @@
 ---
 layout: page
-title: My stories
+title: My Stories
 ---
 
 <style>
-  /* ORGANIZAÇÃO EM GRADE (LADO A LADO) */
+  /* SUBTÍTULO / INTRODUÇÃO */
+  .intro-text {
+    color: var(--texto-secundario, #a1a1aa);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+
+  /* GRADE DE HISTÓRIAS */
   .biblioteca-grid {
     display: grid !important;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
-    gap: 20px !important;
+    gap: 24px !important;
     margin-top: 20px !important;
   }
   
+  /* CARD COMPLETO COMO LINK */
+  .card-historia-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
   .card-historia {
-    background: #18181b !important;
-    border: 1px solid #27272a !important;
-    border-radius: 8px !important;
+    background: var(--bg-card, #18181b) !important;
+    border: 1px solid var(--borda-suave, #27272a) !important;
+    border-radius: 12px !important;
     overflow: hidden !important;
     display: flex !important;
     flex-direction: column !important;
-    transition: transform 0.2s, border-color 0.2s;
+    height: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   }
   
-  .card-historia:hover {
-    transform: translateY(-4px);
-    border-color: #8257e5 !important;
+  .card-historia-link:hover .card-historia {
+    transform: translateY(-6px);
+    border-color: var(--detalhe-accent, #8257e5) !important;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5), 0 0 12px -2px var(--detalhe-accent, #8257e5);
   }
 
-  /* LIMITA O TAMANHO DA CAPA */
+  /* CONTAINER DA CAPA (PROPORÇÃO FIXA DE LIVRO) */
   .capa-container {
-    height: 260px !important;
+    position: relative;
     width: 100% !important;
+    aspect-ratio: 2 / 3 !important;
     background: #27272a;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .capa-img {
@@ -40,70 +62,106 @@ title: My stories
     height: 100% !important;
     object-fit: cover !important;
     display: block !important;
+    transition: transform 0.4s ease;
   }
 
+  .card-historia-link:hover .capa-img {
+    transform: scale(1.05);
+  }
+
+  /* PLACEHOLDER QUANDO A CAPA AINDA NÃO EXISTE OU NÃO CARREGA */
+  .capa-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+    color: var(--texto-secundario, #a1a1aa);
+    font-family: var(--fonte-titulo, serif);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid var(--borda-suave, #27272a);
+  }
+
+  /* CONTEÚDO DO CARD */
   .conteudo-card {
-    padding: 12px !important;
-    text-align: center !important;
+    padding: 14px 12px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-grow: 1;
   }
 
   .titulo-historia {
-    font-size: 1rem !important;
+    font-family: var(--fonte-titulo, serif) !important;
     margin: 0 !important;
+    font-size: 1.05rem !important;
+    color: var(--texto-titulo, #f4f4f5) !important;
+    font-weight: 700;
+    line-height: 1.3;
   }
 
-  .titulo-historia a {
-    text-decoration: none !important;
-    color: #f4f4f5 !important;
-    font-weight: bold !important;
+  .sinopse-historia {
+    font-size: 0.82rem !important;
+    color: var(--texto-secundario, #a1a1aa) !important;
+    margin: 0 !important;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 </style>
 
-<p>Text Text Text<br>Text Text</p>
+<div class="intro-text">
+  Welcome to my novel repository. Select a story below to start reading.
+</div>
 
 <div class="biblioteca-grid">
 
   <!-- HISTÓRIA 1 -->
-  <div class="card-historia">
-    <div class="capa-container">
-      <img src="{{ '/assets/eoshink.jpg' | relative_url }}" alt="Capa Eo" class="capa-img">
+  <a href="{{ '/eoshinki' | relative_url }}" class="card-historia-link">
+    <div class="card-historia">
+      <div class="capa-container">
+        <div class="capa-placeholder">Eo Shinki</div>
+        <img src="{{ '/assets/eoshink.jpg' | relative_url }}" alt="Eo Shinki" class="capa-img" onerror="this.style.display='none'">
+      </div>
+      <div class="conteudo-card">
+        <h2 class="titulo-historia">Eo Shinki</h2>
+        <p class="sinopse-historia">A brief description or teaser for this story goes right here.</p>
+      </div>
     </div>
-    <div style="padding: 16px;">
-      <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
-        Exemplo
-      </h2>
-      <p style="font-size: 0.85rem; color: var(--texto-secundario); margin: 0; line-height: 1.4;">
-        lalala
-      </p>
-    </div>
-  </div>
+  </a>
+
   <!-- HISTÓRIA 2 -->
-  <div class="card-historia">
-    <div class="capa-container">
-      <img src="{{ '/assets/gsg.jpg' | relative_url }}" alt="Capa G" class="capa-img">
+  <a href="{{ '/gsgw' | relative_url }}" class="card-historia-link">
+    <div class="card-historia">
+      <div class="capa-container">
+        <div class="capa-placeholder">GSGW</div>
+        <img src="{{ '/assets/gsg.jpg' | relative_url }}" alt="GSGW" class="capa-img" onerror="this.style.display='none'">
+      </div>
+      <div class="conteudo-card">
+        <h2 class="titulo-historia">GSGW</h2>
+        <p class="sinopse-historia">A brief description or teaser for this story goes right here.</p>
+      </div>
     </div>
-    <div style="padding: 16px;">
-      <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
-        Exemplo
-      </h2>
-      <p style="font-size: 0.85rem; color: var(--texto-secundario); margin: 0; line-height: 1.4;">
-        lalala
-      </p>
+  </a>
+
+  <!-- HISTÓRIA 3 -->
+  <a href="{{ '/outra-obra' | relative_url }}" class="card-historia-link">
+    <div class="card-historia">
+      <div class="capa-container">
+        <div class="capa-placeholder">Exemplo 3</div>
+        <img src="{{ '/assets/es.jpg' | relative_url }}" alt="Exemplo" class="capa-img" onerror="this.style.display='none'">
+      </div>
+      <div class="conteudo-card">
+        <h2 class="titulo-historia">Exemplo 3</h2>
+        <p class="sinopse-historia">A brief description or teaser for this story goes right here.</p>
+      </div>
     </div>
-  </div>
-    <!-- HISTÓRIA 3 -->
-  <div class="card-historia">
-    <div class="capa-container">
-      <img src="{{ '/assets/es.jpg' | relative_url }}" alt="Capa E" class="capa-img">
-    </div>
-    <div style="padding: 16px;">
-      <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
-        Exemplo
-      </h2>
-      <p style="font-size: 0.85rem; color: var(--texto-secundario); margin: 0; line-height: 1.4;">
-        lalala
-      </p>
-    </div>
-  </div>
-  
+  </a>
+
 </div>
