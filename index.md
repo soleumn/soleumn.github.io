@@ -66,7 +66,7 @@ title: My stories
   <!-- HISTÓRIA 1 -->
   <div class="card-historia">
     <div class="capa-container">
-      <img src="{{ '/assets/eoshink.jpg' | relative_url }}" alt="Capa Eoshinki" class="capa-img">
+      <img src="{{ '/assets/eoshink.jpg' | relative_url }}" alt="Capa Eo" class="capa-img">
     </div>
     <div style="padding: 16px;">
       <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
@@ -80,7 +80,7 @@ title: My stories
   <!-- HISTÓRIA 2 -->
   <div class="card-historia">
     <div class="capa-container">
-      <img src="{{ '/assets/gsg.jpg' | relative_url }}" alt="Capa Gsgw" class="capa-img">
+      <img src="{{ '/assets/gsg.jpg' | relative_url }}" alt="Capa G" class="capa-img">
     </div>
     <div style="padding: 16px;">
       <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
@@ -94,7 +94,7 @@ title: My stories
     <!-- HISTÓRIA 3 -->
   <div class="card-historia">
     <div class="capa-container">
-      <img src="{{ '/assets/es.jpg' | relative_url }}" alt="Capa Esg" class="capa-img">
+      <img src="{{ '/assets/es.jpg' | relative_url }}" alt="Capa E" class="capa-img">
     </div>
     <div style="padding: 16px;">
       <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
