@@ -202,6 +202,7 @@
       clear: both !important;
       margin: 0 auto !important;
     }
+
     
     /* ============================================================
        ESTILIZAÇÃO DA BARRA DE LEITURA (NAVBAR DO TOPO)
@@ -218,21 +219,17 @@
       align-items: center !important;
       justify-content: space-between !important;
       padding: 10px 16px !important;
-      background-color: var(--bg-card, #18181b) !important;
-      border-bottom: 1px solid var(--borda-suave, #27272a) !important;
+      background-color: var(--bg-card, #181825) !important;
+      border-bottom: 1px solid var(--borda-suave, #45475a) !important;
       gap: 8px !important;
-      
-      /* Suaviza a animação ao esconder/mostrar */
       transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
       box-sizing: border-box !important;
     }
     
-    /* CLASSE ADICIONADA PELO JAVASCRIPT PARA ESCONDER A BARRA NO CELULAR */
     .reader-navbar.nav-hidden {
       transform: translateY(-100%) !important;
     }
     
-    /* GRUPOS DA NAVBAR */
     .nav-group {
       display: flex !important;
       align-items: center !important;
@@ -243,14 +240,14 @@
     .center-group { justify-content: center !important; }
     .right-group { justify-content: flex-end !important; }
     
-    /* ESTILIZAÇÃO DOS BOTÕES DA NAVBAR */
+    /* Botões da Navbar (Home / Story) com Caixinha */
     .reader-navbar .btn-nav {
       display: inline-flex !important;
       align-items: center !important;
       gap: 6px !important;
-      background: transparent !important;
-      border: 1px solid var(--borda-suave, #27272a) !important;
-      color: var(--texto-principal, #f4f4f5) !important;
+      background-color: rgba(255, 255, 255, 0.05) !important;
+      border: 1px solid var(--borda-suave, #45475a) !important;
+      color: var(--texto-principal, #cdd6f4) !important;
       padding: 6px 12px !important;
       border-radius: 8px !important;
       font-size: 0.85rem !important;
@@ -260,36 +257,35 @@
     }
     
     .reader-navbar .btn-nav:hover {
-      border-color: var(--detalhe-accent, #8257e5) !important;
-      color: var(--detalhe-accent, #8257e5) !important;
+      border-color: var(--detalhe-accent, #cba6f7) !important;
+      color: var(--detalhe-accent, #cba6f7) !important;
     }
     
     .reader-navbar .btn-icon {
-      color: var(--texto-secundario, #a1a1aa) !important;
+      color: var(--texto-secundario, #a6adc8) !important;
       text-decoration: none !important;
       font-size: 1.1rem !important;
       padding: 2px 6px !important;
     }
     
-    .reader-navbar .btn-icon:hover {
-      color: var(--detalhe-accent, #8257e5) !important;
-    }
-    
+    /* Seletor de Capítulos Ajustável (Sem cortar no celular) */
     .reader-navbar .chapter-select {
-      background-color: var(--bg-card, #18181b) !important;
-      color: var(--texto-principal, #f4f4f5) !important;
-      border: 1px solid var(--borda-suave, #27272a) !important;
-      padding: 6px 10px !important;
+      background-color: var(--bg-card, #181825) !important;
+      color: var(--texto-principal, #cdd6f4) !important;
+      border: 1px solid var(--borda-suave, #45475a) !important;
+      padding: 6px 12px !important;
       border-radius: 8px !important;
       font-size: 0.85rem !important;
       outline: none !important;
       cursor: pointer !important;
-      max-width: 140px !important;
+      min-width: 110px !important;
+      max-width: 200px !important;
+      text-overflow: ellipsis !important;
     }
     
     .btn-formatting {
-      background-color: var(--detalhe-accent, #c084fc) !important;
-      color: #121215 !important;
+      background-color: var(--detalhe-accent, #cba6f7) !important;
+      color: #11111b !important;
       border: none !important;
       padding: 6px 14px !important;
       border-radius: 8px !important;
@@ -299,9 +295,56 @@
       white-space: nowrap !important;
     }
     
-    /* ESPAÇAMENTO PARA O CONTEÚDO NÃO FICAR ATRÁS DA BARRA FIXA */
-    body {
-      padding-top: 60px !important;
+    /* ============================================================
+       ESTILIZAÇÃO DOS BOTÕES DE NAVEGAÇÃO INFERIOR (PREV / ☰ / NEXT)
+       ============================================================ */
+    
+    .nav-capitulo-bottom {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      gap: 12px !important;
+      margin: 20px 0 30px 0 !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    
+    .nav-capitulo-bottom .btn-bottom {
+      flex: 1 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 12px 16px !important;
+      background-color: var(--bg-card, #181825) !important;
+      border: 1px solid var(--borda-suave, #45475a) !important;
+      color: var(--texto-principal, #cdd6f4) !important;
+      border-radius: 10px !important;
+      font-size: 0.9rem !important;
+      font-weight: 600 !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease !important;
+      text-align: center !important;
+    }
+    
+    .nav-capitulo-bottom .btn-bottom:hover {
+      border-color: var(--detalhe-accent, #cba6f7) !important;
+      color: var(--detalhe-accent, #cba6f7) !important;
+    }
+    
+    /* Destaque no botão NEXT (como na foto de exemplo) */
+    .nav-capitulo-bottom .btn-bottom-next {
+      background-color: var(--detalhe-accent, #cba6f7) !important;
+      color: #11111b !important;
+      border: none !important;
+    }
+    
+    .nav-capitulo-bottom .btn-bottom-next:hover {
+      opacity: 0.9 !important;
+      color: #11111b !important;
+    }
+    
+    .nav-capitulo-bottom .btn-placeholder {
+      flex: 1 !important;
     }
     
     /* TEMAS DE LEITURA */
@@ -393,21 +436,27 @@
       }
       
       .reader-navbar .btn-text {
-        display: none !important; /* Esconde texto e deixa só ícone */
+        display: none !important;
       }
     
       .reader-navbar .chapter-select {
-        max-width: 95px !important;
-        font-size: 0.78rem !important;
-        padding: 4px 6px !important;
+        min-width: 90px !important;
+        max-width: 130px !important;
+        font-size: 0.8rem !important;
+        padding: 5px 8px !important;
       }
     
       .btn-formatting {
-        padding: 6px 8px !important;
+        padding: 6px 10px !important;
         font-size: 0.78rem !important;
       }
-    }
     
+      .nav-capitulo-bottom .btn-bottom {
+        padding: 10px 8px !important;
+        font-size: 0.82rem !important;
+      }
+    }
+        
         /* AJUSTE PARA CÓDIGO INLINE (CRASES ` `) ADAPTÁVEL AOS TEMAS */
     .post-content code {
       background-color: var(--bg-card, rgba(255, 255, 255, 0.1)) !important;
