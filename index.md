@@ -126,7 +126,6 @@ title: Koko's TL
   <a href="{{ '/eoshinki/' | relative_url }}" class="card-historia-link">
     <div class="card-historia">
       <div class="capa-container">
-        <div class="capa-placeholder">Eoshinki</div>
         <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" alt="Eoshinki" class="capa-img" onerror="this.style.display='none'">
       </div>
       <div class="conteudo-card">
@@ -140,7 +139,6 @@ title: Koko's TL
   <a href="{{ '/gsgw/' | relative_url }}" class="card-historia-link">
     <div class="card-historia">
       <div class="capa-container">
-        <div class="capa-placeholder">GSGW</div>
         <img src="{{ '/assets/gsgw.jpg' | relative_url }}" alt="GSGW" class="capa-img" onerror="this.style.display='none'">
       </div>
       <div class="conteudo-card">
@@ -154,7 +152,6 @@ title: Koko's TL
   <a href="{{ '/esg/' | relative_url }}" class="card-historia-link">
     <div class="card-historia">
       <div class="capa-container">
-        <div class="capa-placeholder">Esg</div>
         <img src="{{ '/assets/esg.jpg' | relative_url }}" alt="Esg" class="capa-img" onerror="this.style.display='none'">
       </div>
       <div class="conteudo-card">
