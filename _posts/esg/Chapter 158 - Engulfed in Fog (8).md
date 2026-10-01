@@ -1,0 +1,406 @@
+# Chapter 158 - Engulfed in Fog (8)
+
+Some things just happen.
+
+Just as a clock hand moves from 12 to 1.
+
+Things destined to unfold follow their predetermined sequence, and so they simply unfold.
+
+Over a dozen cold chunks of scrap metal crashed through the door and fell.
+
+Once they began to fall, they were too massive, too filled with malice.
+
+No mere human strength could stop them, nor gather them back up.
+
+So we could only watch as they streaked past overhead.
+
+The black masses of metal were sucked into the spiral's opening.
+
+The thick fog soon swallowed them whole.
+
+But just because we couldn't see them didn't mean they had vanished.
+
+What followed moments later was a crimson flash.
+
+And a tremor.
+
+*Rumble—*
+
+A heavy tremor shook the ground beneath our feet.
+
+*Rumble— Thud— Thud—*
+
+It sounded as if a giant were stomping its feet.
+
+It was a sound that made humans feel as insignificant and powerless as specks of dust.
+
+A wind blew in.
+
+That hot wind carried the scent of metal and fire.
+
+The atmosphere trembled with the lingering echoes of war, and the fog began to recede.
+
+Beyond the fog that lifted in an instant, the site swept by the bombardment came into view.
+
+The narrow passage we had crossed was completely shattered and blown open.
+
+The surrounding water poured down like a waterfall.
+
+And beyond that, all that could be seen was ruin.
+
+"……."
+
+All the bridges on the far side were destroyed.
+
+Only debris remained, drifting through the air like a shattered planet.
+
+It was impossible to imagine that people had been up there.
+
+Even more impossible to imagine that the people up there could still be alive.
+
+We realized that truth with every fiber of our being.
+
+So we couldn't even let out a breath.
+
+Some things just happen.
+
+Regardless of a person's plans, beliefs, or desperate wishes.
+
+And so, people go mad in the face of such indifference.
+
+"……We can save them."
+
+Amid the shock that threatened to collapse my mind, I forced the words out.
+
+"If we cross through the door, we can save them. From here."
+
+This insane situation happened because this place is just that insane.
+
+If this is the Special District in its embryonic stage where time is all tangled up, then we can use that to our advantage.
+
+Director Go Hongsang had saved people that way several times.
+
+At my words, Cha Sieon and Baek Sara turned to look at me.
+
+Their gazes lingered for a moment on the 「Crow」 in my hand.
+
+But they didn't voice their questions or objections.
+
+Instead, they began to move.
+
+As the fog lifted, the doors up above came into clearer view.
+
+Hundreds of door frames had been smashed apart, forming a massive opening.
+
+Beyond that opening, cruelly enough, was a clear, sunny sky.
+
+Perhaps because they had already fulfilled their purpose, the doors that had been crazily opening and closing were now still and shut.
+
+Let's pick one of those doors and go through.
+
+Then the agents from 13 seconds before their deaths will be waiting for us.
+
+But to do that, damn it.
+
+「Crow」.
+
+If you're not dead, get up.
+
+Get up and do what you need to do.
+
+Don't just lie there after dragging me into this……!
+
+*Boom—!*
+
+The railing that Cha Sieon roughly shoved out was once again laid across the bridge on the far side.
+
+This would be the last time we crossed the bridge this way.
+
+We had reached the top of the spiral.
+
+Now we just needed to follow the path to the door.
+
+Baek Sara and I stepped onto the railing first and crossed to the other side.
+
+Then, as Cha Sieon was crossing over it—
+
+*Clank— Clank— Clank—*
+
+The railing shook with each of Cha Sieon's steps, clanging with metal-on-metal sounds.
+
+But just as he was almost reaching our side—
+
+*Click—!*
+
+The sound changed.
+
+The shaking stopped, replaced by a steady sound.
+
+The moment we noticed the change—
+
+A hand reached out from beneath the railing and grabbed Cha Sieon's ankle.
+
+Cha Sieon immediately aimed his gun downward.
+
+*Rat-a-tat-tat—!*
+
+But the force pulling at his ankle was stronger than expected, and Cha Sieon eventually lost his balance.
+
+"Guh……!"
+
+Baek Sara and I were too close.
+
+In the end, Cha Sieon let go of his gun.
+
+Cha Sieon plummeted, and as if to fill his place, something surged up from below.
+
+"……!"
+
+I recoiled with something close to disgust and stepped back.
+
+What came up had the same face as the one that had just fallen.
+
+The monster from the other side meant to replace Cha Sieon.
+
+「Alpha」.
+
+「Alpha」 charged at us.
+
+*Rat-a-tat-tat-tat—!*
+
+Cha Sieon, who had fallen into the river, fired from below, but it was too late.
+
+「Alpha」 cleared the railing in just two strides and reached us in an instant.
+
+Baek Sara pushed me back with her back and held off 「Alpha」 with her greatsword.
+
+Even 「Alpha」 couldn't face a greatsword with just a knife.
+
+As Baek Sara pressed the attack, 「Alpha」 focused on dodging.
+
+*Swoosh— Clang—!*
+
+The sound of blades cutting the air and metal clashing came in an unending barrage.
+
+In the meantime, I went to the railing and threw down a wire.
+
+*Whir— Splash—!*
+
+Whether Cha Sieon spotted the wire right away or not, I heard the sound of him swimming down below.
+
+I waited for Cha Sieon to climb up while alternating my gaze between under the bridge and Baek Sara's direction.
+
+There was too much noise.
+
+The sound of Cha Sieon climbing the wire.
+
+The sound of Baek Sara swinging her greatsword.
+
+The heavy footsteps of 「Alpha」.
+
+That's why I didn't hear the sound coming from the arch of the bridge on the far side.
+
+I failed to notice something with sharp claws climbing up onto it.
+
+But I immediately noticed the light that suddenly brightened.
+
+The area above my head lit up as if a lightbulb had been switched on—there was no way I couldn't notice that.
+
+I turned to look and froze in place.
+
+The 「Big Cat」 had caught up to us without us noticing.
+
+It was preparing its 「Fire Breath」.
+
+"Jump!"
+
+Baek Sara shouted as she shook off 「Alpha」.
+
+That demand cornered me.
+
+Jump, she said.
+
+The railing was too high.
+
+To me right now, this railing was no different from prison bars.
+
+Baek Sara must have realized that too, because instead of jumping into the river, she ran toward me.
+
+Baek Sara wrapped her arms around me.
+
+But there was no time to leap into the water.
+
+*KABOOM—!*
+
+Held in Baek Sara's embrace, I experienced the trembling of heaven and earth.
+
+*Boom, boom, boom.*
+
+Light, darkness, light.
+
+Float, fall, impact.
+
+It felt like someone was blowing a recorder right into my ear.
+
+The world beyond my blurred vision was layered.
+
+My entire body throbbed dully.
+
+I felt like I couldn't breathe, and then I realized Baek Sara was lying on top of me.
+
+I looked over Baek Sara's shoulder.
+
+*Rat-a-tat-tat— Rat-a-tat-tat—*
+
+The rifle fire sounded as soft as someone tapping a book cover.
+
+And the 「Big Cat」.
+
+That thing is a complete mess again.
+
+Its limbs are hanging on by threads, about to be torn off.
+
+Team Leader Cha must be giving it his all.
+
+Is the one in front of it Cha Sieon, or 「Alpha」?
+
+It was both.
+
+Then which one is holding Baek Sara's greatsword?
+
+If it's Cha Sieon, then the one who got slashed is 「Alpha」.
+
+If it's 「Alpha」, then it would be the opposite.
+
+The scene before my eyes felt like a movie.
+
+Like footage playing on a screen, it felt like something that had nothing to do with me.
+
+So I was staring blankly when suddenly my head throbbed as if it would split open.
+
+"Ugh……!"
+
+At the same time, my sense of reality came rushing back.
+
+Startled, I snapped back to my senses.
+
+I immediately stopped watching the fight and shook Baek Sara, who was lying on top of me.
+
+"Ms. Baek Sara, Ms. Baek Sara……!"
+
+Baek Sara didn't move.
+
+I hesitated at her lack of response, then brought my hand to her mouth.
+
+"……."
+
+I couldn't feel any breath.
+
+In disbelief, I reached for her neck.
+
+It was still warm.
+
+But there was no pulse.
+
+Only stillness.
+
+As I searched for her pulse, I brushed her fallen hair aside.
+
+Her face was exactly as I knew it.
+
+She looks perfectly fine, so why isn't she breathing?
+
+Curiosity came before confusion.
+
+Confusion is a reckless reaction to an incomprehensible situation.
+
+Curiosity is a refined question about a situation that doesn't make sense.
+
+What this situation granted me was curiosity.
+
+How could someone this strong die so suddenly?
+
+A question bordering on protest against a situation that was neither plausible nor rational.
+
+But things that happen, just happen.
+
+Even if I can't believe it, even if I can't accept it.
+
+As I was checking on Baek Sara, a massive claw came into my view.
+
+The sharp claw of the 「Big Cat」.
+
+It was buried deep in Baek Sara's back.
+
+*Boom—!*
+
+Another boom rang out.
+
+The tattered 「Big Cat」 was finally cut in half.
+
+*Skree— Skreeek—!*
+
+Was the 「Big Cat」, having lost its lower body, calling for help?
+
+「Alpha」 dropped its knife and rushed to the 「Big Cat」.
+
+「Alpha」 scooped it up and leaped off the bridge.
+
+*Kekekekekeke—!*
+
+The fleeing 「Big Cat」 let out a bizarre sound.
+
+It sounded like laughter.
+
+Cha Sieon, who had single-handedly repelled the 「Big Cat」 and 「Alpha」, approached me.
+
+Cha Sieon was covered in blood.
+
+But his posture and stride remained steady.
+
+"Ms. Baek Sara is dead."
+
+I said it, but Cha Sieon didn't respond.
+
+He glanced at Baek Sara for a moment, then grabbed my arm and pulled me up.
+
+As I stood, Baek Sara, who had been draped over me, fell to the ground.
+
+But Cha Sieon paid it no mind and said briefly—
+
+"To the door."
+
+To the door.
+
+It was the only thing we had to do.
+
+Because if we cross through the door, we can save them.
+
+Ms. Baek Sara, and the other agents too.
+
+But is that really true?
+
+The 「Crow」 is still in my hand, after all.
+
+Doubt and pessimism began to wander through my mind.
+
+I forced them down and stood up straight.
+
+Cha Sieon no longer carried me; he let me walk on my own.
+
+His pace wasn't particularly fast.
+
+So I could easily keep up.
+
+But the real problem wasn't our stride or walking speed.
+
+"Team Leader."
+
+I walked after Cha Sieon, then finally spoke up.
+
+"You're losing too much blood."
+
+I couldn't tell where the blood was coming from.
+
+The path Cha Sieon had walked was marked by a long trail of blood, as if painted with a brush.
+
