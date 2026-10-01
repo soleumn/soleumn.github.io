@@ -204,90 +204,86 @@
     }
     
     /* ============================================================
-       1. PAINEL DE LEITURA FLUTUANTE
+       1. PAINEL DE LEITURA FLUTUANTE (ANIMAÇÃO DÉ HIDE/SHOW RESTAURADA)
        ============================================================ */
     .reader-settings {
       position: fixed;
       bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
-      background-color: var(--bg-card);
-      border: 1px solid var(--borda-suave);
+      background-color: var(--bg-card, #18181b);
+      border: 1px solid var(--borda-suave, #27272a);
       border-radius: 30px;
       padding: 8px 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
       z-index: 1000;
       backdrop-filter: blur(10px);
       max-width: 95vw;
-      overflow-x: auto;
+      white-space: nowrap;
       
-      /* ESCONDE A BARRA POR PADRÃO */
-      opacity: 0 !important;
-      visibility: hidden !important;
-      pointer-events: none !important;
-      transition: opacity 0.3s ease, visibility 0.3s ease !important;
+      /* CONTROLE DE VISIBILIDADE / SCROLL */
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease !important;
     }
     
-    /* CLASSE QUE MOSTRA A BARRA APENAS NO TEXTO */
+    /* CLASSE QUE SEU SCRIPT USA PARA MOSTRAR A BARRA */
     .reader-settings.is-visible {
       opacity: 1 !important;
       visibility: visible !important;
       pointer-events: auto !important;
     }
-      
-    .reader-btn {
-      background: transparent;
-      border: 1px solid var(--borda-suave);
-      color: var(--texto-principal);
-      padding: 4px 10px;
-      border-radius: 16px;
-      cursor: pointer;
-      font-family: var(--fonte-titulo);
-      font-size: 0.85rem;
-      white-space: nowrap;
+    
+    /* ESTILO DOS BOTÕES DA BARRA FLUTUANTE */
+    .reader-btn,
+    .btn-floating {
+      background: transparent !important;
+      border: 1px solid var(--borda-suave, #27272a) !important;
+      color: var(--texto-principal, #f4f4f5) !important;
+      padding: 6px 12px !important;
+      border-radius: 16px !important;
+      cursor: pointer !important;
+      font-family: var(--fonte-titulo, inherit) !important;
+      font-size: 0.85rem !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease !important;
+    }
+    
+    .reader-btn:hover,
+    .btn-floating:hover {
+      border-color: var(--detalhe-accent, #8257e5) !important;
+      color: var(--detalhe-accent, #8257e5) !important;
     }
     
     .select-capitulo-flutuante {
-      background-color: var(--bg-card) !important;
-      color: var(--texto-principal) !important;
-      border: 1px solid var(--borda-suave) !important;
+      background-color: var(--bg-card, #18181b) !important;
+      color: var(--texto-principal, #f4f4f5) !important;
+      border: 1px solid var(--borda-suave, #27272a) !important;
       border-radius: 16px !important;
-      padding: 4px 10px !important;
+      padding: 5px 10px !important;
       font-size: 0.85rem !important;
       outline: none !important;
       cursor: pointer !important;
-      max-width: 130px !important;
+      max-width: 140px !important;
       text-overflow: ellipsis !important;
     }
     
     .select-capitulo-flutuante option {
-      background-color: var(--bg-card) !important;
-      color: var(--texto-principal) !important;
-    }
-    
-    .btn-floating {
-      background-color: transparent !important;
-      color: var(--texto-principal) !important;
-      border: 1px solid var(--borda-suave) !important;
-      padding: 4px 10px !important;
-      border-radius: 16px !important;
-      text-decoration: none !important;
-      font-size: 0.8rem !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-    }
-    
-    .btn-floating:hover {
-      border-color: var(--detalhe-accent) !important;
-      color: var(--detalhe-accent) !important;
+      background-color: var(--bg-card, #18181b) !important;
+      color: var(--texto-principal, #f4f4f5) !important;
     }
     
     /* ============================================================
-       2. NAVEGAÇÃO DE CAPÍTULO (NOVA E COMPACTA NO CORPO DA PÁGINA)
+       2. BOTÕES DE NAVEGAÇÃO DE CAPÍTULO (NO FIM DA PÁGINA)
        ============================================================ */
     .nav-capitulo-container {
       display: flex !important;
@@ -302,22 +298,22 @@
       display: inline-flex !important;
       align-items: center !important;
       justify-content: center !important;
-      padding: 8px 16px !important;
+      padding: 10px 18px !important;
       border-radius: 8px !important;
-      font-family: var(--fonte-titulo) !important;
-      font-size: 0.9rem !important;
+      font-family: var(--fonte-titulo, inherit) !important;
+      font-size: 0.95rem !important;
       font-weight: 600 !important;
       text-decoration: none !important;
-      background-color: var(--bg-card) !important;
-      color: var(--texto-principal) !important;
-      border: 1px solid var(--borda-suave) !important;
+      background-color: var(--bg-card, #18181b) !important;
+      color: var(--texto-principal, #f4f4f5) !important;
+      border: 1px solid var(--borda-suave, #27272a) !important;
       cursor: pointer !important;
       transition: all 0.2s ease !important;
     }
     
     .btn-nav:hover {
-      background-color: var(--bg-card-hover, #27272a) !important;
-      border-color: var(--detalhe-accent) !important;
+      background-color: #27272a !important;
+      border-color: var(--detalhe-accent, #8257e5) !important;
       color: #ffffff !important;
     }
     
@@ -326,14 +322,6 @@
       color: #ffffff !important;
       border: none !important;
     }
-    
-    .btn-next:hover {
-      background-color: var(--detalhe-hover, #996dff) !important;
-    }
-    
-    /* Oculta footer e metas da página de leitura */
-    .site-footer { display: none !important; }
-    .post-meta, time, [itemprop="datePublished"] { display: none !important; }
     
     /* TEMAS DE LEITURA */
     body.theme-dark-pure {
@@ -416,10 +404,9 @@
     body.spacing-relaxed .post-content p { margin-bottom: 2.3rem !important; }
 
     /* ============================================================
-       3. RESPONSIVIDADE MOBILE (CELULAR)
+       3. RESPONSIVIDADE PARA CELULAR
        ============================================================ */
     @media (max-width: 768px) {
-      /* Leitura confortável */
       .wrapper {
         padding-left: 15px !important;
         padding-right: 15px !important;
@@ -429,56 +416,42 @@
         line-height: 1.8 !important;
       }
     
-      .card-historia:hover {
-        transform: translateY(-2px);
-      }
-    
-      /* Barra Flutuante compacta e sem barra de rolagem visível no celular */
+      /* BARRA FLUTUANTE ENXUTA NO CELULAR */
       .reader-settings {
-        bottom: 10px !important;
-        padding: 4px 8px !important;
-        gap: 4px !important;
-        max-width: 92vw !important;
-        border-radius: 20px !important;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    
-      .reader-settings::-webkit-scrollbar {
-        display: none;
+        bottom: 12px !important;
+        padding: 6px 10px !important;
+        gap: 6px !important;
+        max-width: 95vw !important;
       }
     
       .reader-btn,
-      .select-capitulo-flutuante,
-      .btn-floating {
-        padding: 3px 6px !important;
-        font-size: 0.75rem !important;
-        border-radius: 12px !important;
+      .btn-floating,
+      .select-capitulo-flutuante {
+        padding: 4px 8px !important;
+        font-size: 0.78rem !important;
       }
     
       .select-capitulo-flutuante {
-        max-width: 90px !important;
+        max-width: 95px !important;
       }
     
-      img, .system-window {
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-      }
-    
-      /* Ajuste dos botões de rodapé no celular para ficarem em linha lado a lado */
+      /* BOTÕES DO RODAPÉ NO CELULAR LADO A LADO */
       .nav-capitulo-container {
         flex-direction: row !important;
-        gap: 8px !important;
       }
     
       .btn-nav {
         flex: 1 !important;
-        text-align: center !important;
-        padding: 10px 8px !important;
+        padding: 10px 6px !important;
         font-size: 0.85rem !important;
       }
     }
-
+    
+    /* OCULTA O FOOTER E METADADOS NATIVOS NA LEITURA */
+    .site-footer, .post-meta, time, [itemprop="datePublished"] {
+      display: none !important;
+    }
+    
         /* AJUSTE PARA CÓDIGO INLINE (CRASES ` `) ADAPTÁVEL AOS TEMAS */
     .post-content code {
       background-color: var(--bg-card, rgba(255, 255, 255, 0.1)) !important;
