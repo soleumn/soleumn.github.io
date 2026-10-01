@@ -20,19 +20,19 @@ title: Koko's TL
     margin-top: 20px !important;
   }
   
-  /* ANULA QUALQUER LINHA OU BORDA DO TEMA NOS LINKS DE CAPA */
+  /* ANULA QUALQUER LINHA DO TEMA NOS LINKS */
   a.card-historia-link,
   a.card-historia-link:hover,
   a.card-historia-link:focus,
-  a.card-historia-link:active {
+  a.card-historia-link * {
     text-decoration: none !important;
-    border-bottom: 0 !important;
     border: none !important;
-    box-shadow: none !important;
+    border-bottom: 0 !important;
     outline: none !important;
-    background-image: none !important; /* Alguns temas usam background-image para simular linha */
+    box-shadow: none !important;
+    background-image: none !important;
   }
-  
+
   a.card-historia-link {
     color: inherit !important;
     display: flex !important;
@@ -40,8 +40,8 @@ title: Koko's TL
   }
 
   .card-historia {
-    background: var(--bg-card, #18181b) !important;
-    border: 1px solid var(--borda-suave, #27272a) !important;
+    background: #18181b !important;
+    border: 1px solid #27272a !important;
     border-radius: 12px !important;
     overflow: hidden !important;
     display: flex !important;
@@ -50,40 +50,37 @@ title: Koko's TL
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   }
   
-  .card-historia-link:hover .card-historia {
+  a.card-historia-link:hover .card-historia {
     transform: translateY(-6px);
-    border-color: var(--detalhe-accent, #8257e5) !important;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5), 0 0 12px -2px var(--detalhe-accent, #8257e5) !important;
+    border-color: #8257e5 !important;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5), 0 0 12px -2px #8257e5 !important;
   }
 
-  /* CONTAINER DA CAPA (PROPORÇÃO FIXA DE LIVRO) */
+  /* CONTAINER DA CAPA */
   .capa-container {
     position: relative;
     width: 100% !important;
     aspect-ratio: 2 / 3 !important;
-    background: var(--bg-card, #18181b) !important; /* Cor combinando com o card */
+    background: #18181b !important; /* Mesma cor do card */
     overflow: hidden !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none !important;
+    display: block !important;
+    margin-bottom: -2px !important; /* Puxa o texto 2px para cima tampando a fresta */
   }
 
+  /* IMAGEM DA CAPA (TRUQUE DO +2px QUE ELIMINA A FRESTA) */
   .capa-img {
     width: 100% !important;
-    height: 100% !important;
+    height: calc(100% + 2px) !important; /* Cobre o pixel de sobra na base */
     object-fit: cover !important;
     display: block !important;
-    vertical-align: bottom !important; /* Elimina espaço de linha fantasma de imagens */
     transition: transform 0.4s ease;
-    backface-visibility: hidden; /* Suaviza a renderização no zoom */
   }
 
-  .card-historia-link:hover .capa-img {
+  a.card-historia-link:hover .capa-img {
     transform: scale(1.05);
   }
 
-  /* PLACEHOLDER QUANDO A CAPA AINDA NÃO EXISTE OU NÃO CARREGA */
+  /* PLACEHOLDER QUANDO A CAPA NÃO EXISTE */
   .capa-placeholder {
     position: absolute;
     inset: 0;
@@ -92,7 +89,7 @@ title: Koko's TL
     justify-content: center;
     padding: 16px;
     background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
-    color: var(--texto-secundario, #a1a1aa);
+    color: #a1a1aa;
     font-family: var(--fonte-titulo, serif);
     font-size: 0.95rem;
     font-weight: 600;
@@ -107,23 +104,22 @@ title: Koko's TL
     flex-direction: column;
     gap: 6px;
     flex-grow: 1;
-    background: var(--bg-card, #18181b) !important;
+    background: #18181b !important;
     border-top: none !important;
-    margin-top: 0 !important;
   }
 
   .titulo-historia {
     font-family: var(--fonte-titulo, serif) !important;
     margin: 0 !important;
     font-size: 1.05rem !important;
-    color: var(--texto-titulo, #f4f4f5) !important;
+    color: #f4f4f5 !important;
     font-weight: 700;
     line-height: 1.3;
   }
 
   .sinopse-historia {
     font-size: 0.82rem !important;
-    color: var(--texto-secundario, #a1a1aa) !important;
+    color: #a1a1aa !important;
     margin: 0 !important;
     line-height: 1.4;
     display: -webkit-box;
