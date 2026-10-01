@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Koko's TL
+title: My stories
 ---
 
 <style>
@@ -59,49 +59,49 @@ title: Koko's TL
   }
 </style>
 
-<p>Webnovels translated by me! ^^<br>(pls gatekeep)</p>
+<p>Text Text Text<br>Text Text</p>
 
 <div class="biblioteca-grid">
 
   <!-- HISTÓRIA 1 -->
   <div class="card-historia">
     <div class="capa-container">
-      <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" alt="Capa Eoshinki" class="capa-img">
+      <img src="{{ '/assets/eoshink.jpg' | relative_url }}" alt="Capa Eoshinki" class="capa-img">
     </div>
     <div style="padding: 16px;">
       <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
-        I'm a Young God, Won't You Raise Me?
+        Exemplo
       </h2>
       <p style="font-size: 0.85rem; color: var(--texto-secundario); margin: 0; line-height: 1.4;">
-        ch112+
+        lalala
       </p>
     </div>
   </div>
   <!-- HISTÓRIA 2 -->
   <div class="card-historia">
     <div class="capa-container">
-      <img src="{{ '/assets/gsgw.jpg' | relative_url }}" alt="Capa Gsgw" class="capa-img">
+      <img src="{{ '/assets/gsg.jpg' | relative_url }}" alt="Capa Gsgw" class="capa-img">
     </div>
     <div style="padding: 16px;">
       <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
-        Got Dropped Into a Ghost Story, Still Gotta Work
+        Exemplo
       </h2>
       <p style="font-size: 0.85rem; color: var(--texto-secundario); margin: 0; line-height: 1.4;">
-        Pt3 Only
+        lalala
       </p>
     </div>
   </div>
     <!-- HISTÓRIA 3 -->
   <div class="card-historia">
     <div class="capa-container">
-      <img src="{{ '/assets/esg.jpg' | relative_url }}" alt="Capa Esg" class="capa-img">
+      <img src="{{ '/assets/es.jpg' | relative_url }}" alt="Capa Esg" class="capa-img">
     </div>
     <div style="padding: 16px;">
       <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
-        Editor's Survival Guide
+        Exemplo
       </h2>
       <p style="font-size: 0.85rem; color: var(--texto-secundario); margin: 0; line-height: 1.4;">
-        ch157+
+        lalala
       </p>
     </div>
   </div>
