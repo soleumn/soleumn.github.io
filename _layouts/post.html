@@ -97,9 +97,9 @@ layout: default
 <!-- NAVEGAÇÃO SUPERIOR -->
 <div class="nav-capitulo-topo" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 20px 0 30px 0; width: 100%; box-sizing: border-box;">
   {% if prev_post %}
-    <!--<a href="{{ prev_post.url | relative_url }}" class="btn-nav" style="flex: 1 1 0; min-width: 0; padding: 10px 4px; font-size: 0.85rem; text-align: center; white-space: nowrap;">
+    <a href="{{ prev_post.url | relative_url }}" class="btn-nav" style="flex: 1 1 0; min-width: 0; padding: 10px 4px; font-size: 0.85rem; text-align: center; white-space: nowrap;">
       ↩ Prev
-    </a>-->
+    </a>
   {% else %}
     <div style="flex: 1 1 0; min-width: 0;"></div>
   {% endif %}-->
@@ -109,9 +109,9 @@ layout: default
   </a>
 
   {% if next_post %}
-    <!--<a href="{{ next_post.url | relative_url }}" class="btn-nav btn-next" style="flex: 1 1 0; min-width: 0; padding: 10px 4px; font-size: 0.85rem; text-align: center; white-space: nowrap;">
+    <a href="{{ next_post.url | relative_url }}" class="btn-nav btn-next" style="flex: 1 1 0; min-width: 0; padding: 10px 4px; font-size: 0.85rem; text-align: center; white-space: nowrap;">
       Next ➔
-    </a> -->
+    </a>
   {% else %}
     <div style="flex: 1 1 0; min-width: 0;"></div>
   {% endif %}
