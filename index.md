@@ -21,8 +21,17 @@ title: Koko's TL
   }
   
   /* CARD COMPLETO COMO LINK */
-  .card-historia-link {
+  .card-historia-link,
+  .card-historia-link:hover,
+  .card-historia-link:focus,
+  .card-historia-link * {
     text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  .card-historia-link {
     color: inherit !important;
     display: flex !important;
     flex-direction: column !important;
@@ -42,7 +51,7 @@ title: Koko's TL
   .card-historia-link:hover .card-historia {
     transform: translateY(-6px);
     border-color: var(--detalhe-accent, #8257e5) !important;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5), 0 0 12px -2px var(--detalhe-accent, #8257e5);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5), 0 0 12px -2px var(--detalhe-accent, #8257e5) !important;
   }
 
   /* CONTAINER DA CAPA (PROPORÇÃO FIXA DE LIVRO) */
@@ -50,11 +59,12 @@ title: Koko's TL
     position: relative;
     width: 100% !important;
     aspect-ratio: 2 / 3 !important;
-    background: #27272a;
-    overflow: hidden;
+    background: var(--bg-card, #18181b) !important; /* Cor combinando com o card */
+    overflow: hidden !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none !important;
   }
 
   .capa-img {
@@ -62,7 +72,9 @@ title: Koko's TL
     height: 100% !important;
     object-fit: cover !important;
     display: block !important;
+    vertical-align: bottom !important; /* Elimina espaço de linha fantasma de imagens */
     transition: transform 0.4s ease;
+    backface-visibility: hidden; /* Suaviza a renderização no zoom */
   }
 
   .card-historia-link:hover .capa-img {
@@ -83,15 +95,7 @@ title: Koko's TL
     font-size: 0.95rem;
     font-weight: 600;
     text-align: center;
-    border-bottom: none !important; /* ALTERADO AQUI PARA REMOVER A LINHA */
-  }
-  
-  /* REMOVE SUBUNHADO E BORDAS DOS LINKS */
-  .card-historia-link,
-  .card-historia-link:hover,
-  .card-historia-link * {
-    text-decoration: none !important;
-    border-bottom: none !important;
+    border: none !important;
   }
 
   /* CONTEÚDO DO CARD */
@@ -101,6 +105,7 @@ title: Koko's TL
     flex-direction: column;
     gap: 6px;
     flex-grow: 1;
+    background: var(--bg-card, #18181b) !important;
   }
 
   .titulo-historia {
