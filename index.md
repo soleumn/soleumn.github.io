@@ -117,7 +117,7 @@ title: Koko's TL
 </style>
 
 <div class="intro-text">
-  My translations! ^^ (pls gatekeep)
+  Webnovels translated by me! ^^ (pls gatekeep)
 </div>
 
 <div class="biblioteca-grid">
