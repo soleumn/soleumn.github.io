@@ -1,6 +1,6 @@
 ---
 layout: page
-title: My Stories
+title: Koko's TL
 ---
 
 <style>
@@ -117,49 +117,49 @@ title: My Stories
 </style>
 
 <div class="intro-text">
-  Welcome to my novel repository. Select a story below to start reading.
+  My translations! ^^ (pls gatekeep)
 </div>
 
 <div class="biblioteca-grid">
 
   <!-- HISTÓRIA 1 -->
-  <a href="{{ '/eoshinki' | relative_url }}" class="card-historia-link">
+  <a href="{{ '/eoshinki/' | relative_url }}" class="card-historia-link">
     <div class="card-historia">
       <div class="capa-container">
-        <div class="capa-placeholder">Eo Shinki</div>
-        <img src="{{ '/assets/eoshink.jpg' | relative_url }}" alt="Eo Shinki" class="capa-img" onerror="this.style.display='none'">
+        <div class="capa-placeholder">Eoshinki</div>
+        <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" alt="Eoshinki" class="capa-img" onerror="this.style.display='none'">
       </div>
       <div class="conteudo-card">
-        <h2 class="titulo-historia">Eo Shinki</h2>
-        <p class="sinopse-historia">A brief description or teaser for this story goes right here.</p>
+        <h2 class="titulo-historia">I'm a Young God, Won't You Raise Me?</h2>
+        <p class="sinopse-historia">Ch112+</p>
       </div>
     </div>
   </a>
 
   <!-- HISTÓRIA 2 -->
-  <a href="{{ '/gsgw' | relative_url }}" class="card-historia-link">
+  <a href="{{ '/gsgw/' | relative_url }}" class="card-historia-link">
     <div class="card-historia">
       <div class="capa-container">
         <div class="capa-placeholder">GSGW</div>
-        <img src="{{ '/assets/gsg.jpg' | relative_url }}" alt="GSGW" class="capa-img" onerror="this.style.display='none'">
+        <img src="{{ '/assets/gsgw.jpg' | relative_url }}" alt="GSGW" class="capa-img" onerror="this.style.display='none'">
       </div>
       <div class="conteudo-card">
-        <h2 class="titulo-historia">GSGW</h2>
-        <p class="sinopse-historia">A brief description or teaser for this story goes right here.</p>
+        <h2 class="titulo-historia">Got Dropped Into a Ghost Story, Still Gotta Work</h2>
+        <p class="sinopse-historia">PT3 only!!</p>
       </div>
     </div>
   </a>
 
   <!-- HISTÓRIA 3 -->
-  <a href="{{ '/outra-obra' | relative_url }}" class="card-historia-link">
+  <a href="{{ '/esg/' | relative_url }}" class="card-historia-link">
     <div class="card-historia">
       <div class="capa-container">
-        <div class="capa-placeholder">Exemplo 3</div>
-        <img src="{{ '/assets/es.jpg' | relative_url }}" alt="Exemplo" class="capa-img" onerror="this.style.display='none'">
+        <div class="capa-placeholder">Esg</div>
+        <img src="{{ '/assets/esg.jpg' | relative_url }}" alt="Esg" class="capa-img" onerror="this.style.display='none'">
       </div>
       <div class="conteudo-card">
-        <h2 class="titulo-historia">Exemplo 3</h2>
-        <p class="sinopse-historia">A brief description or teaser for this story goes right here.</p>
+        <h2 class="titulo-historia">Editor's Survival Guide</h2>
+        <p class="sinopse-historia">Ch157+</p>
       </div>
     </div>
   </a>
