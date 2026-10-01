@@ -108,6 +108,8 @@ title: Koko's TL
     gap: 6px;
     flex-grow: 1;
     background: var(--bg-card, #18181b) !important;
+    border-top: none !important;
+    margin-top: 0 !important;
   }
 
   .titulo-historia {
