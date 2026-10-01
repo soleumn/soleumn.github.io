@@ -79,30 +79,31 @@ title: Koko's TL
   </div>
   <!-- HISTÓRIA 2 -->
   <div class="card-historia">
-    <a href="{{ '/gsgw/' | relative_url }}">
-      <div class="capa-container">
-        <img src="{{ '/assets/gsgw.jpg' | relative_url }}" alt="Capa Gsgw" class="capa-img">
-      </div>
-    </a>
-    <div class="conteudo-card">
-      <h3 class="titulo-historia">
-        <a href="{{ '/gsgw/' | relative_url }}">Got Dropped Into a Ghost Story, Still Gotta Work (Pt3 Only)</a>
-      </h3>
+    <div class="capa-container">
+      <img src="{{ '/assets/gsgw.jpg' | relative_url }}" alt="Capa Gsgw" class="capa-img">
+    </div>
+    <div style="padding: 16px;">
+      <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
+        Got Dropped Into a Ghost Story, Still Gotta Work
+      </h2>
+      <p style="font-size: 0.85rem; color: var(--texto-secundario); margin: 0; line-height: 1.4;">
+        Pt3 Only
+      </p>
     </div>
   </div>
-
     <!-- HISTÓRIA 3 -->
   <div class="card-historia">
-    <a href="{{ '/esg/' | relative_url }}">
-      <div class="capa-container">
-        <img src="{{ '/assets/esg.jpg' | relative_url }}" alt="Capa Esg" class="capa-img">
-      </div>
-    </a>
-    <div class="conteudo-card">
-      <h3 class="titulo-historia">
-        <a href="{{ '/esg/' | relative_url }}">Editor's Survival Guide (ch157+)</a>
-      </h3>
+    <div class="capa-container">
+      <img src="{{ '/assets/esg.jpg' | relative_url }}" alt="Capa Esg" class="capa-img">
+    </div>
+    <div style="padding: 16px;">
+      <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
+        Editor's Survival Guide
+      </h2>
+      <p style="font-size: 0.85rem; color: var(--texto-secundario); margin: 0; line-height: 1.4;">
+        ch157+
+      </p>
     </div>
   </div>
-
+  
 </div>
