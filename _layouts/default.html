@@ -134,6 +134,12 @@
       background: linear-gradient(to top, var(--bg-card), transparent);
       pointer-events: none;
     }
+
+        /* Esconde o cabeçalho do tema principal apenas nas páginas de leitura/capítulos */
+    body.layout--post .site-header,
+    .navbar-leitura ~ .site-header {
+      display: none !important;
+    }
     /* JANELA DO SISTEMA */
     .system-window {
       background: var(--bg-card) !important;
