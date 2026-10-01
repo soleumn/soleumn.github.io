@@ -20,18 +20,20 @@ title: Koko's TL
     margin-top: 20px !important;
   }
   
-  /* CARD COMPLETO COMO LINK */
-  .card-historia-link,
-  .card-historia-link:hover,
-  .card-historia-link:focus,
-  .card-historia-link * {
+  /* ANULA QUALQUER LINHA OU BORDA DO TEMA NOS LINKS DE CAPA */
+  a.card-historia-link,
+  a.card-historia-link:hover,
+  a.card-historia-link:focus,
+  a.card-historia-link:active {
     text-decoration: none !important;
+    border-bottom: 0 !important;
     border: none !important;
+    box-shadow: none !important;
     outline: none !important;
-    box-shadow: none;
+    background-image: none !important; /* Alguns temas usam background-image para simular linha */
   }
-
-  .card-historia-link {
+  
+  a.card-historia-link {
     color: inherit !important;
     display: flex !important;
     flex-direction: column !important;
