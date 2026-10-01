@@ -20,9 +20,9 @@ permalink: /esg/
     <!-- INÍCIO DA CAIXA DE SINOPSE EXPANSÍVEL -->
     <div id="synopsisBox" class="synopsis-container">
       <p style="font-size: 1.1rem; line-height: 1.7; margin: 0;">
-        『Editor’s Survival Rules』 “You are currently in a special zone managed by the South Korean government.”<br> 
-        Seo Doun wakes up at an unfamiliar station on his way home from work, only to find himself in a special zone that defies the laws of reality! 
-        A siren sounds every 47 minutes; the price of a single escape ticket is 15.87 million won; and… five escape routes. 
+        『Editor’s Survival Rules』 <br>“You are currently in a special zone managed by the South Korean government.”<br><br> 
+        Seo Doun wakes up at an unfamiliar station on his way home from work, only to find himself in a special zone that defies the laws of reality!<br><br>
+        A siren sounds every 47 minutes; the price of a single escape ticket is 15.87 million won; and… five escape routes.<br>
         To survive here, all that is needed is not morality, but choice. His story of surviving within this special zone does not end!
       </p>
     </div>
