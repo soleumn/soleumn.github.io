@@ -788,7 +788,7 @@
       opacity: 1 !important;
     }
 
-        /* Barra Fixa / Retrátil no Topo */
+    /* Navbar Fixa / Retrátil */
     .navbar-leitura {
       position: fixed;
       top: 0;
@@ -808,19 +808,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 10px;
+      gap: 8px;
     }
     
-    /* Esconde a barra no celular quando rola para baixo */
     .navbar-leitura.nav-hidden {
       transform: translateY(-100%);
     }
     
-    /* Botão de Voltar (Obras) */
     .btn-home {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       color: var(--texto-principal, #f8fafc);
       text-decoration: none;
       font-weight: 600;
@@ -828,30 +826,92 @@
       padding: 6px 10px;
       border-radius: 6px;
       background-color: rgba(255, 255, 255, 0.08);
-      white-space: nowrap;
-    }
-    
-    .btn-home:hover {
-      background-color: var(--detalhe-accent, #6366f1);
-      color: #ffffff;
     }
     
     .reader-settings-top {
       display: flex;
       align-items: center;
-      gap: 6px;
-      overflow-x: auto; /* Permite rolagem horizontal se a tela for muito pequena */
+      gap: 4px;
     }
     
-    .divisor-bar {
-      border-right: 1px solid var(--borda-suave, #3f3f46);
-      height: 18px;
-      margin: 0 4px;
+    .btn-nav-icon {
+      color: var(--texto-principal, #f8fafc);
+      text-decoration: none;
+      padding: 4px 8px;
+      font-size: 0.9rem;
     }
     
-    /* Dá um espaço no topo do corpo da página para o texto não ficar coberto pela barra */
-    body {
-      padding-top: 50px !important;
+    .btn-formatting {
+      background-color: var(--detalhe-accent, #6366f1);
+      color: #ffffff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    
+    /* Modal de Formatação Flutuante */
+    .format-modal {
+      position: fixed;
+      top: 55px;
+      right: 12px;
+      width: 260px;
+      background-color: var(--bg-card, #1e293b);
+      border: 1px solid var(--card-border, #334155);
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      z-index: 1001;
+      display: none;
+      flex-direction: column;
+      padding: 12px;
+    }
+    
+    .format-modal.active {
+      display: flex;
+    }
+    
+    .format-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 0.85rem;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--card-border, #334155);
+      margin-bottom: 10px;
+    }
+    
+    .btn-close-modal {
+      background: none;
+      border: none;
+      color: var(--texto-principal);
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    
+    .format-modal-body {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .format-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+    
+    .btn-group {
+      display: flex;
+      gap: 5px;
+    }
+    
+    .btn-full {
+      width: 130px;
+      text-align: center;
     }
   </style>
 </head>
