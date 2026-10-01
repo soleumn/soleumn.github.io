@@ -203,7 +203,9 @@
       margin: 0 auto !important;
     }
     
-    /* PAINEL DE LEITURA FLUTUANTE */
+    /* ============================================================
+       1. PAINEL DE LEITURA FLUTUANTE
+       ============================================================ */
     .reader-settings {
       position: fixed;
       bottom: 20px;
@@ -235,7 +237,7 @@
       visibility: visible !important;
       pointer-events: auto !important;
     }
-        
+      
     .reader-btn {
       background: transparent;
       border: 1px solid var(--borda-suave);
@@ -247,7 +249,7 @@
       font-size: 0.85rem;
       white-space: nowrap;
     }
-
+    
     .select-capitulo-flutuante {
       background-color: var(--bg-card) !important;
       color: var(--texto-principal) !important;
@@ -283,35 +285,27 @@
       border-color: var(--detalhe-accent) !important;
       color: var(--detalhe-accent) !important;
     }
-
-    /* BOTOES DE NAVEGACAO DO CAPITULO */
+    
+    /* ============================================================
+       2. NAVEGAÇÃO DE CAPÍTULO (NOVA E COMPACTA NO CORPO DA PÁGINA)
+       ============================================================ */
     .nav-capitulo-container {
       display: flex !important;
       justify-content: space-between !important;
       align-items: center !important;
       margin: 40px 0 !important;
       width: 100% !important;
+      gap: 12px !important;
     }
     
-    .nav-grupo-esquerda {
-      display: flex !important;
-      align-items: center !important;
-      gap: 10px !important;
-    }
-    
-    .nav-grupo-direita {
-      display: flex !important;
-      align-items: center !important;
-    }
-
     .btn-nav {
       display: inline-flex !important;
       align-items: center !important;
       justify-content: center !important;
-      padding: 10px 18px !important;
+      padding: 8px 16px !important;
       border-radius: 8px !important;
       font-family: var(--fonte-titulo) !important;
-      font-size: 0.95rem !important;
+      font-size: 0.9rem !important;
       font-weight: 600 !important;
       text-decoration: none !important;
       background-color: var(--bg-card) !important;
@@ -319,26 +313,28 @@
       border: 1px solid var(--borda-suave) !important;
       cursor: pointer !important;
       transition: all 0.2s ease !important;
-      box-sizing: border-box !important;
     }
-
+    
     .btn-nav:hover {
-      background-color: var(--bg-card-hover) !important;
+      background-color: var(--bg-card-hover, #27272a) !important;
+      border-color: var(--detalhe-accent) !important;
       color: #ffffff !important;
-      transform: translateY(-2px);
     }
-
+    
     .btn-next {
-      background-color: var(--detalhe-accent) !important;
-      color: #11111b !important;
+      background-color: var(--detalhe-accent, #8257e5) !important;
+      color: #ffffff !important;
       border: none !important;
     }
-
+    
     .btn-next:hover {
-      background-color: var(--detalhe-hover) !important;
-      color: #11111b !important;
+      background-color: var(--detalhe-hover, #996dff) !important;
     }
-
+    
+    /* Oculta footer e metas da página de leitura */
+    .site-footer { display: none !important; }
+    .post-meta, time, [itemprop="datePublished"] { display: none !important; }
+    
     /* TEMAS DE LEITURA */
     body.theme-dark-pure {
       --bg-principal: #000000 !important;
@@ -419,88 +415,68 @@
     body.spacing-normal .post-content p { margin-bottom: 1.5rem !important; }
     body.spacing-relaxed .post-content p { margin-bottom: 2.3rem !important; }
 
-      /* RESPONSIVIDADE MOBILE */
-      @media (max-width: 768px) {
-        /* Margens laterais para a leitura não colar nas bordas do celular */
-        .wrapper {
-          padding-left: 15px !important;
-          padding-right: 15px !important;
-        }
-      
-        /* Altura de linha confortável para o texto no celular */
-        .post-content, .post-content p {
-          line-height: 1.8 !important;
-        }
-      
-        /* Ajuste do efeito hover dos cards de obras no touch */
-        .card-historia:hover {
-          transform: translateY(-2px);
-        }
+    /* ============================================================
+       3. RESPONSIVIDADE MOBILE (CELULAR)
+       ============================================================ */
+    @media (max-width: 768px) {
+      /* Leitura confortável */
+      .wrapper {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
       }
-      /* BARRA FLUTUANTE COMPACTA & SEM SCROLLBAR VISÍVEL */
+    
+      .post-content, .post-content p {
+        line-height: 1.8 !important;
+      }
+    
+      .card-historia:hover {
+        transform: translateY(-2px);
+      }
+    
+      /* Barra Flutuante compacta e sem barra de rolagem visível no celular */
       .reader-settings {
         bottom: 10px !important;
         padding: 4px 8px !important;
         gap: 4px !important;
         max-width: 92vw !important;
         border-radius: 20px !important;
-        -ms-overflow-style: none;  /* IE/Edge */
-        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
-  
+    
       .reader-settings::-webkit-scrollbar {
-        display: none; /* Chrome/Safari */
+        display: none;
       }
-  
-      .reader-btn {
+    
+      .reader-btn,
+      .select-capitulo-flutuante,
+      .btn-floating {
         padding: 3px 6px !important;
         font-size: 0.75rem !important;
         border-radius: 12px !important;
       }
-  
+    
       .select-capitulo-flutuante {
-        max-width: 85px !important;
-        font-size: 0.75rem !important;
-        padding: 2px 4px !important;
-        border-radius: 12px !important;
+        max-width: 90px !important;
       }
-  
-      .btn-floating {
-        padding: 2px 6px !important;
-        font-size: 0.75rem !important;
-        border-radius: 12px !important;
-      }
-  
+    
       img, .system-window {
         max-width: 100% !important;
         box-sizing: border-box !important;
       }
-  
+    
+      /* Ajuste dos botões de rodapé no celular para ficarem em linha lado a lado */
       .nav-capitulo-container {
-        flex-direction: column !important;
-        gap: 10px !important;
+        flex-direction: row !important;
+        gap: 8px !important;
       }
-  
-      /* CORREÇÃO DO ALINHAMENTO DOS BOTÕES DE NAVEGAÇÃO NO MOBILE */
-      .nav-grupo-esquerda,
-      .nav-grupo-direita {
-        width: 100% !important;
-        flex-direction: column !important;
-        gap: 10px !important;
-      }
-  
+    
       .btn-nav {
-        width: 100% !important;
+        flex: 1 !important;
         text-align: center !important;
-        white-space: nowrap !important; /* Impede que o texto quebre em duas linhas */
-        padding: 12px 10px !important;
+        padding: 10px 8px !important;
+        font-size: 0.85rem !important;
       }
-    }
-
-    .site-footer { display: none !important; }
-
-    .post-meta, time, [itemprop="datePublished"] {
-      display: none !important;
     }
 
         /* AJUSTE PARA CÓDIGO INLINE (CRASES ` `) ADAPTÁVEL AOS TEMAS */
