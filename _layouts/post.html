@@ -33,7 +33,7 @@ layout: default
       <span class="btn-text">Home</span>
     </a>
     
-    <a href="{{ page.novel_url | default: '/stories' | relative_url }}" class="btn-nav" title="Voltar à Obra">
+    <a href="{{ '/' | append: page.categories[0] | append: '/' | relative_url | replace: '//', '/' }}" class="btn-nav" title="Voltar à Obra">
       <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
       <span class="btn-text">Story</span>
     </a>
@@ -47,7 +47,7 @@ layout: default
 
     <div class="select-wrapper">
       <select onchange="location = this.value;" class="chapter-select">
-        <option disabled selected>Capítulos</option>
+        <option disabled selected>Chapters</option>
         {% for cap in obra_posts %}
           <option value="{{ cap.url | relative_url }}" {% if cap.url == page.url %}selected{% endif %}>
             {{ cap.title }}
@@ -120,7 +120,7 @@ layout: default
     <div class="btn-placeholder"></div>
   {% endif %}
 
-  <a href="{{ page.novel_url | default: '/stories' | relative_url }}" class="btn-bottom" title="Ver todos os capítulos">
+  <a href="{{ '/' | append: page.categories[0] | append: '/' | relative_url | replace: '//', '/' }}" class="btn-bottom" title="Ver todos os capítulos">
     ☰
   </a>
 
