@@ -1,6 +1,11 @@
-# Chapter 157 - Engulfed in Fog (7)
+---
+layout: post
+title: "Chapter 157 - Engulfed in Fog (7)"
+categories: esg
+capitulo: 1
+---
 
-「Big Cat」 charged forward.
+<br>「Big Cat」 charged forward.
 
 「Crow」, held in its mouth, dangled limply with 「Big Cat」's movements.
 
