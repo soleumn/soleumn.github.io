@@ -8,7 +8,7 @@
   
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Cinzel:wght@600;700&family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Outfit:wght@400;600;700&family=Bahiana&family=Bitcount:wght@100..900&family=Black+And+White+Picture&family=Chelsea+Market&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Crafty+Girls&family=Emilys+Candy&family=Freckle+Face&family=Fredericka+the+Great&family=Frijole&family=Grape+Nuts&family=Iceland&family=Indie+Flower&family=Life+Savers:wght@400;700;800&family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik+Glitch&family=Rubik+Marker+Hatch&family=Rubik+Vinyl&family=Rubik+Wet+Paint&family=Schoolbell&family=Shadows+Into+Light+Two&family=Silkscreen:wght@400;700&family=Sixtyfour&family=Sofadi+One&family=Special+Elite&family=Syne+Mono&family=Unkempt:wght@400;700&family=VT323&family=Vast+Shadow&family=Workbench&family=Xanh+Mono:ital@0;1&family=Yuyu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;600;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <style>
     /* CONFIGURAÇÃO BASE (CATPPUCCIN MOCHA - DARK) */
     :root {
@@ -342,11 +342,11 @@
     }
 
     /* FONTES E ESPAÇAMENTOS */
-    body.font-merriweather .post-content, body.font-merriweather .post-content p, body.font-merriweather .system-window { font-family: 'Merriweather', serif !important; }
+    body.font-georgia .post-content, body.font-georgia .post-content p, body.font-georgia .system-window { font-family: 'Georgia', serif !important; }
+    body.font-literata .post-content, body.font-literata .post-content p, body.font-literata .system-window { font-family: 'Literata', serif !important; }
     body.font-lora .post-content, body.font-lora .post-content p, body.font-lora .system-window { font-family: 'Lora', serif !important; }
     body.font-outfit .post-content, body.font-outfit .post-content p, body.font-outfit .system-window { font-family: 'Outfit', sans-serif !important; }
     body.font-inter .post-content, body.font-inter .post-content p, body.font-inter .system-window { font-family: 'Inter', sans-serif !important; }
-    body.font-georgia .post-content, body.font-georgia .post-content p, body.font-georgia .system-window { font-family: 'Georgia', serif !important; }
     body.font-spectral .post-content, body.font-spectral .post-content p, body.font-spectral .system-window { font-family: 'Spectral', serif !important; }
     
     body.spacing-compact .post-content p { margin-bottom: 0.8rem !important; }
@@ -988,13 +988,14 @@
 <!-- SCRIPT GLOBAL DO LEITOR (MUDANÇA DE TEMA/FONTE/ESPAÇAMENTO/GISCUS) -->
   <script>
     let currentFontSize = parseFloat(localStorage.getItem('reader_font_size')) || 1.18;
-    let currentFont = localStorage.getItem('reader_font_family') || 'merriweather';
+    // Atualizado o padrão inicial de merriweather para literata
+    let currentFont = localStorage.getItem('reader_font_family') || 'literata';
     let currentSpacing = localStorage.getItem('reader_spacing') || 'normal';
     let currentTheme = localStorage.getItem('reader_theme') || 'mocha';
-
+    
     const fonts = [
       { id: 'georgia', name: 'Georgia' },
-      { id: 'merriweather', name: 'Merriweather' },
+      { id: 'literata', name: 'Literata' },
       { id: 'lora', name: 'Lora' },
       { id: 'outfit', name: 'Outfit' },
       { id: 'inter', name: 'Inter' },
@@ -1040,7 +1041,8 @@
         p.style.fontSize = currentFontSize + 'rem';
       });
     
-      document.body.classList.remove('font-georgia', 'font-merriweather', 'font-lora', 'font-outfit', 'font-inter');
+      // CORREÇÃO AQUI: Incluídas as novas classes 'font-literata' e 'font-spectral' para serem limpas antes de trocar
+      document.body.classList.remove('font-georgia', 'font-literata', 'font-lora', 'font-outfit', 'font-inter', 'font-spectral');
       document.body.classList.add('font-' + currentFont);
     
       const btnFont = document.getElementById('btnFont');
@@ -1048,7 +1050,6 @@
       if (btnFont && fontObj) {
         btnFont.innerText = fontObj.name;
       }
-    
       document.body.classList.remove('spacing-compact', 'spacing-normal', 'spacing-relaxed');
       document.body.classList.add('spacing-' + currentSpacing);
     
