@@ -83,7 +83,15 @@ title: Koko's TL
     font-size: 0.95rem;
     font-weight: 600;
     text-align: center;
-    border-bottom: 1px solid var(--borda-suave, #27272a);
+    border-bottom: none !important; /* ALTERADO AQUI PARA REMOVER A LINHA */
+  }
+  
+  /* REMOVE SUBUNHADO E BORDAS DOS LINKS */
+  .card-historia-link,
+  .card-historia-link:hover,
+  .card-historia-link * {
+    text-decoration: none !important;
+    border-bottom: none !important;
   }
 
   /* CONTEÚDO DO CARD */
