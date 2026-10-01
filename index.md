@@ -65,18 +65,18 @@ title: Koko's TL
 
   <!-- HISTÓRIA 1 -->
   <div class="card-historia">
-    <a href="{{ '/eoshinki/' | relative_url }}">
-      <div class="capa-container">
-        <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" alt="Capa Eoshinki" class="capa-img">
-      </div>
-    </a>
-    <div class="conteudo-card">
-      <h3 class="titulo-historia">
-        <a href="{{ '/eoshinki/' | relative_url }}">I'm a Young God, Won't You Raise Me? (ch112+)</a>
-      </h3>
+    <div class="capa-container">
+      <img src="{{ '/assets/eoshinki.jpg' | relative_url }}" alt="Capa Eoshinki" class="capa-img">
+    </div>
+    <div style="padding: 16px;">
+      <h2 style="font-family: var(--fonte-titulo); margin: 0 0 8px 0; font-size: 1.2rem; color: var(--texto-titulo);">
+        I'm a Young God, Won't You Raise Me?
+      </h2>
+      <p style="font-size: 0.85rem; color: var(--texto-secundario); margin: 0; line-height: 1.4;">
+        ch112+
+      </p>
     </div>
   </div>
-
   <!-- HISTÓRIA 2 -->
   <div class="card-historia">
     <a href="{{ '/gsgw/' | relative_url }}">
