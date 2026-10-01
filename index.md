@@ -91,4 +91,18 @@ title: Koko's TL
     </div>
   </div>
 
+    <!-- HISTÓRIA 3 -->
+  <div class="card-historia">
+    <a href="{{ '/esg/' | relative_url }}">
+      <div class="capa-container">
+        <img src="{{ '/assets/esg.jpg' | relative_url }}" alt="Capa Esg" class="capa-img">
+      </div>
+    </a>
+    <div class="conteudo-card">
+      <h3 class="titulo-historia">
+        <a href="{{ '/esg/' | relative_url }}">Editor's Survival Guide (ch157+)</a>
+      </h3>
+    </div>
+  </div>
+
 </div>
