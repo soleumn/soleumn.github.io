@@ -46,7 +46,8 @@ permalink: /eoshinki/
     <p style="font-size: 1rem; color: #9ca3af;">
       <strong>Author:</strong> 강토공<br>
       <strong>Status:</strong> On-Going<br>
-      <strong>Chapters:</strong> 112+
+      <strong>Chapters:</strong> 112+<br>
+      <strong>Raws:</strong> <a href="https://page.kakao.com/content/69299983/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">here</a>
     </p>
   </div>
 
