@@ -49,7 +49,7 @@ permalink: /gsgw/
       <strong>Author:</strong> 백덕수<br>
       <strong>Status:</strong> Hiatus<br>
       <strong>Chapters:</strong> 372+ (full part 3)<br>
-      <strong>Raws:</strong> [here](https://page.kakao.com/content/65171279/)
+      <strong>Raws:</strong> <a href=https://page.kakao.com/content/65171279/>here</a>
     </p>
   </div>
 
