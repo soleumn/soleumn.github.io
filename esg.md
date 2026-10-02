@@ -38,7 +38,7 @@ permalink: /esg/
       <strong>Author:</strong> 김영지<br>
       <strong>Status:</strong> On-Going<br>
       <strong>Chapters:</strong> 157+<br>
-      <strong>Raws:</strong> <a href="https://page.kakao.com/content/68473234/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">here</a>
+      <strong>Raws:</strong> <a href="https://page.kakao.com/content/68473234/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">here</a><br>
       <strong>place to read previous ch:</strong> <a href="https://azurechronicles.com/novel/editors-survival-guide/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">1</a>
     </p>
   </div>
