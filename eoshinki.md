@@ -47,7 +47,8 @@ permalink: /eoshinki/
       <strong>Author:</strong> 강토공<br>
       <strong>Status:</strong> On-Going<br>
       <strong>Chapters:</strong> 112+<br>
-      <strong>Raws:</strong> <a href="https://page.kakao.com/content/69299983/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">here</a>
+      <strong>Raws:</strong> <a href="https://page.kakao.com/content/69299983/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">here</a><br>
+      <strong>place to read previous ch:</strong> <a href="https://berriezai.cc/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">1</a>
     </p>
   </div>
 
