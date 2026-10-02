@@ -38,20 +38,20 @@ permalink: /gsgw/
       </p>
     </div>
 
-    <button id="btnSynopsis" class="btn-toggle-synopsis" onclick="toggleSynopsis()" style="margin-bottom: 15px;">
+  <button id="btnSynopsis" class="btn-toggle-synopsis" onclick="toggleSynopsis()" style="margin-bottom: 15px;">
       Read More...
-    </button>
+  </button>
     <!-- FIM DA CAIXA DE SINOPSE -->
 
-    <hr style="border-color: #27272a; margin: 20px 0;">
+  <hr style="border-color: #27272a; margin: 20px 0;">
     
-    <p style="font-size: 1rem; color: #9ca3af;">
-      <strong>Author:</strong> 백덕수<br>
-      <strong>Status:</strong> Hiatus<br>
-      <strong>Chapters:</strong> 372+ (full part 3)<br>
-      <strong>Raws:</strong> <a href=https://page.kakao.com/content/65171279/>here</a>
-    </p>
-  </div>
+  <p style="font-size: 1rem; color: #9ca3af;">
+    <strong>Author:</strong> 백덕수<br>
+    <strong>Status:</strong> Hiatus<br>
+    <strong>Chapters:</strong> 372+ (full part 3)<br>
+    <strong>Raws:</strong> <a href=https://page.kakao.com/content/65171279/>here</a>
+  </p>
+ </div>
 
 </div>
 
