@@ -8,7 +8,7 @@
   
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;600;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Bitcount+Grid+Single:wght@400&family=Black+And+White+Picture&family=Chelsea+Market&family=Cinzel:wght@600;700&family=Cormorant+Unicase:wght@400;700&family=Crafty+Girls&family=Emilys+Candy&family=Freckle+Face&family=Fredericka+the+Great&family=Frijole&family=Grape+Nuts&family=Iceland&family=Indie+Flower&family=Inter:wght@400;600&family=Life+Savers:wght@400;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;600;700&family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik+Glitch&family=Rubik+Marker+Hatch&family=Rubik+Vinyl&family=Rubik+Wet+Paint&family=Schoolbell&family=Shadows+Into+Light+Two&family=Silkscreen:wght@400;700&family=Sixtyfour&family=Sofadi+One&family=Special+Elite&family=Spectral:ital,wght@0,400;0,600;1,400&family=Syne+Mono&family=Unkempt:wght@400;700&family=Vast+Shadow&family=VT323&family=Workbench&family=Xanh+Mono&display=swap" rel="stylesheet">
   <style>
     /* CONFIGURAÇÃO BASE (CATPPUCCIN MOCHA - DARK) */
     :root {
@@ -970,6 +970,17 @@
     .btn-full {
       width: 130px;
       text-align: center;
+    }
+
+        /* Protege elementos com fontes customizadas contra a troca global de fonte do leitor */
+    .post-content [style*="font-family"],
+    .f-vt323, .f-bitcount, .f-iceland, .f-silkscreen, .f-sixtyfour {
+      font-family: var(--custom-font) !important;
+    }
+    
+    /* Força a VT323 onde for declarada diretamente */
+    [style*="VT323"] {
+      font-family: 'VT323', monospace !important;
     }
   </style>
 </head>
