@@ -38,9 +38,10 @@ permalink: /esg/
       <strong>Author:</strong> 김영지<br>
       <strong>Status:</strong> On-Going<br>
       <strong>Chapters:</strong> 157+
+      <strong>Raws:</strong> <a href="https://page.kakao.com/content//68473234/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">here</a>
     </p>
   </div>
-
+  
 </div>
 
 <!-- SCRIPT PARA FUNCIONAR O BOTÃO DE ABRIR/FECHAR -->
