@@ -50,7 +50,7 @@ permalink: /gsgw/
       <strong>Status:</strong> Hiatus<br>
       <strong>Chapters:</strong> 372+ (full part 3)<br>
       <strong>Raws:</strong> <a href="https://page.kakao.com/content/65171279/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">here</a><br>
-      <strong>Place to read previous ch:</strong> <a href="https://rosedeertl.com/toc-part-1" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">1</a>-<a href="https://ireum.pages.dev/book/gsgw/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">2</a>
+      <strong>Epub</strong> <a href="https://drive.google.com/file/d/1MzowaspjJpdgMSc_CJIS2ot721m7CmkB/view?usp=sharing" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">part 1 -</a>-<a href="https://drive.google.com/file/d/1Sn0boYmOvHHXO4ig9hnCLaYRIW0NGWm0/view?usp=drive_link" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;"> part 2</a>
     </p>
   </div>
 
