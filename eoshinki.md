@@ -48,7 +48,7 @@ permalink: /eoshinki/
       <strong>Status:</strong> On-Going<br>
       <strong>Chapters:</strong> 112+<br>
       <strong>Raws:</strong> <a href="https://page.kakao.com/content/69299983/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">here</a><br>
-      <strong>Place to read previous ch:</strong> <a href="https://berriezai.cc/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">✦</a>
+      <strong>Place to read previous ch:</strong> <a href="https://berriezai.cc/" style="color: var(--detalhe-accent, #cba6f7); text-decoration: underline; font-weight: 600;">here</a>
     </p>
   </div>
 
