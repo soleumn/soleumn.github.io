@@ -461,6 +461,49 @@
         font-size: 0.82rem !important;
       }
     }
+
+        /* ============================================================
+       GRID DE OBRAS RESPONSIVO (2 POR LINHA NO CELULAR)
+       ============================================================ */
+    
+    /* Container que envolve os cards das obras */
+    .stories-grid,
+    .novels-container,
+    .obra-list {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
+      gap: 16px !important;
+      width: 100% !important;
+    }
+    
+    /* Ajustes específicos para telas menores (celular) */
+    @media (max-width: 640px) {
+      .stories-grid,
+      .novels-container,
+      .obra-list {
+        /* Força exatamente 2 colunas lado a lado no celular */
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+      }
+    
+      /* Reduz ligeiramente a capa e textos dos cards para caber em 2 colunas */
+      .story-card img,
+      .novel-card img {
+        max-height: 180px !important;
+        object-fit: cover !important;
+      }
+    
+      .story-card h2,
+      .novel-card h2,
+      .story-card h3 {
+        font-size: 0.95rem !important;
+      }
+    
+      .story-card p,
+      .novel-card p {
+        font-size: 0.75rem !important;
+      }
+    }
         
         /* AJUSTE PARA CÓDIGO INLINE (CRASES ` `) ADAPTÁVEL AOS TEMAS */
     .post-content code {
