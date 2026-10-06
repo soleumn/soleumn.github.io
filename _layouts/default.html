@@ -462,46 +462,66 @@
       }
     }
 
-        /* ============================================================
-       GRID DE OBRAS RESPONSIVO (2 POR LINHA NO CELULAR)
+    /* ============================================================
+       GRID DE OBRAS RESPONSIVO (COMPUTADOR E CELULAR)
        ============================================================ */
     
-    /* Container que envolve os cards das obras */
-    .stories-grid,
-    .novels-container,
-    .obra-list {
+    /* Container geral da grade */
+    .stories-grid {
       display: grid !important;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
+      /* Diminuído de 220px para 160px: permite mais cards por linha no PC */
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
       gap: 16px !important;
       width: 100% !important;
+      max-width: 1000px !important; /* Limita a largura total para os cards não esticarem demais em telas gigantes */
+      margin: 0 auto !important; /* Centraliza a grade na tela */
     }
     
-    /* Ajustes específicos para telas menores (celular) */
+    .card-historia-link {
+      text-decoration: none !important;
+      display: block !important;
+    }
+    
+    .card-historia {
+      height: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    
+    /* Ajuste da imagem para o computador */
+    .capa-img {
+      height: 220px !important; /* Altura reduzida para o PC */
+      width: 100% !important;
+      object-fit: cover !important;
+      border-radius: 8px !important;
+    }
+    
+    /* ============================================================
+       AJUSTES ESPECÍFICOS PARA O CELULAR (MANTIDOS)
+       ============================================================ */
     @media (max-width: 640px) {
-      .stories-grid,
-      .novels-container,
-      .obra-list {
-        /* Força exatamente 2 colunas lado a lado no celular */
-        grid-template-columns: repeat(2, 1fr) !important;
+      .stories-grid {
+        grid-template-columns: repeat(2, 1fr) !important; /* Força 2 colunas no celular */
         gap: 10px !important;
       }
     
-      /* Reduz ligeiramente a capa e textos dos cards para caber em 2 colunas */
-      .story-card img,
-      .novel-card img {
-        max-height: 180px !important;
+      .capa-img {
+        height: 180px !important;
         object-fit: cover !important;
       }
     
-      .story-card h2,
-      .novel-card h2,
-      .story-card h3 {
+      .titulo-historia {
         font-size: 0.95rem !important;
+        margin: 6px 0 4px 0 !important;
       }
     
-      .story-card p,
-      .novel-card p {
+      .sinopse-historia {
         font-size: 0.75rem !important;
+        line-height: 1.2 !important;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
       }
     }
         
