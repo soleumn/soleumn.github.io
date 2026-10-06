@@ -1045,6 +1045,58 @@
     [style*="VT323"] {
       font-family: 'VT323', monospace !important;
     }
+
+        /* ============================================================
+       CONTAINER E ITENS DE MENSAGENS / COMENTÁRIOS
+       ============================================================ */
+    
+    /* Caixa principal que envolve todas as mensagens */
+    .chat-box {
+      background-color: var(--bg-card, #181825) !important;
+      border: 1px solid var(--borda-suave, #45475a) !important;
+      border-radius: 12px !important;
+      padding: 16px 20px !important;
+      margin: 20px 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px !important;
+    }
+    
+    /* Linha da mensagem principal */
+    .chat-msgs {
+      color: var(--texto-principal, #cdd6f4) !important;
+      font-size: 0.95rem !important;
+      line-height: 1.5 !important;
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 8px !important;
+    }
+    
+    .chat-msgs::before {
+      content: "—" !important;
+      color: var(--detalhe-accent, #cba6f7) !important;
+      font-weight: bold !important;
+      flex-shrink: 0 !important;
+    }
+    
+    /* Linha da resposta (com o recuo e a seta) */
+    .chat-reply {
+      color: var(--texto-principal, #cdd6f4) !important;
+      font-size: 0.92rem !important;
+      line-height: 1.5 !important;
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 8px !important;
+      margin-left: 20px !important; /* Recuo para parecer resposta */
+      opacity: 0.9 !important;
+    }
+    
+    .chat-reply::before {
+      content: "↳" !important;
+      color: var(--detalhe-accent, #cba6f7) !important;
+      font-weight: bold !important;
+      flex-shrink: 0 !important;
+    }
   </style>
 </head>
 <body>
