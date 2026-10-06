@@ -162,7 +162,7 @@ title: Koko's TL
   Webnovels translated by me! ^^ (pls gatekeep)
 </div>
 
-<div class="biblioteca-grid">
+<div class="stories-grid">
 
   <!-- HISTÓRIA 1 -->
   <a href="{{ '/eoshinki/' | relative_url }}" class="card-historia-link">
