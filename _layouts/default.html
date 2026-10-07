@@ -1096,6 +1096,33 @@
       font-weight: bold !important;
       flex-shrink: 0 !important;
     }
+
+        /* Animação que move o gradiente de fundo */
+    @keyframes rainbow-shift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    /* Classe do texto arco-íris */
+    .texto-rainbow {
+      /* Gradiente com várias cores para fazer o arco-íris */
+      background: linear-gradient(
+        90deg, 
+        #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, #ff0000
+      );
+      /* Aumenta a largura do gradiente para ele ter espaço de deslizar */
+      background-size: 400% 400%;
+      
+      /* Aplica o fundo apenas ao texto */
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      
+      /* Aplica a animação (duração: 5s, infinita, suave) */
+      animation: rainbow-shift 5s ease infinite !important;
+    }
   </style>
 </head>
 <body>
