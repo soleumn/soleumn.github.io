@@ -96,6 +96,21 @@
     .f-vast, .f-vast p, .post-content .f-vast p           { font-family: 'Vast Shadow', serif !important; }
     .f-yuyu, .f-yuyu p, .post-content .f-yuyu p           { font-family: 'Yuyu', sans-serif !important; }
 
+        /* Força bruta para qualquer elemento filho de uma classe de fonte */
+    .post-content div[class*="f-"] *,
+    .post-content p[class*="f-"],
+    .post-content .f-special,
+    .post-content .f-special * {
+      font-family: 'Special Elite', cursive !important;
+    }
+    
+    .post-content .f-crafty, .post-content .f-crafty * { font-family: 'Crafty Girls', cursive !important; }
+    .post-content .f-grape, .post-content .f-grape *   { font-family: 'Grape Nuts', cursive !important; }
+    .post-content .f-indie, .post-content .f-indie *   { font-family: 'Indie Flower', cursive !important; }
+    .post-content .f-syne, .post-content .f-syne *     { font-family: 'Syne Mono', monospace !important; }
+    .post-content .f-vt323, .post-content .f-vt323 *   { font-family: 'VT323', monospace !important; }
+    .post-content .f-glitch, .post-content .f-glitch * { font-family: 'Rubik Glitch', display !important; }
+
     /* --- CABEÇALHO --- */
     .site-header { 
       background-color: rgba(24, 24, 37, 0.85) !important;
