@@ -717,7 +717,7 @@
       border-radius: 6px;
       cursor: pointer;
       font-size: 0.85rem;
-      font-family: inherit;
+      ;
       transition: background-color 0.2s ease, transform 0.1s ease;
     }
     
@@ -867,6 +867,20 @@
     .f-sofadi    { font-family: 'Sofadi One', display !important; }
     .f-vast      { font-family: 'Vast Shadow', serif !important; }
     .f-yuyu      { font-family: 'Yuyu', sans-serif !important; }
+
+        /* ============================================================
+       FORÇAR HERANÇA DE FONTE PARA ELEMENTOS FILHOS
+       ============================================================ */
+    
+    .f-crafty *, .f-grape *, .f-indie *, .f-schoolbell *, .f-shadows *, .f-unkempt *,
+    .f-special *, .f-syne *, .f-xanh *,
+    .f-bitcount *, .f-iceland *, .f-silkscreen *, .f-sixtyfour *, .f-vt323 *,
+    .f-dirt *, .f-distressed *, .f-glitch *, .f-hatch *, .f-vinyl *, .f-paint *, 
+    .f-freckle *, .f-fredericka *, .f-frijole *, .f-workbench *,
+    .f-bahiana *, .f-blackwhite *, .f-chelsea *, .f-cormorant *, .f-candy *, 
+    .f-lifesavers *, .f-sofadi *, .f-vast *, .f-yuyu * {
+      font-family: inherit !important;
+    }
 
         /* Tooltip/Glossário para a Webnovel */
     .tooltip-container {
