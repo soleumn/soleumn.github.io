@@ -38,7 +38,9 @@
       color: var(--texto-titulo) !important;
     }
 
-    .post-content, .post-content p {
+    /* Aplica a fonte padrão apenas nos parágrafos normais da história */
+    .post-content, 
+    .post-content p:not([class*="f-"]):not([class*="f-"] *) {
       font-family: var(--fonte-corpo) !important;
       line-height: 2 !important;
       color: var(--texto-principal) !important;
