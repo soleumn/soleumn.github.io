@@ -54,6 +54,46 @@
       color: var(--detalhe-hover) !important;
     }
 
+        /* Força as classes de fonte a vencerem o .post-content p */
+    .post-content [class*="f-"],
+    .post-content [class*="f-"] * {
+      font-family: inherit !important;
+    }
+    
+    .post-content .f-crafty     { font-family: 'Crafty Girls', cursive !important; }
+    .post-content .f-grape      { font-family: 'Grape Nuts', cursive !important; }
+    .post-content .f-indie      { font-family: 'Indie Flower', cursive !important; }
+    .post-content .f-schoolbell { font-family: 'Schoolbell', cursive !important; }
+    .post-content .f-shadows    { font-family: 'Shadows Into Light Two', cursive !important; }
+    .post-content .f-unkempt    { font-family: 'Unkempt', cursive !important; }
+    .post-content .f-special    { font-family: 'Special Elite', cursive !important; }
+    .post-content .f-syne       { font-family: 'Syne Mono', monospace !important; }
+    .post-content .f-xanh       { font-family: 'Xanh Mono', monospace !important; }
+    .post-content .f-bitcount   { font-family: 'Bitcount Grid Single', monospace !important; }
+    .post-content .f-iceland    { font-family: 'Iceland', sans-serif !important; }
+    .post-content .f-silkscreen { font-family: 'Silkscreen', monospace !important; }
+    .post-content .f-sixtyfour  { font-family: 'Sixtyfour', monospace !important; }
+    .post-content .f-vt323      { font-family: 'VT323', monospace !important; }
+    .post-content .f-dirt       { font-family: 'Rubik Dirt', display !important; }
+    .post-content .f-distressed { font-family: 'Rubik Distressed', display !important; }
+    .post-content .f-glitch     { font-family: 'Rubik Glitch', display !important; }
+    .post-content .f-hatch      { font-family: 'Rubik Marker Hatch', display !important; }
+    .post-content .f-vinyl      { font-family: 'Rubik Vinyl', display !important; }
+    .post-content .f-paint      { font-family: 'Rubik Wet Paint', display !important; }
+    .post-content .f-freckle    { font-family: 'Freckle Face', display !important; }
+    .post-content .f-fredericka { font-family: 'Fredericka the Great', serif !important; }
+    .post-content .f-frijole    { font-family: 'Frijole', display !important; }
+    .post-content .f-workbench  { font-family: 'Workbench', monospace !important; }
+    .post-content .f-bahiana    { font-family: 'Bahiana', display !important; }
+    .post-content .f-blackwhite { font-family: 'Black And White Picture', sans-serif !important; }
+    .post-content .f-chelsea    { font-family: 'Chelsea Market', display !important; }
+    .post-content .f-cormorant  { font-family: 'Cormorant Unicase', serif !important; }
+    .post-content .f-candy      { font-family: 'Emilys Candy', display !important; }
+    .post-content .f-lifesavers { font-family: 'Life Savers', cursive !important; }
+    .post-content .f-sofadi     { font-family: 'Sofadi One', display !important; }
+    .post-content .f-vast       { font-family: 'Vast Shadow', serif !important; }
+    .post-content .f-yuyu       { font-family: 'Yuyu', sans-serif !important; }
+
     /* --- CABEÇALHO --- */
     .site-header { 
       background-color: rgba(24, 24, 37, 0.85) !important;
@@ -822,90 +862,6 @@
       padding: 10px 14px;
       border-radius: 6px;
     }
-
-        /* ======================================================
-       CLASSES DE FONTES PERSONALIZADAS PARA AS OBRAS
-       ====================================================== */
-
-        /* Alvo direto em qualquer tag ou texto dentro de uma div/elemento com classe de fonte */
-    .f-crafty, .f-crafty *,
-    .f-grape, .f-grape *,
-    .f-indie, .f-indie *,
-    .f-schoolbell, .f-schoolbell *,
-    .f-shadows, .f-shadows *,
-    .f-unkempt, .f-unkempt *,
-    .f-special, .f-special *,
-    .f-syne, .f-syne *,
-    .f-xanh, .f-xanh *,
-    .f-bitcount, .f-bitcount *,
-    .f-iceland, .f-iceland *,
-    .f-silkscreen, .f-silkscreen *,
-    .f-sixtyfour, .f-sixtyfour *,
-    .f-vt323, .f-vt323 *,
-    .f-dirt, .f-dirt *,
-    .f-distressed, .f-distressed *,
-    .f-glitch, .f-glitch *,
-    .f-hatch, .f-hatch *,
-    .f-vinyl, .f-vinyl *,
-    .f-paint, .f-paint *,
-    .f-freckle, .f-freckle *,
-    .f-fredericka, .f-fredericka *,
-    .f-frijole, .f-frijole *,
-    .f-workbench, .f-workbench *,
-    .f-bahiana, .f-bahiana *,
-    .f-blackwhite, .f-blackwhite *,
-    .f-chelsea, .f-chelsea *,
-    .f-cormorant, .f-cormorant *,
-    .f-candy, .f-candy *,
-    .f-lifesavers, .f-lifesavers *,
-    .f-sofadi, .f-sofadi *,
-    .f-vast, .f-vast *,
-    .f-yuyu, .f-yuyu * {
-      font-family: inherit !important;
-    }
-    /* --- Manuscritas / Cartas / Diários --- */
-    .f-crafty     { font-family: 'Crafty Girls', cursive !important; }
-    .f-grape      { font-family: 'Grape Nuts', cursive !important; }
-    .f-indie      { font-family: 'Indie Flower', cursive !important; }
-    .f-schoolbell { font-family: 'Schoolbell', cursive !important; }
-    .f-shadows    { font-family: 'Shadows Into Light Two', cursive !important; }
-    .f-unkempt    { font-family: 'Unkempt', cursive !important; }
-    
-    /* --- Maquininha de Escrever / Monospaçadas / Documentos Confidenciais --- */
-    .f-special    { font-family: 'Special Elite', cursive !important; }
-    .f-syne       { font-family: 'Syne Mono', monospace !important; }
-    .f-xanh       { font-family: 'Xanh Mono', monospace !important; }
-    
-    /* --- Retro / Pixel / Games / Monitores --- */
-    .f-bitcount   { font-family: 'Bitcount', monospace !important; }
-    .f-iceland    { font-family: 'Iceland', sans-serif !important; }
-    .f-silkscreen { font-family: 'Silkscreen', monospace !important; }
-    .f-sixtyfour  { font-family: 'Sixtyfour', monospace !important; }
-    .f-vt323      { font-family: 'VT323', monospace !important; }
-    
-    /* --- Efeitos Especiais / Corrupção / Glitch / Caos --- */
-    .f-dirt       { font-family: 'Rubik Dirt', display !important; }
-    .f-distressed { font-family: 'Rubik Distressed', display !important; }
-    .f-glitch     { font-family: 'Rubik Glitch', display !important; }
-    .f-hatch      { font-family: 'Rubik Marker Hatch', display !important; }
-    .f-vinyl      { font-family: 'Rubik Vinyl', display !important; }
-    .f-paint      { font-family: 'Rubik Wet Paint', display !important; }
-    .f-freckle    { font-family: 'Freckle Face', display !important; }
-    .f-fredericka { font-family: 'Fredericka the Great', serif !important; }
-    .f-frijole    { font-family: 'Frijole', display !important; }
-    .f-workbench  { font-family: 'Workbench', monospace !important; }
-    
-    /* --- Fantasia / Cartazes / Títulos --- */
-    .f-bahiana   { font-family: 'Bahiana', display !important; }
-    .f-blackwhite{ font-family: 'Black And White Picture', sans-serif !important; }
-    .f-chelsea   { font-family: 'Chelsea Market', display !important; }
-    .f-cormorant { font-family: 'Cormorant Unicase', serif !important; }
-    .f-candy     { font-family: 'Emilys Candy', display !important; }
-    .f-lifesavers{ font-family: 'Life Savers', cursive !important; }
-    .f-sofadi    { font-family: 'Sofadi One', display !important; }
-    .f-vast      { font-family: 'Vast Shadow', serif !important; }
-    .f-yuyu      { font-family: 'Yuyu', sans-serif !important; }
-
 
         /* Tooltip/Glossário para a Webnovel */
     .tooltip-container {
