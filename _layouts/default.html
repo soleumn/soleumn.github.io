@@ -38,13 +38,13 @@
       color: var(--texto-titulo) !important;
     }
 
-/* Fonte e estilos padrão do capítulo */
+    /* 1. Fonte e estilos padrão do capítulo */
     .post-content, .post-content p {
       font-family: var(--fonte-corpo) !important;
       line-height: 2 !important;
       color: var(--texto-principal) !important;
     }
-
+    
     a {
       color: var(--detalhe-accent) !important;
       transition: color 0.2s ease;
@@ -53,91 +53,50 @@
       color: var(--detalhe-hover) !important;
     }
     
+    /* 2. Sobrescreve as fontes do leitor (body.font-*) para as classes especiais */
+    
     /* --- Maquininha / Monospaçadas / Especiais --- */
-    .f-special, .f-special p, .post-content .f-special p { font-family: 'Special Elite', cursive !important; }
-    .f-syne, .f-syne p, .post-content .f-syne p          { font-family: 'Syne Mono', monospace !important; }
-    .f-xanh, .f-xanh p, .post-content .f-xanh p          { font-family: 'Xanh Mono', monospace !important; }
+    body[class*="font-"] .post-content p.f-special, body[class*="font-"] .post-content .f-special, body[class*="font-"] .post-content .f-special *, .post-content p.f-special { font-family: 'Special Elite', cursive !important; }
+    body[class*="font-"] .post-content p.f-syne, body[class*="font-"] .post-content .f-syne, body[class*="font-"] .post-content .f-syne *, .post-content p.f-syne          { font-family: 'Syne Mono', monospace !important; }
+    body[class*="font-"] .post-content p.f-xanh, body[class*="font-"] .post-content .f-xanh, body[class*="font-"] .post-content .f-xanh *, .post-content p.f-xanh          { font-family: 'Xanh Mono', monospace !important; }
     
     /* --- Retro / Pixel / Games --- */
-    .f-bitcount, .f-bitcount p, .post-content .f-bitcount p { font-family: 'Bitcount Grid Single', monospace !important; }
-    .f-iceland, .f-iceland p, .post-content .f-iceland p   { font-family: 'Iceland', sans-serif !important; }
-    .f-silkscreen, .f-silkscreen p, .post-content .f-silkscreen p { font-family: 'Silkscreen', monospace !important; }
-    .f-sixtyfour, .f-sixtyfour p, .post-content .f-sixtyfour p   { font-family: 'Sixtyfour', monospace !important; }
-    .f-vt323, .f-vt323 p, .post-content .f-vt323 p         { font-family: 'VT323', monospace !important; }
+    body[class*="font-"] .post-content p.f-bitcount, body[class*="font-"] .post-content .f-bitcount, body[class*="font-"] .post-content .f-bitcount *, .post-content p.f-bitcount { font-family: 'Bitcount Grid Single', monospace !important; }
+    body[class*="font-"] .post-content p.f-iceland, body[class*="font-"] .post-content .f-iceland, body[class*="font-"] .post-content .f-iceland *, .post-content p.f-iceland   { font-family: 'Iceland', sans-serif !important; }
+    body[class*="font-"] .post-content p.f-silkscreen, body[class*="font-"] .post-content .f-silkscreen, body[class*="font-"] .post-content .f-silkscreen *, .post-content p.f-silkscreen { font-family: 'Silkscreen', monospace !important; }
+    body[class*="font-"] .post-content p.f-sixtyfour, body[class*="font-"] .post-content .f-sixtyfour, body[class*="font-"] .post-content .f-sixtyfour *, .post-content p.f-sixtyfour   { font-family: 'Sixtyfour', monospace !important; }
+    body[class*="font-"] .post-content p.f-vt323, body[class*="font-"] .post-content .f-vt323, body[class*="font-"] .post-content .f-vt323 *, .post-content p.f-vt323         { font-family: 'VT323', monospace !important; }
     
     /* --- Manuscritas --- */
-    .f-crafty, .f-crafty p, .post-content .f-crafty p     { font-family: 'Crafty Girls', cursive !important; }
-    .f-grape, .f-grape p, .post-content .f-grape p        { font-family: 'Grape Nuts', cursive !important; }
-    .f-indie, .f-indie p, .post-content .f-indie p        { font-family: 'Indie Flower', cursive !important; }
-    .f-schoolbell, .f-schoolbell p, .post-content .f-schoolbell p { font-family: 'Schoolbell', cursive !important; }
-    .f-shadows, .f-shadows p, .post-content .f-shadows p  { font-family: 'Shadows Into Light Two', cursive !important; }
-    .f-unkempt, .f-unkempt p, .post-content .f-unkempt p  { font-family: 'Unkempt', cursive !important; }
+    body[class*="font-"] .post-content p.f-crafty, body[class*="font-"] .post-content .f-crafty, body[class*="font-"] .post-content .f-crafty *, .post-content p.f-crafty     { font-family: 'Crafty Girls', cursive !important; }
+    body[class*="font-"] .post-content p.f-grape, body[class*="font-"] .post-content .f-grape, body[class*="font-"] .post-content .f-grape *, .post-content p.f-grape        { font-family: 'Grape Nuts', cursive !important; }
+    body[class*="font-"] .post-content p.f-indie, body[class*="font-"] .post-content .f-indie, body[class*="font-"] .post-content .f-indie *, .post-content p.f-indie        { font-family: 'Indie Flower', cursive !important; }
+    body[class*="font-"] .post-content p.f-schoolbell, body[class*="font-"] .post-content .f-schoolbell, body[class*="font-"] .post-content .f-schoolbell *, .post-content p.f-schoolbell { font-family: 'Schoolbell', cursive !important; }
+    body[class*="font-"] .post-content p.f-shadows, body[class*="font-"] .post-content .f-shadows, body[class*="font-"] .post-content .f-shadows *, .post-content p.f-shadows  { font-family: 'Shadows Into Light Two', cursive !important; }
+    body[class*="font-"] .post-content p.f-unkempt, body[class*="font-"] .post-content .f-unkempt, body[class*="font-"] .post-content .f-unkempt *, .post-content p.f-unkempt  { font-family: 'Unkempt', cursive !important; }
     
     /* --- Efeitos Especiais --- */
-    .f-dirt, .f-dirt p, .post-content .f-dirt p           { font-family: 'Rubik Dirt', display !important; }
-    .f-distressed, .f-distressed p, .post-content .f-distressed p { font-family: 'Rubik Distressed', display !important; }
-    .f-glitch, .f-glitch p, .post-content .f-glitch p     { font-family: 'Rubik Glitch', display !important; }
-    .f-hatch, .f-hatch p, .post-content .f-hatch p        { font-family: 'Rubik Marker Hatch', display !important; }
-    .f-vinyl, .f-vinyl p, .post-content .f-vinyl p        { font-family: 'Rubik Vinyl', display !important; }
-    .f-paint, .f-paint p, .post-content .f-paint p        { font-family: 'Rubik Wet Paint', display !important; }
-    .f-freckle, .f-freckle p, .post-content .f-freckle p  { font-family: 'Freckle Face', display !important; }
-    .f-fredericka, .f-fredericka p, .post-content .f-fredericka p { font-family: 'Fredericka the Great', serif !important; }
-    .f-frijole, .f-frijole p, .post-content .f-frijole p  { font-family: 'Frijole', display !important; }
-    .f-workbench, .f-workbench p, .post-content .f-workbench p { font-family: 'Workbench', monospace !important; }
+    body[class*="font-"] .post-content p.f-dirt, body[class*="font-"] .post-content .f-dirt, body[class*="font-"] .post-content .f-dirt *, .post-content p.f-dirt           { font-family: 'Rubik Dirt', display !important; }
+    body[class*="font-"] .post-content p.f-distressed, body[class*="font-"] .post-content .f-distressed, body[class*="font-"] .post-content .f-distressed *, .post-content p.f-distressed { font-family: 'Rubik Distressed', display !important; }
+    body[class*="font-"] .post-content p.f-glitch, body[class*="font-"] .post-content .f-glitch, body[class*="font-"] .post-content .f-glitch *, .post-content p.f-glitch     { font-family: 'Rubik Glitch', display !important; }
+    body[class*="font-"] .post-content p.f-hatch, body[class*="font-"] .post-content .f-hatch, body[class*="font-"] .post-content .f-hatch *, .post-content p.f-hatch        { font-family: 'Rubik Marker Hatch', display !important; }
+    body[class*="font-"] .post-content p.f-vinyl, body[class*="font-"] .post-content .f-vinyl, body[class*="font-"] .post-content .f-vinyl *, .post-content p.f-vinyl        { font-family: 'Rubik Vinyl', display !important; }
+    body[class*="font-"] .post-content p.f-paint, body[class*="font-"] .post-content .f-paint, body[class*="font-"] .post-content .f-paint *, .post-content p.f-paint        { font-family: 'Rubik Wet Paint', display !important; }
+    body[class*="font-"] .post-content p.f-freckle, body[class*="font-"] .post-content .f-freckle, body[class*="font-"] .post-content .f-freckle *, .post-content p.f-freckle  { font-family: 'Freckle Face', display !important; }
+    body[class*="font-"] .post-content p.f-fredericka, body[class*="font-"] .post-content .f-fredericka, body[class*="font-"] .post-content .f-fredericka *, .post-content p.f-fredericka { font-family: 'Fredericka the Great', serif !important; }
+    body[class*="font-"] .post-content p.f-frijole, body[class*="font-"] .post-content .f-frijole, body[class*="font-"] .post-content .f-frijole *, .post-content p.f-frijole  { font-family: 'Frijole', display !important; }
+    body[class*="font-"] .post-content p.f-workbench, body[class*="font-"] .post-content .f-workbench, body[class*="font-"] .post-content .f-workbench *, .post-content p.f-workbench { font-family: 'Workbench', monospace !important; }
     
     /* --- Fantasia / Títulos --- */
-    .f-bahiana, .f-bahiana p, .post-content .f-bahiana p  { font-family: 'Bahiana', display !important; }
-    .f-blackwhite, .f-blackwhite p, .post-content .f-blackwhite p { font-family: 'Black And White Picture', sans-serif !important; }
-    .f-chelsea, .f-chelsea p, .post-content .f-chelsea p  { font-family: 'Chelsea Market', display !important; }
-    .f-cormorant, .f-cormorant p, .post-content .f-cormorant p { font-family: 'Cormorant Unicase', serif !important; }
-    .f-candy, .f-candy p, .post-content .f-candy p        { font-family: 'Emilys Candy', display !important; }
-    .f-lifesavers, .f-lifesavers p, .post-content .f-lifesavers p { font-family: 'Life Savers', cursive !important; }
-    .f-sofadi, .f-sofadi p, .post-content .f-sofadi p     { font-family: 'Sofadi One', display !important; }
-    .f-vast, .f-vast p, .post-content .f-vast p           { font-family: 'Vast Shadow', serif !important; }
-    .f-yuyu, .f-yuyu p, .post-content .f-yuyu p           { font-family: 'Yuyu', sans-serif !important; }
-
-    /* Regras individuais para cada fonte com seletor genérico e direto */
-    .post-content .f-special, 
-    .post-content .f-special *,
-    .post-content p.f-special { 
-      font-family: 'Special Elite', cursive !important; 
-    }
-    
-    .post-content .f-indie, 
-    .post-content .f-indie *,
-    .post-content p.f-indie { 
-      font-family: 'Indie Flower', cursive !important; 
-    }
-    
-    .post-content .f-crafty, 
-    .post-content .f-crafty *,
-    .post-content p.f-crafty { 
-      font-family: 'Crafty Girls', cursive !important; 
-    }
-    
-    .post-content .f-grape, 
-    .post-content .f-grape *,
-    .post-content p.f-grape { 
-      font-family: 'Grape Nuts', cursive !important; 
-    }
-    
-    .post-content .f-syne, 
-    .post-content .f-syne *,
-    .post-content p.f-syne { 
-      font-family: 'Syne Mono', monospace !important; 
-    }
-    
-    .post-content .f-vt323, 
-    .post-content .f-vt323 *,
-    .post-content p.f-vt323 { 
-      font-family: 'VT323', monospace !important; 
-    }
-    
-    .post-content .f-glitch, 
-    .post-content .f-glitch *,
-    .post-content p.f-glitch { 
-      font-family: 'Rubik Glitch', display !important; 
-    }
+    body[class*="font-"] .post-content p.f-bahiana, body[class*="font-"] .post-content .f-bahiana, body[class*="font-"] .post-content .f-bahiana *, .post-content p.f-bahiana  { font-family: 'Bahiana', display !important; }
+    body[class*="font-"] .post-content p.f-blackwhite, body[class*="font-"] .post-content .f-blackwhite, body[class*="font-"] .post-content .f-blackwhite *, .post-content p.f-blackwhite { font-family: 'Black And White Picture', sans-serif !important; }
+    body[class*="font-"] .post-content p.f-chelsea, body[class*="font-"] .post-content .f-chelsea, body[class*="font-"] .post-content .f-chelsea *, .post-content p.f-chelsea  { font-family: 'Chelsea Market', display !important; }
+    body[class*="font-"] .post-content p.f-cormorant, body[class*="font-"] .post-content .f-cormorant, body[class*="font-"] .post-content .f-cormorant *, .post-content p.f-cormorant { font-family: 'Cormorant Unicase', serif !important; }
+    body[class*="font-"] .post-content p.f-candy, body[class*="font-"] .post-content .f-candy, body[class*="font-"] .post-content .f-candy *, .post-content p.f-candy        { font-family: 'Emilys Candy', display !important; }
+    body[class*="font-"] .post-content p.f-lifesavers, body[class*="font-"] .post-content .f-lifesavers, body[class*="font-"] .post-content .f-lifesavers *, .post-content p.f-lifesavers { font-family: 'Life Savers', cursive !important; }
+    body[class*="font-"] .post-content p.f-sofadi, body[class*="font-"] .post-content .f-sofadi, body[class*="font-"] .post-content .f-sofadi *, .post-content p.f-sofadi     { font-family: 'Sofadi One', display !important; }
+    body[class*="font-"] .post-content p.f-vast, body[class*="font-"] .post-content .f-vast, body[class*="font-"] .post-content .f-vast *, .post-content p.f-vast           { font-family: 'Vast Shadow', serif !important; }
+    body[class*="font-"] .post-content p.f-yuyu, body[class*="font-"] .post-content .f-yuyu, body[class*="font-"] .post-content .f-yuyu *, .post-content p.f-yuyu           { font-family: 'Yuyu', sans-serif !important; }
 
     /* --- CABEÇALHO --- */
     .site-header { 
