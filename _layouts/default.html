@@ -1097,31 +1097,35 @@
       flex-shrink: 0 !important;
     }
 
-        /* Animação que move o gradiente de fundo */
-    @keyframes rainbow-shift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+    /* Animação com movimento contínuo numa só direção */
+    @keyframes rainbow-loop {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 200% 0%;
+      }
     }
     
-    /* Classe do texto arco-íris */
+    /* Classe do texto arco-íris em direção única */
     .texto-rainbow {
-      /* Gradiente com várias cores para fazer o arco-íris */
+      /* Gradiente duplicado para fazer a emenda perfeita no loop */
       background: linear-gradient(
         90deg, 
+        #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, 
         #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, #ff0000
       );
-      /* Aumenta a largura do gradiente para ele ter espaço de deslizar */
-      background-size: 400% 400%;
+      /* Dobra o tamanho do gradiente para permitir o ciclo infinito */
+      background-size: 200% 100%;
       
-      /* Aplica o fundo apenas ao texto */
+      /* Aplica o fundo recortado no texto */
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       color: transparent;
       
-      /* Aplica a animação (duração: 5s, infinita, suave) */
-      animation: rainbow-shift 3s ease infinite !important;
+      /* linear = velocidade constante | 4s = tempo do ciclo completo */
+      animation: rainbow-loop 4s linear infinite !important;
     }
   </style>
 </head>
