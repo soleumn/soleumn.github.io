@@ -466,6 +466,20 @@
       --cor-sistema: #10b981 !important;
     }
 
+        /* --- TEMA: DRACULA --- */
+    body.theme-dracula {
+      --bg-principal: #282a36 !important;
+      --bg-card: #1e1f29 !important;
+      --bg-card-hover: #44475a !important;
+      --texto-principal: #f8f8f2 !important;
+      --texto-titulo: #ff79c6 !important;
+      --texto-secundario: #6272a4 !important;
+      --borda-suave: #44475a !important;
+      --detalhe-accent: #bd93f9 !important;
+      --detalhe-hover: #ff79c6 !important;
+      --cor-sistema: #8be9fd !important;
+    }
+
     /* FONTES E ESPAÇAMENTOS */
     body.font-georgia .post-content, body.font-georgia .post-content p, body.font-georgia .system-window { font-family: 'Georgia', serif !important; }
     body.font-literata .post-content, body.font-literata .post-content p, body.font-literata .system-window { font-family: 'Literata', serif !important; }
@@ -1201,6 +1215,9 @@
         'dark-pure': 'dark_dimmed',
         'sepia': 'light_high_contrast',
         'light': 'light'
+        'nordic': 'nord',
+        'emerald': 'dark_dimmed',
+        'dracula': 'dracula'
       };
 
       const targetGiscusTheme = giscusThemeMap[siteTheme] || 'catppuccin_mocha';
@@ -1245,7 +1262,7 @@
       }
     
       // Remove todas as classes de temas anteriores (incluindo os novos)
-      document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light', 'theme-nordic', 'theme-emerald');
+      document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light', 'theme-nordic', 'theme-emerald', 'theme-dracula');
       if (currentTheme !== 'mocha') {
         document.body.classList.add('theme-' + currentTheme);
       }
@@ -1260,6 +1277,7 @@
           'light': '☀️ Light',
           'nordic': '❄️️ Nordic',
           'emerald': '🍀 Emerald'
+          'dracula': '🧛 Dracula'
         };
         btnTheme.innerText = themeNames[currentTheme] || '🎨 Theme';
       }
@@ -1293,7 +1311,7 @@
     
     function cycleTheme() {
       // Inclui os dois novos temas na rotação
-      const themes = ['mocha', 'dark-pure', 'sepia', 'light', 'nordic', 'emerald'];
+      const themes = ['mocha', 'dark-pure', 'sepia', 'light', 'nordic', 'emerald', 'dracula'];
       let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
       currentTheme = themes[nextIndex];
       localStorage.setItem('reader_theme', currentTheme);
