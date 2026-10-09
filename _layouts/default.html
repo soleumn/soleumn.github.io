@@ -466,20 +466,20 @@
       --cor-sistema: #10b981 !important;
     }
 
-        /* --- TEMA: DRACULA --- */
-    body.theme-dracula {
-      --bg-principal: #282a36 !important;
-      --bg-card: #1e1f29 !important;
-      --bg-card-hover: #44475a !important;
-      --texto-principal: #f8f8f2 !important;
-      --texto-titulo: #ff79c6 !important;
-      --texto-secundario: #6272a4 !important;
-      --borda-suave: #44475a !important;
-      --detalhe-accent: #bd93f9 !important;
-      --detalhe-hover: #ff79c6 !important;
-      --cor-sistema: #8be9fd !important;
+/* --- TEMA: GRUVBOX DARK --- */
+    body.theme-gruvbox {
+      --bg-principal: #282828 !important;
+      --bg-card: #1d2021 !important;
+      --bg-card-hover: #3c3836 !important;
+      --texto-principal: #ebdbb2 !important;
+      --texto-titulo: #fabd2f !important;
+      --texto-secundario: #a89984 !important;
+      --borda-suave: #504945 !important;
+      --detalhe-accent: #fe8019 !important;
+      --detalhe-hover: #d65d0e !important;
+      --cor-sistema: #83a598 !important;
     }
-
+    
     /* FONTES E ESPAÇAMENTOS */
     body.font-georgia .post-content, body.font-georgia .post-content p, body.font-georgia .system-window { font-family: 'Georgia', serif !important; }
     body.font-literata .post-content, body.font-literata .post-content p, body.font-literata .system-window { font-family: 'Literata', serif !important; }
@@ -1215,7 +1215,7 @@
         'light': 'light',
         'nordic': 'nord',
         'emerald': 'dark_dimmed',
-        'dracula': 'dracula'
+        'gruvbox': 'gruvbox'
       };
 
       const targetGiscusTheme = giscusThemeMap[siteTheme] || 'catppuccin_mocha';
@@ -1260,7 +1260,7 @@
       }
     
       // Remove todas as classes de temas anteriores
-      document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light', 'theme-nordic', 'theme-emerald', 'theme-dracula');
+      document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light', 'theme-nordic', 'theme-emerald', 'theme-gruvbox');
       if (currentTheme !== 'mocha') {
         document.body.classList.add('theme-' + currentTheme);
       }
@@ -1275,7 +1275,7 @@
           'light': '☀️ Light',
           'nordic': '❄ Nordic',
           'emerald': '🍀 Emerald',
-          'dracula': '🧛 Dracula'
+          'gruvbox': '📦 Gruvbox'
         };
         btnTheme.innerText = themeNames[currentTheme] || '🎨 Theme';
       }
@@ -1308,9 +1308,9 @@
     }
     
     function cycleTheme() {
-      const themes = ['mocha', 'dark-pure', 'sepia', 'light', 'nordic', 'emerald', 'dracula'];
+      const themes = ['mocha', 'dark-pure', 'sepia', 'light', 'nordic', 'emerald', 'gruvbox'];
       let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
-      if (nextIndex === -1) nextIndex = 0; // Garante que se o tema salvo for inválido, volta ao padrão
+      if (nextIndex === -1) nextIndex = 0;
       currentTheme = themes[nextIndex];
       localStorage.setItem('reader_theme', currentTheme);
       applyReaderSettings();
