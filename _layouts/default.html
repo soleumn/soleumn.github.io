@@ -1187,7 +1187,6 @@
 <!-- SCRIPT GLOBAL DO LEITOR (MUDANÇA DE TEMA/FONTE/ESPAÇAMENTO/GISCUS) -->
   <script>
     let currentFontSize = parseFloat(localStorage.getItem('reader_font_size')) || 1.18;
-    // Atualizado o padrão inicial de merriweather para literata
     let currentFont = localStorage.getItem('reader_font_family') || 'literata';
     let currentSpacing = localStorage.getItem('reader_spacing') || 'normal';
     let currentTheme = localStorage.getItem('reader_theme') || 'mocha';
@@ -1209,12 +1208,11 @@
 
     /* FUNÇÃO PARA ATUALIZAR O TEMA DO GISCUS VIA POSTMESSAGE */
     function updateGiscusTheme(siteTheme) {
-      // Mapeamento dos temas do seu site para temas compatíveis com o Giscus
       const giscusThemeMap = {
         'mocha': 'catppuccin_mocha',
         'dark-pure': 'dark_dimmed',
         'sepia': 'light_high_contrast',
-        'light': 'light'
+        'light': 'light',
         'nordic': 'nord',
         'emerald': 'dark_dimmed',
         'dracula': 'dracula'
@@ -1243,7 +1241,6 @@
         p.style.fontSize = currentFontSize + 'rem';
       });
     
-      // CORREÇÃO AQUI: Incluídas as novas classes 'font-literata' e 'font-spectral' para serem limpas antes de trocar
       document.body.classList.remove('font-georgia', 'font-literata', 'font-lora', 'font-outfit', 'font-inter', 'font-spectral');
       document.body.classList.add('font-' + currentFont);
     
@@ -1252,6 +1249,7 @@
       if (btnFont && fontObj) {
         btnFont.innerText = fontObj.name;
       }
+
       document.body.classList.remove('spacing-compact', 'spacing-normal', 'spacing-relaxed');
       document.body.classList.add('spacing-' + currentSpacing);
     
@@ -1261,13 +1259,13 @@
         btnSpacing.innerText = spaceObj.name;
       }
     
-      // Remove todas as classes de temas anteriores (incluindo os novos)
+      // Remove todas as classes de temas anteriores
       document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light', 'theme-nordic', 'theme-emerald', 'theme-dracula');
       if (currentTheme !== 'mocha') {
         document.body.classList.add('theme-' + currentTheme);
       }
     
-      // Atualiza o texto do botão "btnTheme" no modal de formatação
+      // Atualiza o texto do botão "btnTheme" no leitor
       const btnTheme = document.getElementById('btnTheme');
       if (btnTheme) {
         const themeNames = {
@@ -1275,8 +1273,8 @@
           'dark-pure': '🌙 Dark',
           'sepia': '📜 Sepia',
           'light': '☀️ Light',
-          'nordic': '❄️️ Nordic',
-          'emerald': '🍀 Emerald'
+          'nordic': '❄ Nordic',
+          'emerald': '🍀 Emerald',
           'dracula': '🧛 Dracula'
         };
         btnTheme.innerText = themeNames[currentTheme] || '🎨 Theme';
@@ -1310,9 +1308,9 @@
     }
     
     function cycleTheme() {
-      // Inclui os dois novos temas na rotação
       const themes = ['mocha', 'dark-pure', 'sepia', 'light', 'nordic', 'emerald', 'dracula'];
       let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
+      if (nextIndex === -1) nextIndex = 0; // Garante que se o tema salvo for inválido, volta ao padrão
       currentTheme = themes[nextIndex];
       localStorage.setItem('reader_theme', currentTheme);
       applyReaderSettings();
@@ -1320,7 +1318,6 @@
     
     document.addEventListener('DOMContentLoaded', applyReaderSettings);
     
-    // Garante a troca do tema do Giscus assim que o iframe terminar de carregar na tela
     window.addEventListener('message', function(event) {
       if (event.origin !== 'https://giscus.app') return;
       if (!(typeof event.data === 'object' && event.data.giscus)) return;
