@@ -425,6 +425,19 @@
       --cor-sistema: #8c5a2b !important;
     }
 
+    body.theme-sepia2 {
+      --bg-principal: #CFBB99 !important;
+      --bg-card: #BCA071 !important;
+      --bg-card-hover: #AD8C52 !important;
+      --texto-principal: #4C3D19 !important;
+      --texto-titulo: #2c1d11 !important;
+      --texto-secundario: #AD9257 !important;
+      --borda-suave: #BFAE8E !important;
+      --detalhe-accent: #8c5a2b !important;
+      --detalhe-hover: #6d441f !important;
+      --cor-sistema: #8c5a2b !important;
+    }
+
     body.theme-light {
       --bg-principal: #eff1f5 !important;
       --bg-card: #e6e9ef !important;
@@ -1260,7 +1273,7 @@
       }
     
       // Remove todas as classes de temas anteriores
-      document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-light', 'theme-nordic', 'theme-emerald', 'theme-gruvbox');
+      document.body.classList.remove('theme-dark-pure', 'theme-sepia', 'theme-sepia2', 'theme-light', 'theme-nordic', 'theme-emerald', 'theme-gruvbox');
       if (currentTheme !== 'mocha') {
         document.body.classList.add('theme-' + currentTheme);
       }
@@ -1272,6 +1285,7 @@
           'mocha': '☕ Mocha',
           'dark-pure': '🌙 Dark',
           'sepia': '📜 Sepia',
+          'sepia2': '🪶 Sepia2',
           'light': '☀️ Light',
           'nordic': '❄ Nordic',
           'emerald': '🍀 Emerald',
@@ -1308,7 +1322,7 @@
     }
     
     function cycleTheme() {
-      const themes = ['mocha', 'dark-pure', 'sepia', 'light', 'nordic', 'emerald', 'gruvbox'];
+      const themes = ['mocha', 'dark-pure', 'sepia', 'sepia2', 'light', 'nordic', 'emerald', 'gruvbox'];
       let nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
       if (nextIndex === -1) nextIndex = 0;
       currentTheme = themes[nextIndex];
