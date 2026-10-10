@@ -815,6 +815,31 @@
       margin: 20px 0;
       font-family: inherit;
     }
+
+    /* Junta grupos para alinhar itens à esquerda ou à direita */
+    .chat-group {
+      display: flex;
+      flex-direction: column;
+      max-width: 75%;
+    }
+    
+    .received {
+      align-self: flex-start;
+      align-items: flex-start; /* Mantém o nome alinhado à borda esquerda. */
+    }
+    
+    .sent {
+      align-self: flex-end;
+      align-items: flex-end; /* Mantém os elementos do lado direito alinhados à borda direita. */
+    }
+
+    .chat-author {
+      font-size: 0.75rem;
+      opacity: 0.75;
+      margin-bottom: 3px;
+      display: block;
+      font-weight: 600;
+    }
     
     /* Balão da Mensagem Recebida (Esquerda) */
     .chat-msg {
@@ -842,13 +867,7 @@
       color: #FFFFFF;
       border-bottom-right-radius: 4px;
     }
-    
-    .chat-author {
-      font-size: 0.75rem;
-      opacity: 0.75;
-      margin-bottom: 0;
-      display: block;
-    }
+
     
     /* 2. CAIXA DE TEXTO CENTRALIZADA SIMPLES (Placas, Avisos) */
     .sign-box {
@@ -902,7 +921,7 @@
       border-bottom: 2px dotted var(--detalhe-accent);
     }
     
-        .tooltip-text {
+    .tooltip-text {
       visibility: hidden;
       /* Define largura máxima adaptável para telas pequenas */
       width: max-content;
