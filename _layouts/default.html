@@ -802,12 +802,11 @@
        ESTILOS ESPECIAIS PARA CAPÍTULOS
        ========================================== */
     
-    /* 1. CAIXA DE DM / CHAT */
-        .chat-container {
+/* 1. CAIXA DE DM / CHAT */
+    .chat-container {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      /* Utiliza o fundo de card e borda do tema ativo */
+      gap: 16px;
       background-color: var(--bg-card);
       border: 1px solid var(--borda-suave, rgba(255, 255, 255, 0.1));
       border-radius: 12px;
@@ -816,53 +815,57 @@
       font-family: inherit;
     }
 
-    /* Junta grupos para alinhar itens à esquerda ou à direita */
+    /* Grupo de cada mensagem */
     .chat-group {
       display: flex;
       flex-direction: column;
-      max-width: 75%;
+      width: 100% !important;
+      max-width: 90% !important; /* Aumenta a largura limite geral no mobile */
     }
     
     .received {
       align-self: flex-start;
-      align-items: flex-start; /* Mantém o nome alinhado à borda esquerda. */
+      align-items: flex-start;
     }
     
     .sent {
       align-self: flex-end;
-      align-items: flex-end; /* Mantém os elementos do lado direito alinhados à borda direita. */
+      align-items: flex-end;
     }
 
     .chat-author {
       font-size: 0.75rem;
       opacity: 0.75;
-      margin-bottom: 3px;
+      margin-bottom: 4px;
       display: block;
       font-weight: 600;
+      padding-left: 4px;
     }
     
-    /* Balão da Mensagem Recebida (Esquerda) */
+    .sent .chat-author {
+      padding-left: 0;
+      padding-right: 4px;
+    }
+    
+    /* Balão da Mensagem (Ocupa bem o espaço sem quebrar excessivamente) */
     .chat-msg {
-      max-width: 75%;
-      padding: 10px 14px;
+      width: 100% !important;
+      box-sizing: border-box;
+      padding: 12px 16px;
       border-radius: 18px;
       font-size: 0.95rem;
-      line-height: 1.4;
+      line-height: 1.5;
       word-wrap: break-word;
+      overflow-wrap: break-word;
     }
     
     .chat-msg.received {
-      align-self: flex-start;
-      /* Adapta o fundo do balão e o texto de acordo com o tema */
       background-color: var(--borda-suave, rgba(255, 255, 255, 0.08));
       color: var(--texto-principal);
       border-bottom-left-radius: 4px;
     }
     
-    /* Balão da Mensagem Enviada (Direita) */
     .chat-msg.sent {
-      align-self: flex-end;
-      /* Usa a cor de destaque do tema (accent) para o balão do leitor/remetente */
       background-color: var(--detalhe-accent, #2563eb);
       color: #FFFFFF;
       border-bottom-right-radius: 4px;
