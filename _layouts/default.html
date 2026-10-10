@@ -815,12 +815,11 @@
       font-family: inherit;
     }
 
-    /* Grupo de cada mensagem (controla a largura máxima na tela) */
+    /* Grupo de cada mensagem */
     .chat-group {
       display: flex;
       flex-direction: column;
-      width: fit-content;
-      max-width: 82% !important; /* Limite ideal para não esticar demais no celular */
+      max-width: 82% !important; /* Limite máximo para não colar nas bordas do celular */
     }
     
     .received {
@@ -847,9 +846,10 @@
       padding-right: 4px;
     }
     
-    /* Balão da Mensagem */
+    /* Balão da Mensagem (Ocupa apenas o espaço necessário do texto) */
     .chat-msg {
-      width: 100% !important;
+      width: fit-content !important;
+      max-width: 100% !important;
       box-sizing: border-box;
       padding: 12px 16px;
       border-radius: 18px;
@@ -857,7 +857,7 @@
       line-height: 1.5;
       word-wrap: break-word;
       overflow-wrap: break-word;
-      text-align: left; /* Garante que o texto dentro do balão leia-se confortavelmente */
+      text-align: left;
     }
     
     .chat-msg.received {
