@@ -5,23 +5,24 @@ permalink: /gsgw/          # endereço da página da história (pode manter o qu
 image: /assets/gsgw.jpg
 tagline: "372+ (part 3 only)"
 author: 백덕수/Baek Deok-su
-status: On-Going
+status: Hiatus
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
-  - { name: Original, url: "https://example.com/" }
+  - { name: Epub part 1, url: "https://drive.google.com/file/d/1MzowaspjJpdgMSc_CJIS2ot721m7CmkB/view?usp=sharing" }
+  - { name: Epub part 2, url: "https://drive.google.com/file/d/1Sn0boYmOvHHXO4ig9hnCLaYRIW0NGWm0/view?usp=drive_link" }
 ---
 A pop-up event for some ‘modern fantasy’ media I loved so much that I even took a precious day off work to attend.
         
-<br><br>And that day, I was transported into that very modern fantasy.
+And that day, I was transported into that very modern fantasy.
 
-<br><br>As a newly hired employee at a famous large corporation, no less!
+As a newly hired employee at a famous large corporation, no less!
 
-<br><br>Good benefits, good salary, and even kind and competent bosses—it's a dream job.
+Good benefits, good salary, and even kind and competent bosses—it's a dream job.
 
-<br><br>Using the knowledge of the world that only I possess, I'm rapidly climbing the corporate ladder!
+Using the knowledge of the world that only I possess, I'm rapidly climbing the corporate ladder!
 
-<br><br>Am I happy, you ask?
+Am I happy, you ask?
 
-<br><br>Please, just let me go home. I’m begging you.
+Please, just let me go home. I’m begging you.
 
-<br><br>※Special Note: The genre is horror.
+※Special Note: The genre is horror.
