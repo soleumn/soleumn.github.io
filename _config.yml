@@ -1,6 +1,7 @@
 title: Home
 description: Read peak webnovels translated by me!
 theme: minima
+lang: en
 
 header_pages:
   - index.md
