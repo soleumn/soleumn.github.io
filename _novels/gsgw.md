@@ -6,7 +6,7 @@ image: /assets/gsgw.jpg
 tagline: "372+ (part 3 only)"
 author: 백덕수/Baek Deok-su
 status: Hiatus
-chapter: pt 3 only (372+)
+chapter: "pt 3 only (372+)"
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
   - { name: Epub part 1, url: "https://drive.google.com/file/d/1MzowaspjJpdgMSc_CJIS2ot721m7CmkB/view?usp=sharing" }
