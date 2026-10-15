@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+<p class="intro-text">Webnovels by me! ^^</p>
+
+<div class="stories-grid">
+{% assign novels = site.novels | sort: "order" %}
+{% for n in novels %}
+  <a href="{{ n.url | relative_url }}" class="card-historia-link">
+    <div class="card-historia">
+      <div class="capa-container">
+        <div class="capa-placeholder">{{ n.title }}</div>
+        {% if n.image %}<img src="{{ n.image | relative_url }}" alt="{{ n.title | escape }}" class="capa-img" loading="lazy" onerror="this.remove()">{% endif %}
+      </div>
+      <div class="conteudo-card">
+        <h2 class="titulo-historia">{{ n.title }}</h2>
+        <p class="sinopse-historia">{{ n.tagline }}</p>
+      </div>
+    </div>
+  </a>
+{% endfor %}
+</div>
