@@ -6,7 +6,7 @@ image: /assets/esg.jpg
 tagline: "ch157+"
 author: 김영지/Kim Young-ji
 status: On-Going
-chapter: 157+
+chapter: "157+"
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
   - { name: Raws, url: "https://page.kakao.com/content/68473234/" }
