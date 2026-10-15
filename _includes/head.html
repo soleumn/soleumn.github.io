@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+
+<!-- Aplica tema/fonte/espaçamento salvos ANTES de pintar a página (evita piscada) -->
+<script>
+  (function () {
+    try {
+      var d = document.documentElement, g = function (k) { return localStorage.getItem(k); };
+      d.dataset.theme = g('reader_theme') || 'mocha';
+      d.dataset.font = g('reader_font_family') || 'literata';
+      d.dataset.spacing = g('reader_spacing') || 'normal';
+      var s = parseFloat(g('reader_font_size'));
+      if (s) d.style.setProperty('--reader-size', s + 'rem');
+    } catch (e) {}
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{% if page.layout == "post" %}
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;600;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+{% else %}
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
