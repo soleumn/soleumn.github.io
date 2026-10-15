@@ -8,7 +8,7 @@ author: 강토공/Kang To-gong
 status: On-Going
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
-  - { name: Raws:, url: "https://page.kakao.com/content/69299983/" }
+  - { name: Raws, url: "https://page.kakao.com/content/69299983/" }
 ---
 A former pro gamer who retired due to injury.
 
