@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-{% assign slug = page.categories[0] %}
-{% assign caps = site.categories[slug] | sort: "capitulo" %}
+{% assign parts = page.path | split: "/" %}
+{% assign slug = parts[1] %}
+{% assign prefix = "_posts/" | append: slug | append: "/" %}
+{% assign caps = site.posts | where_exp: "p", "p.path contains prefix" | sort: "capitulo" %}
 {% assign novel = site.novels | where: "slug", slug | first %}
 {% assign novel_url = novel.url | default: "/" %}
 
