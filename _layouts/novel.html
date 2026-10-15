@@ -1,0 +1,49 @@
+---
+layout: default
+---
+{% assign caps = site.categories[page.slug] | sort: "capitulo" %}
+
+<div id="reader-root" data-kind="novel" data-slug="{{ page.slug }}">
+
+  <div class="novel-head">
+    <div class="novel-cover">
+      <div class="capa-placeholder">{{ page.title }}</div>
+      {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}" onerror="this.remove()">{% endif %}
+    </div>
+
+    <div class="novel-info">
+      <h1 class="novel-title">{{ page.title }}</h1>
+      <h2 class="section-label">Summary</h2>
+
+      <div id="synopsisBox" class="synopsis-container">{{ content }}</div>
+      <button id="btnSynopsis" class="btn-toggle-synopsis" data-action="toggle-synopsis" hidden>Read More...</button>
+
+      <hr>
+      <p class="novel-meta">
+        {% if page.author %}<strong>Author:</strong> {{ page.author }}<br>{% endif %}
+        {% if page.status %}<strong>Status:</strong> {{ page.status }}<br>{% endif %}
+        <strong>Chapters:</strong> {{ caps.size }}
+        {% for l in page.links %}<br><strong>{{ l.name }}:</strong> <a href="{{ l.url }}" target="_blank" rel="noopener">here</a>{% endfor %}
+      </p>
+    </div>
+  </div>
+
+  {% if caps.size > 0 %}
+  <a id="btn-continue" class="btn-primary" href="{{ caps.first.url | relative_url }}">✦ Start Reading</a>
+  {% endif %}
+
+  <h3 class="section-label chapters-label">⫶☰ Chapters</h3>
+
+  <div class="chapter-tools">
+    <input type="search" id="chapterSearch" placeholder="Search chapter (e.g. 25)" aria-label="Search chapter">
+    <button class="reader-btn" data-action="reverse-chapters">⇅ Reverse</button>
+  </div>
+
+  <div class="chapter-scrollbox">
+    <ul id="lista-capitulos">
+      {% for c in caps %}
+      <li class="item-capitulo"><a href="{{ c.url | relative_url }}">❏ {{ c.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

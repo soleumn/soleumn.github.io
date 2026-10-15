@@ -1,0 +1,90 @@
+---
+layout: default
+---
+{% assign slug = page.categories[0] %}
+{% assign caps = site.categories[slug] | sort: "capitulo" %}
+{% assign novel = site.novels | where: "slug", slug | first %}
+{% assign novel_url = novel.url | default: "/" %}
+
+{% for c in caps %}
+  {% if c.url == page.url %}
+    {% assign i = forloop.index0 %}
+    {% if i > 0 %}{% assign pi = i | minus: 1 %}{% assign prev_post = caps[pi] %}{% endif %}
+    {% assign ni = i | plus: 1 %}
+    {% if ni < caps.size %}{% assign next_post = caps[ni] %}{% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<div id="reader-root" data-kind="chapter" data-slug="{{ slug }}" data-title="{{ page.title | escape }}">
+
+<div class="read-progress"></div>
+
+<nav class="reader-navbar">
+  <div class="nav-group left-group">
+    <a href="{{ '/' | relative_url }}" class="btn-nav" title="Home">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span class="btn-text">Home</span>
+    </a>
+    <a href="{{ novel_url | relative_url }}" class="btn-nav" title="Back to the story">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+      <span class="btn-text">Story</span>
+    </a>
+  </div>
+
+  <div class="nav-group center-group">
+    {% if prev_post %}<a href="{{ prev_post.url | relative_url }}" rel="prev" class="btn-icon" title="Previous chapter">←</a>{% endif %}
+    <select onchange="location = this.value;" class="chapter-select" aria-label="Chapters">
+      {% for cap in caps %}
+      <option value="{{ cap.url | relative_url }}" {% if cap.url == page.url %}selected{% endif %}>{{ cap.title }}</option>
+      {% endfor %}
+    </select>
+    {% if next_post %}<a href="{{ next_post.url | relative_url }}" rel="next" class="btn-icon" title="Next chapter">→</a>{% endif %}
+  </div>
+
+  <div class="nav-group right-group">
+    <button class="btn-formatting" data-action="toggle-format">Formatting</button>
+  </div>
+</nav>
+
+<div id="formatModal" class="format-modal">
+  <div class="format-modal-header">
+    <span>Formatting Options</span>
+    <button class="btn-close-modal" data-action="toggle-format" aria-label="Close">✕</button>
+  </div>
+  <div class="format-modal-body">
+    <div class="format-row"><label>Font Size:</label>
+      <div class="btn-group">
+        <button class="reader-btn" data-action="size-down">A-</button>
+        <button class="reader-btn" data-action="size-up">A+</button>
+      </div>
+    </div>
+    <div class="format-row"><label>Font Family:</label>
+      <button class="reader-btn btn-full" data-action="cycle-font" id="btnFont">Literata</button></div>
+    <div class="format-row"><label>Line Spacing:</label>
+      <button class="reader-btn btn-full" data-action="cycle-spacing" id="btnSpacing">⬍ Normal</button></div>
+    <div class="format-row"><label>Theme:</label>
+      <button class="reader-btn btn-full" data-action="cycle-theme" id="btnTheme">☕ Mocha</button></div>
+  </div>
+</div>
+
+<h1 class="chapter-title">{{ page.title }}</h1>
+
+<div class="post-content">
+{{ content }}
+</div>
+
+<hr class="chapter-hr">
+
+<div class="nav-capitulo-bottom">
+  {% if prev_post %}<a href="{{ prev_post.url | relative_url }}" class="btn-bottom">⤶ Prev</a>{% else %}<div class="btn-placeholder"></div>{% endif %}
+  <a href="{{ novel_url | relative_url }}" class="btn-bottom" title="All chapters">☰</a>
+  {% if next_post %}<a href="{{ next_post.url | relative_url }}" class="btn-bottom btn-bottom-next">Next ➔</a>{% else %}<div class="btn-placeholder"></div>{% endif %}
+</div>
+
+<section class="comments">
+  <h3>🗨 Comments</h3>
+  <div class="giscus"></div>
+</section>
+
+</div>
