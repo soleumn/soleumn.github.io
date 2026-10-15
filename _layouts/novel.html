@@ -23,7 +23,7 @@ layout: default
       <p class="novel-meta">
         {% if page.author %}<strong>Author:</strong> {{ page.author }}<br>{% endif %}
         {% if page.status %}<strong>Status:</strong> {{ page.status }}<br>{% endif %}
-        <strong>Chapters:</strong> {{ caps.size }}
+        <!-- <strong>Chapters:</strong> {{ caps.size }} -->
         {% for l in page.links %}<br><strong>{{ l.name }}:</strong> <a href="{{ l.url }}" target="_blank" rel="noopener">here</a>{% endfor %}
       </p>
     </div>
