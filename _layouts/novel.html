@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-{% assign caps = site.categories[page.slug] | sort: "capitulo" %}
+{% assign prefix = "_posts/" | append: page.slug | append: "/" %}
+{% assign caps = site.posts | where_exp: "p", "p.path contains prefix" | sort: "capitulo" %}
 
 <div id="reader-root" data-kind="novel" data-slug="{{ page.slug }}">
 
