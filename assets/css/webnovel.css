@@ -242,3 +242,14 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
 
 /* Comentários (Giscus) */
 .giscus{min-height:60px}
+
+/* Citações (> texto) */
+.post-content blockquote {
+  margin: 0 0 var(--para-gap);
+  padding: 2px 0 2px 16px;
+  border-left: 4px solid var(--borda-suave);
+  color: var(--texto-secundario);
+  font-style: italic;
+}
+.post-content blockquote p { margin: 0 0 .8em; }
+.post-content blockquote p:last-child { margin-bottom: 0; }
