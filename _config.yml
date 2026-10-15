@@ -1,0 +1,27 @@
+title: Webnovels
+description: Read peak webnovels translated by me!
+lang: en
+url: "https://soleumn.github.io"
+
+# Sem tema: o visual vem 100% de assets/css/style.css
+plugins:
+  - jekyll-seo-tag
+
+# Publica capítulos mesmo com data futura na pasta/nome do arquivo
+future: true
+
+# Cada história é um arquivo em _novels/
+collections:
+  novels:
+    output: true
+
+# Valores padrão: não precisa repetir "layout" em cada capítulo/história
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+  - scope: { path: "", type: "novels" }
+    values: { layout: "novel" }
+
+exclude:
+  - README.md
+  - tools
