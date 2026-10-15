@@ -145,7 +145,7 @@ layout: default
 <script>
   function salvarProgresso() {
     const urlAtual = window.location.pathname;
-    const tituloCapitulo = "{{ page.title }}";
+    const tituloCapitulo = {{ page.title | jsonify }};
     
     localStorage.setItem('{{ page.categories[0] }}_progresso_url', urlAtual);
     localStorage.setItem('{{ page.categories[0] }}_progresso_titulo', tituloCapitulo);
