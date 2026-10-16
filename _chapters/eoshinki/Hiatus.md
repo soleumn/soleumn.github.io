@@ -1,7 +1,7 @@
 ---
 title: "Hiatus notice"
 categories: eoshinki
-capitulo: 68
+capitulo: 0
 ---
 <br>
 
