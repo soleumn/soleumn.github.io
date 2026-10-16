@@ -254,12 +254,81 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
 .post-content blockquote p { margin: 0 0 .8em; }
 .post-content blockquote p:last-child { margin-bottom: 0; }
 
+
 /* =========================================================
    CADERNO (diário / anotações dentro do capítulo)
    Cole este bloco no FINAL do arquivo assets/css/webnovel.css
+   (se você colou a versão anterior, APAGUE ela antes)
    ========================================================= */
 
-/* A folha: pautada, com margem vermelha e furinhos de espiral */
+/* ---------- Cores do caderno em cada tema ---------- */
+/* Padrão = Mocha */
+.post-content .notebook {
+  --nb-paper:  #2a2a3d;
+  --nb-ink:    #d9def5;
+  --nb-line:   rgba(137, 180, 250, .22);
+  --nb-margin: rgba(243, 139, 168, .5);
+  --nb-red:    #f38ba8;
+  --nb-mark:   rgba(255, 224, 102, .35);
+}
+html[data-theme="dark-pure"] .post-content .notebook {
+  --nb-paper:  #1c1c1c;
+  --nb-ink:    #e0e0e0;
+  --nb-line:   rgba(133, 145, 168, .25);
+  --nb-margin: rgba(200, 100, 100, .5);
+  --nb-red:    #e07a7a;
+  --nb-mark:   rgba(255, 224, 102, .35);
+}
+html[data-theme="sepia"] .post-content .notebook {
+  --nb-paper:  #fbf5e3;
+  --nb-ink:    #433422;
+  --nb-line:   rgba(140, 90, 43, .25);
+  --nb-margin: rgba(190, 80, 60, .5);
+  --nb-red:    #a8402e;
+  --nb-mark:   rgba(255, 224, 102, .6);
+}
+html[data-theme="sepia2"] .post-content .notebook {
+  --nb-paper:  #e3d3b2;
+  --nb-ink:    #4C3D19;
+  --nb-line:   rgba(153, 113, 56, .3);
+  --nb-margin: rgba(170, 70, 50, .5);
+  --nb-red:    #9c3a28;
+  --nb-mark:   rgba(255, 224, 102, .55);
+}
+html[data-theme="light"] .post-content .notebook {
+  --nb-paper:  #fdfdfb;
+  --nb-ink:    #2d3a5a;
+  --nb-line:   rgba(86, 132, 181, .4);
+  --nb-margin: rgba(214, 84, 84, .55);
+  --nb-red:    #b3342b;
+  --nb-mark:   rgba(255, 224, 102, .65);
+}
+html[data-theme="nordic"] .post-content .notebook {
+  --nb-paper:  #3b4252;
+  --nb-ink:    #e5e9f0;
+  --nb-line:   rgba(136, 192, 208, .25);
+  --nb-margin: rgba(191, 97, 106, .55);
+  --nb-red:    #e0818a;
+  --nb-mark:   rgba(255, 224, 102, .35);
+}
+html[data-theme="emerald"] .post-content .notebook {
+  --nb-paper:  #0e3a31;
+  --nb-ink:    #d5f5e8;
+  --nb-line:   rgba(110, 231, 183, .2);
+  --nb-margin: rgba(240, 120, 120, .5);
+  --nb-red:    #f08a8a;
+  --nb-mark:   rgba(255, 224, 102, .35);
+}
+html[data-theme="gruvbox"] .post-content .notebook {
+  --nb-paper:  #32302f;
+  --nb-ink:    #ebdbb2;
+  --nb-line:   rgba(131, 165, 152, .3);
+  --nb-margin: rgba(251, 73, 52, .5);
+  --nb-red:    #fb4934;
+  --nb-mark:   rgba(255, 224, 102, .35);
+}
+
+/* ---------- A folha: pautada, com margem e furinhos de espiral ---------- */
 .post-content .notebook {
   position: relative;
   margin: 32px 0;
@@ -267,14 +336,15 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
   font-family: 'Indie Flower', 'Segoe Print', 'Comic Sans MS', cursive;
   font-size: 1.1em;
   line-height: 2em;                 /* tem que ser igual à altura da pauta abaixo */
-  color: #1f3556;                   /* tinta de caneta azul */
-  background-color: #f8f4e4;        /* cor do papel (fixa em qualquer tema) */
-  background-image: linear-gradient(to bottom, transparent calc(2em - 1px), rgba(86, 132, 181, .45) calc(2em - 1px));
+  color: var(--nb-ink);
+  background-color: var(--nb-paper);
+  background-image: linear-gradient(to bottom, transparent calc(2em - 1px), var(--nb-line) calc(2em - 1px));
   background-size: 100% 2em;        /* altura da pauta */
   background-position: 0 1em;
   background-repeat: repeat-y;
+  border: 1px solid rgba(127, 127, 127, .25);
   border-radius: 4px 10px 10px 4px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .3);
   overflow: hidden;
 }
 
@@ -286,10 +356,10 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
   bottom: 0;
   left: 2.3em;
   width: 2px;
-  background: rgba(214, 84, 84, .55);
+  background: var(--nb-margin);
 }
 
-/* Furinhos da espiral (usam a cor do fundo do site, então combinam com qualquer tema) */
+/* Furinhos da espiral (usam a cor do fundo do site) */
 .post-content .notebook::after {
   content: "";
   position: absolute;
@@ -308,28 +378,28 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
   text-align: left;
 }
 
-/* Extras opcionais */
-.post-content .notebook .nb-title {      /* título da página, centralizado e sublinhado */
+/* ---------- Extras opcionais ---------- */
+.post-content .notebook .nb-title {      /* título da página */
   text-align: center;
   font-size: 1.2em;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: .2em;
 }
-.post-content .notebook .nb-date {       /* data, alinhada à direita */
+.post-content .notebook .nb-date {       /* data, à direita */
   text-align: right;
   font-size: .9em;
   opacity: .7;
 }
 .post-content .notebook .nb-red {        /* caneta vermelha */
-  color: #b3342b;
+  color: var(--nb-red);
 }
 .post-content .notebook s {              /* texto riscado */
   text-decoration-thickness: 2px;
-  text-decoration-color: #b3342b;
+  text-decoration-color: var(--nb-red);
 }
 .post-content .notebook mark {           /* marca-texto */
-  background: rgba(255, 224, 102, .65);
+  background: var(--nb-mark);
   color: inherit;
   padding: 0 .1em;
   border-radius: 2px;
