@@ -92,7 +92,7 @@
     ['f-freckle', 'Freckle Face'], ['f-fredericka', 'Fredericka the Great'], ['f-frijole', 'Frijole'],
     ['f-workbench', 'Workbench'], ['f-bahiana', 'Bahiana'], ['f-blackwhite', 'Black And White Picture'],
     ['f-chelsea', 'Chelsea Market'], ['f-cormorant', 'Cormorant Unicase', 1], ['f-candy', 'Emilys Candy'],
-    ['f-lifesavers', 'Life Savers', 1], ['f-sofadi', 'Sofadi One'], ['f-vast', 'Vast Shadow']
+    ['f-lifesavers', 'Life Savers', 1], ['f-sofadi', 'Sofadi One'], ['f-vast', 'Vast Shadow'], ['notebook', 'Indie Flower']
   ];
   function loadSpecialFonts() {
     var c = $('.post-content');
