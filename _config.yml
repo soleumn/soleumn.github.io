@@ -10,14 +10,15 @@ plugins:
 # Publica capítulos mesmo com data futura na pasta/nome do arquivo
 future: true
 
-# Cada história é um arquivo em _novels/
 collections:
   novels:
     output: true
+  chapters:
+    output: true
+    permalink: /:path/
 
-# Valores padrão: não precisa repetir "layout" em cada capítulo/história
 defaults:
-  - scope: { path: "", type: "posts" }
+  - scope: { path: "", type: "chapters" }
     values: { layout: "post" }
   - scope: { path: "", type: "novels" }
     values: { layout: "novel" }
