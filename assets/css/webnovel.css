@@ -404,3 +404,112 @@ html[data-theme="gruvbox"] .post-content .notebook {
   padding: 0 .1em;
   border-radius: 2px;
 }
+
+/* =========================================================
+   WIKI (página de site/wiki em tema escuro, fonte VT323)
+   Cole este bloco no FINAL do arquivo assets/css/webnovel.css
+   ========================================================= */
+
+/* A página: um painel escuro (fixo, não muda com o tema do leitor) */
+.post-content .wiki {
+  display: grid;
+  grid-template-columns: 1fr auto;   /* título à esquerda, autor à direita */
+  margin: 32px 0;
+  padding: 0 0 .6em;
+  font-family: 'VT323', monospace;
+  font-size: 1.3em;
+  line-height: 1.4;
+  color: #c9d1d9;
+  background: #161a22;
+  border: 1px solid #2a303c;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
+  overflow: hidden;
+  text-align: left;
+}
+
+/* Tudo que você escreve ocupa a largura toda, com uma margem lateral */
+.post-content .wiki > * {
+  grid-column: 1 / -1;
+  margin: 0 1em .8em;
+}
+
+/* ---------- Cabeçalho: título (esquerda) + autor (direita) ---------- */
+.post-content .wiki > .wiki-title {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0 0 1em;
+  padding: .6em .9em;
+  font-size: 1.35em;
+  line-height: 1.2;
+  color: #e6edf3;
+  background: #1b212b;
+  border-bottom: 1px solid #2a303c;
+}
+.post-content .wiki > .wiki-author {
+  grid-column: 2;
+  grid-row: 1;
+  max-width: 14em;
+  margin: 0 0 1em;
+  padding: .6em .9em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: .95em;
+  color: #8b949e;
+  background: #1b212b;
+  border-bottom: 1px solid #2a303c;
+}
+
+/* Celular bem estreito: o autor desce para uma linha própria (continua à direita) */
+@media (max-width: 480px) {
+  .post-content .wiki > .wiki-title  { grid-column: 1 / -1; border-bottom: 0; padding-bottom: .1em; margin-bottom: 0; }
+  .post-content .wiki > .wiki-author { grid-column: 1 / -1; grid-row: 2; max-width: none; padding-top: 0; }
+}
+
+/* ---------- Títulos de seção (## Título) ---------- */
+.post-content .wiki h2,
+.post-content .wiki h3 {
+  font-family: 'VT323', monospace;
+  color: #e6edf3;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: .9em 1em .5em;
+  padding-bottom: .15em;
+  border-bottom: 1px solid #2a303c;
+}
+.post-content .wiki h2 { font-size: 1.35em; }
+.post-content .wiki h3 { font-size: 1.15em; border-bottom: 0; color: #58a6ff; }
+
+/* ---------- Listas (- item) ---------- */
+.post-content .wiki ul,
+.post-content .wiki ol {
+  padding-left: 1.3em;
+}
+.post-content .wiki li { margin-bottom: .25em; }
+.post-content .wiki li::marker { color: #58a6ff; }
+.post-content .wiki strong { color: #e6edf3; }
+
+/* ---------- Extras opcionais ---------- */
+.post-content .wiki .wiki-red {             /* trecho em vermelho */
+  color: #ff5c5c;
+  text-shadow: 0 0 6px rgba(255, 92, 92, .35);
+}
+.post-content .wiki > .wiki-warning {       /* caixa de aviso em vermelho */
+  padding: .6em .8em;
+  color: #ff8a8a;
+  background: rgba(255, 92, 92, .08);
+  border: 1px solid rgba(255, 92, 92, .45);
+  border-left: 4px solid #ff5c5c;
+  border-radius: 4px;
+}
+.post-content .wiki .wiki-redacted {        /* tarja preta (aparece ao tocar/passar o mouse) */
+  background: #000;
+  color: #000;
+  padding: 0 .2em;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: color .2s;
+}
+.post-content .wiki .wiki-redacted:hover { color: #ff5c5c; }
