@@ -13,6 +13,7 @@ links:
   - { name: Place to read previous chapters, url: "https://azurechronicles.com/novel/editors-survival-guide/" }
 ---
 『Editor’s Survival Guide』 
+
 “You are currently in a special zone managed by the South Korean government.”
         
 Seo Doun wakes up at an unfamiliar station on his way home from work, only to find himself in a special zone that defies the laws of reality!
