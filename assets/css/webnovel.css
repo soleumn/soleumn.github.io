@@ -415,7 +415,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
   display: grid;
   grid-template-columns: 1fr auto;   /* título à esquerda, autor à direita */
   margin: 32px 0;
-  padding: 0 0 .6em;
+  padding: 6em 0 .6em;
   font-family: 'VT323', monospace;
   font-size: 1.3em;
   line-height: 1.4;
