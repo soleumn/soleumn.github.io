@@ -539,63 +539,48 @@ html[data-theme="gruvbox"] .post-content .notebook {
 /* =========================================================
    GOGGLES (óculos preto de máscara, com emojis nas lentes)
    Cole este bloco no FINAL do arquivo assets/css/webnovel.css
+   (se colou a versão anterior, APAGUE ela antes)
    ========================================================= */
 
 .post-content .goggles {
-  --gg-color: #dff6ff;                      /* cor dos símbolos nas lentes */
-  --gg-glow:  rgba(120, 220, 255, .85);     /* brilho em volta dos símbolos */
+  --gg-color: #ffffff;                      /* cor dos símbolos nas lentes */
+  --gg-glow:  rgba(255, 255, 255, .55);     /* brilho em volta dos símbolos */
 
   position: relative;
   width: 100%;
   max-width: 520px;
   aspect-ratio: 2.9 / 1;
   margin: 28px auto;
-  container-type: inline-size;              /* deixa o tamanho dos emojis acompanhar a largura */
+  container-type: inline-size;              /* deixa o tamanho dos símbolos acompanhar a largura */
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  padding: 0 14%;
+  padding: 0 9% 1%;
 
-  /* tiras laterais do óculos */
-  background:
-    linear-gradient(#0c0c0e, #0c0c0e) left center / 6% 52% no-repeat,
-    linear-gradient(#0c0c0e, #0c0c0e) right center / 6% 52% no-repeat;
-  filter: drop-shadow(0 0 1px rgba(255, 255, 255, .3)) drop-shadow(0 8px 10px rgba(0, 0, 0, .45));
+  /* O desenho do óculos (moldura, lentes e reflexos) */
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 580 200' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='fr' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='200'%3E%3Cstop offset='0' stop-color='%232a2c32'/%3E%3Cstop offset='.28' stop-color='%23131417'/%3E%3Cstop offset='1' stop-color='%23060607'/%3E%3C/linearGradient%3E%3ClinearGradient id='ln' gradientUnits='userSpaceOnUse' x1='60' y1='30' x2='260' y2='150'%3E%3Cstop offset='0' stop-color='%231b1e25'/%3E%3Cstop offset='1' stop-color='%23040405'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23000' stroke='%23fff' stroke-opacity='.22' stroke-width='54' stroke-linejoin='round'%3E%3Crect x='0' y='72' width='72' height='56' rx='8' stroke='none' fill='%230c0c0e'/%3E%3Crect x='508' y='72' width='72' height='56' rx='8' stroke='none' fill='%230c0c0e'/%3E%3Cpolygon points='80,40 262,78 236,140 86,126'/%3E%3Cg transform='translate(580,0) scale(-1,1)'%3E%3Cpolygon points='80,40 262,78 236,140 86,126'/%3E%3C/g%3E%3Crect x=%22258%22 y=%2252%22 width=%2264%22 height=%2254%22 rx=%2210%22/%3E%3C/g%3E%3Cg fill='url(%23fr)' stroke='url(%23fr)' stroke-width='52' stroke-linejoin='round'%3E%3Cpolygon points='80,40 262,78 236,140 86,126'/%3E%3Cg transform='translate(580,0) scale(-1,1)'%3E%3Cpolygon points='80,40 262,78 236,140 86,126'/%3E%3C/g%3E%3Crect x=%22258%22 y=%2252%22 width=%2264%22 height=%2254%22 rx=%2210%22/%3E%3C/g%3E%3Cg%3E%3Cpolygon points='80,40 262,78 236,140 86,126' fill='url(%23ln)' stroke='url(%23ln)' stroke-width='28' stroke-linejoin='round'/%3E%3Cpolygon points='130,50 160,55 128,128 98,123' fill='%23fff' fill-opacity='.05'/%3E%3Cpolygon points='172,57 184,59 152,130 140,128' fill='%23fff' fill-opacity='.035'/%3E%3C/g%3E%3Cg transform='translate(580,0) scale(-1,1)'%3E%3Cpolygon points='80,40 262,78 236,140 86,126' fill='url(%23ln)' stroke='url(%23ln)' stroke-width='28' stroke-linejoin='round'/%3E%3Cpolygon points='130,50 160,55 128,128 98,123' fill='%23fff' fill-opacity='.05'/%3E%3Cpolygon points='172,57 184,59 152,130 140,128' fill='%23fff' fill-opacity='.035'/%3E%3C/g%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, .45));
 }
 
-/* Moldura preta, com o recorte do nariz embaixo */
-.post-content .goggles::before {
-  content: "";
-  position: absolute;
-  inset: 0 4.5%;
-  background: linear-gradient(180deg, #2b2d34 0, #15161a 16%, #08080a 100%);
-  border-radius: 36px 36px 44px 44px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 62% 100%, 58% 76%, 42% 76%, 38% 100%, 0 100%);
-}
-
-/* Lente escura com um reflexo discreto */
-.post-content .goggles::after {
-  content: "";
-  position: absolute;
-  inset: 13% 9.5% 15% 9.5%;
-  background:
-    linear-gradient(115deg, transparent 38%, rgba(255, 255, 255, .05) 42%, rgba(255, 255, 255, .015) 52%, transparent 56%),
-    linear-gradient(160deg, #181b22, #050608);
-  border-radius: 28px 28px 34px 34px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 66.5% 100%, 62.1% 78%, 37.9% 78%, 33.5% 100%, 0 100%);
-}
-
-/* Os símbolos/emojis de cada lado */
+/* Os símbolos/emojis de cada lente */
 .post-content .goggles > span {
   position: relative;
-  z-index: 2;
-  font-size: var(--gg-size, 15cqw);         /* tamanho; veja como mudar nas instruções */
+  font-size: var(--gg-size, 2.4rem);        /* tamanho (veja como mudar nas instruções) */
   line-height: 1;
   font-weight: 700;
   font-family: system-ui, 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
   color: var(--gg-color);
   text-shadow: 0 0 .35em var(--gg-glow);
   white-space: nowrap;
+  transform: rotate(var(--gg-tilt, 0deg));  /* inclinação opcional dos símbolos */
+}
+.post-content .goggles > span:last-child {
+  transform: rotate(calc(var(--gg-tilt, 0deg) * -1));
+}
+
+/* Em navegadores modernos, o tamanho acompanha a largura do óculos */
+@supports (width: 1cqw) {
+  .post-content .goggles > span { font-size: var(--gg-size, 14cqw); }
 }
