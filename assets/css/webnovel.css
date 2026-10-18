@@ -539,7 +539,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
 /* ============================================================
     MÁSCARA E ÓCULOS DIGITAIS (GOGGLES)
     ============================================================ */
- .goggles-mask {
+.goggles-mask {
    background-color: #0d0d0f !important; /* Máscara preta */
    border: 2px solid var(--borda-suave, #45475a);
    border-radius: 16px;
@@ -551,18 +551,18 @@ html[data-theme="gruvbox"] .post-content .notebook {
    align-items: center;
    gap: 12px;
    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), inset 0 2px 6px rgba(255, 255, 255, 0.05);
- }
+}
 
  /* Container das duas lentes */
- .goggles-container {
+.goggles-container {
    display: flex;
    justify-content: center;
    gap: 14px;
    width: 100%;
- }
+}
 
  /* Cada lado do óculos */
- .goggle-lens {
+.goggle-lens {
    background-color: #000000 !important;
    border: 2px solid var(--cor-sistema, #89b4fa); /* Cor do brilho da borda */
    border-radius: 10px;
@@ -576,4 +576,4 @@ html[data-theme="gruvbox"] .post-content .notebook {
    text-shadow: 0 0 8px currentColor; /* Efeito de LED/Neon */
    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
    font-family: monospace;
- }
+}
