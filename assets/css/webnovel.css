@@ -449,7 +449,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
 .post-content .wiki > .wiki-author {
   grid-column: 2;
   grid-row: 1;
-  max-width: 14em;
+  max-width: 18em;
   margin: 0 0 1em;
   padding: .6em .9em;
   display: flex;
@@ -464,7 +464,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
 
 /* Celular bem estreito: o autor desce para uma linha própria (continua à direita) */
 @media (max-width: 480px) {
-  .post-content .wiki > .wiki-author { grid-column: 1 / -1; grid-row: 2; max-width: none; padding-top: 0; }
+  .post-content .wiki > .wiki-author { grid-column: 1 / -1; grid-row: 1; max-width: none; padding-top: 0; }
   .post-content .wiki > .wiki-title  { grid-column: 1 / -1; border-bottom: 0; padding-bottom: .1em; margin-bottom: 0; }
 }
 
