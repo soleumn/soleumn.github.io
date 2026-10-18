@@ -549,12 +549,12 @@ html[data-theme="gruvbox"] .post-content .notebook {
   position: relative;
   width: 100%;
   max-width: 520px;
-  aspect-ratio: 560 / 220;
+  /*aspect-ratio: 560 / 220; */
   margin: 28px auto;
-  container-type: inline-size;              /* deixa o tamanho dos símbolos acompanhar a largura */
+  /* container-type: inline-size;    */           /* deixa o tamanho dos símbolos acompanhar a largura */
    background-color: #736F6F;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   align-items: center;
   justify-items: center;
   padding: 0 11% 4.5%;
@@ -564,31 +564,4 @@ html[data-theme="gruvbox"] .post-content .notebook {
   filter: drop-shadow(0 8px 10px rgba(0, 0, 0, .45));
 } */
 
-/* Os símbolos/emojis de cada lado */
-.post-content .goggles > span {
-  position: relative;
-  font-size: var(--gg-size, 2.4rem);        /* tamanho (veja como mudar nas instruções) */
-  line-height: 1;
-  font-weight: 700;
-  font-family: system-ui, 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
-  color: var(--gg-color);
-  text-shadow: 0 0 .35em var(--gg-glow);
-  white-space: nowrap;
-  top: var(--gg-y, 0em);                    /* sobe (negativo) ou desce (positivo) os símbolos */
-  transform: rotate(var(--gg-tilt, 0deg));  /* inclinação opcional dos símbolos */
-}
-.post-content .goggles > span:last-child {
-  transform: rotate(calc(var(--gg-tilt, 0deg) * -1));
-}
 
-/* Em navegadores modernos, o tamanho acompanha a largura do óculos */
-@supports (width: 1cqw) {
-  .post-content .goggles > span { font-size: var(--gg-size, 14cqw); }
-}
-
-/* Atalho para olhos de "^" (e outros símbolos que ficam pequenos e no alto da linha):
-   use  <div class="goggles caret">  e eles ficam maiores e centralizados */
-.post-content .goggles.caret { --gg-y: .3em; }
-@supports (width: 1cqw) {
-  .post-content .goggles.caret { --gg-size: 24cqw; }
-}
