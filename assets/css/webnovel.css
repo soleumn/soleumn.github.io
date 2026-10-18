@@ -553,9 +553,10 @@ html[data-theme="gruvbox"] .post-content .notebook {
   margin: 28px auto;
   /* container-type: inline-size;    */           /* deixa o tamanho dos símbolos acompanhar a largura */
    background-color: #736F6F;
-  /*display: grid; */
+  display: flex; 
   /* grid-template-columns: 1fr 1fr; */
   text-align: center;
+   color: #DCDBDB;
   justify-items: center;
   /* padding: 0 11% 4.5%; */
 
