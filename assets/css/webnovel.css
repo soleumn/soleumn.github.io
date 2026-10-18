@@ -574,6 +574,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
   color: var(--gg-color);
   text-shadow: 0 0 .35em var(--gg-glow);
   white-space: nowrap;
+  top: var(--gg-y, 0em);                    /* sobe (negativo) ou desce (positivo) os símbolos */
   transform: rotate(var(--gg-tilt, 0deg));  /* inclinação opcional dos símbolos */
 }
 .post-content .goggles > span:last-child {
@@ -583,4 +584,11 @@ html[data-theme="gruvbox"] .post-content .notebook {
 /* Em navegadores modernos, o tamanho acompanha a largura do óculos */
 @supports (width: 1cqw) {
   .post-content .goggles > span { font-size: var(--gg-size, 14cqw); }
+}
+
+/* Atalho para olhos de "^" (e outros símbolos que ficam pequenos e no alto da linha):
+   use  <div class="goggles caret">  e eles ficam maiores e centralizados */
+.post-content .goggles.caret { --gg-y: .3em; }
+@supports (width: 1cqw) {
+  .post-content .goggles.caret { --gg-size: 24cqw; }
 }
