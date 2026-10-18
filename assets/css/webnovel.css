@@ -345,7 +345,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
   border: 1px solid rgba(127, 127, 127, .25);
   border-radius: 4px 10px 10px 4px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, .3);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Linha vermelha da margem */
@@ -424,8 +424,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
   border: 1px solid #2a303c;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
-  overflow: hidden;
-  text-align: left;
+  text-align: left;                  /* (sem overflow:hidden, senão o tooltip é cortado) */
 }
 
 /* Tudo que você escreve ocupa a largura toda, com uma margem lateral */
@@ -450,6 +449,10 @@ html[data-theme="gruvbox"] .post-content .notebook {
   color: #e6edf3;
   background: #1b212b;
   border-bottom: 1px solid #2a303c;
+  border-top-left-radius: 9px;       /* cantos arredondados do cabeçalho */
+}
+.post-content .wiki:not(:has(.wiki-author)) > .wiki-title {
+  border-top-right-radius: 9px;      /* título sozinho ocupa a largura toda */
 }
 .post-content .wiki > .wiki-author {
   grid-column: 2;
@@ -465,14 +468,25 @@ html[data-theme="gruvbox"] .post-content .notebook {
   color: #8b949e;
   background: #1b212b;
   border-bottom: 1px solid #2a303c;
+  border-top-right-radius: 9px;
 }
 
 /* Celular estreito: o autor ocupa a linha toda (continua à direita).
    Só desce para uma segunda linha se existir um título; sem título, fica no topo. */
 @media (max-width: 480px) {
-  .post-content .wiki > .wiki-title  { grid-column: 1 / -1; border-bottom: 0; padding-bottom: .1em; margin-bottom: 0; }
+  .post-content .wiki > .wiki-title  { grid-column: 1 / -1; border-bottom: 0; padding-bottom: .1em; margin-bottom: 0; border-top-right-radius: 9px; }
   .post-content .wiki > .wiki-author { grid-column: 1 / -1; max-width: none; }
-  .post-content .wiki:has(.wiki-title) > .wiki-author { grid-row: 2; padding-top: 0; }
+  .post-content .wiki:has(.wiki-title) > .wiki-author { grid-row: 2; padding-top: 0; border-radius: 0; }
+  .post-content .wiki:not(:has(.wiki-title)) > .wiki-author { border-top-left-radius: 9px; }
+}
+
+/* ---------- Tooltip (significado de palavras) dentro da wiki ---------- */
+.post-content .wiki .tooltip-text {
+  background: #1b212b;
+  color: #c9d1d9;
+  border-color: #58a6ff;
+  font-size: .85em;                  /* o padrão é pequeno demais para a fonte VT323 */
+  line-height: 1.2;
 }
 
 /* ---------- Títulos de seção (## Título) ---------- */
