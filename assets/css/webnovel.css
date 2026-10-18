@@ -546,16 +546,16 @@ html[data-theme="gruvbox"] .post-content .notebook {
   --gg-color: #ffffff;                      /* cor dos símbolos nas lentes */
   --gg-glow:  rgba(255, 255, 255, .55);     /* brilho em volta dos símbolos */
 
-  position: relative;
+  /*position: relative; */
   width: 100%;
   max-width: 520px;
   /*aspect-ratio: 560 / 220; */
   margin: 28px auto;
   /* container-type: inline-size;    */           /* deixa o tamanho dos símbolos acompanhar a largura */
    background-color: #736F6F;
-  display: grid;
+  /*display: grid; */
   /* grid-template-columns: 1fr 1fr; */
-  align-items: center;
+  text-align: center;
   justify-items: center;
   padding: 0 11% 4.5%;
 
