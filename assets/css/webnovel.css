@@ -449,7 +449,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
 .post-content .wiki > .wiki-author {
   grid-column: 2;
   grid-row: 1;
-  max-width: 18em;
+  max-width: 32em;                   /* largura máxima da caixa do autor (aumente se quiser mais) */
   margin: 0 0 1em;
   padding: .6em .9em;
   display: flex;
@@ -462,10 +462,12 @@ html[data-theme="gruvbox"] .post-content .notebook {
   border-bottom: 1px solid #2a303c;
 }
 
-/* Celular bem estreito: o autor desce para uma linha própria (continua à direita) */
+/* Celular estreito: o autor ocupa a linha toda (continua à direita).
+   Só desce para uma segunda linha se existir um título; sem título, fica no topo. */
 @media (max-width: 480px) {
-  .post-content .wiki > .wiki-author { grid-column: 1 / -1; grid-row: 1; max-width: none; padding-top: 0; }
   .post-content .wiki > .wiki-title  { grid-column: 1 / -1; border-bottom: 0; padding-bottom: .1em; margin-bottom: 0; }
+  .post-content .wiki > .wiki-author { grid-column: 1 / -1; max-width: none; }
+  .post-content .wiki:has(.wiki-title) > .wiki-author { grid-row: 2; padding-top: 0; }
 }
 
 /* ---------- Títulos de seção (## Título) ---------- */
