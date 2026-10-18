@@ -484,7 +484,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
 .post-content .wiki .tooltip-text {
   background: #1b212b;
   color: #c9d1d9;
-  border-color: var(--detalhe-accent)
+  border-color: var(--detalhe-accent);
   font-size: .85em;                  /* o padrão é pequeno demais para a fonte VT323 */
   line-height: 1.2;
 }
