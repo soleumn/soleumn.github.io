@@ -536,44 +536,66 @@ html[data-theme="gruvbox"] .post-content .notebook {
 .post-content .wiki .wiki-redacted:hover { color: #ff5c5c; }
 
 
-/* ============================================================
-       MÁSCARA E ÓCULOS DIGITAIS (GOGGLES) - PRETO E BRANCO CIRCULAR
-       ============================================================ */
-.goggles-mask {
-   background-color: #0d0d0f !important; /* Máscara preta */
-   border: 2px solid #333338;
-   border-radius: 16px;
-   padding: 16px 20px;
-   margin: 25px auto;
-   max-width: 320px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 12px;
-   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+/* =========================================================
+   GOGGLES (óculos preto de máscara, com emojis nas lentes)
+   Cole este bloco no FINAL do arquivo assets/css/webnovel.css
+   ========================================================= */
+
+.post-content .goggles {
+  --gg-color: #dff6ff;                      /* cor dos símbolos nas lentes */
+  --gg-glow:  rgba(120, 220, 255, .85);     /* brilho em volta dos símbolos */
+
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 2.9 / 1;
+  margin: 28px auto;
+  container-type: inline-size;              /* deixa o tamanho dos emojis acompanhar a largura */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 0 14%;
+
+  /* tiras laterais do óculos */
+  background:
+    linear-gradient(#0c0c0e, #0c0c0e) left center / 6% 52% no-repeat,
+    linear-gradient(#0c0c0e, #0c0c0e) right center / 6% 52% no-repeat;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, .3)) drop-shadow(0 8px 10px rgba(0, 0, 0, .45));
 }
 
- /* Container das duas lentes */
-.goggles-container {
-   display: flex;
-   justify-content: center;
-   gap: 18px;
-   width: 100%;
+/* Moldura preta, com o recorte do nariz embaixo */
+.post-content .goggles::before {
+  content: "";
+  position: absolute;
+  inset: 0 4.5%;
+  background: linear-gradient(180deg, #2b2d34 0, #15161a 16%, #08080a 100%);
+  border-radius: 36px 36px 44px 44px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 62% 100%, 58% 76%, 42% 76%, 38% 100%, 0 100%);
 }
 
- /* Cada lado do óculos (Circular, Preto e Branco) */
-.goggle-lens {
-   background-color: #000000 !important;
-   border: 2px solid #ffffff !important; /* Borda branca brilhante */
-   border-radius: 50% !important; /* Deixa perfeitamente circular */
-   width: 70px;
-   height: 70px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 1.5rem;
-   color: #ffffff !important; /* Texto/emoji branco */
-   text-shadow: 0 0 6px rgba(255, 255, 255, 0.6); /* Brilho suave em branco */
-   box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.15);
-   font-family: monospace;
+/* Lente escura com um reflexo discreto */
+.post-content .goggles::after {
+  content: "";
+  position: absolute;
+  inset: 13% 9.5% 15% 9.5%;
+  background:
+    linear-gradient(115deg, transparent 38%, rgba(255, 255, 255, .05) 42%, rgba(255, 255, 255, .015) 52%, transparent 56%),
+    linear-gradient(160deg, #181b22, #050608);
+  border-radius: 28px 28px 34px 34px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 66.5% 100%, 62.1% 78%, 37.9% 78%, 33.5% 100%, 0 100%);
+}
+
+/* Os símbolos/emojis de cada lado */
+.post-content .goggles > span {
+  position: relative;
+  z-index: 2;
+  font-size: var(--gg-size, 15cqw);         /* tamanho; veja como mudar nas instruções */
+  line-height: 1;
+  font-weight: 700;
+  font-family: system-ui, 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  color: var(--gg-color);
+  text-shadow: 0 0 .35em var(--gg-glow);
+  white-space: nowrap;
 }
