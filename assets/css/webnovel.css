@@ -415,7 +415,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
   display: grid;
   grid-template-columns: 1fr auto;   /* título à esquerda, autor à direita */
   margin: 32px 0;
-  padding: 6em 0 .6em;
+  padding: 0 0 .6em;
   font-family: 'VT323', monospace;
   font-size: 1.3em;
   line-height: 1.4;
@@ -432,6 +432,11 @@ html[data-theme="gruvbox"] .post-content .notebook {
 .post-content .wiki > * {
   grid-column: 1 / -1;
   margin: 0 1em .8em;
+}
+
+/* Sem título e sem autor (só um trecho): adiciona espaço no topo, igual ao de baixo */
+.post-content .wiki:not(:has(.wiki-title, .wiki-author)) {
+  padding-top: .8em;
 }
 
 /* ---------- Cabeçalho: título (esquerda) + autor (direita) ---------- */
