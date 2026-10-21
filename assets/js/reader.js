@@ -210,10 +210,241 @@
     if (e.origin === 'https://giscus.app' && e.data && typeof e.data === 'object' && e.data.giscus) giscusTheme();
   });
 
+  /* ---------- EDITOR DO DONO (só aparece em aparelhos onde você colou o token) ---------- */
+  var REPO = 'soleumn/soleumn.github.io';
+  var TOKEN_KEY = 'gh_editor_token';
+  var HINT = 'Linha em branco = novo parágrafo · *itálico* · **negrito**';
+  var ed = {};
+  var lastSel = '';
+
+  function getToken() { return store.get(TOKEN_KEY, ''); }
+
+  function toast(msg, ms) {
+    var t = $('#edToast');
+    if (!t) { t = document.createElement('div'); t.id = 'edToast'; t.className = 'ed-toast'; document.body.appendChild(t); }
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(toast.timer);
+    if (ms) toast.timer = setTimeout(function () { t.classList.remove('show'); }, ms);
+  }
+
+  function utf8ToB64(str) {
+    var bytes = new TextEncoder().encode(str), bin = '', i;
+    for (i = 0; i < bytes.length; i += 8192) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 8192));
+    return btoa(bin);
+  }
+  function b64ToUtf8(b64) {
+    var bin = atob(b64.replace(/\s/g, '')), bytes = new Uint8Array(bin.length), i;
+    for (i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return new TextDecoder().decode(bytes);
+  }
+
+  function api(method, path, body) {
+    var url = 'https://api.github.com/repos/' + REPO + '/contents/' + path.split('/').map(encodeURIComponent).join('/');
+    return fetch(url, {
+      method: method,
+      cache: 'no-store',
+      headers: { 'Authorization': 'Bearer ' + getToken(), 'Accept': 'application/vnd.github+json' },
+      body: body ? JSON.stringify(body) : undefined
+    }).then(function (r) {
+      return r.json().then(function (j) {
+        if (!r.ok) { var e = new Error(j.message || ('HTTP ' + r.status)); e.status = r.status; throw e; }
+        return j;
+      });
+    });
+  }
+
+  function errMsg(e) {
+    if (e.status === 401) return 'Token inválido ou expirado. Abra o capítulo com #admin no final do endereço para colocar um novo.';
+    if (e.status === 403 || e.status === 404) return 'Sem permissão. O token precisa de "Contents: Read and write" neste repositório.';
+    if (e.status === 409 || e.status === 422) return 'O arquivo mudou no GitHub desde que você abriu. Feche e abra o editor de novo.';
+    return 'Erro: ' + (e.message || e);
+  }
+
+  function clearDraft(path) { try { localStorage.removeItem('draft_' + path); } catch (e) {} }
+  function isDirty() { var ta = $('#edText'); return !!(ta && ed.path && ta.value !== ed.original); }
+
+  function buildEditor() {
+    if ($('#edPanel')) return;
+    var p = document.createElement('div');
+    p.id = 'edPanel';
+    p.className = 'ed-panel';
+    p.innerHTML =
+      '<div class="ed-bar">' +
+        '<button class="ed-btn" id="edClose" aria-label="Close">✕</button>' +
+        '<span class="ed-tools"><button class="ed-btn" id="edBold"><b>B</b></button><button class="ed-btn" id="edItalic"><i>I</i></button></span>' +
+        '<button class="ed-btn ed-save" id="edSave">Save</button>' +
+      '</div>' +
+      '<div class="ed-status" id="edStatus"></div>' +
+      '<textarea id="edText" spellcheck="true"></textarea>';
+    document.body.appendChild(p);
+
+    var ta = $('#edText'), timer;
+    ta.addEventListener('input', function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () { if (isDirty()) store.set('draft_' + ed.path, ta.value); }, 800);
+    });
+    $('#edClose').addEventListener('click', closeEditor);
+    $('#edSave').addEventListener('click', saveEditor);
+    $('#edBold').addEventListener('click', function () { wrapSel('**'); });
+    $('#edItalic').addEventListener('click', function () { wrapSel('*'); });
+  }
+
+  function wrapSel(m) {
+    var ta = $('#edText'), s = ta.selectionStart, e = ta.selectionEnd, v = ta.value;
+    ta.value = v.slice(0, s) + m + v.slice(s, e) + m + v.slice(e);
+    ta.setSelectionRange(s + m.length, e + m.length);
+    ta.focus();
+    ta.dispatchEvent(new Event('input'));
+  }
+
+  function jumpTo(ta, sel, ratio) {
+    var body = ta.value, i = -1, len = 0, tries = sel ? [sel, sel.slice(0, 25), sel.slice(-25)] : [], k;
+    for (k = 0; k < tries.length; k++) {
+      if (tries[k].length >= 4) { i = body.indexOf(tries[k]); if (i > -1) { len = tries[k].length; break; } }
+    }
+    if (i > -1) {
+      ta.focus();
+      ta.setSelectionRange(i, i + len);
+      ta.scrollTop = Math.max(0, (i / body.length) * ta.scrollHeight - ta.clientHeight / 3);
+    } else {
+      ta.scrollTop = ratio * (ta.scrollHeight - ta.clientHeight);
+    }
+  }
+
+  function openEditor() {
+    var rootEl = $('#reader-root'), path = rootEl && rootEl.dataset.path;
+    if (!path) { toast('Falta o data-path no post.html', 4000); return; }
+    buildEditor();
+    var ta = $('#edText'), st = $('#edStatus'), sel = lastSel;
+    lastSel = '';
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var ratio = max > 0 ? window.pageYOffset / max : 0;
+    ed = { path: path, title: rootEl.dataset.title || path, sha: '', head: '', original: '' };
+    $('#edPanel').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    ta.value = ''; ta.disabled = true; $('#edSave').disabled = true;
+    st.textContent = 'Loading…';
+
+    api('GET', path).then(function (f) {
+      ed.sha = f.sha;
+      var raw = b64ToUtf8(f.content).replace(/\r\n/g, '\n');
+      var m = raw.match(/^---\n[\s\S]*?\n---\n?/);
+      ed.head = m ? m[0] : '';
+      var body = raw.slice(ed.head.length);
+      ed.original = body;
+      var draft = store.get('draft_' + path, '');
+      if (draft && draft !== body && confirm('Há um rascunho não salvo deste capítulo neste aparelho. Recuperar?')) body = draft;
+      ta.value = body; ta.disabled = false; $('#edSave').disabled = false;
+      st.textContent = HINT;
+      jumpTo(ta, sel, ratio);
+    }).catch(function (e) { st.textContent = errMsg(e); });
+  }
+
+  function closeEditor(force) {
+    if (force !== true && isDirty() && !confirm('Fechar sem salvar? Um rascunho fica guardado neste aparelho.')) return;
+    var p = $('#edPanel');
+    if (p) p.classList.remove('open');
+    document.body.style.overflow = '';
+    ed.path = '';
+  }
+
+  function saveEditor() {
+    var ta = $('#edText'), st = $('#edStatus'), btn = $('#edSave');
+    if (!isDirty()) { toast('Nenhuma alteração.', 2000); closeEditor(true); return; }
+    btn.disabled = true;
+    st.textContent = 'Saving…';
+    api('PUT', ed.path, {
+      message: 'Edit ' + ed.title + ' (via site)',
+      content: utf8ToB64(ed.head + ta.value),
+      sha: ed.sha
+    }).then(function () {
+      clearDraft(ed.path);
+      ed.original = ta.value;
+      closeEditor(true);
+      waitForBuild();
+    }).catch(function (e) { btn.disabled = false; st.textContent = errMsg(e); });
+  }
+
+  /* Depois de salvar, o GitHub leva ~1 min para republicar. Esta função fica
+     checando e troca o texto na tela sozinha quando a versão nova ficar pronta. */
+  function waitForBuild() {
+    var box = $('.post-content');
+    if (!box) return;
+    var before = box.innerHTML.trim(), n = 0;
+    toast('Salvo ✓ Publicando… (o texto atualiza sozinho)', 0);
+    (function poll() {
+      if (++n > 40) { toast('Salvo! A publicação está demorando — recarregue a página mais tarde.', 6000); return; }
+      fetch(location.pathname + '?v=' + Date.now(), { cache: 'no-store' })
+        .then(function (r) { return r.text(); })
+        .then(function (html) {
+          var doc = new DOMParser().parseFromString(html, 'text/html'), nb = doc.querySelector('.post-content');
+          if (nb && nb.innerHTML.trim() !== before) {
+            box.innerHTML = nb.innerHTML;
+            loadSpecialFonts();
+            toast('Atualizado ✓', 2500);
+          } else setTimeout(poll, 6000);
+        })
+        .catch(function () { setTimeout(poll, 6000); });
+    })();
+  }
+
+  var EDITOR_CSS = [
+    '.ed-fab{position:fixed;right:16px;bottom:20px;z-index:1050;width:52px;height:52px;border-radius:50%;border:0;background:var(--detalhe-accent);color:var(--on-accent);font-size:1.4rem;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.45);opacity:.9}',
+    '.ed-panel{position:fixed;inset:0;z-index:2000;background:var(--bg-principal);display:none;flex-direction:column}',
+    '.ed-panel.open{display:flex}',
+    '.ed-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;background:var(--bg-card);border-bottom:1px solid var(--borda-suave)}',
+    '.ed-tools{display:flex;gap:8px}',
+    '.ed-btn{background:rgba(127,127,127,.12);color:var(--texto-principal);border:1px solid var(--borda-suave);border-radius:8px;padding:8px 14px;font:inherit;font-size:1rem;cursor:pointer}',
+    '.ed-save{background:var(--detalhe-accent);color:var(--on-accent);border:0;font-weight:700}',
+    '.ed-save:disabled{opacity:.5}',
+    '.ed-status{padding:6px 12px;font-size:.8rem;color:var(--texto-secundario);background:var(--bg-card);border-bottom:1px solid var(--borda-suave)}',
+    '.ed-panel textarea{flex:1;width:100%;border:0;resize:none;outline:0;padding:14px;background:var(--bg-principal);color:var(--texto-principal);font:16px/1.7 ui-monospace,Menlo,Consolas,monospace}',
+    '.ed-toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);z-index:2100;max-width:90%;background:var(--bg-card);color:var(--texto-principal);border:1px solid var(--detalhe-accent);border-radius:10px;padding:10px 16px;font-size:.9rem;box-shadow:0 8px 20px rgba(0,0,0,.5);display:none;text-align:center}',
+    '.ed-toast.show{display:block}'
+  ].join('');
+
+  function initAdmin() {
+    if (location.hash === '#admin') {
+      var t = prompt('Cole aqui o seu token do GitHub para ativar a edição neste aparelho.\n(Deixe vazio e confirme para desativar.)');
+      if (t !== null) {
+        t = t.trim();
+        if (t) { store.set(TOKEN_KEY, t); }
+        else { try { localStorage.removeItem(TOKEN_KEY); } catch (e) {} }
+      }
+      history.replaceState(null, '', location.pathname + location.search);
+    }
+    if (!getToken()) return;
+
+    var css = document.createElement('style');
+    css.textContent = EDITOR_CSS;
+    document.head.appendChild(css);
+
+    var fab = document.createElement('button');
+    fab.className = 'ed-fab';
+    fab.title = 'Edit this chapter';
+    fab.textContent = '✎';
+    fab.addEventListener('click', openEditor);
+    document.body.appendChild(fab);
+
+    /* lembra o último texto selecionado, para o editor abrir já naquele ponto */
+    document.addEventListener('selectionchange', function () {
+      var s = window.getSelection(), c = $('.post-content');
+      if (s && c && s.anchorNode && c.contains(s.anchorNode)) {
+        var txt = String(s).trim();
+        if (txt) lastSel = txt;
+      }
+    });
+    window.addEventListener('beforeunload', function (e) { if (isDirty()) { e.preventDefault(); e.returnValue = ''; } });
+    document.addEventListener('keydown', function (e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === 's' && $('#edPanel') && $('#edPanel').classList.contains('open')) { e.preventDefault(); saveEditor(); }
+    });
+  }
+
   /* ---------- início ---------- */
   apply();
   var rootEl = $('#reader-root');
-  if (rootEl && rootEl.dataset.kind === 'chapter') { saveProgress(rootEl); loadSpecialFonts(); initScroll(); initKeys(); initComments(); }
+  if (rootEl && rootEl.dataset.kind === 'chapter') { saveProgress(rootEl); loadSpecialFonts(); initScroll(); initKeys(); initComments(); initAdmin(); }
   if (rootEl && rootEl.dataset.kind === 'novel') { initContinueButton(rootEl); initChapterSearch(); }
   window.addEventListener('load', initSynopsis);
 })();
