@@ -5,7 +5,7 @@ permalink: /eoshinki/          # endereço da página da história (pode manter 
 image: /assets/eoshinki.jpg
 tagline: "ch112+"
 author: 강토공/Kang To-gong
-status: Hiatus till Oct 22th
+status: On-Going
 chapter: "112+"
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
