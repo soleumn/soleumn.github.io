@@ -193,7 +193,7 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
    CAIXAS ESPECIAIS DENTRO DOS CAPÍTULOS
    ========================================================= */
 .system-window{background:var(--bg-card);border:1px solid var(--cor-sistema);border-left:4px solid var(--cor-sistema);border-radius:8px;padding:16px 20px;margin:25px 0;box-shadow:0 4px 20px rgba(0,0,0,.15);text-align:center;color:var(--texto-principal)}
-.system-header{font:700 .95rem var(--fonte-titulo);text-transform:uppercase;letter-spacing:.08em;color:var(--cor-sistema);margin-bottom:10px;display:flex;align-items:center;justify-content:center;}
+.system-header{font:700 .95rem var(--fonte-titulo);text-transform:uppercase;letter-spacing:.08em;color:var(--cor-sistema);margin-bottom:10px;display:flex;align-items:center;justify-content:center;gap:8px}
 .system-content{font-size:inherit;line-height:1.6}
 .system-content p{margin:0 0 .4em}
 
