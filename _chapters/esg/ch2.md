@@ -38,7 +38,7 @@ Route D. Take Refuge in the Special Zone 「Circulating Library」
 
 Route E. Patriotic Martyrdom
 
----
+・・・・・
 
 I was reading the rulebook when I instinctively reached out with my right hand.
 
@@ -66,7 +66,7 @@ Surely it doesn’t mean what I know it means?
 
 After thinking it over, I searched the detailed explanations for each route and read the section on “Patriotic Martyrdom” first.
 
----
+・・・・・
 
 Route E. Patriotic Martyrdom
 
@@ -80,7 +80,7 @@ In the event of your patriotic martyrdom, a set condolence payment will be deliv
 
 Furthermore, if meaningful information is confirmed through your sacrifice, substantial compensation will be paid.
 
----
+・・・・・
 
 ……Are they serious?
 
@@ -140,7 +140,7 @@ But here, purchasing a ticket looked nearly impossible.
 
 Because the ticket was insanely expensive.
 
----
+・・・・・
 
 Route A. Escape by Boarding a Train
 
@@ -152,7 +152,7 @@ It can only be purchased with cash. Credit cards, debit cards, and blank checks 
 
 Please also note that the cash machines inside the special zone do not operate.
 
----
+・・・・・
 
 No, what kind of person carries around fifteen million won in cash…….
 
@@ -160,7 +160,7 @@ Fortunately, the author of the rulebook seemed to have thought the same thing.
 
 There was an alternative of sorts below it.
 
----
+・・・・・
 
 If you do not have cash, you may exchange items for cash through the storage lockers located in the concourse.
 
@@ -170,7 +170,7 @@ The item placed in the locker will then disappear, and cash equivalent to 70 per
 
 Citizens carrying high-value items may secure cash through this method and purchase a ticket.
 
----
+・・・・・
 
 Mm. A completely useless alternative.
 
@@ -256,7 +256,7 @@ Even so, I approached while pretending outwardly that nothing was wrong and aske
 
 Then the bizarre thing slowly nodded.
 
----
+・・・・・
 
 If you cannot purchase a ticket at the ticket counter, please go to the Armed Forces Lounge on the second floor of the concourse.
 
@@ -306,7 +306,7 @@ For your safety, barter attempts with the following items are prohibited.
 
 4\. Living or dead humans
 
----
+・・・・・
 
 I had none of the items listed there right now.
 
