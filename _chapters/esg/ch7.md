@@ -82,7 +82,7 @@ As far as circumstances went, I had not had many choices back then.
 
 First, the Survival Rules had said this.
 
----
+・・・・・
 
 Request a barter exchange from the 「Thing in the Old Military Uniform」.
 
@@ -126,7 +126,7 @@ For safety, barter attempts are prohibited.
 
 4\. Living or dead humans
 
----
+・・・・・
 
 I repeated the memory to myself, then opened my mouth.
 
