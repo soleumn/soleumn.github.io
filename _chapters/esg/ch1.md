@@ -4,7 +4,7 @@ categories: esg
 capitulo: 1
 ---
 
-# Chapter 1
+<br>
 
 「It was an honor to accompany you on this long journey. May your days always be good.」
 
