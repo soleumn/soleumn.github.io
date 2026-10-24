@@ -7,10 +7,10 @@ tagline: "On-Going"
 author: 김영지/Kim Young-ji
 status: On-Going
 chapter: "168"
+desc: "ch157+ is my own translation!"
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
   - { name: Raws, url: "https://page.kakao.com/content/68473234/" }
-ch157+ is my own translation!
 ---
 『Editor’s Survival Guide』 
 
