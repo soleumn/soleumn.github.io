@@ -1,10 +1,9 @@
 ---
 title: "Chapter 1"
+subtitle: "When the Siren Sounds (1)"
 categories: esg
 capitulo: 1
 ---
-
-### When the Siren Sounds (1)
 
 <br>「It was an honor to accompany you on this long journey. May your days always be good.」
 
