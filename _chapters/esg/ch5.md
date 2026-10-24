@@ -1,5 +1,6 @@
 ---
-title: "Chapter 5 - When the Siren Sounds (5)"
+title: "Chapter 5"
+subtitle: "When the Siren Sounds (5)"
 categories: esg
 capitulo: 5
 ---
@@ -88,7 +89,7 @@ Then I handed Sol the small scissors from the emergency kit.
 
 Sol held the scissors and headed toward the Lost and Found Center.
 
-・・・・・
+════════
 
 When the 「Cloth Doll」 appears, cut off your hair and offer it.
 
@@ -100,7 +101,7 @@ Do not move, and continue asking until the 「Cloth Doll」 grants your request.
 
 Once your request reaches 121 times, the 「Cloth Doll」 will return you to reality.
 
-・・・・・
+════════
 
 It was something even a child could do as long as they kept their head.
 
@@ -294,7 +295,7 @@ A certain hand was hanging beside the train.
 
 It was a huge hand that made the railroad tracks look like toy rails.
 
-・・・・・
+════════
 
 Once you have obtained a Ticket, proceed down to the platform.
 
@@ -304,7 +305,7 @@ When boarding the train, please be sure to carry a Ticket.
 
 A person without a Ticket who boards the train will be removed by the 「Severed Station Attendant」.
 
-・・・・・
+════════
 
 Now it felt as if this rulebook was enjoying my misfortune.
 
@@ -364,7 +365,7 @@ Then, when she found the Ticket lying at her feet, she cried out in shock.
 
 With that voice as the last thing I heard, I was devoured by the black forms.
 
-・・・・・
+════════
 
 Everything went dark and went out.
 

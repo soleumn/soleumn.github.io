@@ -427,7 +427,7 @@ Still, as I kept riffling through it, there was a paragraph inside the leaflet t
 
 In letters I could read clearly, it said this:
 
-・・・・・
+════════
 
 Survival Rules for Missing Persons inside the 「Railway Station Where the Siren Sounds」
 
@@ -435,7 +435,7 @@ You are currently inside the 「Railway Station Where the Siren Sounds」, which
 
 This is a dangerous situation in which you may lose your life. Please familiarize yourself with the survival rules below and evacuate promptly.
 
-・・・・・
+════════
 
 I was going to survive, whatever it took.
 

@@ -1,5 +1,6 @@
 ---
-title: "Chapter 3 - When the Siren Sounds (3)"
+title: "Chapter 3"
+subtitle: "When the Siren Sounds (3)"
 categories: esg
 capitulo: 3
 ---
@@ -26,21 +27,21 @@ The cold sensation of metal touching the nape of my neck.
 
 Along with that chilling feeling, the warning from the rulebook came to mind.
 
-・・・・・
+════════
 
 Up to five barter attempts are safe.
 
 Attempts beyond that may provoke the aggression of the 「Thing in the Old Military Uniform」.
 
-・・・・・
+════════
 
 No, I’m only on my fourth!
 
-・・・・・
+════════
 
 For your safety, barter attempts with the following items are prohibited.
 
-・・・・・
+════════
 
 Don’t tell me books are prohibited items too.
 
@@ -242,7 +243,7 @@ At that moment, the man’s half-rolled-back eyes trembled.
 
 It seemed he had only now realized what he had done.
 
-・・・・・
+════════
 
 ■ Individual Precautions inside the 「Railway Station Where the Siren Sounds」
 
@@ -250,7 +251,7 @@ One. Strictly observe public etiquette within this special zone.
 
 If you damage property inside the railway station or threaten railway station employees, the 「Railway Police」 may punish you.
 
-・・・・・
+════════
 
 Something like a rope grew out from among the glittering shards of glass.
 

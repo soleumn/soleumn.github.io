@@ -1,5 +1,6 @@
 ---
-title: "Chapter 4 - When the Siren Sounds (4)"
+title: "Chapter 4"
+subtitle: "When the Siren Sounds (4)"
 categories: esg
 capitulo: 4
 ---
@@ -132,7 +133,7 @@ I picked up the Survival Rules from the floor.
 
 Then I showed the child the part I had skimmed over because it was useless to me.
 
-・・・・・
+════════
 
 Route B. Escape through the 「Cloth Doll」
 
@@ -142,7 +143,7 @@ The 「Cloth Doll」 does not reveal itself to people aged 16 or older.
 
 If you do not meet this condition, please select a different route.
 
-・・・・・
+════════
 
 In other words, as a 28-year-old adult, this was a route I could not even attempt.
 
@@ -186,13 +187,13 @@ The thing that exchanged objects for money.
 
 That was the Storage Locker on the first floor of the concourse, the one I had given up on early.
 
-・・・・・
+════════
 
 Place the item you wish to exchange in the locker in row 7, column 1, and close the door.
 
 The item placed in the locker will then disappear, and cash equivalent to 70 percent of that item’s market price will be automatically dispensed.
 
-・・・・・
+════════
 
 No way.
 
@@ -430,7 +431,7 @@ I really had nearly died back there.
 
 I could not bring myself to say it was fine, so I nodded with a petty smile.
 
-・・・・・
+════════
 
 If you are a child or adolescent under the age of 16, carry a cutting tool such as a knife or scissors and proceed to the Lost and Found Center.
 
