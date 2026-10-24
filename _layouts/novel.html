@@ -24,6 +24,7 @@ layout: default
         {% if page.author %}<strong>Author:</strong> {{ page.author }}<br>{% endif %}
         {% if page.status %}<strong>Status:</strong> {{ page.status }}<br>{% endif %}
         {% if page.chapter %}<strong>Chapters:</strong> {{ page.chapter }}<br>{% endif %}
+        {% if page.desc %}<strong></strong> {{ page.desc }}<br>{% endif %}
         {% for l in page.links %}<strong>{{ l.name }}:</strong> <a href="{{ l.url }}" target="_blank" rel="noopener">here</a><br>{% endfor %}
       </p>
     </div>
