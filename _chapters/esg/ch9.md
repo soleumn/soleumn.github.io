@@ -1,5 +1,6 @@
 ---
-title: "Chapter 9 - I Thought I’d Escaped (4)"
+title: "Chapter 9"
+subtitle: "I Thought I’d Escaped (4)"
 categories: esg
 capitulo: 9
 ---
