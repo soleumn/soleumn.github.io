@@ -3,14 +3,14 @@ title: Editor's Survival Guide
 slug: esg           # TEM que ser igual ao nome da pasta em _posts/
 permalink: /esg/          # endereço da página da história (pode manter o que você já usa)
 image: /assets/esg.jpg
-tagline: "ch157+"
+tagline: "On-Going"
 author: 김영지/Kim Young-ji
 status: On-Going
-chapter: "157+"
+chapter: "168"
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
   - { name: Raws, url: "https://page.kakao.com/content/68473234/" }
-  - { name: Place to read previous chapters, url: "https://azurechronicles.com/novel/editors-survival-guide/" }
+  - { name: ch157+ is my own translation! }
 ---
 『Editor’s Survival Guide』 
 
