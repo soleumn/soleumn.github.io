@@ -3,9 +3,9 @@ title: "Chapter 1"
 categories: esg
 capitulo: 1
 ---
+<br>
 
-
-<br>## When the Siren Sounds (1)
+### When the Siren Sounds (1)
 
 「It was an honor to accompany you on this long journey. May your days always be good.」
 
