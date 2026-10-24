@@ -286,7 +286,11 @@ As if protesting that one-sided cutoff, I stood my ground and asked,
 
 But what came back was a purely textbook answer.
 
+<br>
+
 ---
+
+<br>
 
 “Ah, it went to print? Thank you, editor-in-chief. Yes, yes. I’ll contact the author later. Not at all, yes.”
 

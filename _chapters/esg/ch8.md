@@ -202,7 +202,11 @@ But no voice came out.
 
 I simply lost my grip on consciousness and fell into a comfortable dream.
 
+<br>
+
 ---
+
+<br>
 
 A ceiling.
 
@@ -252,7 +256,11 @@ I threw away the note and counted the cash that had spilled out.
 
 The amount of cash scattered across the floor was exactly one hundred million won.
 
+<br>
+
 ---
+
+<br>
 
 “Assistant Manager Seo, did you buy a new keyboard?!”
 

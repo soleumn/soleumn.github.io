@@ -146,7 +146,11 @@ I forced a smile and greeted her.
 
 Then that person, Author Na Bit, whom I had agreed to meet today, also smiled faintly and nodded.
 
+<br>
+
 ---
+
+<br>
 
 I returned to our seats with an Americano and bubble tea.
 
@@ -318,7 +322,11 @@ But I could barely hear those words.
 
 What filled my head right now was only the correlation between the 「Railway Station Where the Siren Sounds」 and Yongsan Station, which had supposedly been bombed.
 
+<br>
+
 ---
+
+<br>
 
 “It’s true…….”
 
