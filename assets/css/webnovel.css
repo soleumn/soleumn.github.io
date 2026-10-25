@@ -575,11 +575,6 @@ html[data-theme="gruvbox"] .post-content .notebook {
   text-align: left;
 }
 
-.post-content .scribble.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Cada palavra fica em uma linha, inclinada */
 .post-content .scribble > span {
   display: block;
@@ -595,3 +590,8 @@ html[data-theme="gruvbox"] .post-content .notebook {
 .post-content .scribble > span:nth-child(4) { margin-left: 3.3em; }
 .post-content .scribble > span:nth-child(5) { margin-left: 4.2em; }
 .post-content .scribble > span:nth-child(6) { margin-left: 5.1em; }
+
+.post-content .scribble.center {
+  margin-left: auto;
+  margin-right: auto;
+}
