@@ -556,4 +556,38 @@ html[data-theme="gruvbox"] .post-content .notebook {
    font-size: 2.4rem;
    font-weight: bold;
    text-shadow: 0 0 8px #808080, 0 0 25px rgba(255, 252, 253, 0.8);
-   
+
+   /* =========================================================
+   PALAVRAS INCLINADAS
+   ========================================================= */
+
+/* Container principal */
+.container-texto {
+   padding: 50px;
+   font-family: 'Sofadi One', 'Segoe UI', sans-serif; /* Fonte estilo escrita à mão */
+   color: var(--texto-secundario); /* Cor cinza idêntica à imagem */
+   user-select: none;
+}
+
+/* Configuração base para todas as palavras */
+.container-texto span {
+   display: inline-block;
+   transform-origin: left center;
+}
+
+/* Primeira palavra: "here" (fica na posição normal, apenas inclinada) */
+.here {
+   transform: rotate(-10deg);
+   margin-right: 1px; /* Espaço para a próxima palavra */
+}
+
+/* Segunda palavra: "it" (inclinada e deslocada para baixo) */
+.it {
+   transform: rotate(-10deg) translateY(30px);
+   margin-right: 6px;
+}
+
+/* Terceira palavra: "is" (inclinada e deslocada ainda mais para baixo) */
+.is {
+   transform: rotate(-10deg) translateY(55px);
+}
