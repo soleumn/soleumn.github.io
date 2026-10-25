@@ -10,7 +10,7 @@ chapter: "168"
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
   - { name: Raws, url: "https://page.kakao.com/content/68473234/" }
-desc: "ch157+ is my own translation ˎˊ˗"
+desc: "ch1-156 is not my translation! ˎˊ˗"
 ---
 『Editor’s Survival Guide』 
 
