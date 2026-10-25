@@ -4,7 +4,7 @@ layout: default
 {% assign prefix = "_chapters/" | append: page.slug | append: "/" %}
 {% assign caps = site.chapters | where_exp: "p", "p.path contains prefix" | sort: "capitulo" %}
 
-<div id="reader-root" data-kind="novel" data-slug="{{ page.slug }}">
+<div id="reader-root" data-kind="novel" data-slug="{{ page.slug }}" data-count="{{ caps.size }}">
 
   <div class="novel-head">
     <div class="novel-cover">
@@ -27,6 +27,8 @@ layout: default
         {% for l in page.links %}<strong>{{ l.name }}:</strong> <a href="{{ l.url }}" target="_blank" rel="noopener">here</a><br>{% endfor %}
         {% if page.desc %}<strong>✎</strong> {{ page.desc }}<br>{% endif %}
       </p>
+      <button id="btnFollow" class="reader-btn btn-follow" data-action="toggle-follow">🔔 Follow</button>
+      <p class="follow-hint">Follow to get a NEW tag on the home page when a chapter is posted.</p>
     </div>
   </div>
 
@@ -44,7 +46,7 @@ layout: default
   <div class="chapter-scrollbox">
     <ul id="lista-capitulos">
       {% for c in caps %}
-      <li class="item-capitulo"><a href="{{ c.url | relative_url }}">❏ {{ c.title }}{% if c.subtitle %} — {{ c.subtitle }}{% endif %}</a></li>
+      <li class="item-capitulo" data-i="{{ forloop.index }}"><a href="{{ c.url | relative_url }}">❏ {{ c.title }}{% if c.subtitle %} — {{ c.subtitle }}{% endif %}</a></li>
       {% endfor %}
     </ul>
   </div>
