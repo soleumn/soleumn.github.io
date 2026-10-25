@@ -15,11 +15,11 @@ This is often what a day looks like for an editor before publication.
 
 Evenings and weekends do not exist by default, and after staring at manuscripts all day, your eyes blur, your back aches, and even your brain goes a little fried, as if lightly burnt.
 
-And yet, sadly enough, I still like this work.
+And yet, sadly enough, I still like this job.
 
 Everyone has their own story.
 
-An editor finds something interesting among those common, strange, good, or bad stories and weaves it into a book.
+An editor finds interesting stories among the common, peculiar, good, or bad ones and compiles them into a book.
 
 Then delivers it to the reader.
 
@@ -55,7 +55,7 @@ I looked around, then turned to look behind me.
 
 Somehow, there was a wall behind my back.
 
-Considering that I had kept walking, it was impossible both temporally and spatially.
+Considering that I had been walking continuously, it was impossible in terms of both time and space.
 
 Half in doubt, I put my hand against the wall.
 
