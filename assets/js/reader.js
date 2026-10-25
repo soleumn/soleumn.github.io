@@ -441,10 +441,86 @@
     });
   }
 
+  /* ---------- SEGUIR HISTÓRIAS (aviso de capítulo novo, guardado neste aparelho) ---------- */
+  var FOLLOW_CSS =
+    '.btn-follow{margin-top:6px}' +
+    '.btn-follow.on{border-color:var(--detalhe-accent);color:var(--detalhe-accent)}' +
+    '.follow-hint{margin:8px 0 0;font-size:.8rem;color:var(--texto-secundario)}' +
+    '.badge-new,.badge-follow{position:absolute;top:8px;z-index:2;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.4)}' +
+    '.badge-new{right:8px;background:var(--detalhe-accent);color:var(--on-accent);font:700 .72rem var(--fonte-titulo);padding:3px 9px}' +
+    '.badge-follow{left:8px;background:var(--bg-card);font-size:.8rem;padding:2px 6px}' +
+    '.tag-new{margin-left:8px;background:var(--detalhe-accent);color:var(--on-accent);font:700 .68rem var(--fonte-titulo);padding:2px 7px;border-radius:999px;vertical-align:middle}';
+
+  function injectFollowCss() {
+    if ($('#followCss')) return;
+    var s = document.createElement('style');
+    s.id = 'followCss';
+    s.textContent = FOLLOW_CSS;
+    document.head.appendChild(s);
+  }
+  function isFollowing(slug) { return store.get('follow_' + slug, '') === '1'; }
+  function paintFollow(btn, slug) {
+    var on = isFollowing(slug);
+    btn.textContent = on ? '🔔 Following' : '🔔 Follow';
+    btn.classList.toggle('on', on);
+  }
+
+  /* Página inicial: etiqueta "NEW +N" nas histórias que a pessoa segue */
+  function initHomeBadges() {
+    var cards = document.querySelectorAll('.card-historia-link[data-slug]');
+    if (!cards.length) return;
+    injectFollowCss();
+    Array.prototype.forEach.call(cards, function (a) {
+      var slug = a.dataset.slug, total = parseInt(a.dataset.count, 10) || 0;
+      if (!isFollowing(slug)) return;
+      var cover = a.querySelector('.capa-container');
+      if (!cover) return;
+      var seen = parseInt(store.get('seen_' + slug, String(total)), 10);
+      var bell = document.createElement('span');
+      bell.className = 'badge-follow';
+      bell.textContent = '🔔';
+      cover.appendChild(bell);
+      if (total > seen) {
+        var b = document.createElement('span');
+        b.className = 'badge-new';
+        b.textContent = 'NEW +' + (total - seen);
+        cover.appendChild(b);
+      }
+    });
+  }
+
+  /* Página da história: botão Follow + etiqueta NEW nos capítulos novos */
+  actions['toggle-follow'] = function (el) {
+    var r = $('#reader-root');
+    if (!r) return;
+    var slug = r.dataset.slug, total = parseInt(r.dataset.count, 10) || 0;
+    if (isFollowing(slug)) { store.set('follow_' + slug, '0'); }
+    else { store.set('follow_' + slug, '1'); store.set('seen_' + slug, String(total)); }
+    paintFollow(el, slug);
+  };
+  function initFollow(rootEl) {
+    var btn = $('#btnFollow'), slug = rootEl.dataset.slug, total = parseInt(rootEl.dataset.count, 10) || 0;
+    if (!btn || !slug) return;
+    injectFollowCss();
+    paintFollow(btn, slug);
+    if (!isFollowing(slug)) return;
+    var seen = parseInt(store.get('seen_' + slug, String(total)), 10);
+    Array.prototype.forEach.call(document.querySelectorAll('.item-capitulo[data-i]'), function (li) {
+      if ((parseInt(li.dataset.i, 10) || 0) > seen) {
+        var t = document.createElement('span');
+        t.className = 'tag-new';
+        t.textContent = 'NEW';
+        li.firstElementChild.appendChild(t);
+      }
+    });
+    store.set('seen_' + slug, String(total));
+  }
+
   /* ---------- início ---------- */
   apply();
   var rootEl = $('#reader-root');
   if (rootEl && rootEl.dataset.kind === 'chapter') { saveProgress(rootEl); loadSpecialFonts(); initScroll(); initKeys(); initComments(); initAdmin(); }
-  if (rootEl && rootEl.dataset.kind === 'novel') { initContinueButton(rootEl); initChapterSearch(); }
+  if (rootEl && rootEl.dataset.kind === 'novel') { initContinueButton(rootEl); initChapterSearch(); initFollow(rootEl); }
+  initHomeBadges();
   window.addEventListener('load', initSynopsis);
 })();
