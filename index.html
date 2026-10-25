@@ -8,7 +8,9 @@ title: HOME
 <div class="stories-grid">
 {% assign novels = site.novels | sort: "order" %}
 {% for n in novels %}
-  <a href="{{ n.url | relative_url }}" class="card-historia-link">
+  {% assign pfx = "_chapters/" | append: n.slug | append: "/" %}
+  {% assign cnt = site.chapters | where_exp: "p", "p.path contains pfx" | size %}
+  <a href="{{ n.url | relative_url }}" class="card-historia-link" data-slug="{{ n.slug }}" data-count="{{ cnt }}">
     <div class="card-historia">
       <div class="capa-container">
         <div class="capa-placeholder">{{ n.title }}</div>
