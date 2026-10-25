@@ -5,7 +5,7 @@ categories: esg
 capitulo: 1
 ---
 
-<br>「It was an honor to accompany you on this long journey. May your days always be good.」
+<br>「It was an honor to accompany you on this long journey. Wishing you many wonderful days ahead.」
 
 I sent the final email and let out a relieved breath.
 
