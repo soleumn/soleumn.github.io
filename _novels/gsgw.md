@@ -9,7 +9,7 @@ status: Hiatus
 chapter: "pt 3 only (372+)"
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
-  - { name: Epub part 1, url: "https://drive.google.com/file/d/1MzowaspjJpdgMSc_CJIS2ot721m7CmkB/view?usp=sharing" }
+  - { name: Epub part 1, url: "https://drive.google.com/file/d/1X0QprcooM1YlOeYF_2T4wXt8ugHm82zt/view?usp=sharing" }
   - { name: Epub part 2, url: "https://drive.google.com/file/d/1Sn0boYmOvHHXO4ig9hnCLaYRIW0NGWm0/view?usp=drive_link" }
 desc: "best epub reader app for:<br>Android: Episteme<br>iOS: PocketBook / BookFusion / Books"
 ---
