@@ -6,7 +6,7 @@ image: /assets/esg.jpg
 tagline: "On-Going"
 author: 김영지/Kim Young-ji
 status: On-Going
-chapter: {{ caps.size }}
+chapter_auto: true
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
   - { name: Raws, url: "https://page.kakao.com/content/68473234/" }
