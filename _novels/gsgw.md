@@ -11,6 +11,7 @@ order: 1                 # ordem na home (1 aparece primeiro)
 links:
   - { name: Epub part 1, url: "https://drive.google.com/file/d/1MzowaspjJpdgMSc_CJIS2ot721m7CmkB/view?usp=sharing" }
   - { name: Epub part 2, url: "https://drive.google.com/file/d/1Sn0boYmOvHHXO4ig9hnCLaYRIW0NGWm0/view?usp=drive_link" }
+desc: best epub reader app for android is Episteme!
 ---
 A pop-up event for some ‘modern fantasy’ media I loved so much that I even took a precious day off work to attend.
         
