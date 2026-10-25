@@ -556,38 +556,37 @@ html[data-theme="gruvbox"] .post-content .notebook {
    font-size: 2.4rem;
    font-weight: bold;
    text-shadow: 0 0 8px #808080, 0 0 25px rgba(255, 252, 253, 0.8);
+   
 
-   /* =========================================================
-   PALAVRAS INCLINADAS
+/* =========================================================
+   SCRIBBLE (palavras escritas à mão, inclinadas e em "escadinha")
+   Cole este bloco no FINAL do arquivo assets/css/webnovel.css
    ========================================================= */
 
-/* Container principal */
-.container-texto {
-   padding: 50px;
-   font-family: 'Sofadi One', 'Segoe UI', sans-serif; /* Fonte estilo escrita à mão */
-   color: var(--texto-secundario); /* Cor cinza idêntica à imagem */
-   user-select: none;
+.post-content .scribble {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin: 28px 0 28px 1em;
+  font-family: 'Shadows Into Light Two', 'Segoe Print', 'Comic Sans MS', cursive;
+  font-size: 1.9em;
+  line-height: 1;
+  color: var(--texto-secundario);        /* acompanha o tema do leitor */
+  text-align: left;
 }
 
-/* Configuração base para todas as palavras */
-.container-texto span {
-   display: inline-block;
-   transform-origin: left center;
+/* Cada palavra fica em uma linha, inclinada */
+.post-content .scribble > span {
+  display: block;
+  width: fit-content;
+  padding: .12em 0;
+  transform: rotate(var(--sc-tilt, -8deg));   /* inclinação das palavras */
+  transform-origin: left bottom;
 }
 
-/* Primeira palavra: "here" (fica na posição normal, apenas inclinada) */
-.here {
-   transform: rotate(-10deg);
-   margin-right: 1px; /* Espaço para a próxima palavra */
-}
-
-/* Segunda palavra: "it" (inclinada e deslocada para baixo) */
-.it {
-   transform: rotate(-10deg) translateY(30px);
-   margin-right: 6px;
-}
-
-/* Terceira palavra: "is" (inclinada e deslocada ainda mais para baixo) */
-.is {
-   transform: rotate(-10deg) translateY(55px);
-}
+/* A "escadinha": cada palavra começa um pouco mais à direita (até 6 palavras) */
+.post-content .scribble > span:nth-child(2) { margin-left: 1.5em; }
+.post-content .scribble > span:nth-child(3) { margin-left: 2.4em; }
+.post-content .scribble > span:nth-child(4) { margin-left: 3.3em; }
+.post-content .scribble > span:nth-child(5) { margin-left: 4.2em; }
+.post-content .scribble > span:nth-child(6) { margin-left: 5.1em; }
