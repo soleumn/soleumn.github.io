@@ -43,7 +43,11 @@ The reason was simple. It wasn’t fun.
 
 But what about earlier?
 
+<br>
+
 <span style="color: var(--texto-secundario);">“Hanmuk. Bind.”</span>
+
+<br>
 
 The moment Mo Haein’s words fell, he fired off the Bind without a second thought.
 
@@ -81,7 +85,11 @@ Whether he could be used, or not.
 
 If it helped close a Trial with a True Ending, Mo Haein was ready to accept whatever that thing was.
 
+<br>
+
 <span style="color: var(--texto-secundario);">“You worked hard, Captain.”</span>
+
+<br>
 
 The image of him greeting her suddenly came to mind.
 
@@ -209,7 +217,7 @@ The atmosphere turned cold.
 
 To show a more cooperative attitude, I scraped together everything I had and didn’t have to explain.
 
-“My name is Han Goyo. You know the carol? *‘Silent Night.’* At first, I was called *‘Gobam.’* Then, while eating roasted chestnuts with my friends, *‘Gobam’* turned into *‘Gunbam’*<sup><a href="#u6dyDlVl3tTOtxVzGnDsRK7">1</a></sup>….”
+“My name is Han Goyo. You know the carol? *‘Silent Night.’* At first, I was called *‘Gobam.’* Then, while eating roasted chestnuts with my friends, *‘Gobam’* turned into <p id="gunbam">*‘Gunbam’*<sup><a href="gunbamm">1</a></sup>….”
 
 God, this was pathetic.
 
@@ -265,7 +273,11 @@ In HapFactory, Park Seonggyeon’s nametag had read *‘Sample.’*
 
 A System window immediately came to mind.
 
+<br>
+
 <span style="color: var(--texto-secundario);">\[*‘Park Seonggyeon’* is a registrable Sample character. Would you like to register?\]</span>
+
+<br>
 
 <p id="sample">Sample, and Sample.<sup><a href="#samplefoot">2</a></sup></p>
 
@@ -355,7 +367,7 @@ Not human. An AI system android.
 
 I called the man’s name.
 
-“Samra Mansang.<sup><a href="#samrafoot2">3</a></sup>”
+“<p id="samra">Samra Mansang.<sup><a href="#samraa">3</a></sup>”
 
 At that moment, the man’s face, which I had thought was perfectly normal until just now, came into proper view.
 
@@ -387,8 +399,8 @@ Samra, seated on the chair, looked down at me.
 
 <br>
 
-<sup><a href="#uoC8iCfSUPL8VpoRTcpy9H5">1</a></sup>Gunbam means *‘roasted chestnut’*, just makes more sense to keep it as Gunbam in this context.
+<p <p id="gunbamm"><sup><a href="#gunbam">1</a></sup>Gunbam means *‘roasted chestnut’*, just makes more sense to keep it as Gunbam in this context.</p>
 
 <p id="samplefoot"><sup><a href="#sample">2</a></sup>It’s two different words for sample, the one the system used was ‘샘플’, borrowed from English, said like “Sam-peul.” The second, used on his  name tag, was ‘견본,’ and is more formal.</p>
 
-<br><sup><a href="#samra">3</a></sup>Samra Mansang or 삼라만상 means “all things in the universe,” a nod to him being an all-knowing AI.
+<br><p id="samraa"><sup><a href="#samra">3</a></sup>Samra Mansang or 삼라만상 means “all things in the universe,” a nod to him being an all-knowing AI.</p>
