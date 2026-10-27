@@ -44,22 +44,20 @@ The M-Tuber beamed and called out to me.
 *“Roasted Chestnut! Welcome!”*
 
 <div class="chat-box">
-  <div style="display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit; color:var(--detalhe-accent);font-weight:700;flex-shrink:0">Roasted Chestnut: Hello</div>
+  <div style="display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit;"><span style="color:var(--detalhe-accent);font-weight:700;flex-shrink:0">Roasted Chestnut:</span> Hello</div>
 </div>
 
 <br>
 
 My greeting was immediately buried under a flood of chat from the fervent viewers.
 
-\[PLEASESAVEMEPLEASEGETMEOUTICANTBEATTHIS\]
-
-\[I CANT DO THIS ANYMORE HEHEHEHHEHEHEHEHEHE\]
-
-\[IMSORRYIMSORRYIMSORRYIMSORRY\]
-
-\[IMDYINGITSHURTSHURTSHURTS\]
-
-\[THEENDINGHOWTHEENDINGPLEASETHEENDING\]
+<div class="chat-box">
+  <div class="chat-msgs">PLEASESAVEMEPLEASEGETMEOUTICANTBEATTHIS</div>
+  <div class="chat-msgs">I CANT DO THIS ANYMORE HEHEHEHHEHEHEHEHEHE</div>
+  <div class="chat-msgs">IMSORRYIMSORRYIMSORRYIMSORRY</div>
+  <div class="chat-msgs">IMDYINGITSHURTSHURTSHURTS</div>
+  <div class="chat-msgs">THEENDINGHOWTHEENDINGPLEASETHEENDING</div>
+</div>
 
 The M-Tuber I loved didn’t have many viewers.
 
