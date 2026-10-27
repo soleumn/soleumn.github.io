@@ -6,18 +6,15 @@ capitulo: 1
 <br>
 
 <div class="chat-container">
-<div class="chat-group received">
-<span class="chat-author">Director</span>
+
 <div class="chat-msg received" style="color: var(--texto-secundario) !important;">
 Goyo, there’s a coaching position open. Come whenever you want.
 </div>
-</div>
-<div class="chat-group received">
-<span class="chat-author">SGY</span>
+
 <div class="chat-msg received" style="color: var(--texto-secundario) !important;">
 Player, this is Day News Sa Gongyeon. Would it be possible to schedule an interview…
 </div>
-</div>
+
 </div>
 
 I turned on my phone to check the time and saw unread message notifications staring back at me.
