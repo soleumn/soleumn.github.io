@@ -74,7 +74,7 @@ Which I actually liked. No unwanted attention meant I could relax.
 *“I was just waiting for you, Roasted Chestnut.”*
 
 <div class="chat-box">
-  <div style="display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit;"><span style="color:var(--detalhe-accent);font-weight:700;flex-shrink:0">Roasted Chestnut:</span> I was waiting for the stream too.</div>
+  <div style="display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit;"><span style="color:var(--detalhe-accent);font-weight:700;">Roasted Chestnut:</span> I was waiting for the stream too.</div>
 </div>
 
 <br>
