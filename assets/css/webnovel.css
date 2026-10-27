@@ -595,3 +595,18 @@ html[data-theme="gruvbox"] .post-content .notebook {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* =========================================================
+   Caixa do jogo no passado
+   ========================================================= */
+
+.post-content .caixajogo {
+   background: #1d1c35; 
+   border: 2px solid #1d1c35; 
+   color: #fff; 
+   font-weight: 700; 
+   text-align: justify; 
+   line-height: 1.8; 
+   padding: 1.5em; 
+   margin: 20px 0;"
+}
