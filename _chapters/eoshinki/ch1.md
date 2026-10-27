@@ -43,7 +43,9 @@ The M-Tuber beamed and called out to me.
 
 *“Roasted Chestnut! Welcome!”*
 
-\[Roasted Chestnut: Hello\]
+<div class="chat-box">
+  <div style="display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit; color:var(--detalhe-accent);font-weight:700;flex-shrink:0">Roasted Chestnut: Hello</div>
+</div>
 
 <br>
 
