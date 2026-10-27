@@ -5,8 +5,6 @@ capitulo: 9
 ---
 <br>BEEP— BEEP— BEEP—.
 
-<br>
-
 An error alarm rang out in repeated bursts.
 
 Researchers, fully kitted in protective suits and gear, reported in tense voices.
