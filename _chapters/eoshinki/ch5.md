@@ -285,8 +285,8 @@ Unknown Storybook: A crude storybook made by drawing pictures in a sketchbook wi
 
 And at the end of the storybook, one more page was added.
 
-<div class="f-distressed" style="background: #d10019; border: 2px solid #ff3b4f; color: #fff; font-weight: 700; text-align: justify; word-break: break-all; letter-spacing: .06em; line-height: 1.6; text-shadow: 2px 2px 0 rgba(0, 0, 0, .5); box-shadow: 0 0 22px rgba(255, 30, 60, .55); padding: 1.2em; margin: 24px 0;">
-WANNADIEWANNADIEWANNADIEWANNADIEKILLME KILLMEKILLMEKIEDIEKILL
+<div style="background: #d10019; border: 2px solid #d10019; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+Unknown Paper #5<br>The enraged princess pushed the prince from the tower.<br>The prince shattered into pieces and died.<br>The princess envied the prince’s fragmented death.
 </div>
 
 This was the core of HapFactory’s main story.
@@ -299,20 +299,16 @@ Then I approached an old cabinet tucked away in a corner, barely visible.
 
 I pulled on the door of the long metal cabinet. Clunk. It didn’t open.
 
-<div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
-<div class="system-content" style="color: var(--texto-secundario) !important;">
-<strong>Seems to be locked…</strong>
-</div>
+<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+Seems to be locked…
 </div>
 
 In the game, a System Window would pop up here.
 
 But if you stubbornly tried to open the door over ten times—
 
-<div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
-<div class="system-content" style="color: var(--texto-secundario) !important;">
-<strong>The cabinet door broke!</strong>
-</div>
+<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+The cabinet door broke!
 </div>
 
 A chime would sound, and the door would swing open.
