@@ -73,7 +73,9 @@ Which I actually liked. No unwanted attention meant I could relax.
 
 *“I was just waiting for you, Roasted Chestnut.”*
 
-\[Roasted Chestnut: I was waiting for the stream too.\]
+<div class="chat-box">
+  <div style="display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit;"><span style="color:var(--detalhe-accent);font-weight:700;flex-shrink:0">Roasted Chestnut:</span> I was waiting for the stream too.</div>
+</div>
 
 <br>
 
@@ -113,7 +115,9 @@ I typed into the chat, wondering what kind of game they’d made this time.
 
 <br>
 
-\[Roasted Chestnut: The last game you gave me was really fun.\]
+<div class="chat-box">
+  <div style="display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit;"><span style="color:var(--detalhe-accent);font-weight:700;flex-shrink:0">Roasted Chestnut:</span> The last game you gave me was really fun.</div>
+</div>
 
 *“I knew you’d get the true ending, Roasted Chestnut.”*
 
@@ -129,7 +133,9 @@ I shook off the confusion and asked.
 
 <br>
 
-\[Roasted Chestnut: What kind of game is it today?\]
+<div class="chat-box">
+  <div style="display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit;"><span style="color:var(--detalhe-accent);font-weight:700;flex-shrink:0">Roasted Chestnut:</span> What kind of game is it today?</div>
+</div>
 
 <br>
 
@@ -163,13 +169,12 @@ Unlike me, frozen in shock, the M-Tuber seemed strangely excited today.
 
 Like they’d just won the lottery or something.
 
-\[NOGAME? NOGAME? ICANLEAVE? LETMEOUT?\]
-
-\[IWANTTOGOOUTIMSORRYPLEASESAVEME\]
-
-\[Already over? Boring.\]
-
-\[FINALLYFINALLYDIEDIEDIEDIE\]
+<div class="chat-box">
+  <div class="chat-msgs">NOGAME? NOGAME? ICANLEAVE? LETMEOUT?</div>
+  <div class="chat-msgs">IWANTTOGOOUTIMSORRYPLEASESAVEME</div>
+  <div class="chat-msgs">Already over? Boring.</div>
+  <div class="chat-msgs">FINALLYFINALLYDIEDIEDIEDIE</div>
+</div>
 
 The viewers’ chat went into overdrive at the M-Tuber’s bombshell.
 
@@ -177,7 +182,9 @@ I barely managed to move my fingers through the torrent of messages.
 
 <br>
 
-\[Roasted Chestnut: That’s a shame… Can I ask why?\]
+<div class="chat-box">
+  <div style="display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit;"><span style="color:var(--detalhe-accent);font-weight:700;flex-shrink:0">Roasted Chestnut:</span> That’s a shame… Can I ask why?</div>
+</div>
 
 *“Because it’s over now.”*
 
@@ -241,7 +248,9 @@ Nothing they’d said since earlier made any sense. I pressed my nose and typed 
 
 <br>
 
-\[Roasted Chestnut: I don’t understand what you mean.\]
+<div class="chat-box">
+  <div style="display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit;"><span style="color:var(--detalhe-accent);font-weight:700;flex-shrink:0">Roasted Chestnut:</span> I don’t understand what you mean.</div>
+</div>
 
 *“I can’t wait. I’ve been waiting for so long. So, so, so, so long.”*
 
