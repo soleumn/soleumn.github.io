@@ -249,6 +249,7 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
    background: #1d1c35; 
    border: 2px solid #1d1c35; 
    color: #fff; 
+   font-family: 'Jersey 10', sans-serif;
    font-weight: 700; 
    text-align: justify; 
    line-height: 1.8; 
