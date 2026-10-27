@@ -5,8 +5,6 @@ capitulo: 8
 ---
 <br>I squinted at the system window, wondering what kind of ending this was supposed to be.
 
-<br>
-
 No miracle happened. The ■ didn’t suddenly turn into letters.
 
 The next system window that popped up was just as incomprehensible.
