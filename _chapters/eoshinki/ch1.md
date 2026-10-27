@@ -8,11 +8,11 @@ capitulo: 1
 <div class="chat-container">
 
 <div class="chat-msg received" style="color: var(--texto-secundario) !important;">
-Goyo, there’s a coaching position open. Come whenever you want.
+Director: Goyo, there’s a coaching position open. Come whenever you want.
 </div>
 
 <div class="chat-msg received" style="color: var(--texto-secundario) !important;">
-Player, this is Day News Sa Gongyeon. Would it be possible to schedule an interview…
+SGY: Player, this is Day News Sa Gongyeon. Would it be possible to schedule an interview…
 </div>
 
 </div>
