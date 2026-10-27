@@ -187,10 +187,8 @@ Mo Haein had cut the attacking team member in half with the Blade.
 
 <div class="f-special" style="border: 1px solid var(--borda-suave, rgba(255, 255, 255, 0.1)); border-radius: 12px; padding: 16px; text-align: center; margin: 20px 0; background-color: var(--bg-card) !important;">
 <strong>…This incident was triggered by Lieutenant Park Seonggyeon’s unilateral attack, and the counterattack by the attacked party was confirmed as an immediate response to the preemptive strike.</strong><br><br>
-1) The incident occurred during a boss fight.<br>2) Due to the chaos at the scene, the attacked party lacked the time to make a judgment call.<br>3) The attacked party was also seriously injured.
+1) The incident occurred during a boss fight.<br>2) Due to the chaos at the scene, the attacked party lacked the time to make a judgment call.<br>3) The attacked party was also seriously injured.<br><br>Considering the above factors comprehensively, the attacked party’s use of force is judged as self-defense, not excessive response.
 </div>
-
-Considering the above factors comprehensively, the attacked party’s use of force is judged as self-defense, not excessive response.
 
 Even though it was a death, self-defense was recognized, and the punishment was light — just filing a report and a short suspension.
 
