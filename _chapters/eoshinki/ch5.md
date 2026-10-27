@@ -75,7 +75,7 @@ Princess Tarantella was staring down at me.
 
 *Ding!* A System Window appeared.
 
-{% include system.html text="◆ Main Quest: Soothe the Angry Princess Tarantella.<br>All your companions have died. You are alone.<br>Only you remain to face the angry spider.<br>You wish to soothe Princess Tarantella. To do so, you must win the battle." %}
+{% include system.html text="◆ Main Quest: Soothe the Angry Princess Tarantella.<br><br>All your companions have died. You are alone.<br>Only you remain to face the angry spider.<br>You wish to soothe Princess Tarantella. To do so, you must win the battle." %}
 
 The boss’s target had shifted to me now.
 
