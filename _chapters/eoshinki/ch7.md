@@ -7,6 +7,8 @@ capitulo: 7
 
 *“…..”*
 
+<br>
+
 Smiley was silent.
 
 Its black plastic eyes simply held me still, as if examining something unfamiliar.
