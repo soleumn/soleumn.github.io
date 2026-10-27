@@ -5,8 +5,6 @@ capitulo: 5
 ---
 <br>Park Seonggyeon’s lips trembled as he let out a terrified murmur.
 
-<br>
-
 “Wha-what… Why is it doing this…”
 
 He tried to back away from the System Window shoved in his face, but his back hit the wall almost immediately.
