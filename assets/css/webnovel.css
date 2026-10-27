@@ -245,11 +245,17 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
 
 /* Citações (> texto) */
 .post-content blockquote {
-  margin: 0 0 var(--para-gap);
-  padding: 2px 0 2px 16px;
-  border-left: 4px solid var(--borda-suave);
-  color: var(--borda-suave);
-  font-style: italic;
+   background: #1d1c35; 
+   border: 2px solid #1d1c35; 
+   color: #fff; 
+   font-weight: 700; 
+   text-align: justify; 
+   line-height: 1.8; 
+   padding: 1.5em; 
+   margin: 0 0 var(--para-gap);
+   padding: 2px 0 2px 16px;
+   border-left: 4px solid var(--borda-suave);
+   font-style: italic;
 }
 .post-content blockquote p { margin: 0 0 .8em; }
 .post-content blockquote p:last-child { margin-bottom: 0; }
