@@ -5,8 +5,6 @@ capitulo: 6
 ---
 <br>Before I could answer, she spat out coldly.
 
-<br>
-
 “Nut Candy.”
 
 An interrogation that said: don’t even think about weaseling your way out. Her words brought a scene flashing through my mind.
