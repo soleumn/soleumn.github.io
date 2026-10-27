@@ -69,7 +69,7 @@ Staring at Mo Haein and Park Seonggyeon with their glossy eyes.
 
 A notification sound rang out as a system window appeared.
 
-{% include system.html text="◆Main Quest: Survive the Murderous Toys.<br>The toys will not forgive the adult who attacked Smiley.<br>You decide you must survive, evading the enraged toys." %}
+{% include system.html text="◆Main Quest: Survive the Murderous Toys.<br><br>The toys will not forgive the adult who attacked Smiley.<br>You decide you must survive, evading the enraged toys." %}
 
 *‘Why’d you have to go and beat up Smiley…’*
 
