@@ -609,6 +609,7 @@ html[data-theme="gruvbox"] .post-content .notebook {
 
 .post-content .caixajogo {
    background: #1d1c35; 
+   font-family: 'Jersey 10', sans-serif;
    border: 2px solid #1d1c35; 
    color: #fff; 
    font-weight: 700; 
