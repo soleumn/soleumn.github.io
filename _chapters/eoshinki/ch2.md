@@ -31,13 +31,13 @@ Spreading an infectious virus that mutated both living and non-living things.
 
 It was a calamity in the truest sense — inexplicable by modern science.
 
-Humans considered the calamity from space a test from God and named it the *‘Trial.’*
+Humans considered the calamity from space a test from God and named it the ‘Trial.’
 
 With the hatching of the Trials, humans also began to bloom with special talents.
 
 Beings who could see the System window appeared.
 
-They were called *‘Adaptees,’* and they could clear Trials through the System window.
+They were called ‘Adaptees,’ and they could clear Trials through the System window.
 
 In the Archive world, the Player bloomed as an Adaptee and entered various Trials.
 
@@ -55,7 +55,11 @@ And second — the System window.
 
 I stared at the System window glowing with a hazy light, and recalled what I’d seen right before losing consciousness.
 
-<span style="color: var(--texto-secundario);">\[You are the System of planet *‘Earth’*\]</span>
+<br>
+
+<span style="color: var(--texto-secundario);">\[You are the System of planet ‘Earth’\]</span>
+
+<br>
 
 A message only visible to the Archive’s Adaptees.
 
@@ -139,7 +143,7 @@ I gasped at the blunt answer, and the man next to me snickered.
 
 “It’s true there are killers, but don’t worry. We’ll get you out safe.”
 
-He said *‘we’re soldiers, after all,’* and flashed his military ID.
+He said ‘we’re soldiers, after all,’ and flashed his military ID.
 
 “Trial Response Agency…?”
 
@@ -157,7 +161,7 @@ Employee: Sand
 Employee: Sample
 </div>
 
-Mo Haein wore an orange work uniform with *‘Sand’* on her name tag. The man wore a yellow one with *‘Sample’* on his.
+Mo Haein wore an orange work uniform with ‘Sand’ on her name tag. The man wore a yellow one with ‘Sample’ on his.
 
 But Mo Haein’s name tag was a little different.
 
@@ -215,7 +219,7 @@ First, you weren’t supposed to wear any of the toy limbs you get in the game.
 
 As you progressed through the game, NPCs would give you toy arm and leg items one by one.
 
-Players would naturally equip them because it *‘seemed’* essential to the game.
+Players would naturally equip them because it ‘seemed’ essential to the game.
 
 They were incredibly convenient items — but if you got greedy and replaced all your limbs with toys, you’d immediately get the Bad Ending.
 
@@ -243,7 +247,7 @@ I’m curious about that man too.
 
 I had a pretty good memory.
 
-As much as I loved the Archive, I remembered even the small details — but the man with the nickname *‘Sample’* was new to me.
+As much as I loved the Archive, I remembered even the small details — but the man with the nickname ‘Sample’ was new to me.
 
 I’d never seen him in any Trial or in the cutscenes after the endings.
 

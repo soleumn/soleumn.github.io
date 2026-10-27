@@ -15,7 +15,11 @@ I was in the middle of fulfilling the true ending conditions — I couldn’t af
 
 I hurried after Park Seonggyeon, glancing back.
 
+<br>
+
 “…..”
+
+<br>
 
 The candy on Smiley’s palm was still there.
 
@@ -73,7 +77,7 @@ I swallowed a sigh internally and crept toward the safe zone.
 
 The Trial Response Agency, being a government organization, applied strict rules to Trials.
 
-The most important rule was *‘no unnecessary contact with NPCs.’*
+The most important rule was ‘no unnecessary contact with NPCs.’
 
 It was to minimize the risk of viral infection through contact.
 
@@ -93,10 +97,8 @@ The players would be attacked by toys in every stage, and at the end, they’d e
 
 The text that appeared at the end of the Collapse Ending was especially chilling.
 
-<div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
-<div class="system-content" style="color: var(--texto-secundario) !important;">
-<strong>&lt;Happy Smile Factory&gt; has collapsed.<br>Smiley was hacked to pieces and thrown into the flames, but even so, it could not die.<br>Smiley will become a terrible nightmare and come for the player again…</strong>
-</div>
+<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+&lt;Happy Smile Factory&gt; has collapsed.<br>Smiley was hacked to pieces and thrown into the flames, but even so, it could not die.<br>Smiley will become a terrible nightmare and come for the player again…
 </div>
 
 I still remembered that ending vividly.
@@ -107,11 +109,17 @@ If I played it right, I could maintain my position as a clueless civilian and st
 
 As I recalled the Collapse Ending, a child’s voice rang out over the music as a guide announcement.
 
+<br>
+
 *“It’s the adult who bullied Smiley. A-dult. The boring adult.”*
+
+<br>
 
 Hundreds of toys stared at Mo Haein and Park Seonggyeon, swaying their bodies in time with the music like they were warming up.
 
 Left, right, left, left, right…
+
+<br>
 
 *“We want to make the adult fun.”*
 
@@ -119,13 +127,19 @@ Left, right, left, left, right…
 
 *“Aha!”*
 
+<br>
+
 Cymbals crashed and children cheered.
+
+<br>
 
 *“We found the answer. Make the adult small!”*
 
 *“Small. Small. Small. Like a child. Like a-a-a-a child. Small. Small.”*
 
 *“Pieces. Pieces. Pieces. Pieces. Pieces.”*
+
+<br>
 
 Mo Haein shouted.
 
@@ -149,7 +163,11 @@ But there was something neither Park Seonggyeon nor Mo Haein knew.
 
 On the Collapse route, the conveyor belt was useless.
 
+<br>
+
 *“Turning the adult into a child, staaaart!”*
+
+<br>
 
 The guide announcement ended with the sound of children’s laughter. The toys that had been swaying shot up like popcorn and lunged.
 
@@ -259,14 +277,16 @@ It was suspicious, but I had no time to deliberate.
 
 I pressed Sad Smiley’s belly. A recorded, melancholy child’s voice came out.
 
+<br>
+
 *“Please make Sad Smiley happy.”*
+
+<br>
 
 In the original game, two choices would appear.
 
-<div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
-<div class="system-content" style="color: var(--texto-secundario) !important;">
-<strong>- Ignore it.<br>- Ask what to do.</strong>
-</div>
+<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+- Ignore it.<br>- Ask what to do.
 </div>
 
 But there were no choices here, so I had to say it out loud.
@@ -275,11 +295,19 @@ But there were no choices here, so I had to say it out loud.
 
 Then Sad Smiley would give me a clue to the toy factory’s secret…
 
+<br>
+
 *“Become Sad Smiley’s owner.”*
+
+<br>
 
 …it said.
 
+<br>
+
 *“Stay together forever. Together is fun. Fun is happy. Forever. For-ev-ever. Forever. Forever. Foreverrrrrr…”*
+
+<br>
 
 CRACK!
 

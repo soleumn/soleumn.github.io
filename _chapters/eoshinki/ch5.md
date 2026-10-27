@@ -5,6 +5,8 @@ capitulo: 5
 ---
 <br>Park Seonggyeon’s lips trembled as he let out a terrified murmur.
 
+<br>
+
 “Wha-what… Why is it doing this…”
 
 He tried to back away from the System Window shoved in his face, but his back hit the wall almost immediately.
@@ -89,7 +91,11 @@ The Trial granted you the minimum physical ability needed to clear it as a basel
 
 It was strange how easily my body moved exactly as I willed it.
 
+<br>
+
 *“——!”*
+
+<br>
 
 Tarantella, who hadn’t landed a single hit, let out a high-pitched shriek.
 
@@ -147,7 +153,11 @@ Tarantella, now spewing webs in only one direction like a broken machine, lifted
 
 Then it coughed up a cocoon, and its four-part mouth closed back into a smiling face.
 
+<br>
+
 *“——…”*
+
+<br>
 
 A child’s crying sound emerged as the spider toy collapsed to the floor.
 
@@ -165,7 +175,11 @@ They were the limbs of the prince doll.
 
 I collected the doll parts and put them in my inventory.
 
+<br>
+
 *“…..”*
+
+<br>
 
 Tarantella hadn’t moved a muscle the whole time.
 
@@ -209,7 +223,7 @@ This was the first time a boss had handed over a hidden item.
 
 HapFactory’s toys hate adults.
 
-In the true ending route, the toys do develop some fondness for the player, but it’s more like *‘not hating them.’*
+In the true ending route, the toys do develop some fondness for the player, but it’s more like ‘not hating them.’
 
 Something like this — giving gifts — shouldn’t have been possible.
 
@@ -245,47 +259,35 @@ A space that could only be found by collecting the sketchbook papers scattered t
 
 The contents of the sketchbook papers were as follows:
 
-<div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
-<div class="system-content" style="color: var(--texto-secundario) !important;">
-<strong>Unknown Paper #1<br>To save the princess who fell ill, the prince summoned an evil demon.</strong>
-</div>
+<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+Unknown Paper #1<br>To save the princess who fell ill, the prince summoned an evil demon.
 </div>
 
-<div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
-<div class="system-content" style="color: var(--texto-secundario) !important;">
-<strong>Unknown Paper #2<br>The princess, having gained the demon’s power, grew healthy! But she became a terrible monster.</strong>
-</div>
+<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+Unknown Paper #2<br>The princess, having gained the demon’s power, grew healthy! But she became a terrible monster.
 </div>
 
-<div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
-<div class="system-content" style="color: var(--texto-secundario) !important;">
-<strong>Unknown Paper #3<br>The princess, trapped in the tower, lives an eternal life. The princess hates becoming a monster and wants to die.</strong>
-</div>
+<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+Unknown Paper #3<br>The princess, trapped in the tower, lives an eternal life. The princess hates becoming a monster and wants to die.
 </div>
 
-<div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
-<div class="system-content" style="color: var(--texto-secundario) !important;">
-<strong>Unknown Paper #4<br>But no matter what she does, she cannot die. Forever…</strong>
-</div>
+<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+Unknown Paper #4<br>But no matter what she does, she cannot die. Forever…
 </div>
 
-<div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
-<div class="system-content" style="color: var(--texto-secundario) !important;">
-<strong>Unknown Paper #5<br>The enraged princess pushed the prince from the tower.<br>The prince shattered into pieces and died.<br>The princess envied the prince’s fragmented death.</strong>
-</div>
+<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+Unknown Paper #5<br>The enraged princess pushed the prince from the tower.<br>The prince shattered into pieces and died.<br>The princess envied the prince’s fragmented death.
 </div>
 
 When all five papers were collected, they transformed into a storybook item.
 
-<div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
-<div class="system-content" style="color: var(--texto-secundario) !important;">
-<strong>Unknown Storybook: A crude storybook made by drawing pictures in a sketchbook with crayons. It seems to have been made by a young child.</strong>
-</div>
+<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+Unknown Storybook: A crude storybook made by drawing pictures in a sketchbook with crayons. It seems to have been made by a young child.
 </div>
 
 And at the end of the storybook, one more page was added.
 
-<div class="system-window system-content" style="text-align: center; box-shadow: -3px -3px 0px #ff0055, 3px 3px 0px #00fffa !important; color: var(--texto-principal); text-shadow: -1px -1px 0 #ff0055, 1px 1px 0 #00fffa; font-weight: bold;">
+<div class="f-distressed" style="background: #d10019; border: 2px solid #ff3b4f; color: #fff; font-weight: 700; text-align: justify; word-break: break-all; letter-spacing: .06em; line-height: 1.6; text-shadow: 2px 2px 0 rgba(0, 0, 0, .5); box-shadow: 0 0 22px rgba(255, 30, 60, .55); padding: 1.2em; margin: 24px 0;">
 WANNADIEWANNADIEWANNADIEWANNADIEKILLME KILLMEKILLMEKIEDIEKILL
 </div>
 
@@ -307,7 +309,7 @@ I pulled on the door of the long metal cabinet. Clunk. It didn’t open.
 
 In the game, a System Window would pop up here.
 
-But if you stubbornly tried to open the door over ten times —
+But if you stubbornly tried to open the door over ten times—
 
 <div class="system-window" style="text-align: center; color: var(--texto-secundario) !important; border: 1px solid var(--texto-secundario) !important; border-left: 4px solid var(--texto-secundario) !important;">
 <div class="system-content" style="color: var(--texto-secundario) !important;">

@@ -5,11 +5,17 @@ capitulo: 6
 ---
 <br>Before I could answer, she spat out coldly.
 
+<br>
+
 “Nut Candy.”
 
 An interrogation that said: don’t even think about weaseling your way out. Her words brought a scene flashing through my mind.
 
+<br>
+
 <span style="color: var(--texto-secundario);">“Well, when I picked up this candy, it said it could repair toys.”</span>
+
+<br>
 
 My explanation when I’d been talking about collecting the Sad Smiley pieces.
 
@@ -109,9 +115,13 @@ Mo Haein opened a sealed door in the corridor between the Warehouse and the Labo
 
 Unlike the outside — decorated in bright colors like a children’s paradise — this elevator was made of stark, colorless steel.
 
+<br>
+
 <div style="border: 1px solid var(--borda-suave, rgba(255, 255, 255, 0.1)); border-radius: 12px; padding: 16px; text-align: center; margin: 20px 0;">
 ▼
 </div>
+
+<br>
 
 The elevator only had a down button. I pressed it, and the doors opened immediately.
 
@@ -123,15 +133,23 @@ Inside, the floor buttons were just as sparse as the outside. To be precise, in 
 
 Inside a long rectangle, a dense string of numbers was crammed together.
 
+<br>
+
 <div style="border: 1px solid var(--borda-suave, rgba(255, 255, 255, 0.1)); border-radius: 12px; padding: 16px; text-align: center; margin: 20px 0;">
 B9999999999999999….
 </div>
+
+<br>
 
 I tried counting the nines, then gave up. Mo Haein spread her fingers wide and pressed the giant button.
 
 A crackling announcement came through.
 
+<br>
+
 *“G-g-going d-d-down. Ch-children, children, d-down. Down. Down.”*
+
+<br>
 
 The doors closed, and the elevator began to move.
 
@@ -225,7 +243,11 @@ Explaining how I’d obtained it would be tricky, so dealing with Park Seonggyeo
 
 The elevator reached its destination, stopping with a short jolt.
 
+<br>
+
 *“■■ floor. Ch-children, children, children, please do not get off.”*
+
+<br>
 
 The doors opened.
 
@@ -349,7 +371,7 @@ In colorful work uniforms, they stood at attention with wide smiles — their mo
 
 Despite so many people present, not a single breath could be heard.
 
-Probably because they weren’t *‘people’* anymore.
+Probably because they weren’t ‘people’ anymore.
 
 The giant Smiley, with the employees lined up behind it, looked down at me.
 
@@ -369,7 +391,11 @@ I was lifted up like a prize doll.
 
 Smiley brought me to its face. A mechanical voice came through.
 
+<br>
+
 *“Smiley-welcomes-you-only-you-in-Happy-Smile-Factory-we-together-happy-happy-.”*
+
+<br>
 
 Behind the mechanical voice repeating “happy happy,” I could hear children’s laughter and cheers.
 

@@ -42,9 +42,13 @@ My nickname and donation message appeared in large letters across the chat windo
 
 The M-Tuber beamed and called out to me.
 
+<br>
+
 *“Roasted Chestnut! Welcome!”*
 
 \[Roasted Chestnut: Hello\]
+
+<br>
 
 My greeting was immediately buried under a flood of chat from the fervent viewers.
 
@@ -68,9 +72,13 @@ They were all too busy demanding what they wanted from the M-Tuber.
 
 Which I actually liked. No unwanted attention meant I could relax.
 
+<br>
+
 *“I was just waiting for you, Roasted Chestnut.”*
 
 \[Roasted Chestnut: I was waiting for the stream too.\]
+
+<br>
 
 And more than anything, I genuinely liked this M-Tuber.
 
@@ -82,7 +90,7 @@ It was a forced retirement because of the accident, and becoming unemployed over
 
 So I looked for something to kill the boredom and ended up gaming.
 
-I dove into all kinds of online games, then moved on to packaged games — *AAA* titles, indie games, I devoured everything without discrimination.
+I dove into all kinds of online games, then moved on to packaged games — AAA titles, indie games, I devoured everything without discrimination.
 
 That’s how I discovered an indie game that fit my tastes perfectly.
 
@@ -106,9 +114,13 @@ For two years, I’d test-play the games the creator handed me and spent a wonde
 
 I typed into the chat, wondering what kind of game they’d made this time.
 
+<br>
+
 \[Roasted Chestnut: The last game you gave me was really fun.\]
 
 *“I knew you’d get the true ending, Roasted Chestnut.”*
+
+<br>
 
 How did they know I’d cleared the true ending?
 
@@ -118,11 +130,19 @@ But they knew I’d stayed up all night to see every ending for every game they�
 
 I shook off the confusion and asked.
 
+<br>
+
 \[Roasted Chestnut: What kind of game is it today?\]
+
+<br>
 
 The M-Tuber plucked my message out of the frantic flood of viewer chat and grinned.
 
+<br>
+
 *“Hmm, no game today.”*
+
+<br>
 
 Then they suddenly leaned their face close to the camera.
 
@@ -130,7 +150,11 @@ Their face filled the screen, and I instinctively leaned back.
 
 The M-Tuber’s eyes glistened under the lighting as they whispered.
 
+<br>
+
 *“And there won’t be any from nooow on.”*
+
+<br>
 
 My heart plummeted.
 
@@ -154,13 +178,21 @@ The viewers’ chat went into overdrive at the M-Tuber’s bombshell.
 
 I barely managed to move my fingers through the torrent of messages.
 
+<br>
+
 \[Roasted Chestnut: That’s a shame… Can I ask why?\]
 
 *“Because it’s over now.”*
 
+<br>
+
 The M-Tuber’s voice sounded completely carefree.
 
+<br>
+
 *“Thanks for everything. It’s all thanks to you, Roasted Chestnut.”*
+
+<br>
 
 Were they saying they were quitting streaming entirely?
 
@@ -192,31 +224,51 @@ Was it from staying up all night and then watching the stream right after?
 
 I got up to find a tissue, and a voice came through.
 
+<br>
+
 *“Roasted Chestnut is the best viewer I’ve ever met. If it’s you, you can do it. Because I found you, and I confirmed it.”*
+
+<br>
 
 I finally found a tissue, plugged my nose, and looked back at the screen.
 
 The M-Tuber was still staring straight into the camera.
 
+<br>
+
 *“From now on, I’ll be your viewer, Roasted Chestnut.”*
 
+<br>
+
 Nothing they’d said since earlier made any sense. I pressed my nose and typed with one hand.
+
+<br>
 
 \[Roasted Chestnut: I don’t understand what you mean.\]
 
 *“I can’t wait. I’ve been waiting for so long. So, so, so, so long.”*
 
+<br>
+
 By this point, I couldn’t ignore that something was seriously wrong with the M-Tuber.
 
 They didn’t seem drunk. Please don’t tell me it was drugs…?
 
-As a long-time viewer, I was about to type that they should end the stream when —
+As a long-time viewer, I was about to type that they should end the stream when—
+
+<br>
 
 *“Well then, shall we begin?”*
 
+<br>
+
 He said my name.
 
+<br>
+
 *“Han Goyo.”*
+
+<br>
 
 A name I’d never once told him.
 
@@ -298,6 +350,8 @@ The bright green work clothes had a name tag with the Happy Smile logo on the ch
 Employee: Roasted Chestnut
 </div>
 
+<br>
+
 I scraped at the embroidered name tag with my finger, but it was sewn on tight — wouldn’t come off.
 
 I checked my pockets for anything useful, but they were empty except for dust.
@@ -332,7 +386,7 @@ First, I figured I might as well treat it like playing the game.
 
 Since according to the game, the goal was to escape the factory.
 
-I moved cautiously, crossing the lobby. Just as I was about to enter the interior —
+I moved cautiously, crossing the lobby. Just as I was about to enter the interior—
 
 CRASH!
 
@@ -344,7 +398,7 @@ If so, staying out here wasn’t going to help.
 
 I vaulted over the turnstile gate and ran inside.
 
-Dust billowed up, obscuring my vision. I was covering my nose with my sleeve, looking for somewhere to hide, when —
+Dust billowed up, obscuring my vision. I was covering my nose with my sleeve, looking for somewhere to hide, when—
 
 Suddenly, my throat was squeezed tight and my body lifted off the ground.
 

@@ -290,7 +290,11 @@ The 8-bit BGM announced the start of the boss fight with Princess Tarantella.
 
 Tarantella’s smiling face split into four directions, revealing rows of packed teeth.
 
+<br>
+
 *“——!”*
+
+<br>
 
 An incomprehensible roar burst from its gaping mouth, tearing at my eardrums.
 

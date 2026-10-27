@@ -3,7 +3,11 @@ title: "Chapter 7"
 categories: eoshinki
 capitulo: 7
 ---
-<br>*“…..”*
+<br>
+
+*“…..”*
+
+<br>
 
 Smiley was silent.
 
@@ -169,7 +173,11 @@ Even though it was a plastic toy, it felt like piercing soft flesh.
 
 A mechanical sound of a child giggling and shouting repeated from Smiley.
 
+<br>
+
 *“Die!-Kill-me!-Die!-Kill-me!-Die!”*
+
+<br>
 
 Mo Haein pulled the spear free and landed on the ground. The fifteen-meter Smiley began to shrink, creaking and cracking.
 
@@ -215,7 +223,11 @@ I told Mo Haein what I planned to do at the finish. She frowned but didn’t arg
 
 The factory speakers that had been playing the BGM crackled, then a signal tone dropped.
 
+<br>
+
 *“One, two, Happy Smile!”*
+
+<br>
 
 The bindings on our feet released. Mo Haein and I sprinted forward like mad.
 
@@ -229,7 +241,11 @@ Even with my physical abilities enhanced by Bolt Candy, my breath was climbing u
 
 An announcement played through the tearing BGM.
 
+<br>
+
 *“Announcement. For the. Attention. Of. Happy Smile Factory’s Roa-sted Chestnut. Roa-sted Chestnut employee. Roa-sted Chestnut employee, please stop moving immediately. Immediately. Stooooop.”*
+
+<br>
 
 They were drawing out the name “Roasted Chestnut” so long it almost sounded like they were actually roasting a chestnut.
 
@@ -281,7 +297,11 @@ The spear shot forward like a javelin, piercing straight through Smiley.
 
 Smiley crumpled to the dirt floor, letting out a child’s cry.
 
+<br>
+
 *“No—!”*
+
+<br>
 
 The ear-splitting background music cut out. HapFactory’s final boss fight was over.
 
@@ -363,7 +383,7 @@ Seriously… hah.
 
 If I didn’t accept, I wouldn’t see the ending, so I had no choice.
 
-I picked *‘YEEES!’* A cheerful notification rang out as the System window appeared.
+I picked ‘YEEES!’ A cheerful notification rang out as the System window appeared.
 
 {% include system.html text="&lt;Happy Smile Factory&gt; Cleared!<br>- ■■ ■■ ■■ Banquet Ending." %}
 

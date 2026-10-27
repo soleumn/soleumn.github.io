@@ -5,6 +5,8 @@ capitulo: 8
 ---
 <br>I squinted at the system window, wondering what kind of ending this was supposed to be.
 
+<br>
+
 No miracle happened. The ■ didn’t suddenly turn into letters.
 
 The next system window that popped up was just as incomprehensible.
@@ -123,7 +125,7 @@ Since I was already in this situation, I planned to let the TRA figure out my cu
 
 I looked around and spotted Mo Haein waking up at a distance. In her TRA uniform, she stood out sharply among the civilians.
 
-I was about to limp over to her when —
+I was about to limp over to her when—
 
 “Don’t move.”
 
@@ -193,6 +195,8 @@ But if things stayed like this, I’d lose the Black Moon Blade and bleed out. T
 
 {% include system.html text="You execute ‘Park Seonggyeon (Sample).’ This decision is irreversible and will cause a permanent change to Akasha." %}
 
+<br>
+
 {% include system.html text="Would you like to execute ‘Park Seonggyeon (Sample)’?" %}
 
 Choices appeared.
@@ -213,7 +217,7 @@ But his voice was trembling — faintly.
 
 Like he was scared.
 
-I selected *‘Dooo it!’*
+I selected ‘Dooo it!’
 
 {% include system.html text="Executing ‘Park Seonggyeon (Sample)’!" %}
 
@@ -253,7 +257,7 @@ I ignored the system window fluttering before my eyes and opened my mouth.
 
 “Um… Captain?”
 
-I was just about to call out to her carefully when —
+I was just about to call out to her carefully when—
 
 “Captain Mo Haein! You got your ass kicked in the Trial or what?”
 

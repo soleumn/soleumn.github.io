@@ -5,6 +5,8 @@ capitulo: 9
 ---
 <br>BEEP— BEEP— BEEP—.
 
+<br>
+
 An error alarm rang out in repeated bursts.
 
 Researchers, fully kitted in protective suits and gear, reported in tense voices.
@@ -17,7 +19,7 @@ Ham Jiwol, the Research and Analysis Agency Director who’d been checking the r
 
 Kwak Hanmuk waved his hand to signal that he was maintaining the Bind properly.
 
-Ham Jiwol cautiously approached *‘it’* and replaced the attached patch.
+Ham Jiwol cautiously approached ‘it’ and replaced the attached patch.
 
 As if handling radioactive material.
 
@@ -69,17 +71,17 @@ The only thing sustaining her now was the euphoria of having permanently closed 
 
 In the moment Park Seonggyeon’s head burst into golden fragments, Mo Haein had witnessed it clearly.
 
-The change that occurred in *‘its’* pupils.
+The change that occurred in ‘its’ pupils.
 
 It was something that couldn’t happen if it were human.
 
-Currently, all personnel at the TRA were scrambling to investigate the being called *‘Han Goyo.’*
+Currently, all personnel at the TRA were scrambling to investigate the being called ‘Han Goyo.’
 
 Samra would start their investigation soon, so that thing could be analyzed too.
 
 Whether it was an infected entity contaminated by the Trial’s virus, or a non-human being.
 
-In truth, Mo Haein didn’t care what *‘Han Goyo’* was.
+In truth, Mo Haein didn’t care what ‘Han Goyo’ was.
 
 Whether he could be used, or not.
 
@@ -193,7 +195,7 @@ If I got out of here, I’d be homeless. I tried my best to look as innocent as 
 
 The man sitting across from me checked his tablet for a moment, then smiled faintly.
 
-“First… what does *‘Roasted Chestnut’* mean?”
+“First… what does ‘Roasted Chestnut’ mean?”
 
 I, who had been ready to answer quickly, ended up asking back with a dumb look on my face.
 
@@ -217,7 +219,7 @@ The atmosphere turned cold.
 
 To show a more cooperative attitude, I scraped together everything I had and didn’t have to explain.
 
-“My name is Han Goyo. You know the carol? *‘Silent Night.’* At first, I was called *‘Gobam.’* Then, while eating roasted chestnuts with my friends, *‘Gobam’* turned into <p id="gunbam">*‘Gunbam’*<sup><a href="gunbamm">1</a></sup>….”
+“My name is Han Goyo. You know the carol? ‘Silent Night.’ At first, I was called ‘Gobam.’ Then, while eating roasted chestnuts with my friends, ‘Gobam’ turned into ‘Gunbam’<sup><a href="#u6dyDlVl3tTOtxVzGnDsRK7">1</a></sup>….”
 
 God, this was pathetic.
 
@@ -225,11 +227,11 @@ The more I explained, the deeper I felt myself digging a hole.
 
 But if I stopped now, it would seem even weirder.
 
-“…My nickname changed. It was a familiar word, so I used the nickname *‘Roasted Chestnut’* often on the internet and such.”
+“…My nickname changed. It was a familiar word, so I used the nickname ‘Roasted Chestnut’ often on the internet and such.”
 
 When I played Archive’s games, I always set my player name to Roasted Chestnut.
 
-“So, *‘Roasted Chestnut’* is a nickname you chose yourself?”
+“So, ‘Roasted Chestnut’ is a nickname you chose yourself?”
 
 “Yes.”
 
@@ -269,13 +271,13 @@ A photo of Park Seonggyeon was displayed on the tablet.
 
 “Park Seonggyeon was given a completely different name, not the one he was usually assigned by the Trial.”
 
-In HapFactory, Park Seonggyeon’s nametag had read *‘Sample.’*
+In HapFactory, Park Seonggyeon’s nametag had read ‘Sample.’
 
 A System window immediately came to mind.
 
 <br>
 
-<span style="color: var(--texto-secundario);">\[*‘Park Seonggyeon’* is a registrable Sample character. Would you like to register?\]</span>
+<span style="color: var(--texto-secundario);">\[‘Park Seonggyeon’ is a registrable Sample character. Would you like to register?\]</span>
 
 <br>
 
@@ -349,7 +351,7 @@ I couldn’t figure out why it was showing me something covered up. Then, as if 
 
 {% include system.html text="Insufficient." %}
 
-As if it couldn’t even be bothered to type the six syllables of *‘your ability is insufficient,’* it sent just a single word. At this rate, it would be sending only the initial consonants next.
+As if it couldn’t even be bothered to type the six syllables of ‘your ability is insufficient,’ it sent just a single word. At this rate, it would be sending only the initial consonants next.
 
 I was about to dismiss the System window when I looked at the black box with fresh eyes.
 
@@ -367,7 +369,7 @@ Not human. An AI system android.
 
 I called the man’s name.
 
-“<p id="samra">Samra Mansang.<sup><a href="#samraa">3</a></sup>”
+“Samra Mansang.<sup><a href="#samrafoot2">3</a></sup>”
 
 At that moment, the man’s face, which I had thought was perfectly normal until just now, came into proper view.
 
@@ -399,8 +401,8 @@ Samra, seated on the chair, looked down at me.
 
 <br>
 
-<p <p id="gunbamm"><sup><a href="#gunbam">1</a></sup>Gunbam means *‘roasted chestnut’*, just makes more sense to keep it as Gunbam in this context.</p>
+<sup><a href="#uoC8iCfSUPL8VpoRTcpy9H5">1</a></sup>Gunbam means ‘roasted chestnut’, just makes more sense to keep it as Gunbam in this context.
 
 <p id="samplefoot"><sup><a href="#sample">2</a></sup>It’s two different words for sample, the one the system used was ‘샘플’, borrowed from English, said like “Sam-peul.” The second, used on his  name tag, was ‘견본,’ and is more formal.</p>
 
-<br><p id="samraa"><sup><a href="#samra">3</a></sup>Samra Mansang or 삼라만상 means “all things in the universe,” a nod to him being an all-knowing AI.</p>
+<br><sup><a href="#samra">3</a></sup>Samra Mansang or 삼라만상 means “all things in the universe,” a nod to him being an all-knowing AI.
