@@ -286,7 +286,7 @@ Unknown Storybook: A crude storybook made by drawing pictures in a sketchbook wi
 And at the end of the storybook, one more page was added.
 
 <div style="background: #d10019; border: 2px solid #d10019; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
-Unknown Paper #5<br>The enraged princess pushed the prince from the tower.<br>The prince shattered into pieces and died.<br>The princess envied the prince’s fragmented death.
+WANNADIEWANNADIEWANNADIEWANNADIEKILLMEKILLMEKILLMEKIEDIEKILL
 </div>
 
 This was the core of HapFactory’s main story.
