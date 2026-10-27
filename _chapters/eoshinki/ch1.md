@@ -347,8 +347,6 @@ The bright green work clothes had a name tag with the Happy Smile logo on the ch
 Employee: Roasted Chestnut
 </div>
 
-<br>
-
 I scraped at the embroidered name tag with my finger, but it was sewn on tight — wouldn’t come off.
 
 I checked my pockets for anything useful, but they were empty except for dust.
