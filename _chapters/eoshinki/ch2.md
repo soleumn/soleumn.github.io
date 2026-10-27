@@ -85,7 +85,7 @@ I thought it was finally gone — but then a new window popped up.
 
 {% include system.html text="Han Goyo (Roasted Chestnut) has entered &lt;Happy Smile Factory&gt;!" %}
 
-{% include system.html text="◆ &lt;Happy Smile Factory&gt; Main Quest: Clear the murderous toy factory with a True Ending.<br>You have entered your first Trial as the System.<br>You must prove the System’s abilities by achieving a True Ending clear.<br>Survival upon quest success!<br>Consequences of failure are unknown.<br>However, you have a feeling that something unpleasant will happen to a loser." %}
+{% include system.html text="◆ &lt;Happy Smile Factory&gt; Main Quest: Clear the murderous toy factory with a True Ending.<br><br>You have entered your first Trial as the System.<br>You must prove the System’s abilities by achieving a True Ending clear.<br>Survival upon quest success!<br>Consequences of failure are unknown.<br>However, you have a feeling that something unpleasant will happen to a loser." %}
 
 …What the hell is this.
 
