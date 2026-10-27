@@ -208,7 +208,7 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
 .chat-msg.sent{background:var(--detalhe-accent);color:var(--on-accent);border-bottom-right-radius:4px}
 
 .chat-box{background:var(--bg-card);border:1px solid var(--borda-suave);border-radius:12px;padding:16px 20px;margin:20px 0;display:flex;flex-direction:column;gap:10px}
-.chat-msgs,.chat-reply{display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit}
+.chat-msgs,.chat-reply{display:flex;align-items:flex-start;gap:8px;line-height:1.5;font-size:inherit;word-break: break-word;overflow-wrap: break-word}
 .chat-reply{margin-left:20px;opacity:.9}
 .chat-msgs::before{content:"—";color:var(--detalhe-accent);font-weight:700;flex-shrink:0}
 .chat-reply::before{content:"↳";color:var(--detalhe-accent);font-weight:700;flex-shrink:0}
