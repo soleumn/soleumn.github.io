@@ -217,7 +217,7 @@ The atmosphere turned cold.
 
 To show a more cooperative attitude, I scraped together everything I had and didn’t have to explain.
 
-“My name is Han Goyo. You know the carol? ‘Silent Night.’ At first, I was called ‘Gobam.’ Then, while eating roasted chestnuts with my friends, ‘Gobam’ turned into <p id="gunbam">‘Gunbam’<sup><a href="#bam">1</a></sup>….”
+“My name is Han Goyo. You know the carol? ‘Silent Night.’ At first, I was called ‘Gobam.’ Then, while eating roasted chestnuts with my friends, ‘Gobam’ turned into <p id="gunbam">‘Gunbam’<sup><a href="#bam">1</a></sup></p>….”
 
 God, this was pathetic.
 
@@ -367,7 +367,7 @@ Not human. An AI system android.
 
 I called the man’s name.
 
-<p id="samra">“Samra Mansang.<sup><a href="#samra2">3</a></sup>”
+<p id="samra">“Samra Mansang.<sup><a href="#samra2">3</a></sup></p>”
 
 At that moment, the man’s face, which I had thought was perfectly normal until just now, came into proper view.
 
