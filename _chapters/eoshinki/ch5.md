@@ -257,35 +257,35 @@ A space that could only be found by collecting the sketchbook papers scattered t
 
 The contents of the sketchbook papers were as follows:
 
-<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo'>
 Unknown Paper #1<br>To save the princess who fell ill, the prince summoned an evil demon.
 </div>
 
-<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo'>
 Unknown Paper #2<br>The princess, having gained the demon’s power, grew healthy! But she became a terrible monster.
 </div>
 
-<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo'>
 Unknown Paper #3<br>The princess, trapped in the tower, lives an eternal life. The princess hates becoming a monster and wants to die.
 </div>
 
-<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo'>
 Unknown Paper #4<br>But no matter what she does, she cannot die. Forever…
 </div>
 
-<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo'>
 Unknown Paper #5<br>The enraged princess pushed the prince from the tower.<br>The prince shattered into pieces and died.<br>The princess envied the prince’s fragmented death.
 </div>
 
 When all five papers were collected, they transformed into a storybook item.
 
-<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo'>
 Unknown Storybook: A crude storybook made by drawing pictures in a sketchbook with crayons. It seems to have been made by a young child.
 </div>
 
 And at the end of the storybook, one more page was added.
 
-<div style="background: #d10019; border: 2px solid #d10019; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo' style="background: #d10019 !important; border: 2px solid #d10019 !important;">
 WANNADIEWANNADIEWANNADIEWANNADIEKILLMEKILLMEKILLMEKIEDIEKILL
 </div>
 
@@ -299,7 +299,7 @@ Then I approached an old cabinet tucked away in a corner, barely visible.
 
 I pulled on the door of the long metal cabinet. Clunk. It didn’t open.
 
-<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo'>
 Seems to be locked…
 </div>
 
@@ -307,7 +307,7 @@ In the game, a System Window would pop up here.
 
 But if you stubbornly tried to open the door over ten times—
 
-<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo'>
 The cabinet door broke!
 </div>
 
