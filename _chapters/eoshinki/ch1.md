@@ -155,7 +155,7 @@ The M-Tuber’s eyes glistened under the lighting as they whispered.
 
 <br>
 
-*“And there won’t be any from nooow on.”*
+*“And there won’t be any from now on.”*
 
 <br>
 
