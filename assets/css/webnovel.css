@@ -611,10 +611,11 @@ html[data-theme="gruvbox"] .post-content .notebook {
 
 .post-content .caixajogo {
    background: #1d1c35; 
-   font-family: 'Jersey 10', sans-serif !important;
+   font-family: 'Jersey 10', sans-serif;
    border: 2px solid #1d1c35; 
    color: #fff; 
-   font-weight: 700; 
+   font-weight: 400; 
+   font-size: 1.4em;
    text-align: justify; 
    line-height: 1.8; 
    padding: 1.5em; 
