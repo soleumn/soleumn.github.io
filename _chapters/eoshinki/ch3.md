@@ -97,7 +97,7 @@ The players would be attacked by toys in every stage, and at the end, they’d e
 
 The text that appeared at the end of the Collapse Ending was especially chilling.
 
-<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo'>
 &lt;Happy Smile Factory&gt; has collapsed.<br>Smiley was hacked to pieces and thrown into the flames, but even so, it could not die.<br>Smiley will become a terrible nightmare and come for the player again…
 </div>
 
@@ -285,7 +285,7 @@ I pressed Sad Smiley’s belly. A recorded, melancholy child’s voice came out.
 
 In the original game, two choices would appear.
 
-<div style="background: #1d1c35; border: 2px solid #1d1c35; color: #fff; font-weight: 700; text-align: justify; line-height: 1.8; padding: 1.5em; margin: 20px 0;">
+<div class='caixajogo'>
 - Ignore it.<br>- Ask what to do.
 </div>
 
