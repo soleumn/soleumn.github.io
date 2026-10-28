@@ -251,6 +251,7 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
    color: #fff; 
    font-family: 'Jersey 10', sans-serif;
    font-weight: 700; 
+   font-size: 1.3em;
    text-align: justify; 
    line-height: 1.8; 
    padding: 1.5em; 
