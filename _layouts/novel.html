@@ -3,51 +3,67 @@ layout: default
 ---
 {% assign prefix = "_chapters/" | append: page.slug | append: "/" %}
 {% assign caps = site.chapters | where_exp: "p", "p.path contains prefix" | sort: "capitulo" %}
+{% if page.chapter_auto %}{% assign total = caps.size %}{% elsif page.chapter %}{% assign total = page.chapter %}{% else %}{% assign total = caps.size %}{% endif %}
 
-<div id="reader-root" data-kind="novel" data-slug="{{ page.slug }}" data-count="{{ caps.size }}">
+<div id="reader-root" class="novel-page" data-kind="novel" data-slug="{{ page.slug }}" data-count="{{ caps.size }}"{% if page.accent %} style="--na:{{ page.accent }}"{% endif %}>
 
-  <div class="novel-head">
-    <div class="novel-cover">
-      <div class="capa-placeholder">{{ page.title }}</div>
-      {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}" onerror="this.remove()">{% endif %}
+  <section class="novel-hero">
+    {% if page.image %}<div class="hero-bg" style="background-image:url('{{ page.image | relative_url }}')"></div>{% endif %}
+
+    <div class="novel-head">
+      <div class="novel-cover">
+        <div class="capa-placeholder">{{ page.title }}</div>
+        {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}" onerror="this.remove()">{% endif %}
+      </div>
+
+      <div class="novel-info">
+        <h1 class="novel-title">{{ page.title }}</h1>
+        {% if page.tagline %}<p class="novel-tagline">{{ page.tagline }}</p>{% endif %}
+        {% if page.tags %}<ul class="chips">{% for t in page.tags %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+
+        <div class="stat-row">
+          {% if page.author %}<div class="stat"><span class="stat-k">Author</span><span class="stat-v">{{ page.author }}</span></div>{% endif %}
+          {% if page.status %}<div class="stat"><span class="stat-k">Status</span><span class="stat-v">{{ page.status }}</span></div>{% endif %}
+          <div class="stat"><span class="stat-k">Chapters</span><span class="stat-v">{{ total }}</span></div>
+        </div>
+
+        <div class="novel-actions">
+          {% if caps.size > 0 %}<a id="btn-continue" class="btn-primary" href="{{ caps.first.url | relative_url }}">✦ Start Reading</a>{% else %}<span class="btn-soon">Coming soon</span>{% endif %}
+          <button id="btnFollow" class="reader-btn btn-follow" data-action="toggle-follow">🔔 Follow</button>
+        </div>
+        <p class="follow-hint">Follow to get a NEW tag on the home page when a chapter is posted.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="novel-info">
-      <h1 class="novel-title">{{ page.title }}</h1>
-      <h2 class="section-label">Summary</h2>
+  <section class="novel-section">
+    <h2 class="section-label">Summary</h2>
+    <div id="synopsisBox" class="synopsis-container">{{ content }}</div>
+    <button id="btnSynopsis" class="btn-toggle-synopsis" data-action="toggle-synopsis" hidden>Read More...</button>
+  </section>
 
-      <div id="synopsisBox" class="synopsis-container">{{ content }}</div>
-      <button id="btnSynopsis" class="btn-toggle-synopsis" data-action="toggle-synopsis" hidden>Read More...</button>
-
-      <hr>
-      <p class="novel-meta">
-        {% if page.author %}<strong>Author:</strong> {{ page.author }}<br>{% endif %}
-        {% if page.status %}<strong>Status:</strong> {{ page.status }}<br>{% endif %}
-        {% if page.chapter_auto %}<strong>Chapters:</strong> {{ caps.size }}<br>{% elsif page.chapter %}<strong>Chapters:</strong> {{ page.chapter }}<br>{% endif %}
-        {% for l in page.links %}<strong>{{ l.name }}:</strong> <a href="{{ l.url }}" target="_blank" rel="noopener">here</a><br>{% endfor %}
-        {% if page.desc %}<strong>✎</strong> {{ page.desc }}<br>{% endif %}
-      </p>
-      <button id="btnFollow" class="reader-btn btn-follow" data-action="toggle-follow">🔔 Follow</button>
-      <p class="follow-hint">Follow to get a NEW tag on the home page when a chapter is posted.</p>
-    </div>
-  </div>
-
-  {% if caps.size > 0 %}
-  <a id="btn-continue" class="btn-primary" href="{{ caps.first.url | relative_url }}">✦ Start Reading</a>
+  {% if page.quote or page.desc or page.links %}
+  <section class="novel-section novel-extras">
+    {% if page.quote %}<figure class="novel-quote"><blockquote>{{ page.quote }}</blockquote></figure>{% endif %}
+    {% if page.desc %}<div class="novel-note"><h3>✎ Author's note</h3><p>{{ page.desc }}</p></div>{% endif %}
+    {% if page.links %}<div class="novel-links"><h3>Links</h3><div class="link-row">{% for l in page.links %}<a class="link-btn" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.name }} ↗</a>{% endfor %}</div></div>{% endif %}
+  </section>
   {% endif %}
 
-  <h3 class="section-label chapters-label">⫶☰ Chapters</h3>
+  <section class="novel-section">
+    <h2 class="section-label chapters-label">Chapters</h2>
 
-  <div class="chapter-tools">
-    <input type="search" id="chapterSearch" placeholder="Search chapter (e.g. 25)" aria-label="Search chapter">
-    <button class="reader-btn" data-action="reverse-chapters">⇅ Reverse</button>
-  </div>
+    <div class="chapter-tools">
+      <input type="search" id="chapterSearch" placeholder="Search chapter (e.g. 25)" aria-label="Search chapter">
+      <button class="reader-btn" data-action="reverse-chapters">⇅ Reverse</button>
+    </div>
 
-  <div class="chapter-scrollbox">
-    <ul id="lista-capitulos">
-      {% for c in caps %}
-      <li class="item-capitulo" data-i="{{ forloop.index }}"><a href="{{ c.url | relative_url }}">❏ {{ c.title }}{% if c.subtitle %} — {{ c.subtitle }}{% endif %}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
+    <div class="chapter-scrollbox">
+      <ul id="lista-capitulos">
+        {% for c in caps %}
+        <li class="item-capitulo" data-i="{{ forloop.index }}"><a href="{{ c.url | relative_url }}">❏ {{ c.title }}{% if c.subtitle %} — {{ c.subtitle }}{% endif %}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
 </div>
