@@ -10,7 +10,7 @@ chapter_auto: true
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
   - { name: Raws, url: "https://page.kakao.com/content/69299983/" }
-  - { name: Place to read previous chapters, url: "https://berriezai.cc/" }
+desc: "ch1-111 is not my translation! ˎˊ˗"
 ---
 A former pro gamer who retired due to injury.
 
