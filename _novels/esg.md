@@ -1,16 +1,22 @@
 ---
 title: Editor's Survival Guide
-slug: esg           # TEM que ser igual ao nome da pasta em _posts/
-permalink: /esg/          # endereço da página da história (pode manter o que você já usa)
-image: /assets/esg.jpg
-tagline: "On-Going"
+slug: esg                 # TEM que ser igual ao nome da pasta em _chapters/
+permalink: /esg/          # endereço da página da história
+image: /assets/esg.jpg    # capa
+tagline: ""
 author: 김영지/Kim Young-ji
-status: On-Going
+status: OnGoing
 chapter_auto: true
-order: 1                 # ordem na home (1 aparece primeiro)
+order: 1                      # ordem na home (1 aparece primeiro)
+
+# ---------- CAMPOS NOVOS (todos opcionais: apague a linha se não quiser) ----------
+tags: [Action, Horror, Fantasy, Supernatural]      # etiquetas (a home mostra as 2 primeiras)
+accent: "#762929"             # cor de destaque só desta história (bordas, linhas, etiquetas)
+quote: "S.O.C.H., Save the Otter Campaign Headquarters!"
+desc: "ch1-156 is not my translation! ˎˊ˗"
+
 links:
   - { name: Raws, url: "https://page.kakao.com/content/68473234/" }
-desc: "ch1-156 is not my translation! ˎˊ˗"
 ---
 『Editor’s Survival Guide』 
 
