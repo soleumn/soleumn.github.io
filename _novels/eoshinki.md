@@ -11,7 +11,7 @@ order: 1                      # ordem na home (1 aparece primeiro)
 
 # ---------- CAMPOS NOVOS (todos opcionais: apague a linha se não quiser) ----------
 tags: [Action, Fantasy, Sci-fi, Supernatural]      # etiquetas (a home mostra as 2 primeiras)
-accent: "#3e5972"             # cor de destaque só desta história (bordas, linhas, etiquetas)
+accent: "#297dc1"             # cor de destaque só desta história (bordas, linhas, etiquetas)
 desc: "ch1-111 is not my translation! ˎˊ˗"
 
 links:
