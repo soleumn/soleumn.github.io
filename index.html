@@ -2,25 +2,42 @@
 layout: default
 title: HOME
 ---
-<p>𓎢𓎠𓎟𓎠𓎡𓎢𓎠𓎟𓎠𓎡</p>
-<p class="intro-text">Silly website to read my translations & more ^^ (BETA) / <a href="https://kokotlinfo.straw.page">read this!</a></p>
+<section class="hero">
+  <p class="hero-orn">𓎢𓎠𓎟𓎠𓎡𓎢𓎠𓎟𓎠𓎡</p>
+  <h1 class="hero-title">{{ site.title }}</h1>
+  <p class="hero-sub">Silly website to read my translations & more ^^ (BETA) / <a href="https://kokotlinfo.straw.page">read this!</a></p>
+  <div class="hero-rule"></div>
+  <p class="hero-count">{{ site.novels.size }} stories, {{ site.chapters.size }} chapters and counting</p>
+</section>
 
-<div class="stories-grid">
-{% assign novels = site.novels | sort: "order" %}
-{% for n in novels %}
-  {% assign pfx = "_chapters/" | append: n.slug | append: "/" %}
-  {% assign cnt = site.chapters | where_exp: "p", "p.path contains pfx" | size %}
-  <a href="{{ n.url | relative_url }}" class="card-historia-link" data-slug="{{ n.slug }}" data-count="{{ cnt }}">
-    <div class="card-historia">
-      <div class="capa-container">
-        <div class="capa-placeholder">{{ n.title }}</div>
-        {% if n.image %}<img src="{{ n.image | relative_url }}" alt="{{ n.title | escape }}" class="capa-img" loading="lazy" onerror="this.remove()">{% endif %}
+<div class="home-tabs" role="tablist">
+  <button type="button" class="home-tab on" data-tab="stories">Stories</button>
+  <button type="button" class="home-tab" data-tab="favorites">♥ Favorites <span class="tab-count" id="favCount"></span></button>
+</div>
+
+<div id="storiesPanel">
+  <div class="stories-grid">
+  {% assign novels = site.novels | sort: "order" %}
+  {% for n in novels %}
+    {% assign pfx = "_chapters/" | append: n.slug | append: "/" %}
+    {% assign cnt = site.chapters | where_exp: "p", "p.path contains pfx" | size %}
+    <a href="{{ n.url | relative_url }}" class="card-historia-link" data-slug="{{ n.slug }}" data-count="{{ cnt }}"{% if n.accent %} style="--na:{{ n.accent }}"{% endif %}>
+      <div class="card-historia">
+        <div class="capa-container">
+          <div class="capa-placeholder">{{ n.title }}</div>
+          {% if n.image %}<img src="{{ n.image | relative_url }}" alt="{{ n.title | escape }}" class="capa-img" loading="lazy" onerror="this.remove()">{% endif %}
+          {% if n.status %}<span class="card-status">{{ n.status }}</span>{% endif %}
+        </div>
+        <div class="conteudo-card">
+          <h2 class="titulo-historia">{{ n.title }}</h2>
+          <p class="sinopse-historia">{{ n.tagline }}</p>
+          {% if n.tags %}<ul class="chips">{% for t in n.tags limit:2 %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+          <p class="card-foot">{{ cnt }} chapters{% if n.author %}, by {{ n.author }}{% endif %}</p>
+        </div>
       </div>
-      <div class="conteudo-card">
-        <h2 class="titulo-historia">{{ n.title }}</h2>
-        <p class="sinopse-historia">{{ n.tagline }}</p>
-      </div>
-    </div>
-  </a>
-{% endfor %}
-</div> 
+    </a>
+  {% endfor %}
+  </div>
+</div>
+
+<div id="favPanel" class="fav-panel" hidden></div>
