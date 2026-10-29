@@ -3,16 +3,15 @@ title: I'm a Young God, Won't You Raise Me?
 slug: eoshinki                 # TEM que ser igual ao nome da pasta em _chapters/
 permalink: /eoshinki/          # endereço da página da história
 image: /assets/eoshinki.jpg    # capa
-tagline: "On-Going"
+tagline: ""
 author: 강토공/Kang To-gong
 status: Ongoing
 chapter_auto: true
 order: 1                      # ordem na home (1 aparece primeiro)
 
 # ---------- CAMPOS NOVOS (todos opcionais: apague a linha se não quiser) ----------
-tags: [Fantasy, Romance]      # etiquetas (a home mostra as 2 primeiras)
-accent: "#72583E"             # cor de destaque só desta história (bordas, linhas, etiquetas)
-quote: "testing"
+tags: [Action, Fantasy, Sci-fi, Supernatural]      # etiquetas (a home mostra as 2 primeiras)
+accent: "#3e5972"             # cor de destaque só desta história (bordas, linhas, etiquetas)
 desc: "ch1-111 is not my translation! ˎˊ˗"
 
 links:
