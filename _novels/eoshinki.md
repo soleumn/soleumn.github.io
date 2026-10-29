@@ -3,7 +3,7 @@ title: I'm a Young God, Won't You Raise Me?
 slug: eoshinki           # TEM que ser igual ao nome da pasta em _posts/
 permalink: /eoshinki/          # endereço da página da história (pode manter o que você já usa)
 image: /assets/eoshinki.jpg
-tagline: "ch112+"
+tagline: "On-Going"
 author: 강토공/Kang To-gong
 status: On-Going
 chapter_auto: true
