@@ -6,8 +6,13 @@
 <body class="layout-{{ page.layout }}">
   {% unless page.layout == "post" %}
   <header class="site-header">
-    <div class="wrapper">
+    <div class="wrapper header-inner">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="{{ '/' | relative_url }}" class="nav-link"><span class="nav-text">Stories</span></a>
+        <a href="{{ '/' | relative_url }}#favorites" class="nav-link"><span class="nav-ico">♥</span><span class="nav-text">Favorites</span></a>
+        <button type="button" id="siteThemeBtn" class="theme-toggle" aria-label="Change theme" title="Change theme">☾</button>
+      </nav>
     </div>
   </header>
   {% endunless %}
@@ -16,6 +21,14 @@
     {{ content }}
   </main>
 
+  {% unless page.layout == "post" %}
+  <footer class="site-footer">
+    <p class="foot-orn">𓎢𓎠𓎟𓎠𓎡</p>
+    <p>{{ site.title }} · written with love</p>
+  </footer>
+  {% endunless %}
+
   <script src="{{ '/assets/js/reader.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 </body>
 </html>
