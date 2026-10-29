@@ -7,23 +7,23 @@
    Paleta: Clockwork #72583E · Latte #DBC4A5 · Café Noir #443223 · Weathered #A08670
    ========================================================= */
 
-/* ---------- TEMA CLARO (papel envelhecido) ---------- */
+/* ---------- TEMA CLARO (sépia) ---------- */
 html[data-site-theme="light"] body:not(.layout-post) {
-  --bg-principal: #f3ece2;
-  --bg-card: #fbf7f1;
-  --bg-card-hover: #ece1d0;
-  --borda-suave: #dccdb6;
+  --bg-principal: #e8d9bd;
+  --bg-card: #f1e6cf;
+  --bg-card-hover: #e0cfae;
+  --borda-suave: #cbb28a;
   --texto-principal: #443223;
   --texto-titulo: #36261a;
-  --texto-secundario: #7d6650;
+  --texto-secundario: #765b3d;
   --detalhe-accent: #72583e;
   --detalhe-hover: #56402c;
   --cor-sistema: #a08670;
-  --on-accent: #fbf4e8;
-  --header-bg: rgba(251, 247, 241, .92);
-  --accent-soft: rgba(114, 88, 62, .10);
-  --shadow: rgba(68, 50, 35, .25);
-  background-image: linear-gradient(180deg, #f7f1e8 0%, #eadfcd 100%);
+  --on-accent: #f7edd8;
+  --header-bg: rgba(241, 230, 207, .92);
+  --accent-soft: rgba(114, 88, 62, .12);
+  --shadow: rgba(68, 50, 35, .3);
+  background-image: linear-gradient(180deg, #ecddc2 0%, #dfcba6 100%);
   background-attachment: fixed;
 }
 
@@ -202,8 +202,9 @@ body:not(.layout-post) .sinopse-historia { font-size: .88rem; }
 body:not(.layout-post) .follow-hint { margin: 10px 0 0; }
 @media (max-width: 640px) {
   .novel-hero { padding: 22px 16px; }
-  .novel-hero .novel-head { gap: 20px; justify-content: center; }
-  .novel-info { text-align: center; min-width: 0; width: 100%; }
+  .novel-hero .novel-head { flex-direction: column; flex-wrap: nowrap; align-items: center; gap: 20px; }
+  .novel-cover { width: 200px; margin: 0 auto; }
+  .novel-info { flex: none; width: 100%; min-width: 0; text-align: center; }
   .novel-info .chips, .stat-row, .novel-actions { justify-content: center; }
 }
 
@@ -283,4 +284,16 @@ body:not(.layout-post) .chapter-tools .reader-btn { border-radius: 999px; paddin
 @media (prefers-reduced-motion: reduce) {
   .para-bar, body:not(.layout-post) { transition: none; }
   .post-content p.para-flash { animation: none; background: rgba(255, 213, 79, .3); }
+}
+
+/* Barra do capítulo no celular: tudo cabe na largura da tela */
+@media (max-width: 640px) {
+  .reader-navbar { gap: 4px; padding: 8px 6px; }
+  .reader-navbar .nav-group { gap: 4px; min-width: 0; }
+  .reader-navbar .center-group { flex: 1 1 0; justify-content: center; }
+  .reader-navbar .btn-nav { padding: 6px 9px; }
+  .reader-navbar .btn-icon { padding: 2px 3px; }
+  .reader-navbar .chapter-select { flex: 1 1 0; min-width: 0; max-width: 130px; padding: 5px 4px; }
+  .reader-navbar .btn-heart { padding: 5px 8px; }
+  .reader-navbar .btn-formatting { padding: 6px 8px; font-size: .75rem; }
 }
