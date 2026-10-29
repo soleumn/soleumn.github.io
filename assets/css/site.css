@@ -1,0 +1,284 @@
+/* =========================================================
+   SITE.CSS  (arquivo NOVO: assets/css/site.css)
+   Visual da home, das páginas das histórias e dos favoritos.
+   Carrega DEPOIS do webnovel.css e só altera o que for do site;
+   os capítulos continuam com os temas do leitor.
+
+   Paleta: Clockwork #72583E · Latte #DBC4A5 · Café Noir #443223 · Weathered #A08670
+   ========================================================= */
+
+/* ---------- TEMA CLARO (base Latte) ---------- */
+html[data-site-theme="light"] body:not(.layout-post) {
+  --bg-principal: #efe3cf;
+  --bg-card: #f8f0e3;
+  --bg-card-hover: #e9d9bf;
+  --borda-suave: #d3bd9b;
+  --texto-principal: #443223;
+  --texto-titulo: #3a2a1c;
+  --texto-secundario: #7b6143;
+  --detalhe-accent: #72583e;
+  --detalhe-hover: #56402c;
+  --cor-sistema: #a08670;
+  --on-accent: #fbf4e8;
+  --header-bg: rgba(248, 240, 227, .9);
+  --accent-soft: rgba(114, 88, 62, .12);
+  --shadow: rgba(68, 50, 35, .35);
+}
+
+/* ---------- TEMA ESCURO (base Café Noir) — é o padrão ---------- */
+html:not([data-site-theme="light"]) body:not(.layout-post) {
+  --bg-principal: #241912;
+  --bg-card: #2f2218;
+  --bg-card-hover: #443223;
+  --borda-suave: #5a4532;
+  --texto-principal: #eadcc4;
+  --texto-titulo: #f4e7d0;
+  --texto-secundario: #b39c82;
+  --detalhe-accent: #dbc4a5;
+  --detalhe-hover: #f0e0c6;
+  --cor-sistema: #a08670;
+  --on-accent: #2a1d13;
+  --header-bg: rgba(36, 25, 18, .9);
+  --accent-soft: rgba(219, 196, 165, .12);
+  --shadow: rgba(0, 0, 0, .55);
+}
+
+/* ---------- Base comum do site ---------- */
+body:not(.layout-post) {
+  --fonte-titulo: 'Cormorant Garamond', Georgia, serif;
+  --na: var(--detalhe-accent);
+  transition: background-color .3s, color .3s;
+}
+/* papel levemente texturizado */
+body:not(.layout-post)::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .07;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/><feColorMatrix values='0 0 0 0 .4  0 0 0 0 .3  0 0 0 0 .2  0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='%23n'/></svg>");
+}
+body:not(.layout-post) .wrapper { max-width: 1040px; }
+body:not(.layout-post) .page-content { position: relative; z-index: 1; padding-top: 8px; }
+body:not(.layout-post) h1,
+body:not(.layout-post) h2,
+body:not(.layout-post) h3 { font-weight: 600; }
+
+/* ---------- Cabeçalho ---------- */
+html body:not(.layout-post) .site-header {
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--borda-suave);
+}
+body:not(.layout-post) .header-inner { justify-content: space-between; gap: 12px; }
+body:not(.layout-post) .site-title,
+body:not(.layout-post) .site-title:visited { font: 700 1.7rem var(--fonte-titulo); letter-spacing: .01em; }
+.site-nav { display: flex; align-items: center; gap: 4px; }
+.nav-link, .nav-link:visited {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 14px; border-radius: 999px;
+  color: var(--texto-principal); text-decoration: none; font-size: .95rem;
+}
+.nav-link:hover { background: var(--accent-soft); color: var(--detalhe-accent); }
+.theme-toggle {
+  width: 38px; height: 38px; margin-left: 6px; border-radius: 50%;
+  border: 1px solid var(--borda-suave); background: var(--bg-card);
+  color: var(--texto-principal); font-size: 1.1rem; line-height: 1; cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--detalhe-accent); color: var(--detalhe-accent); }
+@media (max-width: 560px) {
+  .nav-link .nav-text { display: none; }
+  .nav-link:nth-child(1) { display: none; }
+  .nav-link .nav-ico { font-size: 1.15rem; }
+}
+
+/* ---------- Rodapé ---------- */
+.site-footer {
+  position: relative; z-index: 1; text-align: center;
+  padding: 30px 16px 40px; color: var(--texto-secundario); font-size: .9rem;
+  border-top: 1px solid var(--borda-suave);
+}
+.site-footer p { margin: 0 0 6px; }
+.foot-orn { color: var(--cor-sistema); letter-spacing: .3em; }
+
+/* ---------- HOME: topo ---------- */
+.hero { text-align: center; padding: 38px 0 18px; }
+.hero-orn { margin: 0 0 8px; color: var(--cor-sistema); letter-spacing: .35em; }
+.hero-title { margin: 0; font-size: clamp(2.8rem, 9vw, 4.6rem); letter-spacing: .01em; line-height: 1.05; }
+.hero-sub { margin: .5rem 0 0; font: italic 500 1.35rem var(--fonte-titulo); color: var(--texto-secundario); }
+.hero-rule { height: 1px; max-width: 320px; margin: 22px auto 14px; background: linear-gradient(90deg, transparent, var(--cor-sistema), transparent); }
+.hero-count { margin: 0; font-size: .9rem; color: var(--texto-secundario); }
+
+/* ---------- HOME: abas ---------- */
+.home-tabs { display: flex; justify-content: center; gap: 8px; margin: 18px 0 26px; }
+.home-tab {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 9px 22px; border-radius: 999px; cursor: pointer;
+  background: transparent; color: var(--texto-secundario);
+  border: 1px solid var(--borda-suave); font: 600 .95rem 'Outfit', system-ui, sans-serif;
+}
+.home-tab:hover { border-color: var(--detalhe-accent); color: var(--detalhe-accent); }
+.home-tab.on { background: var(--detalhe-accent); border-color: var(--detalhe-accent); color: var(--on-accent); }
+.tab-count:empty { display: none; }
+.tab-count { font-size: .8rem; opacity: .85; }
+
+/* ---------- HOME: cards das histórias ---------- */
+body:not(.layout-post) .stories-grid { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 26px; }
+body:not(.layout-post) .card-historia { border-radius: 16px; background: var(--bg-card); }
+body:not(.layout-post) .card-historia-link:hover .card-historia {
+  transform: translateY(-5px);
+  border-color: var(--na);
+  box-shadow: 0 16px 30px -14px var(--shadow);
+}
+body:not(.layout-post) .capa-placeholder { font: 600 1.3rem var(--fonte-titulo); }
+.card-status {
+  position: absolute; left: 10px; bottom: 10px; z-index: 2;
+  padding: 3px 11px; border-radius: 999px; font: 600 .75rem 'Outfit', sans-serif;
+  background: var(--header-bg); color: var(--texto-principal); border: 1px solid var(--na);
+}
+body:not(.layout-post) .conteudo-card { padding: 14px 16px 16px; gap: 8px; }
+body:not(.layout-post) .titulo-historia { font-size: 1.5rem; line-height: 1.1; }
+body:not(.layout-post) .sinopse-historia { font-size: .88rem; }
+.card-foot { margin: auto 0 0; padding-top: 4px; font-size: .78rem; color: var(--texto-secundario); }
+@media (max-width: 640px) {
+  body:not(.layout-post) .stories-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  body:not(.layout-post) .titulo-historia { font-size: 1.25rem; }
+  body:not(.layout-post) .conteudo-card { padding: 10px 12px 12px; }
+}
+
+/* etiquetas (tags) */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 2px 0 0; padding: 0; }
+.chips li {
+  padding: 3px 11px; border-radius: 999px; font-size: .78rem;
+  background: var(--accent-soft); color: var(--texto-principal);
+  border: 1px solid var(--borda-suave);
+}
+
+/* ---------- HOME: favoritos ---------- */
+.fav-panel { max-width: 760px; margin: 0 auto; }
+.fav-h { margin: 6px 0 12px; font-size: 1.7rem; }
+.fav-list { list-style: none; margin: 0 0 30px; padding: 0; display: grid; gap: 10px; }
+.fav-item {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--bg-card); border: 1px solid var(--borda-suave); border-radius: 12px;
+}
+.fav-link, .fav-link:visited { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 12px 16px; text-decoration: none; color: var(--texto-principal); }
+.fav-link:hover .fav-title { color: var(--detalhe-accent); }
+.fav-title { font: 600 1.25rem var(--fonte-titulo); }
+.fav-meta { font-size: .82rem; color: var(--texto-secundario); }
+.fav-rm { margin-right: 10px; width: 32px; height: 32px; border-radius: 50%; border: 0; background: transparent; color: var(--texto-secundario); cursor: pointer; font-size: .9rem; }
+.fav-rm:hover { background: var(--accent-soft); color: var(--detalhe-accent); }
+.fav-quote { position: relative; margin: 0 0 14px; padding: 18px 48px 14px 22px; background: var(--bg-card); border: 1px solid var(--borda-suave); border-left: 4px solid var(--na); border-radius: 12px; }
+.fav-text { margin: 0 0 10px; font: italic 500 1.3rem/1.5 var(--fonte-titulo); }
+.fav-quote .fav-meta { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.fav-quote .fav-rm { position: absolute; top: 10px; right: 6px; margin: 0; }
+.fav-empty { text-align: center; padding: 40px 10px; color: var(--texto-secundario); }
+.fav-empty-ico { font-size: 2.4rem; margin: 0; color: var(--cor-sistema); }
+.fav-empty p { margin: 6px 0; }
+.fav-note { margin-top: 26px; text-align: center; font-size: .82rem; color: var(--texto-secundario); }
+
+/* ---------- PÁGINA DA HISTÓRIA ---------- */
+.novel-hero {
+  position: relative; overflow: hidden; margin: 18px 0 34px; padding: 30px;
+  background: var(--bg-card); border: 1px solid var(--borda-suave); border-radius: 20px;
+  box-shadow: 0 18px 36px -22px var(--shadow);
+}
+.hero-bg { position: absolute; inset: -30px; background-size: cover; background-position: center; filter: blur(30px); opacity: .28; transform: scale(1.1); }
+.novel-hero .novel-head { position: relative; z-index: 1; margin: 0; gap: 34px; align-items: center; }
+.novel-cover { width: 230px; border-radius: 12px; border: 3px solid var(--bg-card); outline: 1px solid var(--na); box-shadow: 0 16px 30px -12px var(--shadow); }
+.novel-title { font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1.02; margin: 0; }
+.novel-tagline { margin: 8px 0 0; font: italic 500 1.4rem var(--fonte-titulo); color: var(--texto-secundario); }
+.novel-info .chips { margin-top: 14px; }
+.stat-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
+.stat { min-width: 96px; padding: 8px 16px; background: var(--accent-soft); border: 1px solid var(--borda-suave); border-radius: 12px; }
+.stat-k { display: block; font-size: .78rem; color: var(--texto-secundario); }
+.stat-v { display: block; font: 600 1.25rem var(--fonte-titulo); }
+.novel-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.novel-actions .btn-primary { display: inline-flex; width: auto; margin: 0; padding: 12px 28px; border-radius: 999px; }
+.novel-actions .btn-follow { margin: 0; padding: 11px 20px; border-radius: 999px; }
+.btn-soon { padding: 12px 24px; border: 1px dashed var(--borda-suave); border-radius: 999px; color: var(--texto-secundario); }
+body:not(.layout-post) .follow-hint { margin: 10px 0 0; }
+@media (max-width: 640px) {
+  .novel-hero { padding: 22px 16px; }
+  .novel-hero .novel-head { gap: 20px; justify-content: center; }
+  .novel-info { text-align: center; min-width: 0; width: 100%; }
+  .novel-info .chips, .stat-row, .novel-actions { justify-content: center; }
+}
+
+.novel-section { margin: 0 0 36px; }
+body:not(.layout-post) .section-label { display: flex; align-items: center; gap: 14px; font-size: 1.8rem; margin: 0 0 14px; }
+body:not(.layout-post) .section-label::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--na), transparent); }
+body:not(.layout-post) .synopsis-container { border-radius: 14px; font-size: 1.05rem; line-height: 1.8; }
+
+.novel-extras { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+.novel-extras h3 { margin: 0 0 8px; font-size: 1.35rem; }
+.novel-note, .novel-links { padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--borda-suave); border-radius: 14px; }
+.novel-note p { margin: 0; line-height: 1.7; }
+.novel-quote { margin: 0; padding: 20px 24px; border-left: 4px solid var(--na); background: var(--accent-soft); border-radius: 4px 14px 14px 4px; }
+.novel-quote blockquote { margin: 0; font: italic 500 1.5rem/1.4 var(--fonte-titulo); color: var(--texto-titulo); }
+.link-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.link-btn, .link-btn:visited { padding: 7px 16px; border: 1px solid var(--borda-suave); border-radius: 999px; font-size: .9rem; text-decoration: none; color: var(--texto-principal); background: var(--bg-principal); }
+.link-btn:hover { border-color: var(--detalhe-accent); color: var(--detalhe-accent); }
+
+body:not(.layout-post) .chapter-scrollbox { max-height: 480px; border-radius: 14px; padding: 4px 8px; }
+body:not(.layout-post) .item-capitulo { padding: 0; }
+body:not(.layout-post) .item-capitulo a { display: block; padding: 12px 10px; border-radius: 8px; color: var(--texto-principal); }
+body:not(.layout-post) .item-capitulo a:hover { background: var(--accent-soft); color: var(--detalhe-accent); }
+body:not(.layout-post) .chapter-tools input { border-radius: 999px; padding: 9px 16px; }
+body:not(.layout-post) .chapter-tools .reader-btn { border-radius: 999px; padding: 8px 16px; }
+
+/* =========================================================
+   DENTRO DOS CAPÍTULOS: coração, barra do parágrafo, avisos
+   (usa as cores do tema do leitor)
+   ========================================================= */
+.reader-navbar .btn-heart {
+  background: rgba(127, 127, 127, .1); color: var(--texto-principal);
+  border: 1px solid var(--borda-suave); border-radius: 8px;
+  padding: 5px 11px; font-size: 1.05rem; line-height: 1.2; cursor: pointer;
+}
+.reader-navbar .btn-heart:hover { border-color: #e0607e; }
+.reader-navbar .btn-heart.on { color: #e0607e; border-color: #e0607e; }
+
+.post-content p.para-active { background: rgba(127, 127, 127, .14); box-shadow: 0 0 0 6px rgba(127, 127, 127, .14); border-radius: 4px; }
+.post-content p.is-fav { background: rgba(224, 96, 126, .13); box-shadow: 0 0 0 6px rgba(224, 96, 126, .13); border-radius: 4px; }
+.post-content p.para-flash { animation: paraflash 3.5s ease-out; }
+@keyframes paraflash {
+  0%, 55% { background: rgba(255, 213, 79, .38); box-shadow: 0 0 0 6px rgba(255, 213, 79, .38); }
+  100% { background: transparent; box-shadow: 0 0 0 6px transparent; }
+}
+
+.para-bar {
+  position: fixed; left: 50%; bottom: 18px; z-index: 1060;
+  display: flex; align-items: center; gap: 6px; max-width: 94vw; padding: 8px 10px;
+  background: var(--bg-card); border: 1px solid var(--borda-suave); border-radius: 999px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .45);
+  transform: translate(-50%, 170%); opacity: 0; pointer-events: none;
+  transition: transform .25s, opacity .25s;
+}
+.para-bar.open { transform: translate(-50%, 0); opacity: 1; pointer-events: auto; }
+.para-bar .pb-label { padding: 0 8px; font-size: .78rem; color: var(--texto-secundario); white-space: nowrap; }
+.para-bar button {
+  font: 600 .85rem 'Outfit', system-ui, sans-serif; white-space: nowrap; cursor: pointer;
+  background: rgba(127, 127, 127, .14); color: var(--texto-principal);
+  border: 1px solid var(--borda-suave); border-radius: 999px; padding: 8px 14px;
+}
+.para-bar button:hover { border-color: var(--detalhe-accent); color: var(--detalhe-accent); }
+.para-bar button[data-pa="comment"] { background: var(--detalhe-accent); color: var(--on-accent); border-color: transparent; }
+.para-bar button[data-pa="comment"]:hover { color: var(--on-accent); opacity: .9; }
+.para-bar button.on { color: #e0607e; border-color: #e0607e; }
+@media (max-width: 480px) { .para-bar .pb-label { display: none; } }
+
+.comment-hint { margin: -8px 0 16px; font-size: .88rem; color: var(--texto-secundario); }
+
+.site-toast {
+  position: fixed; left: 50%; bottom: 90px; transform: translateX(-50%); z-index: 2100;
+  max-width: 90%; display: none; text-align: center; font-size: .9rem;
+  padding: 10px 16px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, .5);
+  background: var(--bg-card); color: var(--texto-principal); border: 1px solid var(--detalhe-accent);
+}
+.site-toast.show { display: block; }
+
+@media (prefers-reduced-motion: reduce) {
+  .para-bar, body:not(.layout-post) { transition: none; }
+  .post-content p.para-flash { animation: none; background: rgba(255, 213, 79, .3); }
+}
