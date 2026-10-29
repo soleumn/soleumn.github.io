@@ -6,7 +6,7 @@ image: /assets/eoshinki.jpg
 tagline: "ch112+"
 author: 강토공/Kang To-gong
 status: On-Going
-chapter: "112+"
+chapter_auto: true
 order: 1                 # ordem na home (1 aparece primeiro)
 links:
   - { name: Raws, url: "https://page.kakao.com/content/69299983/" }
