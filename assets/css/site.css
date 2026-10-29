@@ -7,22 +7,24 @@
    Paleta: Clockwork #72583E · Latte #DBC4A5 · Café Noir #443223 · Weathered #A08670
    ========================================================= */
 
-/* ---------- TEMA CLARO (base Latte) ---------- */
+/* ---------- TEMA CLARO (papel envelhecido) ---------- */
 html[data-site-theme="light"] body:not(.layout-post) {
-  --bg-principal: #efe3cf;
-  --bg-card: #f8f0e3;
-  --bg-card-hover: #e9d9bf;
-  --borda-suave: #d3bd9b;
+  --bg-principal: #f3ece2;
+  --bg-card: #fbf7f1;
+  --bg-card-hover: #ece1d0;
+  --borda-suave: #dccdb6;
   --texto-principal: #443223;
-  --texto-titulo: #3a2a1c;
-  --texto-secundario: #7b6143;
+  --texto-titulo: #36261a;
+  --texto-secundario: #7d6650;
   --detalhe-accent: #72583e;
   --detalhe-hover: #56402c;
   --cor-sistema: #a08670;
   --on-accent: #fbf4e8;
-  --header-bg: rgba(248, 240, 227, .9);
-  --accent-soft: rgba(114, 88, 62, .12);
-  --shadow: rgba(68, 50, 35, .35);
+  --header-bg: rgba(251, 247, 241, .92);
+  --accent-soft: rgba(114, 88, 62, .10);
+  --shadow: rgba(68, 50, 35, .25);
+  background-image: linear-gradient(180deg, #f7f1e8 0%, #eadfcd 100%);
+  background-attachment: fixed;
 }
 
 /* ---------- TEMA ESCURO (base Café Noir) — é o padrão ---------- */
