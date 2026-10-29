@@ -45,7 +45,7 @@ layout: default
   {% if page.quote or page.desc or page.links %}
   <section class="novel-section novel-extras">
     {% if page.quote %}<figure class="novel-quote"><blockquote>{{ page.quote }}</blockquote></figure>{% endif %}
-    {% if page.desc %}<div class="novel-note"><h3>✎ Author's note</h3><p>{{ page.desc }}</p></div>{% endif %}
+    {% if page.desc %}<div class="novel-note"><h3>✎ Note</h3><p>{{ page.desc }}</p></div>{% endif %}
     {% if page.links %}<div class="novel-links"><h3>Links</h3><div class="link-row">{% for l in page.links %}<a class="link-btn" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.name }} ↗</a>{% endfor %}</div></div>{% endif %}
   </section>
   {% endif %}
