@@ -109,7 +109,7 @@
 
     /* dica acima dos comentários */
     var box = $('.comments .giscus');
-    if (box) box.parentNode.insertBefore(el('p', 'comment-hint', '💬 Tip: tap a paragraph (or select some text) in the story and press “Comment”. The quote is copied, just paste it here.'), box);
+    if (box) box.parentNode.insertBefore(el('p', 'comment-hint', '𖡊 Tip: tap a paragraph (or select some text) in the story and press “Comment”. The quote is copied, just paste it here.'), box);
 
     initParagraphs(path, slug, title);
   }
@@ -125,7 +125,7 @@
     var bar = el('div', 'para-bar');
     bar.setAttribute('role', 'toolbar');
     bar.innerHTML = '<span class="pb-label"></span>' +
-      '<button type="button" data-pa="comment">💬 Comment</button>' +
+      '<button type="button" data-pa="comment">🗨 Comment</button>' +
       '<button type="button" data-pa="fav">♡ Save</button>' +
       '<button type="button" data-pa="close" aria-label="Close">✕</button>';
     document.body.appendChild(bar);
