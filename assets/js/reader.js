@@ -461,7 +461,7 @@
   function isFollowing(slug) { return store.get('follow_' + slug, '') === '1'; }
   function paintFollow(btn, slug) {
     var on = isFollowing(slug);
-    btn.textContent = on ? '☕︎ Following' : '☕︎ Follow';
+    btn.textContent = on ? '✦ Following' : '⟡ Follow';
     btn.classList.toggle('on', on);
   }
 
