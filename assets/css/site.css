@@ -328,7 +328,7 @@ html[data-site-theme="light"] .novel-hero {
   --accent-soft: rgba(219, 196, 165, .14);
   color: var(--texto-principal);
 }
-html[data-site-theme="light"] .novel-cover { border-color: #443223; outline-color: #dbc4a5; }
+html[data-site-theme="light"] .novel-cover { border-color: #B89375; outline-color: #dbc4a5; }
 
 /* etiquetas preenchidas */
 html[data-site-theme="light"] .chips li {
@@ -336,7 +336,7 @@ html[data-site-theme="light"] .chips li {
 }
 
 /* rodapé em faixa escura */
-html[data-site-theme="light"] .site-footer { background: #B89375; color: #c9b08a; border-top: 0; }
+html[data-site-theme="light"] .site-footer { background: #443223; color: #c9b08a; border-top: 0; }
 html[data-site-theme="light"] .foot-orn { color: #a08670; }
 
 /* botão Read More: preenchido nos dois temas */
