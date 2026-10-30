@@ -324,7 +324,7 @@ html[data-site-theme="light"] .novel-hero {
   --detalhe-accent: #72583e;
   --detalhe-hover: #f0e0c6;
   --on-accent: #f6ead3;
-  --borda-suave: rgba(219, 196, 165, .35);
+  --borda-suave: rgba(233, 223, 223, .35);
   --accent-soft: rgba(114, 88, 62, .14);
   color: var(--texto-principal);
 }
