@@ -319,13 +319,13 @@ html[data-site-theme="light"] .novel-hero {
   border-color: #443223;
   box-shadow: 0 20px 40px -20px rgba(68, 50, 35, .6);
   --texto-principal: #3d2c1e;
-  --texto-titulo: #EDE0CE;
-  --texto-secundario: #2f2015;
+  --texto-titulo: #2f2015;
+  --texto-secundario: #6b5238;
   --detalhe-accent: #72583e;
   --detalhe-hover: #f0e0c6;
   --on-accent: #f6ead3;
   --borda-suave: rgba(219, 196, 165, .35);
-  --accent-soft: rgba(219, 196, 165, .14);
+  --accent-soft: rgba(114, 88, 62, .14);
   color: var(--texto-principal);
 }
 html[data-site-theme="light"] .novel-cover { border-color: #443223; outline-color: #dbc4a5; }
