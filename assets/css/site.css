@@ -315,7 +315,7 @@ body:not(.layout-post) .chapter-tools .reader-btn { border-radius: 999px; paddin
 /* ---------- TEMA CLARO: uso criativo da paleta ---------- */
 /* caixa principal da história: painel escuro, como uma capa de livro */
 html[data-site-theme="light"] .novel-hero {
-  background: linear-gradient(135deg, #C6B295 0%, #E3CECC 100%);
+  background: linear-gradient(135deg, #C6B295 0%, #D4C8B8 100%);
   border-color: #443223;
   box-shadow: 0 20px 40px -20px rgba(68, 50, 35, .6);
   --texto-principal: #3d2c1e;
