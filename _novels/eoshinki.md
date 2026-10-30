@@ -3,8 +3,8 @@ title: I'm a Young God, Won't You Raise Me?
 slug: eoshinki                 # TEM que ser igual ao nome da pasta em _chapters/
 permalink: /eoshinki/          # endereço da página da história
 image: /assets/eoshinki.jpg    # capa
-tagline: "Not fully translated by me"
-author: 강토공/Kang To-gong
+tagline: ""
+author: Kang To-gong
 status: Ongoing
 chapter_auto: true
 order: 1                      # ordem na home (1 aparece primeiro)
