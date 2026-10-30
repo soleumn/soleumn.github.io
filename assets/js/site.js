@@ -231,10 +231,11 @@
   function renderFavs() {
     var host = $('#favPanel');
     if (!host) return;
-    var names = {};
+    var names = {}, order = [];
     $$('.card-historia-link[data-slug]').forEach(function (a) {
       var h = $('.titulo-historia', a);
       names[a.dataset.slug] = h ? h.textContent.trim() : '';
+      order.push(a.dataset.slug);
     });
     var ch = list(KC).sort(byTime), qs = list(KQ).sort(byTime);
     host.textContent = '';
@@ -258,36 +259,69 @@
       return b;
     }
 
-    if (ch.length) {
-      host.appendChild(el('h2', 'fav-h', 'Chapters'));
-      var ul = el('ul', 'fav-list');
-      ch.forEach(function (c) {
-        var li = el('li', 'fav-item'), a = el('a', 'fav-link');
-        a.href = safeUrl(c.url);
-        a.appendChild(el('span', 'fav-title', c.title || 'Chapter'));
-        a.appendChild(el('span', 'fav-meta', names[c.slug] || ''));
-        li.appendChild(a);
-        li.appendChild(rmBtn(KC, c.url));
-        ul.appendChild(li);
-      });
-      host.appendChild(ul);
+    /* separa tudo por história */
+    var groups = {};
+    function grp(slug) {
+      slug = slug || '';
+      if (!groups[slug]) {
+        groups[slug] = { chapters: [], quotes: [] };
+        if (order.indexOf(slug) < 0) order.push(slug);
+      }
+      return groups[slug];
     }
+    ch.forEach(function (c) { grp(c.slug).chapters.push(c); });
+    qs.forEach(function (q) { grp(q.slug).quotes.push(q); });
 
-    if (qs.length) {
-      host.appendChild(el('h2', 'fav-h', 'Quotes'));
-      qs.forEach(function (q) {
-        var d = el('div', 'fav-quote');
-        d.appendChild(el('p', 'fav-text', '“' + q.text + '”'));
-        var m = el('div', 'fav-meta');
-        m.appendChild(el('span', '', (names[q.slug] ? names[q.slug] + ', ' : '') + (q.title || '')));
-        var a = el('a', '', 'Read in context');
-        a.href = safeUrl(q.url);
-        m.appendChild(a);
-        d.appendChild(m);
-        d.appendChild(rmBtn(KQ, q.url));
-        host.appendChild(d);
-      });
-    }
+    order.forEach(function (slug) {
+      var gr = groups[slug];
+      if (!gr) return;
+
+      var det = el('details', 'fav-group');
+      det.open = true;
+      var sum = el('summary', 'fav-group-head');
+      sum.appendChild(el('span', 'fav-group-name', names[slug] || slug || 'Other'));
+      var parts = [];
+      if (gr.chapters.length) parts.push(gr.chapters.length + (gr.chapters.length > 1 ? ' chapters' : ' chapter'));
+      if (gr.quotes.length) parts.push(gr.quotes.length + (gr.quotes.length > 1 ? ' quotes' : ' quote'));
+      sum.appendChild(el('span', 'fav-group-count', parts.join(', ')));
+      det.appendChild(sum);
+
+      var body = el('div', 'fav-group-body');
+
+      if (gr.chapters.length) {
+        body.appendChild(el('h3', 'fav-h', 'Chapters'));
+        var ul = el('ul', 'fav-list');
+        gr.chapters.forEach(function (c) {
+          var li = el('li', 'fav-item'), a = el('a', 'fav-link');
+          a.href = safeUrl(c.url);
+          a.appendChild(el('span', 'fav-title', c.title || 'Chapter'));
+          li.appendChild(a);
+          li.appendChild(rmBtn(KC, c.url));
+          ul.appendChild(li);
+        });
+        body.appendChild(ul);
+      }
+
+      if (gr.quotes.length) {
+        body.appendChild(el('h3', 'fav-h', 'Quotes'));
+        gr.quotes.forEach(function (q) {
+          var d = el('div', 'fav-quote');
+          d.appendChild(el('p', 'fav-text', '“' + q.text + '”'));
+          var m = el('div', 'fav-meta');
+          m.appendChild(el('span', '', q.title || ''));
+          var a = el('a', '', 'Read in context');
+          a.href = safeUrl(q.url);
+          m.appendChild(a);
+          d.appendChild(m);
+          d.appendChild(rmBtn(KQ, q.url));
+          body.appendChild(d);
+        });
+      }
+
+      det.appendChild(body);
+      host.appendChild(det);
+    });
+
     host.appendChild(el('p', 'fav-note', 'Favorites are saved in this browser, on this device only.'));
   }
 
