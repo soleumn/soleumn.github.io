@@ -169,7 +169,7 @@
         var md = '> ' + clip(cur.text, 500).replace(/\n+/g, '\n> ') +
           '\n\n[↳ Paragraph ' + id.slice(1) + '](' + location.origin + path + '#' + id + ')\n\n';
         copy(md, function (ok) {
-          if (ok) toast('Quote copied! Paste it in the comment box below 👇', 4500);
+          if (ok) toast('Quote copied! Paste it in the comment box below ⇩', 4500);
           else window.prompt('Copy this quote and paste it in the comment box:', md);
         });
         hide();
