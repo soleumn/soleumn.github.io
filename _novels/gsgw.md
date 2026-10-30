@@ -12,7 +12,7 @@ order: 1                      # ordem na home (1 aparece primeiro)
 # ---------- CAMPOS NOVOS (todos opcionais: apague a linha se não quiser) ----------
 tags: [Horror, Comedy, Drama, Psychological, Mystery, Supernatural]      # etiquetas (a home mostra as 2 primeiras)
 accent: "#762929"             # cor de destaque só desta história (bordas, linhas, etiquetas)
-quote: "I want to go home."
+quote: "❝I want to go home.❞"
 desc: "best epub reader app for:<br>Android: Episteme<br>iOS: PocketBook / BookFusion / Books"
 
 links:
