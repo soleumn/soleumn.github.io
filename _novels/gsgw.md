@@ -3,7 +3,7 @@ title: Got Dropped Into a Ghost Story, Still Gotta Work
 slug: gsgw                 # TEM que ser igual ao nome da pasta em _chapters/
 permalink: /gsgw/          # endereço da página da história
 image: /assets/gsgw.jpg    # capa
-tagline: ""
+tagline: "Fully translated by me"
 author: 백덕수/Baek Deok-su
 status: Hiatus
 chapter: "pt 3 only (372+)"
