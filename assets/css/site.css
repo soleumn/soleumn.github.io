@@ -315,7 +315,7 @@ body:not(.layout-post) .chapter-tools .reader-btn { border-radius: 999px; paddin
 /* ---------- TEMA CLARO: uso criativo da paleta ---------- */
 /* caixa principal da história: painel escuro, como uma capa de livro */
 html[data-site-theme="light"] .novel-hero {
-  background: linear-gradient(135deg, #72583e 0%, #443223 100%);
+  background: linear-gradient(135deg, #C6AD95 0%, #B69677 100%);
   border-color: #443223;
   box-shadow: 0 20px 40px -20px rgba(68, 50, 35, .6);
   --texto-principal: #f3e6cf;
@@ -328,7 +328,7 @@ html[data-site-theme="light"] .novel-hero {
   --accent-soft: rgba(219, 196, 165, .14);
   color: var(--texto-principal);
 }
-html[data-site-theme="light"] .novel-cover { border-color: #B89375; outline-color: #dbc4a5; }
+html[data-site-theme="light"] .novel-cover { border-color: #443223; outline-color: #dbc4a5; }
 
 /* etiquetas preenchidas */
 html[data-site-theme="light"] .chips li {
