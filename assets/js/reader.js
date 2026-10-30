@@ -461,7 +461,7 @@
   function isFollowing(slug) { return store.get('follow_' + slug, '') === '1'; }
   function paintFollow(btn, slug) {
     var on = isFollowing(slug);
-    btn.textContent = on ? '🔔 Following' : '🔔 Follow';
+    btn.textContent = on ? '🕭 Following' : '🕭 Follow';
     btn.classList.toggle('on', on);
   }
 
@@ -478,7 +478,7 @@
       var seen = parseInt(store.get('seen_' + slug, String(total)), 10);
       var bell = document.createElement('span');
       bell.className = 'badge-follow';
-      bell.textContent = '🔔';
+      bell.textContent = '🕭';
       cover.appendChild(bell);
       if (total > seen) {
         var b = document.createElement('span');
