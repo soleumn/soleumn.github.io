@@ -4,7 +4,7 @@ slug: esg                 # TEM que ser igual ao nome da pasta em _chapters/
 permalink: /esg/          # endereço da página da história
 image: /assets/esg.jpg    # capa
 tagline: ""
-author: 김영지/Kim Young-ji
+author: Kim Young-ji
 status: OnGoing
 chapter_auto: true
 order: 1                      # ordem na home (1 aparece primeiro)
