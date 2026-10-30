@@ -9,21 +9,21 @@
 
 /* ---------- TEMA CLARO (sépia) ---------- */
 html[data-site-theme="light"] body:not(.layout-post) {
-  --bg-principal: #e8d9bd;
-  --bg-card: #f1e6cf;
-  --bg-card-hover: #e0cfae;
-  --borda-suave: #cbb28a;
-  --texto-principal: #443223;
-  --texto-titulo: #36261a;
-  --texto-secundario: #765b3d;
+  --bg-principal: #ebdcc0;
+  --bg-card: #dfcba7;
+  --bg-card-hover: #d3bd96;
+  --borda-suave: #c4aa82;
+  --texto-principal: #3d2c1e;
+  --texto-titulo: #2f2015;
+  --texto-secundario: #6b5238;
   --detalhe-accent: #72583e;
   --detalhe-hover: #56402c;
   --cor-sistema: #a08670;
-  --on-accent: #f7edd8;
-  --header-bg: rgba(241, 230, 207, .92);
-  --accent-soft: rgba(114, 88, 62, .12);
-  --shadow: rgba(68, 50, 35, .3);
-  background-image: linear-gradient(180deg, #ecddc2 0%, #dfcba6 100%);
+  --on-accent: #f6ead3;
+  --header-bg: rgba(235, 220, 192, .93);
+  --accent-soft: rgba(114, 88, 62, .14);
+  --shadow: rgba(68, 50, 35, .35);
+  background-image: radial-gradient(ellipse 120% 60% at 50% 0%, #f3e8d0 0%, transparent 70%);
   background-attachment: fixed;
 }
 
@@ -201,11 +201,25 @@ body:not(.layout-post) .sinopse-historia { font-size: .88rem; }
 .btn-soon { padding: 12px 24px; border: 1px dashed var(--borda-suave); border-radius: 999px; color: var(--texto-secundario); }
 body:not(.layout-post) .follow-hint { margin: 10px 0 0; }
 @media (max-width: 640px) {
-  .novel-hero { padding: 22px 16px; }
-  .novel-hero .novel-head { flex-direction: column; flex-wrap: nowrap; align-items: center; gap: 20px; }
-  .novel-cover { width: 200px; margin: 0 auto; }
+  .novel-hero { padding: 22px 16px 20px; }
+  .novel-hero .novel-head { flex-direction: column; flex-wrap: nowrap; align-items: center; gap: 18px; }
+  .novel-cover { width: 170px; margin: 0 auto; }
   .novel-info { flex: none; width: 100%; min-width: 0; text-align: center; }
-  .novel-info .chips, .stat-row, .novel-actions { justify-content: center; }
+  .novel-title { font-size: 2.3rem; }
+  .novel-tagline { font-size: 1.2rem; }
+  .novel-info .chips { justify-content: center; }
+
+  /* as 3 caixinhas viram uma faixa única: autor em cima, status e capítulos embaixo */
+  .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 16px 0; overflow: hidden;
+    background: var(--accent-soft); border: 1px solid var(--borda-suave); border-radius: 14px; }
+  .stat { min-width: 0; padding: 10px 12px; background: transparent; border: 0; text-align: center; }
+  .stat-v { font-size: 1.15rem; overflow-wrap: anywhere; }
+  .stat:first-child { grid-column: 1 / -1; border-bottom: 1px solid var(--borda-suave); }
+  .stat:nth-child(3) { border-left: 1px solid var(--borda-suave); }
+
+  /* botões ocupam a largura toda */
+  .novel-actions { flex-direction: column; align-items: stretch; gap: 10px; }
+  .novel-actions .btn-primary, .novel-actions .btn-follow, .btn-soon { width: 100%; justify-content: center; text-align: center; }
 }
 
 .novel-section { margin: 0 0 36px; }
@@ -297,3 +311,37 @@ body:not(.layout-post) .chapter-tools .reader-btn { border-radius: 999px; paddin
   .reader-navbar .btn-heart { padding: 5px 8px; }
   .reader-navbar .btn-formatting { padding: 6px 8px; font-size: .75rem; }
 }
+
+/* ---------- TEMA CLARO: uso criativo da paleta ---------- */
+/* caixa principal da história: painel escuro, como uma capa de livro */
+html[data-site-theme="light"] .novel-hero {
+  background: linear-gradient(135deg, #72583e 0%, #443223 100%);
+  border-color: #443223;
+  box-shadow: 0 20px 40px -20px rgba(68, 50, 35, .6);
+  --texto-principal: #f3e6cf;
+  --texto-titulo: #fbf0dc;
+  --texto-secundario: #dbc4a5;
+  --detalhe-accent: #dbc4a5;
+  --detalhe-hover: #f0e0c6;
+  --on-accent: #3a2a1c;
+  --borda-suave: rgba(219, 196, 165, .35);
+  --accent-soft: rgba(219, 196, 165, .14);
+  color: var(--texto-principal);
+}
+html[data-site-theme="light"] .novel-cover { border-color: #443223; outline-color: #dbc4a5; }
+
+/* etiquetas preenchidas */
+html[data-site-theme="light"] .chips li {
+  background: var(--detalhe-accent); color: var(--on-accent); border-color: transparent;
+}
+
+/* rodapé em faixa escura */
+html[data-site-theme="light"] .site-footer { background: #443223; color: #c9b08a; border-top: 0; }
+html[data-site-theme="light"] .foot-orn { color: #a08670; }
+
+/* botão Read More: preenchido nos dois temas */
+body:not(.layout-post) .btn-toggle-synopsis {
+  background: var(--detalhe-accent); color: var(--on-accent); border: 0;
+  border-radius: 999px; padding: 8px 22px; font-weight: 600;
+}
+body:not(.layout-post) .btn-toggle-synopsis:hover { background: var(--detalhe-hover); }
