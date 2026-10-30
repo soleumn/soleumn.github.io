@@ -30,10 +30,10 @@ title: HOME
         </div>
         <div class="conteudo-card">
           <h2 class="titulo-historia">{{ n.title }}</h2>
-          <p class="sinopse-historia">{{ n.tagline }}</p>
+          <p class="sinopse-historia"><!--{{ n.tagline }}--></p>
           {% if n.tags %}<ul class="chips">{% for t in n.tags limit:2 %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
-          <p class="card-foot">{{ cnt }} chapters{% if n.author %}, by {{ n.author }}{% endif %}</p>
-        </div>
+          <p class="card-foot">{{ n.tagline }}</p>
+        </div> <!-- {{ cnt }} chapters{% if n.author %}, by {{ n.author }}{% endif %} -->
       </div>
     </a>
   {% endfor %}
