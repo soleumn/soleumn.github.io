@@ -18,6 +18,7 @@ desc: "best epub reader app for:<br>Android: Episteme<br>iOS: PocketBook / BookF
 links:
   - { name: Epub part 1, url: "https://drive.google.com/file/d/1X0QprcooM1YlOeYF_2T4wXt8ugHm82zt/view?usp=sharing" }
   - { name: Epub part 2, url: "https://drive.google.com/file/d/1Sn0boYmOvHHXO4ig9hnCLaYRIW0NGWm0/view?usp=drive_link" }
+  - { name: Raws, url: "https://page.kakao.com/content/65171279/" }
 ---
 A pop-up event for some ‘modern fantasy’ media I loved so much that I even took a precious day off work to attend.
         
