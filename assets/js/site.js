@@ -309,7 +309,7 @@
           d.appendChild(el('p', 'fav-text', '“' + q.text + '”'));
           var m = el('div', 'fav-meta');
           m.appendChild(el('span', '', q.title || ''));
-          var a = el('a', '', 'Read in context');
+          var a = el('a', '', 'Context');
           a.href = safeUrl(q.url);
           m.appendChild(a);
           d.appendChild(m);
