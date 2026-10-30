@@ -12,7 +12,7 @@ order: 1                      # ordem na home (1 aparece primeiro)
 # ---------- CAMPOS NOVOS (todos opcionais: apague a linha se não quiser) ----------
 tags: [Action, Horror, Fantasy, Supernatural]      # etiquetas (a home mostra as 2 primeiras)
 accent: "#762929"             # cor de destaque só desta história (bordas, linhas, etiquetas)
-quote: "S.O.C.H., Save the Otter Campaign Headquarters!"
+quote: "❝S.O.C.H., Save the Otter Campaign Headquarters!❞"
 desc: "ch1-156 is not my translation! ˎˊ˗"
 
 links:
