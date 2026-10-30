@@ -3,7 +3,7 @@ title: Editor's Survival Guide
 slug: esg                 # TEM que ser igual ao nome da pasta em _chapters/
 permalink: /esg/          # endereço da página da história
 image: /assets/esg.jpg    # capa
-tagline: ""
+tagline: "Not fully translated by me"
 author: 김영지/Kim Young-ji
 status: OnGoing
 chapter_auto: true
