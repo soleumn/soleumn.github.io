@@ -33,7 +33,7 @@ For it to be just a mistake, the sight that followed was far too familiar.
 
 It was my first time at Yongsan Station, yet every part of its structure was familiar to my eyes.
 
-Thinking, Surely not, I looked for the ticket counter.
+Thinking, surely not, I looked for the ticket counter.
 
 It was the same.
 
