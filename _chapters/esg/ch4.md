@@ -5,7 +5,7 @@ categories: esg
 capitulo: 4
 ---
 
-<br>The Girl in a School Uniform struggled with all her might to shake me off.
+<br>The girl in a school uniform struggled with all her might to shake me off.
 
 But when that didn’t work, she spun around and kicked me with all her strength.
 
