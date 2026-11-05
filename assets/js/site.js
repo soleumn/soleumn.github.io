@@ -306,7 +306,7 @@
         body.appendChild(el('h3', 'fav-h', 'Quotes'));
         gr.quotes.forEach(function (q) {
           var d = el('div', 'fav-quote');
-          d.appendChild(el('p', 'fav-text', '“' + q.text + '”'));
+          d.appendChild(el('p', 'fav-text', '' + q.text + ''));
           var m = el('div', 'fav-meta');
           m.appendChild(el('span', '', q.title || ''));
           var a = el('a', '', 'Context');
