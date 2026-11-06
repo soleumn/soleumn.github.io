@@ -289,7 +289,7 @@ But what came back was a purely textbook answer.
 
 <br>
 
----
+<center>\*\&emsp;\*\&emsp;\*</center>
 
 <br>
 

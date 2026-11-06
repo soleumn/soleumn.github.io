@@ -205,7 +205,7 @@ I simply lost my grip on consciousness and fell into a comfortable dream.
 
 <br>
 
----
+<center>\*\&emsp;\*\&emsp;\*</center>
 
 <br>
 
@@ -259,7 +259,7 @@ The amount of cash scattered across the floor was exactly one hundred million wo
 
 <br>
 
----
+<center>\*\&emsp;\*\&emsp;\*</center>
 
 <br>
 

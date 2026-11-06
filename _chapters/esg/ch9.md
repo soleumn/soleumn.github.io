@@ -149,7 +149,7 @@ Then that person, Author Na Bit, whom I had agreed to meet today, also smiled fa
 
 <br>
 
----
+<center>\*\&emsp;\*\&emsp;\*</center>
 
 <br>
 
@@ -325,7 +325,7 @@ What filled my head right now was only the correlation between the 「Railway St
 
 <br>
 
----
+<center>\*\&emsp;\*\&emsp;\*</center>
 
 <br>
 
