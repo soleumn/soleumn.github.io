@@ -537,8 +537,8 @@
             var s = document.createElement('span');
             s.className = 'shake-char';
             s.textContent = ch;
-            s.style.animationDuration = (0.22 + Math.random() * 0.25).toFixed(2) + 's';
-            s.style.animationDelay = '-' + (Math.random() * 0.5).toFixed(2) + 's';
+            s.style.setProperty('--r', (0.65 + Math.random() * 0.7).toFixed(2));  /* ritmo de cada letra */
+            s.style.setProperty('--d', (Math.random() * 1.4).toFixed(2));         /* ponto de partida de cada letra */
             w.appendChild(s);
           });
           frag.appendChild(w);
