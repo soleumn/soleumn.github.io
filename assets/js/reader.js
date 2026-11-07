@@ -518,10 +518,40 @@
     store.set('seen_' + slug, String(total));
   }
 
+/* ---------- texto que treme: separa cada letra para tremer sozinha ---------- */
+  function initShake() {
+    var c = $('.post-content');
+    if (!c) return;
+    Array.prototype.forEach.call(c.querySelectorAll('.shake:not([data-split])'), function (el) {
+      el.dataset.split = '1';
+      var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null), nodes = [], n;
+      while ((n = walker.nextNode())) nodes.push(n);
+      nodes.forEach(function (t) {
+        var frag = document.createDocumentFragment();
+        t.nodeValue.split(/(\s+)/).forEach(function (part) {
+          if (!part) return;
+          if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+          var w = document.createElement('span');
+          w.className = 'shake-word';
+          Array.from(part).forEach(function (ch) {
+            var s = document.createElement('span');
+            s.className = 'shake-char';
+            s.textContent = ch;
+            s.style.animationDuration = (0.22 + Math.random() * 0.25).toFixed(2) + 's';
+            s.style.animationDelay = '-' + (Math.random() * 0.5).toFixed(2) + 's';
+            w.appendChild(s);
+          });
+          frag.appendChild(w);
+        });
+        t.parentNode.replaceChild(frag, t);
+      });
+    });
+  }
+  
   /* ---------- início ---------- */
   apply();
   var rootEl = $('#reader-root');
-  if (rootEl && rootEl.dataset.kind === 'chapter') { saveProgress(rootEl); loadSpecialFonts(); initScroll(); initKeys(); initComments(); initAdmin(); }
+  if (rootEl && rootEl.dataset.kind === 'chapter') { saveProgress(rootEl); loadSpecialFonts(); initShake(); initScroll(); initKeys(); initComments(); initAdmin(); }
   if (rootEl && rootEl.dataset.kind === 'novel') { initContinueButton(rootEl); initChapterSearch(); initFollow(rootEl); }
   initHomeBadges();
   window.addEventListener('load', initSynopsis);
