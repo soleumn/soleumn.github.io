@@ -639,10 +639,12 @@ html[data-theme="gruvbox"] .post-content .notebook {
   white-space: nowrap;
 }
 
-/* Cada letra treme; a duração e o atraso de cada uma são sorteados pelo reader.js */
+/* Cada letra treme; o ritmo (--r) e o ponto de partida (--d) de cada uma são sorteados pelo reader.js.
+   Velocidade: --shake-time no style (padrão .7s; maior = mais lento, menor = mais rápido) */
 .post-content .shake-char {
   display: inline-block;
-  animation: shake-char .35s infinite linear;
+  animation: shake-char calc(var(--shake-time, .7s) * var(--r, 1)) infinite linear;
+  animation-delay: calc(var(--shake-time, .7s) * var(--d, 0) * -1);
 }
 
 /* Força do tremor: --shake no style (padrão .035em; maior = treme mais) */
