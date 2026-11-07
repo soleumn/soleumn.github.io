@@ -627,3 +627,37 @@ html[data-theme="gruvbox"] .post-content .notebook {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* =========================================================
+   SHAKE (cada letra treme de leve, cada uma no seu ritmo)
+   Cole este bloco no FINAL do arquivo assets/css/webnovel.css
+   (precisa também da função do arquivo shake.js, no reader.js)
+   ========================================================= */
+
+/* Cada palavra fica inteira (não quebra no meio) */
+.post-content .shake-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Cada letra treme; a duração e o atraso de cada uma são sorteados pelo reader.js */
+.post-content .shake-char {
+  display: inline-block;
+  animation: shake-char .35s infinite linear;
+}
+
+/* Força do tremor: --shake no style (padrão .035em; maior = treme mais) */
+@keyframes shake-char {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  10% { transform: translate(var(--shake, .035em), calc(var(--shake, .035em) * -1)) rotate(-1.5deg); }
+  22% { transform: translate(calc(var(--shake, .035em) * -1), calc(var(--shake, .035em) * .6)) rotate(1.2deg); }
+  36% { transform: translate(calc(var(--shake, .035em) * .7), var(--shake, .035em)) rotate(-.8deg); }
+  50% { transform: translate(calc(var(--shake, .035em) * -.8), calc(var(--shake, .035em) * -.7)) rotate(1.6deg); }
+  64% { transform: translate(calc(var(--shake, .035em) * .5), calc(var(--shake, .035em) * -.4)) rotate(-1.2deg); }
+  78% { transform: translate(calc(var(--shake, .035em) * -1), calc(var(--shake, .035em) * .3)) rotate(.9deg); }
+  90% { transform: translate(calc(var(--shake, .035em) * .4), calc(var(--shake, .035em) * .8)) rotate(-1.4deg); }
+}
+
+/* Quem pediu para o aparelho reduzir animações não vê o tremor */
+@media (prefers-reduced-motion: reduce) {
+  .post-content .shake-char { animation: none; }
+}
