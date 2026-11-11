@@ -12,7 +12,7 @@ order: 1                      # ordem na home (1 aparece primeiro)
 # ---------- CAMPOS NOVOS (todos opcionais: apague a linha se não quiser) ----------
 tags: [Action, Fantasy, Sci-fi, Supernatural]      # etiquetas (a home mostra as 2 primeiras)
 accent: "#297dc1"             # cor de destaque só desta história (bordas, linhas, etiquetas)
-desc: "ch1-111 is not my translation! ˎˊ˗<br>---------<br>NO new chapters on wednesdays and weekends!"
+desc: "ch1-111 is not my translation! ⊹<br>---------<br>NO new chapters on wednesdays and weekends!"
 
 links:
   - { name: Raws, url: "https://page.kakao.com/content/69299983/" }
