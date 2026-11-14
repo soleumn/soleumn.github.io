@@ -10,6 +10,18 @@
       var st = g('site_theme');
       if (st !== 'light' && st !== 'dark') st = (window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
       d.dataset.siteTheme = st;
+      d.dataset.siteStyle = g('site_style') === 'cyber' ? 'cyber' : 'classic';
+      var sz = g('site_size');
+      d.dataset.siteSize = (sz === 'sm' || sz === 'lg' || sz === 'xl') ? sz : 'md';
+      d.dataset.siteFx = g('site_fx') === 'off' ? 'off' : 'on';
+      {% unless page.layout == "post" %}
+      if (d.dataset.siteStyle === 'cyber') {
+        var cf = document.createElement('link');
+        cf.id = 'cyberFonts'; cf.rel = 'stylesheet';
+        cf.href = 'https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Pixelify+Sans:wght@400;700&display=swap';
+        document.head.appendChild(cf);
+      }
+      {% endunless %}
       /* Temas do LEITOR: só valem dentro dos capítulos */
       d.dataset.theme = g('reader_theme') || 'mocha';
       d.dataset.font = g('reader_font_family') || 'literata';
@@ -29,3 +41,4 @@
 {% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/webnovel.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/format.css' | relative_url }}">
