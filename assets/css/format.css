@@ -7,12 +7,12 @@
 
    PARA MUDAR AS CORES DO CYBER, troque só os códigos #xxxxxx:
      --detalhe-accent = vermelho (cor principal)
-     --cor-sistema    = azul
-     --cy-b           = azul de apoio (linhas, foco, detalhes)
+     --cor-sistema    = cinza das janelas de sistema
+     --cy-b           = cinza de apoio (linhas, foco, detalhes)
      --bg-principal   = fundo da página
    Modo escuro: bloco "CYBER ESCURO". Modo claro: "CYBER CLARO".
    O botão "Effects" do painel Format liga/desliga os brilhos,
-   a grade, as linhas de monitor, a faixa de alerta e as animações.
+   a grade, as linhas de monitor e as animações.
    ========================================================= */
 
 /* ---------- Botão e painel Format (valem para os 2 estilos) ---------- */
@@ -53,6 +53,9 @@ html[data-site-size="sm"]:has(body:not(.layout-post)){font-size:94%}
 html[data-site-size="lg"]:has(body:not(.layout-post)){font-size:108%}
 html[data-site-size="xl"]:has(body:not(.layout-post)){font-size:116%}
 
+/* fonte digital opcional do leitor (botão Formatting > Font Family) */
+html[data-font="chakra"]{--reader-font:'Chakra Petch',system-ui,sans-serif}
+
 /* =========================================================
    TEMAS DO LEITOR (dentro dos capítulos): Cyber e Cyber Light
    Aparecem no botão Formatting > Theme
@@ -61,21 +64,21 @@ html[data-theme="cyber"]{
   --bg-principal:#121316; --bg-card:#0c0d0f; --bg-card-hover:#1c1e23;
   --texto-principal:#d4d6db; --texto-titulo:#f0f1f3; --texto-secundario:#8d919b;
   --borda-suave:#34373f; --detalhe-accent:#ff3b40; --detalhe-hover:#ff7a7e;
-  --cor-sistema:#4aa3ff; --on-accent:#0c0d0f;
+  --cor-sistema:#b4b9c4; --on-accent:#0c0d0f;
 }
 html[data-theme="cyber-light"]{
-  --bg-principal:#eceef1; --bg-card:#f7f8fa; --bg-card-hover:#dfe2e7;
+  --bg-principal:#eceef1; --bg-card:#dcdfe4; --bg-card-hover:#cfd3da;
   --texto-principal:#1d2026; --texto-titulo:#0e1013; --texto-secundario:#5b616d;
-  --borda-suave:#c3c7cf; --detalhe-accent:#c4161c; --detalhe-hover:#8f0f14;
-  --cor-sistema:#0b5cad; --on-accent:#ffffff;
+  --borda-suave:#b5bac3; --detalhe-accent:#b3141a; --detalhe-hover:#8f0f14;
+  --cor-sistema:#4d535f; --on-accent:#ffffff;
 }
 /* caderno dentro dos capítulos, nas cores desses temas */
 html[data-theme="cyber"] .post-content .notebook{
-  --nb-paper:#1b1d22; --nb-ink:#d8dae0; --nb-line:rgba(74,163,255,.22);
+  --nb-paper:#1b1d22; --nb-ink:#d8dae0; --nb-line:rgba(180,185,196,.18);
   --nb-margin:rgba(255,59,64,.5); --nb-red:#ff6b6f; --nb-mark:rgba(255,224,102,.30);
 }
 html[data-theme="cyber-light"] .post-content .notebook{
-  --nb-paper:#fbfbfc; --nb-ink:#1d2026; --nb-line:rgba(11,92,173,.30);
+  --nb-paper:#e1e4e9; --nb-ink:#1d2026; --nb-line:rgba(70,76,90,.25);
   --nb-margin:rgba(196,22,28,.5); --nb-red:#b3141a; --nb-mark:rgba(255,224,102,.6);
 }
 
@@ -160,19 +163,19 @@ html[data-site-style="cyber"] body:not(.layout-post){
 html[data-site-style="cyber"]:not([data-site-theme="light"]) body:not(.layout-post){
   --bg-principal:#0f1013; --bg-card:#17191e; --bg-card-hover:#21242b; --borda-suave:#363a43;
   --texto-principal:#d4d6db; --texto-titulo:#f0f1f3; --texto-secundario:#8d919b;
-  --detalhe-accent:#ff3b40; --detalhe-hover:#ff7a7e; --cor-sistema:#4aa3ff; --on-accent:#0c0d0f;
+  --detalhe-accent:#ff3b40; --detalhe-hover:#ff7a7e; --cor-sistema:#b4b9c4; --on-accent:#0c0d0f;
   --header-bg:rgba(15,16,19,.92); --accent-soft:rgba(255,59,64,.10); --shadow:rgba(0,0,0,.7);
-  --cy-b:#4aa3ff; --cy-grid:rgba(74,163,255,.06); --cy-scan:rgba(255,255,255,.025);
+  --cy-b:#c9ccd3; --cy-grid:rgba(255,255,255,.04); --cy-scan:rgba(255,255,255,.025);
   background-image:none;
 }
 
-/* ---------- CYBER CLARO ---------- */
+/* ---------- CYBER CLARO (papel de dossiê envelhecido + vinho) ---------- */
 html[data-site-style="cyber"][data-site-theme="light"] body:not(.layout-post){
-  --bg-principal:#e9ebef; --bg-card:#f7f8fa; --bg-card-hover:#dde0e6; --borda-suave:#c0c5ce;
-  --texto-principal:#1d2026; --texto-titulo:#0e1013; --texto-secundario:#5b616d;
-  --detalhe-accent:#c4161c; --detalhe-hover:#8f0f14; --cor-sistema:#0b5cad; --on-accent:#ffffff;
-  --header-bg:rgba(233,235,239,.92); --accent-soft:rgba(196,22,28,.08); --shadow:rgba(20,24,40,.28);
-  --cy-b:#0b5cad; --cy-grid:rgba(11,92,173,.07); --cy-scan:rgba(14,16,19,.035);
+  --bg-principal:#d9d5ca; --bg-card:#cbc7ba; --bg-card-hover:#c0bcae; --borda-suave:#a39e8f;
+  --texto-principal:#24211d; --texto-titulo:#15130f; --texto-secundario:#4f4a41;
+  --detalhe-accent:#8f1d24; --detalhe-hover:#6b1218; --cor-sistema:#4d4a43; --on-accent:#f7f3ea;
+  --header-bg:rgba(217,213,202,.93); --accent-soft:rgba(143,29,36,.10); --shadow:rgba(40,28,16,.30);
+  --cy-b:#3b3730; --cy-grid:rgba(60,48,30,.07); --cy-scan:rgba(40,30,20,.03);
   background-image:none;
 }
 
@@ -293,20 +296,19 @@ html[data-site-style="cyber"] body:not(.layout-post) .fmt-seg button{border-radi
 
 /* =========================================================
    CYBER: EFEITOS (botão "Effects" do painel Format)
-   Tudo que é brilho, grade, linhas, faixa de alerta e
-   animação fica AQUI. Com Effects desligado, nada disso aparece.
+   Tudo que é brilho, grade, linhas e animação fica AQUI. Com Effects desligado, nada disso aparece.
    ========================================================= */
-/* névoa suave no fundo */
+/* luz suave no fundo (escuro: brilho vermelho no topo; claro: luz de abajur no papel) */
 html[data-site-style="cyber"]:not([data-site-fx="off"]):not([data-site-theme="light"]) body:not(.layout-post){
   background-image:
     radial-gradient(ellipse 80% 45% at 50% -10%,rgba(255,59,64,.10),transparent 70%),
-    radial-gradient(ellipse 55% 40% at 100% 0,rgba(74,163,255,.07),transparent 60%);
+    radial-gradient(ellipse 120% 50% at 50% 120%,rgba(0,0,0,.35),transparent 60%);
   background-attachment:fixed;
 }
 html[data-site-style="cyber"]:not([data-site-fx="off"])[data-site-theme="light"] body:not(.layout-post){
   background-image:
-    radial-gradient(ellipse 80% 45% at 50% -10%,rgba(196,22,28,.07),transparent 70%),
-    radial-gradient(ellipse 55% 40% at 100% 0,rgba(11,92,173,.07),transparent 60%);
+    radial-gradient(ellipse 90% 50% at 50% -8%,rgba(255,255,255,.45),transparent 65%),
+    radial-gradient(ellipse 120% 55% at 50% 118%,rgba(70,45,20,.14),transparent 60%);
   background-attachment:fixed;
 }
 /* grade de fundo */
@@ -321,15 +323,11 @@ html[data-site-style="cyber"]:not([data-site-fx="off"]) body:not(.layout-post)::
   content:"";position:fixed;inset:0;z-index:5;pointer-events:none;
   background:repeating-linear-gradient(to bottom,var(--cy-scan) 0,var(--cy-scan) 1px,transparent 1px,transparent 3px);
 }
-/* brilho e faixa de alerta embaixo do cabeçalho */
-html[data-site-style="cyber"]:not([data-site-fx="off"]) body:not(.layout-post) .site-header{box-shadow:0 12px 30px -18px var(--detalhe-accent)}
-html[data-site-style="cyber"]:not([data-site-fx="off"]) body:not(.layout-post) .site-header::after{
-  content:"";position:absolute;left:0;right:0;bottom:-4px;height:3px;pointer-events:none;opacity:.8;
-  background:repeating-linear-gradient(-45deg,var(--detalhe-accent) 0,var(--detalhe-accent) 6px,transparent 6px,transparent 12px);
-}
+/* brilho suave embaixo do cabeçalho (como na primeira versão) */
+html[data-site-style="cyber"]:not([data-site-fx="off"]) body:not(.layout-post) .site-header{box-shadow:0 1px 0 var(--borda-suave),0 12px 30px -18px var(--detalhe-accent)}
 /* brilhos nos títulos */
-html[data-site-style="cyber"]:not([data-site-fx="off"]):not([data-site-theme="light"]) body:not(.layout-post) .hero-title{text-shadow:2px 0 rgba(255,59,64,.55),-2px 0 rgba(74,163,255,.55),0 0 24px rgba(255,59,64,.30)}
-html[data-site-style="cyber"]:not([data-site-fx="off"])[data-site-theme="light"] body:not(.layout-post) .hero-title{text-shadow:2px 2px 0 rgba(196,22,28,.18)}
+html[data-site-style="cyber"]:not([data-site-fx="off"]):not([data-site-theme="light"]) body:not(.layout-post) .hero-title{text-shadow:2px 0 rgba(255,59,64,.55),-2px 0 rgba(255,255,255,.20),0 0 24px rgba(255,59,64,.30)}
+html[data-site-style="cyber"]:not([data-site-fx="off"])[data-site-theme="light"] body:not(.layout-post) .hero-title{text-shadow:2px 2px 0 rgba(143,29,36,.16)}
 html[data-site-style="cyber"]:not([data-site-fx="off"]):not([data-site-theme="light"]) body:not(.layout-post) .site-title{text-shadow:0 0 14px rgba(255,59,64,.45)}
 html[data-site-style="cyber"]:not([data-site-fx="off"]):not([data-site-theme="light"]) body:not(.layout-post) .novel-title{text-shadow:0 0 18px rgba(255,59,64,.28)}
 html[data-site-style="cyber"]:not([data-site-fx="off"]) body:not(.layout-post) .site-title::before{box-shadow:0 0 10px var(--detalhe-accent)}
