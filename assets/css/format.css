@@ -199,7 +199,7 @@ html[data-site-style="cyber"] body:not(.layout-post) .theme-toggle:hover{backgro
 
 /* ---------- Rodapé ---------- */
 html[data-site-style="cyber"] body:not(.layout-post) .site-footer{background:var(--header-bg);color:var(--texto-secundario);border-top:1px solid var(--borda-suave);font-size:.82rem;letter-spacing:.04em}
-html[data-site-style="cyber"] body:not(.layout-post) .foot-orn{color:var(--borda-suave)}
+html[data-site-style="cyber"] body:not(.layout-post) .foot-orn{color:var(--cor-sistema)}
 
 /* ---------- HOME ---------- */
 html[data-site-style="cyber"] body:not(.layout-post) .hero-title{font-size:clamp(2rem,7.5vw,3.4rem);font-weight:700;letter-spacing:.05em;text-transform:uppercase;line-height:1.1}
