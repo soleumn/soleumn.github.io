@@ -64,13 +64,13 @@ html[data-font="atkinson"]{--reader-font:'Atkinson Hyperlegible',Verdana,system-
    ========================================================= */
 html[data-theme="cyber"]{
   --bg-principal:#121316; --bg-card:#0c0d0f; --bg-card-hover:#1c1e23;
-  --texto-principal:#d4d6db; --texto-titulo:#f0f1f3; --texto-secundario:#8d919b;
+  --texto-principal:#d4d6db; --texto-titulo:#f0f1f3; --texto-secundario:#9296A1;
   --borda-suave:#34373f; --detalhe-accent:#ff3b40; --detalhe-hover:#ff7a7e;
   --cor-sistema:#4aa3ff; --on-accent:#0c0d0f;
 }
 html[data-theme="cyber-light"]{
   --bg-principal:#eceef1; --bg-card:#dcdfe4; --bg-card-hover:#cfd3da;
-  --texto-principal:#1d2026; --texto-titulo:#0e1013; --texto-secundario:#5b616d;
+  --texto-principal:#1d2026; --texto-titulo:#0e1013; --texto-secundario:#797D8A;
   --borda-suave:#b5bac3; --detalhe-accent:#b3141a; --detalhe-hover:#8f0f14;
   --cor-sistema:#0b5cad; --on-accent:#ffffff;
 }
@@ -87,7 +87,7 @@ html[data-theme="cyber-light"] .post-content .notebook{
 /* ROSÉ: substitui o antigo tema "Light" (a chave interna continua "light") */
 html[data-theme="light"]{
   --bg-principal:#faf4ed; --bg-card:#efe4da; --bg-card-hover:#e6d8cc;
-  --texto-principal:#575279; --texto-titulo:#2f2b4a; --texto-secundario:#655f80;
+  --texto-principal:#575279; --texto-titulo:#2f2b4a; --texto-secundario:#8D87A6;
   --borda-suave:#d9cbbd; --detalhe-accent:#a14463; --detalhe-hover:#7f3350;
   --cor-sistema:#286983; --on-accent:#fffaf3;
 }
