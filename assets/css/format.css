@@ -4,6 +4,7 @@
    2) Estilo CLASSIC refinado (home e páginas das histórias)
    3) Estilo CYBER "wiki de terror": cinza neutro, vermelho e azul
    4) Temas "Cyber" e "Cyber Light" do leitor (dentro dos capítulos)
+   5) Tema "Rosé" do leitor (no lugar do antigo Light) e fonte Atkinson
 
    PARA MUDAR AS CORES DO CYBER, troque só os códigos #xxxxxx:
      --detalhe-accent = vermelho (cor principal)
@@ -55,6 +56,7 @@ html[data-site-size="xl"]:has(body:not(.layout-post)){font-size:116%}
 
 /* fonte digital opcional do leitor (botão Formatting > Font Family) */
 html[data-font="chakra"]{--reader-font:'Chakra Petch',system-ui,sans-serif}
+html[data-font="atkinson"]{--reader-font:'Atkinson Hyperlegible',Verdana,system-ui,sans-serif}
 
 /* =========================================================
    TEMAS DO LEITOR (dentro dos capítulos): Cyber e Cyber Light
@@ -68,7 +70,7 @@ html[data-theme="cyber"]{
 }
 html[data-theme="cyber-light"]{
   --bg-principal:#eceef1; --bg-card:#dcdfe4; --bg-card-hover:#cfd3da;
-  --texto-principal:#1d2026; --texto-titulo:#0e1013; --texto-secundario:#717885;
+  --texto-principal:#1d2026; --texto-titulo:#0e1013; --texto-secundario:#5b616d;
   --borda-suave:#b5bac3; --detalhe-accent:#b3141a; --detalhe-hover:#8f0f14;
   --cor-sistema:#0b5cad; --on-accent:#ffffff;
 }
@@ -80,6 +82,18 @@ html[data-theme="cyber"] .post-content .notebook{
 html[data-theme="cyber-light"] .post-content .notebook{
   --nb-paper:#e1e4e9; --nb-ink:#1d2026; --nb-line:rgba(70,76,90,.25);
   --nb-margin:rgba(196,22,28,.5); --nb-red:#b3141a; --nb-mark:rgba(255,224,102,.6);
+}
+
+/* ROSÉ: substitui o antigo tema "Light" (a chave interna continua "light") */
+html[data-theme="light"]{
+  --bg-principal:#faf4ed; --bg-card:#efe4da; --bg-card-hover:#e6d8cc;
+  --texto-principal:#575279; --texto-titulo:#2f2b4a; --texto-secundario:#655f80;
+  --borda-suave:#d9cbbd; --detalhe-accent:#a14463; --detalhe-hover:#7f3350;
+  --cor-sistema:#286983; --on-accent:#fffaf3;
+}
+html[data-theme="light"] .post-content .notebook{
+  --nb-paper:#f4e9de; --nb-ink:#575279; --nb-line:rgba(40,105,131,.22);
+  --nb-margin:rgba(161,68,99,.5); --nb-red:#a14463; --nb-mark:rgba(246,193,119,.55);
 }
 
 /* =========================================================
@@ -165,7 +179,7 @@ html[data-site-style="cyber"]:not([data-site-theme="light"]) body:not(.layout-po
   --texto-principal:#d4d6db; --texto-titulo:#f0f1f3; --texto-secundario:#8d919b;
   --detalhe-accent:#ff3b40; --detalhe-hover:#ff7a7e; --cor-sistema:#4aa3ff; --on-accent:#0c0d0f;
   --header-bg:rgba(15,16,19,.92); --accent-soft:rgba(255,59,64,.10); --shadow:rgba(0,0,0,.7);
-  --cy-b:#c9ccd3; --cy-grid:rgba(255,255,255,.04); --cy-scan:rgba(255,255,255,.025);
+  --cy-b:#c9ccd3; --cy-orn:#c0393e; --cy-grid:rgba(255,255,255,.04); --cy-scan:rgba(255,255,255,.025);
   background-image:none;
 }
 
@@ -175,7 +189,7 @@ html[data-site-style="cyber"][data-site-theme="light"] body:not(.layout-post){
   --texto-principal:#24211d; --texto-titulo:#15130f; --texto-secundario:#4f4a41;
   --detalhe-accent:#8f1d24; --detalhe-hover:#6b1218; --cor-sistema:#4d4a43; --on-accent:#f7f3ea;
   --header-bg:rgba(217,213,202,.93); --accent-soft:rgba(143,29,36,.10); --shadow:rgba(40,28,16,.30);
-  --cy-b:#3b3730; --cy-grid:rgba(60,48,30,.07); --cy-scan:rgba(40,30,20,.03);
+  --cy-b:#3b3730; --cy-orn:#8f1d24; --cy-grid:rgba(60,48,30,.07); --cy-scan:rgba(40,30,20,.03);
   background-image:none;
 }
 
@@ -199,7 +213,9 @@ html[data-site-style="cyber"] body:not(.layout-post) .theme-toggle:hover{backgro
 
 /* ---------- Rodapé ---------- */
 html[data-site-style="cyber"] body:not(.layout-post) .site-footer{background:var(--header-bg);color:var(--texto-secundario);border-top:1px solid var(--borda-suave);font-size:.82rem;letter-spacing:.04em}
-html[data-site-style="cyber"] body:not(.layout-post) .foot-orn{color:var(--cor-sistema)}
+/* ornamento 𓎢𓎠𓎟𓎠𓎡 da home e do rodapé: cor = --cy-orn (nos blocos CYBER ESCURO / CLARO) */
+html[data-site-style="cyber"] body:not(.layout-post) .hero-orn,
+html[data-site-style="cyber"] body:not(.layout-post) .foot-orn{color:var(--cy-orn)}
 
 /* ---------- HOME ---------- */
 html[data-site-style="cyber"] body:not(.layout-post) .hero-title{font-size:clamp(2rem,7.5vw,3.4rem);font-weight:700;letter-spacing:.05em;text-transform:uppercase;line-height:1.1}
