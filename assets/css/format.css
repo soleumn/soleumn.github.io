@@ -163,7 +163,7 @@ html[data-site-style="cyber"] body:not(.layout-post){
 html[data-site-style="cyber"]:not([data-site-theme="light"]) body:not(.layout-post){
   --bg-principal:#0f1013; --bg-card:#17191e; --bg-card-hover:#21242b; --borda-suave:#363a43;
   --texto-principal:#d4d6db; --texto-titulo:#f0f1f3; --texto-secundario:#8d919b;
-  --detalhe-accent:#ff3b40; --detalhe-hover:#ff7a7e; --cor-sistema:#b4b9c4; --on-accent:#0c0d0f;
+  --detalhe-accent:#ff3b40; --detalhe-hover:#ff7a7e; --cor-sistema:#4aa3ff; --on-accent:#0c0d0f;
   --header-bg:rgba(15,16,19,.92); --accent-soft:rgba(255,59,64,.10); --shadow:rgba(0,0,0,.7);
   --cy-b:#c9ccd3; --cy-grid:rgba(255,255,255,.04); --cy-scan:rgba(255,255,255,.025);
   background-image:none;
