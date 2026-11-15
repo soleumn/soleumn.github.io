@@ -68,7 +68,7 @@ html[data-theme="cyber"]{
 }
 html[data-theme="cyber-light"]{
   --bg-principal:#eceef1; --bg-card:#dcdfe4; --bg-card-hover:#cfd3da;
-  --texto-principal:#1d2026; --texto-titulo:#0e1013; --texto-secundario:#5b616d;
+  --texto-principal:#1d2026; --texto-titulo:#0e1013; --texto-secundario:#717885;
   --borda-suave:#b5bac3; --detalhe-accent:#b3141a; --detalhe-hover:#8f0f14;
   --cor-sistema:#0b5cad; --on-accent:#ffffff;
 }
