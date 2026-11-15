@@ -87,7 +87,7 @@ html[data-theme="cyber-light"] .post-content .notebook{
 /* ROSÉ: substitui o antigo tema "Light" (a chave interna continua "light") */
 html[data-theme="light"]{
   --bg-principal:#faf4ed; --bg-card:#efe4da; --bg-card-hover:#e6d8cc;
-  --texto-principal:#575279; --texto-titulo:#2f2b4a; --texto-secundario:#8D87A6;
+  --texto-principal:#575279; --texto-titulo:#2f2b4a; --texto-secundario:#9994B3;
   --borda-suave:#d9cbbd; --detalhe-accent:#a14463; --detalhe-hover:#7f3350;
   --cor-sistema:#286983; --on-accent:#fffaf3;
 }
