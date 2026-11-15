@@ -92,7 +92,7 @@
         '<button type="button" data-fmt="size-down" aria-label="Smaller text">A-</button>' +
         '<span class="fmt-val" id="fmtSizeVal">100%</span>' +
         '<button type="button" data-fmt="size-up" aria-label="Larger text">A+</button></div></div>' +
-      '<div class="fmt-row fmt-row-fx"><span class="fmt-label" title="Glow, grid, scanlines, alert stripe and animations">Effects</span><div class="fmt-seg">' +
+      '<div class="fmt-row fmt-row-fx"><span class="fmt-label" title="Glow, grid, scanlines and animations">Effects</span><div class="fmt-seg">' +
         '<button type="button" data-fmt="fx" data-val="on">On</button>' +
         '<button type="button" data-fmt="fx" data-val="off">Off</button></div></div>' +
       '<button type="button" class="fmt-reset" data-fmt="reset">Reset to default</button>';
