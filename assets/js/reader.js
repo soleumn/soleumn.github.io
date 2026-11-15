@@ -11,7 +11,7 @@
   };
 
   /* ---------- opções do leitor ---------- */
-  var FONTS = { georgia: 'Georgia', literata: 'Literata', lora: 'Lora', outfit: 'Outfit', inter: 'Inter', spectral: 'Spectral', chakra: 'Chakra Petch' };
+  var FONTS = { georgia: 'Georgia', literata: 'Literata', lora: 'Lora', outfit: 'Outfit', inter: 'Inter', spectral: 'Spectral', chakra: 'Chakra Petch', atkinson: 'Atkinson' };
   var SPACINGS = { compact: '⬍ Fair', normal: '⬍ Normal', relaxed: '⬍ Wide' };
   var THEMES = { mocha: '☕ Mocha', 'dark-pure': '🌙 Dark', sepia: '📜 Sepia', sepia2: '🪶 Sepia2', light: '☀️ Light', nordic: '❄ Nordic', emerald: '🍀 Emerald', gruvbox: '📦 Gruvbox', cyber: '🩸 Cyber', 'cyber-light': '🩸 Cyber Light' };
   var GISCUS_THEME = { mocha: 'catppuccin_mocha', 'dark-pure': 'dark', sepia: 'light_high_contrast', sepia2: 'gruvbox', light: 'light', nordic: 'dark_dimmed', emerald: 'dark_dimmed', gruvbox: 'gruvbox', cyber: 'dark', 'cyber-light': 'light' };
