@@ -150,10 +150,10 @@ html:not([data-site-style="cyber"]) body:not(.layout-post) .novel-cover::after{
 html:not([data-site-style="cyber"]) body:not(.layout-post) .section-label::before{
   content:"";flex:none;width:8px;height:8px;background:var(--na);transform:rotate(45deg);
 }
-html:not([data-site-style="cyber"]) body:not(.layout-post) .synopsis-container p:first-child::first-letter{
+/* html:not([data-site-style="cyber"]) body:not(.layout-post) .synopsis-container p:first-child::first-letter{
   float:left;margin:.06em .12em 0 0;
   font:600 2.7rem/.9 var(--fonte-titulo);color:var(--detalhe-accent);
-}
+} */
 html:not([data-site-style="cyber"]) body:not(.layout-post) .btn-primary{box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 10px 20px -12px var(--shadow);letter-spacing:.03em}
 html:not([data-site-style="cyber"]) body:not(.layout-post) .item-capitulo a:hover{box-shadow:inset 3px 0 0 var(--detalhe-accent)}
 
