@@ -358,7 +358,7 @@ html[data-site-style="cyber"]:not([data-site-fx="off"]) body:not(.layout-post) .
 /* Cyber: Author / Status / Chapters na mesma fonte dos títulos */
 html[data-site-style="cyber"] body:not(.layout-post) .novel-meta,
 html[data-site-style="cyber"] body:not(.layout-post) .stat-v{
-  font-family: var(--fonte-titulo);
+  font-family: var(--cy-body);
 }
 html[data-site-style="cyber"] body:not(.layout-post) .novel-meta{
   font-size: 1.05rem;
