@@ -267,6 +267,8 @@
     var t = ta.value.replace(/\{%[\s\S]*?%\}/g, ' ').replace(/<[^>]+>/g, ' ');
     var w = (t.match(/\S+/g) || []).length;
     c.textContent = w.toLocaleString('en-US') + ' words · ~' + Math.max(1, Math.round(w / 230)) + ' min';
+    lint();
+    schedulePreview();
   }
 
   function normalizeHead(h) {
@@ -283,6 +285,7 @@
 
   /* Escreve no textarea de um jeito que o "desfazer" (Ctrl+Z) continua funcionando */
   function putText(ta, text, from, to) {
+    ensureWrite();
     ta.focus();
     ta.setSelectionRange(from, to);
     var ok = false;
@@ -305,6 +308,7 @@
         '<button type="button" class="ed-btn" id="edBold" title="Negrito"><b>B</b></button>' +
         '<button type="button" class="ed-btn" id="edItalic" title="Itálico"><i>I</i></button>' +
         '<button type="button" class="ed-btn" id="edPre">✦ Presets</button>' +
+        '<button type="button" class="ed-btn" id="edPv" title="Mostrar ou esconder a pré-visualização">👁 Prévia</button>' +
         '<button type="button" class="ed-btn" id="edFix" title="Arruma os parágrafos (selecione um trecho, ou vale para o texto todo)">¶ Arrumar</button>' +
         '<button type="button" class="ed-btn" id="edFindBtn" title="Achar e substituir">🔍</button>' +
         '<button type="button" class="ed-btn" id="edHeadBtn" title="Cabeçalho do capítulo (título, subtítulo...)" hidden>⚙</button>' +
@@ -319,8 +323,8 @@
       '<div class="ed-headwrap" id="edHeadWrap" hidden>' +
         '<textarea id="edHead" spellcheck="false" rows="6"></textarea>' +
       '</div>' +
-      '<div class="ed-status"><span id="edStatus"></span><span id="edCount"></span></div>' +
-      '<textarea id="edText" spellcheck="true"></textarea>';
+      '<div class="ed-status"><span id="edStatus"></span><span id="edLint" class="ed-lint"></span><span id="edCount"></span></div>' +
+      '<div class="ed-body"><textarea id="edText" spellcheck="true"></textarea><div class="ed-preview post-content" id="edPreview"></div></div>';
     document.body.appendChild(p);
 
     var ta = $('#edText'), timer;
@@ -358,6 +362,10 @@
       if (!f.hidden) { $('#edDrawer').hidden = true; $('#edPre').classList.remove('ed-on'); $('#edFindIn').focus(); }
     });
     $('#edHeadBtn').addEventListener('click', function () { var h = $('#edHeadWrap'); h.hidden = !h.hidden; });
+    $('#edPv').addEventListener('click', function () { setPreview(!p.classList.contains('pv')); });
+    $('#edPreview').addEventListener('click', function (e) { if (e.target.closest('a')) e.preventDefault(); });
+    ta.addEventListener('scroll', syncPv);
+    p.addEventListener('input', function (e) { if (/^(mfTitle|mfSub|edHead)$/.test(e.target.id)) schedulePreview(); });
     $('#edNext').addEventListener('click', findNext);
     $('#edAll').addEventListener('click', replaceAll);
   }
@@ -380,6 +388,7 @@
     ta.value = ''; ta.disabled = false;
     $('#edSave').disabled = false;
     $('#edPanel').classList.add('open');
+    setPreview(window.innerWidth >= 900 && store.get('ed_pv', '1') === '1', true);
     document.body.style.overflow = 'hidden';
     setStatus(HINT);
     updateCount();
@@ -420,6 +429,7 @@
   }
 
   function findNext() {
+    ensureWrite();
     var ta = $('#edText'), q = $('#edFindIn').value;
     if (!q) return;
     var i = ta.value.indexOf(q, ta.selectionEnd);
@@ -437,6 +447,148 @@
     putText(ta, parts.join(r), 0, ta.value.length);
     updateCount();
     setStatus(n + (n > 1 ? ' trocas feitas ✓' : ' troca feita ✓'));
+  }
+
+  /* =========================================================
+     PRÉ-VISUALIZAÇÃO AO VIVO
+     Usa a biblioteca "marked" (baixada sozinha na primeira vez) e o CSS do
+     próprio site. É uma aproximação muito boa do resultado final, mas quem
+     decide de verdade é o Jekyll depois de salvar (ex.: as aspas curvas
+     automáticas só aparecem na página publicada).
+     ========================================================= */
+  var mdReady = null, pvTimer;
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+  function loadMarked() {
+    if (window.marked) return Promise.resolve();
+    if (mdReady) return mdReady;
+    function add(src) {
+      return new Promise(function (ok, fail) {
+        var s = document.createElement('script');
+        s.src = src; s.onload = ok; s.onerror = fail;
+        document.head.appendChild(s);
+      });
+    }
+    mdReady = add('https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js')
+      .catch(function () { return add('https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js'); })
+      .catch(function () {});
+    return mdReady;
+  }
+
+  /* plano B, caso a biblioteca não carregue: só parágrafos, negrito e itálico */
+  function miniMd(s) {
+    return s.split(/\n{2,}/).map(function (b) {
+      b = b.trim();
+      if (!b) return '';
+      if (b.charAt(0) === '<') return b;
+      return '<p>' + b.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\*(.+?)\*/g, '<i>$1</i>').replace(/\n/g, '<br>') + '</p>';
+    }).join('\n');
+  }
+
+  /* Prepara o texto: troca o {% include system.html %} pelo HTML dele e
+     imita o markdown="1" do Jekyll (texto dentro de <div> também vira markdown) */
+  function prepare(src) {
+    return src
+      .replace(/\{%\s*include\s+system\.html([\s\S]*?)%\}/g, function (_, args) {
+        var m = args.match(/text\s*=\s*(?:"((?:[^"\\]|\\.)*)"|'((?:[^'\\]|\\.)*)')/);
+        var t = m ? (m[1] != null ? m[1] : m[2]) : '';
+        return '\n\n<div class="system-window"><div class=""></div><div class="system-content" style="font-weight: bold;">' + t + '</div></div>\n\n';
+      })
+      .replace(/\{%[\s\S]*?%\}/g, '')
+      .replace(/\{\{[\s\S]*?\}\}/g, '')
+      .replace(/(<[a-zA-Z][^>]*\smarkdown\s*=\s*["']1["'][^>]*>)/g, '$1\n\n');
+  }
+
+  /* kramdown: um parágrafo seguido de {: .classe} ganha essa classe */
+  function applyIAL(html) {
+    return html.replace(/<p>([\s\S]*?)\s*\{:\s*([^}]*)\}\s*<\/p>/g, function (_, text, spec) {
+      var cls = [], id = '';
+      spec.split(/\s+/).forEach(function (t) {
+        if (t.charAt(0) === '.') cls.push(t.slice(1));
+        else if (t.charAt(0) === '#') id = t.slice(1);
+      });
+      return '<p' + (cls.length ? ' class="' + cls.join(' ') + '"' : '') + (id ? ' id="' + id + '"' : '') + '>' + text + '</p>';
+    });
+  }
+
+  /* Título e subtítulo no topo da prévia (como aparecem no capítulo) */
+  function pvHead() {
+    var t = '', s = '';
+    function val(re, h) { var m = h.match(re); return m ? m[1].trim().replace(/^["']|["']$/g, '') : ''; }
+    if (ed.mode === 'newchapter') {
+      t = ($('#mfTitle') || {}).value || '';
+      s = ($('#mfSub') || {}).value || '';
+    } else if (ed.mode === 'edit') {
+      var h = $('#edHead').value;
+      t = val(/^title:\s*(.+)$/m, h);
+      s = val(/^subtitle:\s*(.+)$/m, h);
+    }
+    if (!t) return '';
+    return '<h1 class="chapter-title" style="margin:8px 0 26px">' + esc(t.trim()) + '</h1>' +
+      (s ? '<p style="text-align:center;font-style:italic;opacity:.8;margin:-16px 0 26px">' + esc(s) + '</p>' : '');
+  }
+
+  function draw() {
+    var p = $('#edPanel'), pv = $('#edPreview');
+    if (!p || !pv || !p.classList.contains('pv')) return;
+    var src = $('#edText').value.replace(/\r\n/g, '\n');
+    if (ed.mode === 'raw') src = src.replace(/^---\n[\s\S]*?\n---\n?/, '');
+    src = prepare(src);
+    var html;
+    try { html = window.marked ? window.marked.parse(src, { gfm: true }) : miniMd(src); }
+    catch (err) { html = '<p>Erro na prévia: ' + esc(err.message) + '</p>'; }
+    html = applyIAL(html);
+    var top = pv.scrollTop;
+    pv.innerHTML = pvHead() + html;
+    pv.scrollTop = top;
+    if (window.WN) { window.WN.loadSpecialFonts(pv); window.WN.initShake(pv); }
+  }
+  function renderPreview() {
+    var p = $('#edPanel');
+    if (!p || !p.classList.contains('pv')) return;
+    if (!window.marked) loadMarked().then(draw); else draw();
+  }
+  function schedulePreview() { clearTimeout(pvTimer); pvTimer = setTimeout(renderPreview, 300); }
+
+  function setPreview(on, init) {
+    var p = $('#edPanel'), ta = $('#edText');
+    if (!p || !ta) return;
+    var max = ta.scrollHeight - ta.clientHeight, ratio = max > 0 ? ta.scrollTop / max : 0;
+    p.classList.toggle('pv', on);
+    var b = $('#edPv');
+    if (b) b.classList.toggle('ed-on', on);
+    if (!init && window.innerWidth >= 900) store.set('ed_pv', on ? '1' : '0');
+    if (on) {
+      renderPreview();
+      var pv = $('#edPreview');
+      pv.scrollTop = ratio * (pv.scrollHeight - pv.clientHeight);
+    }
+  }
+  /* no celular a prévia ocupa o lugar do texto; ao editar, volta para a escrita */
+  function ensureWrite() {
+    var p = $('#edPanel');
+    if (p && window.innerWidth < 900 && p.classList.contains('pv')) setPreview(false);
+  }
+  /* a prévia acompanha a rolagem do texto */
+  function syncPv() {
+    var p = $('#edPanel'), pv = $('#edPreview'), ta = $('#edText');
+    if (!p || !p.classList.contains('pv') || window.innerWidth < 900) return;
+    var max = ta.scrollHeight - ta.clientHeight;
+    pv.scrollTop = (max > 0 ? ta.scrollTop / max : 0) * (pv.scrollHeight - pv.clientHeight);
+  }
+
+  /* Aviso de erros comuns: caixa sem fechar, {% %} incompleto */
+  function lint() {
+    var l = $('#edLint'), ta = $('#edText');
+    if (!l || !ta) return;
+    var t = ta.value.replace(/\{%[\s\S]*?%\}/g, ' '), msgs = [];
+    function n(re) { return (t.match(re) || []).length; }
+    var d1 = n(/<div\b/gi), d2 = n(/<\/div>/gi);
+    if (d1 !== d2) msgs.push(Math.abs(d1 - d2) + (d1 > d2 ? ' <div> sem fechar' : ' </div> sobrando'));
+    var s1 = n(/<span\b/gi), s2 = n(/<\/span>/gi);
+    if (s1 !== s2) msgs.push(Math.abs(s1 - s2) + (s1 > s2 ? ' <span> sem fechar' : ' </span> sobrando'));
+    if (/\{%|%\}/.test(t)) msgs.push('{% %} incompleto');
+    l.textContent = msgs.length ? '⚠ ' + msgs.join(' · ') : '';
   }
 
   /* ---------- aplica um preset no ponto onde está o cursor ---------- */
@@ -842,7 +994,12 @@
     '.ed-headwrap{padding:8px 12px;background:var(--bg-card);border-bottom:1px solid var(--borda-suave)}',
     '.ed-headwrap textarea{width:100%;box-sizing:border-box;background:var(--bg-principal);color:var(--texto-principal);border:1px solid var(--borda-suave);border-radius:8px;padding:8px;font:14px/1.5 ui-monospace,Menlo,Consolas,monospace}',
     '.ed-status{display:flex;justify-content:space-between;gap:10px;padding:6px 12px;font-size:.78rem;color:var(--texto-secundario);background:var(--bg-card);border-bottom:1px solid var(--borda-suave)}',
-    '.ed-panel #edText{flex:1;width:100%;border:0;resize:none;outline:0;padding:14px;background:var(--bg-principal);color:var(--texto-principal);font:16px/1.7 ui-monospace,Menlo,Consolas,monospace}',
+    '.ed-body{flex:1;display:flex;min-height:0}',
+    '.ed-panel #edText{flex:1;min-width:0;width:100%;border:0;resize:none;outline:0;padding:14px;background:var(--bg-principal);color:var(--texto-principal);font:16px/1.7 ui-monospace,Menlo,Consolas,monospace}',
+    '.ed-panel .ed-preview{display:none;flex:1;min-width:0;overflow:auto;padding:18px 22px 60px;background:var(--bg-principal);border-left:1px solid var(--borda-suave)}',
+    '.ed-panel.pv .ed-preview{display:block}',
+    '@media (max-width:899px){.ed-panel.pv #edText{display:none}.ed-panel.pv .ed-preview{border-left:0}}',
+    '.ed-lint{color:#e0607e;font-weight:600}',
     '.ed-toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);z-index:2100;max-width:90%;background:var(--bg-card);color:var(--texto-principal);border:1px solid var(--detalhe-accent);border-radius:10px;padding:10px 16px;font-size:.9rem;box-shadow:0 8px 20px rgba(0,0,0,.5);display:none;text-align:center;cursor:pointer}',
     '.ed-toast.show{display:block}'
   ].join('');
