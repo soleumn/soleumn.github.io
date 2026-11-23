@@ -551,7 +551,7 @@
   /* ---------- início ---------- */
   apply();
   var rootEl = $('#reader-root');
-  if (rootEl && rootEl.dataset.kind === 'chapter') { saveProgress(rootEl); loadSpecialFonts(); initShake(); initScroll(); initKeys(); initComments(); initAdmin(); }
+  if (rootEl && rootEl.dataset.kind === 'chapter') { saveProgress(rootEl); loadSpecialFonts(); initShake(); initScroll(); initKeys(); initComments(); }
   if (rootEl && rootEl.dataset.kind === 'novel') { initContinueButton(rootEl); initChapterSearch(); initFollow(rootEl); }
   initHomeBadges();
   window.addEventListener('load', initSynopsis);
