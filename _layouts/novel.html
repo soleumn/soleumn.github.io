@@ -5,7 +5,7 @@ layout: default
 {% assign caps = site.chapters | where_exp: "p", "p.path contains prefix" | sort: "capitulo" %}
 {% if page.chapter_auto %}{% assign total = caps.size %}{% elsif page.chapter %}{% assign total = page.chapter %}{% else %}{% assign total = caps.size %}{% endif %}
 
-<div id="reader-root" class="novel-page" data-kind="novel" data-slug="{{ page.slug }}" data-count="{{ caps.size }}"{% if page.accent %} style="--na:{{ page.accent }}"{% endif %}>
+<div id="reader-root" class="novel-page" data-kind="novel" data-slug="{{ page.slug }}" data-path="{{ page.path }}" data-count="{{ caps.size }}"{% if page.accent %} style="--na:{{ page.accent }}"{% endif %}>
 
   <section class="novel-hero">
     <!-- {% if page.image %}<div class="hero-bg" style="background-image:url('{{ page.image | relative_url }}')"></div>{% endif %} -->
