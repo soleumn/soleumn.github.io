@@ -44,7 +44,7 @@
     var f = $('iframe.giscus-frame');
     if (f) f.contentWindow.postMessage({ giscus: { setConfig: { theme: GISCUS_THEME[state.theme] } } }, 'https://giscus.app');
   }
-  function loadGiscus() {
+  function Giscus() {
     var box = $('.giscus');
     if (!box || box.dataset.loaded) return;
     box.dataset.loaded = '1';
@@ -96,14 +96,16 @@
     ['notebook', 'Indie Flower'], ['wiki', 'VT323'], ['scribble', 'Shadows Into Light Two'], ['caixajogo', 'Jersey 10'], ['blockquote', 'Jersey 10'],
     ['f-architects', 'Architects Daughter']
   ];
-  function loadSpecialFonts() {
-    var c = $('.post-content');
+  var fontsDone = {};
+  function loadSpecialFonts(box) {
+    var c = box || $('.post-content');
     if (!c) return;
     var html = c.innerHTML, seen = {}, params = [];
     SPECIAL.forEach(function (f) {
-      if (seen[f[1]]) return;
+      if (seen[f[1]] || fontsDone[f[1]]) return;
       if (c.querySelector('.' + f[0]) || html.indexOf(f[1]) > -1) {
         seen[f[1]] = 1;
+        fontsDone[f[1]] = 1;
         params.push('family=' + f[1].replace(/ /g, '+') + (f[2] ? ':wght@400;700' : ''));
       }
     });
@@ -520,7 +522,7 @@
 
 /* ---------- texto que treme: separa cada letra para tremer sozinha ---------- */
   function initShake() {
-    var c = $('.post-content');
+    var c = box || $('.post-content');
     if (!c) return;
     Array.prototype.forEach.call(c.querySelectorAll('.shake:not([data-split])'), function (el) {
       el.dataset.split = '1';
@@ -547,7 +549,8 @@
       });
     });
   }
-  
+
+  window.WN = { loadSpecialFonts: loadSpecialFonts, initShake: initShake };
   /* ---------- início ---------- */
   apply();
   var rootEl = $('#reader-root');
