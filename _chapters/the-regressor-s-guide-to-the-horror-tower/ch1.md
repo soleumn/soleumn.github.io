@@ -221,10 +221,10 @@ And beneath that, the records of numerous people were written.
 
 [4. I'm not getting out of the elevator.]
 
-[5. Let's try to organize the situation roughly.]
-[5. After my college lecture ended, I took the elevator down and when I got off, I was here.]
-[5. Inside the elevator is safe, but there's nothing to eat or drink.]
-[5. Outside is a hallway where the lights keep turning on and off.]
+[5. Let's try to organize the situation roughly.]<br>
+[5. After my college lecture ended, I took the elevator down and when I got off, I was here.]<br>
+[5. Inside the elevator is safe, but there's nothing to eat or drink.]<br>
+[5. Outside is a hallway where the lights keep turning on and off.]<br>
 [5. Judging by the four human corpses nearby, they must be the people who came before us.]
 
 [6. What on earth were those idiots before me doing? It says we have hidden powers. I'm ■■. When the lights go out, I'm going to try fighting. Heading out first.]
@@ -235,20 +235,20 @@ And beneath that, the records of numerous people were written.
 
 [8. Then I'll go out when the lights are off. I'm wearing a pink hoodie. My ability says it's ■■■.]
 
-[9. I'm just gonna die here. Good luck to the next people.]
+[9. I'm just gonna die here. Good luck to the next people.]<br>
 [9. I've been here for about six hours and I keep hearing weird noises.]
 
 [10. Number 9 supposedly died, but why are there no corpses inside the elevator? Anyway, my power is ■■■■, and I'm heading out when the lights go out. I can't see the navy sweater corpse, but the pink hoodie corpse is right in front of my eyes.]
 
-[10. There's a resting spot midway. Looks like you can take a break here, there's food, drinks, and an NPC.]
+[10. There's a resting spot midway. Looks like you can take a break here, there's food, drinks, and an NPC.]<br>
 [10. The NPC doesn't answer even if you talk to them. They just move around rigidly and it's kind of creepy...]
 
-[11. What are we supposed to do if that crazy bastard Number 10 doesn't even tell us how to get there; If you move straight only when the lights go out, you'll reach a fork in the road. You need to branch off to the left there.]
+[11. What are we supposed to do if that crazy bastard Number 10 doesn't even tell us how to get there; If you move straight only when the lights go out, you'll reach a fork in the road. You need to branch off to the left there.]<br>
 [OHFUCKDON'TMAKEASOUNDABSOLUTELYDON'TMAKEASOUND]
 
 [12. The NPC is just wearing a mascot costume. Looks cute. Even if you talk to it, it just stays still, and if you try to peek inside, it hits you.]
 
-[12. It just brings you drinks and food if you say they're empty. Still, seems like there's light?]
+[12. It just brings you drinks and food if you say they're empty. Still, seems like there's light?]<br>
 [12. I'll try heading out when the lights go out this time too. Just in case I don't make it, I'm wearing a black sweater.]
 
 [13. Found the black sweater corpse. Gotta go when the lights are on.]
@@ -257,13 +257,13 @@ And beneath that, the records of numerous people were written.
 
 [15. Even setting it on fire doesn't work?]
 
-[16. Doesn't seem like you can stay in the resting room for long. Been here four days and it feels like something's glaring at me.]
-[16. But what the hell can you do even if you glare at me?]
+[16. Doesn't seem like you can stay in the resting room for long. Been here four days and it feels like something's glaring at me.]<br>
+[16. But what the hell can you do even if you glare at me?]<br>
 [Guysdon'tstayhereformorethanaweekthemascotcostumeis]
 
-[17. Does that mean if it's not a week, six days is fine?]
-[17. The mascot costume looks cute, but no matter how much I talk to it, it only answers with its body, crazy bastard.]
-[17. I'll sum it up. First, you have to go out when the lights are on. Just think of it as the exact opposite. Second, trust your instincts. There are times when even though the lights are on, you just feel like you shouldn't move.]
+[17. Does that mean if it's not a week, six days is fine?]<br>
+[17. The mascot costume looks cute, but no matter how much I talk to it, it only answers with its body, crazy bastard.]<br>
+[17. I'll sum it up. First, you have to go out when the lights are on. Just think of it as the exact opposite. Second, trust your instincts. There are times when even though the lights are on, you just feel like you shouldn't move.]<br>
 [Don't move then.]
 
 [■■■■■■.]
@@ -274,10 +274,10 @@ And beneath that, the records of numerous people were written.
 
 [20. What the hell is that black box.]
 
-[21. Found the exit.]
-[21. Absolutely do not write it out in the open. Just write the method. You gotta write the strategy guide, not the right answer.]
-[21. Seems like writing the right answer automatically censors it.]
-[21. The strategy is the same as before.]
+[21. Found the exit.]<br>
+[21. Absolutely do not write it out in the open. Just write the method. You gotta write the strategy guide, not the right answer.]<br>
+[21. Seems like writing the right answer automatically censors it.]<br>
+[21. The strategy is the same as before.]<br>
 [AH SHIT ■■■■■■]
 
 [22. Found the exit.]
@@ -285,17 +285,17 @@ And beneath that, the records of numerous people were written.
 [22. Even if you get caught, you can survive if you sacrifice one arm. Probably. At least I survived that way.]
 [22. And ■■■■■■.]
 
-[23. What the hell are those bastards above me talking about? I can't find it at all? For your reference, my ability is ■■■ ■■ ■■.]
-[23. The scenery you see from the elevator and the scenery when you step outside are different. Keep that in mind.]
+[23. What the hell are those bastards above me talking about? I can't find it at all? For your reference, my ability is ■■■ ■■ ■■.]<br>
+[23. The scenery you see from the elevator and the scenery when you step outside are different. Keep that in mind.]<br>
 [23. I'll have jajangmyeon with black soybean paste as my last meal on earth.]
 
-[24. Hello, this is ■■■ from the Management Bureau. Regarding this matter, ■■■■■■■■■■■■■■■■■■]
-[24. Presumably, the proper method to ascend to the next floor seems to be intentionally getting covered up by censorship. Might just be the first floor, though.]
-[24. If this is the case, it is highly likely that the contents of the notebook update once you reach the next floor.]
-[24. My advice is, consider the speed of the elevator.]
-[24. My ability is ■ ■■ ■■, which doesn't seem very useful here.]
-[24. However, as long as you stay calm, you too can safely escape this place.]
-[24. I will leave information on the next floor as well. I pray that we meet alive.]
+[24. Hello, this is ■■■ from the Management Bureau. Regarding this matter, ■■■■■■■■■■■■■■■■■■]<br>
+[24. Presumably, the proper method to ascend to the next floor seems to be intentionally getting covered up by censorship. Might just be the first floor, though.]<br>
+[24. If this is the case, it is highly likely that the contents of the notebook update once you reach the next floor.]<br>
+[24. My advice is, consider the speed of the elevator.]<br>
+[24. My ability is ■ ■■ ■■, which doesn't seem very useful here.]<br>
+[24. However, as long as you stay calm, you too can safely escape this place.]<br>
+[24. I will leave information on the next floor as well. I pray that we meet alive.]<br>
 [24. Lastly, absolutely ■■■■■■.]
 
 [25. Where is this? I need to go home! I ran an errand for my mom!]
@@ -308,7 +308,7 @@ And beneath that, the records of numerous people were written.
 
 [148. Wondered where all the mass disappearances were happening from, turns out it was here. My ability is ■■. I don't know what the text blocked by the black box is, but I just followed the instructions written above and got through fine.]
 
-[149. Just exercise caution at the path before the shelter. If you're barefoot, I recommend wearing shoes. The path after the shelter must only be walked when the lights are on.]
+[149. Just exercise caution at the path before the shelter. If you're barefoot, I recommend wearing shoes. The path after the shelter must only be walked when the lights are on.]<br>
 [DON'TRUNABSOLUTELYDON'TWALKANNOTABSOLUTELY■■■■■■]
 
 "...."
@@ -561,17 +561,17 @@ Nothing happened.
 
 As expected, nothing happened.
 
-“…Status window!”
-“Window!”
-“Ability!”
-“Stats!”
+“…Status window!”<br>
+“Window!”<br>
+“Ability!”<br>
+“Stats!”<br>
 “Level!”
 
 No matter what words I shout out, nothing happens.
 
-“Regression!”
-“Regression ability!”
-“Go back to the past!”
+“Regression!”<br>
+“Regression ability!”<br>
+“Go back to the past!”<br>
 "See the future!"
 
 As expected, nothing happens.
