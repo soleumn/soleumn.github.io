@@ -215,8 +215,8 @@ html[data-theme="sepia"] .site-header,html[data-theme="sepia2"] .site-header,htm
 .chat-msgs::before{content:"—";color:var(--detalhe-accent);font-weight:700;flex-shrink:0}
 .chat-reply::before{content:"↳";color:var(--detalhe-accent);font-weight:700;flex-shrink:0}
 
-.sign-box{text-align:center;border:1px solid var(--borda-suave);border-radius:8px;padding:14px 20px;margin:20px auto;font-weight:500}
-.highlight-box{text-align:center;background:#A89206;border-left:4px solid #a855f7;border-radius:6px;padding:16px 20px;margin:20px 0;color:#f3e8ff}
+.sign-box{border: 1px solid var(--borda-suave, rgba(255, 255, 255, 0.1)); border-radius: 12px; padding: 16px; text-align: center; margin: 20px 0;font-weight:500}
+.highlight-box{background-color: #EBEB81; padding: 20px; text-align: center !important; border-left: 5px solid #CDC600; border-radius: 8px; margin: 0 !important; text-color: #000000 !important; font-weight: bold !important; line-height: 1.6;}
 .font-handwriting{font-style:italic;font-size:1.05rem;line-height:1.6}
 .font-system{color:#4ade80;background:#052e16;padding:10px 14px;border-radius:6px}
 
