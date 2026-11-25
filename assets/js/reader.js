@@ -521,7 +521,7 @@
   }
 
 /* ---------- texto que treme: separa cada letra para tremer sozinha ---------- */
-  function initShake() {
+  function initShake(box) {
     var c = box || $('.post-content');
     if (!c) return;
     Array.prototype.forEach.call(c.querySelectorAll('.shake:not([data-split])'), function (el) {
@@ -549,8 +549,9 @@
       });
     });
   }
-
+  
   window.WN = { loadSpecialFonts: loadSpecialFonts, initShake: initShake };
+
   /* ---------- início ---------- */
   apply();
   var rootEl = $('#reader-root');
