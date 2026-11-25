@@ -44,7 +44,7 @@
     var f = $('iframe.giscus-frame');
     if (f) f.contentWindow.postMessage({ giscus: { setConfig: { theme: GISCUS_THEME[state.theme] } } }, 'https://giscus.app');
   }
-  function Giscus() {
+  function loadGiscus() {
     var box = $('.giscus');
     if (!box || box.dataset.loaded) return;
     box.dataset.loaded = '1';
