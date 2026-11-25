@@ -69,7 +69,7 @@
 
     /* ---------- WIKI ---------- */
     { g: 'wiki', label: 'Página wiki completa', block: true,
-      tpl: '<div class="wiki" markdown="1">\n<div class="wiki-title">Page title</div>\n<div class="wiki-author">Written by: Name</div>\n\n## Section\n\n@@Text of the wiki.@@\n\n- item one\n- item two\n\n</div>' },
+      tpl: '<div class="wiki" markdown="1">\n<div class="wiki-title">Page title</div>\n<div class="wiki-author">Written by: Name</div>\n\n**Classification:** Ghost, Grade B\n\n## Section\n\n@@Text of the <span class="wiki-red">wiki</span>.@@\n\n- item one\n- item two\n- <span class="wiki-redacted">item three</span>\n\n<div class="wiki-warning">WARNING: Do not answer if it calls your name.</div>\n\n</div>' },
     { g: 'wiki', label: 'Wiki só com texto', block: true,
       tpl: '<div class="wiki" markdown="1">\n\n@@Text of the wiki.@@\n\n</div>' },
     { g: 'wiki', label: 'Título de seção', block: true, tpl: '## @@Section@@' },
@@ -80,15 +80,13 @@
 
     /* ---------- CHAT ---------- */
     { g: 'chat', label: 'Chat (balões)', block: true,
-      tpl: '<div class="chat-container">\n<div class="chat-group received"><span class="chat-author">Name</span><div class="chat-msg received">@@Hello!@@</div></div>\n<div class="chat-group sent"><span class="chat-author">Me</span><div class="chat-msg sent">Hi there!</div></div>\n</div>' },
+      tpl: '<div class="chat-container">\n\n<div class="chat-group received">\n<span class="chat-author">Name</span>\n<div class="chat-msg received">\n@@Hello!@@\n</div>\n</div>\n\n<div class="chat-msg sent">\nHi there!\n</div>\n\n</div>' },
     { g: 'chat', label: '+ balão recebido', line: true,
-      tpl: '<div class="chat-group received"><span class="chat-author">Name</span><div class="chat-msg received">@@Message@@</div></div>' },
+      tpl: '<div class="chat-container">\n\n<div class="chat-group received">\n<span class="chat-author">Name</span>\n<div class="chat-msg received">\n@@Hello!@@\n</div>\n</div>\n\n</div>' },
     { g: 'chat', label: '+ balão enviado', line: true,
-      tpl: '<div class="chat-group sent"><span class="chat-author">Me</span><div class="chat-msg sent">@@Message@@</div></div>' },
+      tpl: '<div class="chat-container">\n\n<div class="chat-msg sent">\nHi there!\n</div>\n\n</div>' },
     { g: 'chat', label: 'Chat (lista com —)', block: true,
       tpl: '<div class="chat-box">\n<div class="chat-msgs">@@First message@@</div>\n<div class="chat-reply">Reply</div>\n</div>' },
-    { g: 'chat', label: '+ mensagem —', line: true, tpl: '<div class="chat-msgs">@@Message@@</div>' },
-    { g: 'chat', label: '+ resposta ↳', line: true, tpl: '<div class="chat-reply">@@Reply@@</div>' },
 
     /* ---------- EFEITOS (dentro de uma frase) ---------- */
     { g: 'fx', label: 'Glitch animado',
@@ -107,9 +105,9 @@
     /* ---------- EXTRAS ---------- */
     { g: 'misc', label: 'Quebra de cena', block: true, tpl: '* * *' },
     { g: 'misc', label: 'Texto centralizado', block: true,
-      tpl: '<div style="text-align:center" markdown="1">\n@@Centered text@@\n</div>' },
+      tpl: '<br>\n\n<center>@@Centered text@@</center>\n\n<br>' },
     { g: 'misc', label: "Nota da autora", block: true,
-      tpl: '<div class="sign-box" markdown="1">\n**Author\'s note:** @@Your note here.@@\n</div>' },
+      tpl: '<br>\n\n***\n\n<br><small>@@TN: text here@@</small>' },
     { g: 'misc', label: 'Pensamento (itálico)', tpl: '*@@thought@@*' },
     { g: 'misc', label: 'Link', tpl: '[@@link text@@](https://)' },
     { g: 'misc', label: 'Imagem', block: true, tpl: '![@@description@@](/assets/IMAGE.jpg)' },
