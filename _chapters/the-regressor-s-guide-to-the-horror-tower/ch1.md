@@ -592,7 +592,7 @@ The ability given to me in this insane building was neither monstrous strength, 
 
 <br>
 
-<div style="border: 6px double var(--borda-suave, rgba(255, 255, 255, 0.1)); padding: 16px; text-align: center; margin: 20px 0;">
+<div class="doublebox">
   [Remaining Regressions: ?? times]
 </div>
 
