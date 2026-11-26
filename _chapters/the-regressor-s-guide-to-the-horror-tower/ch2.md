@@ -689,4 +689,4 @@ What ■■■■■■ means.
 
 <center><img alt="img1" src="/assets/the-regressor-s-guide-to-the-horror-tower/img1.jpg" width="350" height="500"></center>
 
-<small><center>Illustrator: Ninto<br>The illustrations for this content were produced with support from the Publication Industry Promotion Agency of Korea.</small></center>
+<small><center>Illustrator: Ninto<br>The illustrations for this content were produced with support from the Publication Industry Promotion Agency of Korea.</center>
