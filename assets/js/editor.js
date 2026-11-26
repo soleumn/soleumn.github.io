@@ -80,11 +80,11 @@
 
     /* ---------- CHAT ---------- */
     { g: 'chat', label: 'Chat (balões)', block: true,
-      tpl: '<div class="chat-container">\n\n<div class="chat-group received">\n<span class="chat-author">Name</span>\n<div class="chat-msg received">\n@@Hello!@@\n</div>\n</div>\n\n<div class="chat-msg sent">\nHi there!\n</div>\n\n</div>' },
+      tpl: '<br>\n\n<div class="chat-container">\n\n<div class="chat-group received">\n<span class="chat-author">Name</span>\n<div class="chat-msg received">\n@@Hello!@@\n</div>\n</div>\n\n<div class="chat-msg sent">\nHi there!\n</div>\n\n</div>\n\n<br>' },
     { g: 'chat', label: '+ balão recebido', line: true,
-      tpl: '<div class="chat-container">\n\n<div class="chat-group received">\n<span class="chat-author">Name</span>\n<div class="chat-msg received">\n@@Hello!@@\n</div>\n</div>\n\n</div>' },
+      tpl: '<br>\n\n<div class="chat-container">\n\n<div class="chat-group received">\n<span class="chat-author">Name</span>\n<div class="chat-msg received">\n@@Hello!@@\n</div>\n</div>\n\n</div>\n\n<br>' },
     { g: 'chat', label: '+ balão enviado', line: true,
-      tpl: '<div class="chat-container">\n\n<div class="chat-msg sent">\nHi there!\n</div>\n\n</div>' },
+      tpl: '<br>\n\n<div class="chat-container">\n\n<div class="chat-msg sent">\n@@Hi there!@@\n</div>\n\n</div>\n\n<br>' },
     { g: 'chat', label: 'Chat (lista com —)', block: true,
       tpl: '<div class="chat-box">\n<div class="chat-msgs">@@First message@@</div>\n<div class="chat-reply">Reply</div>\n</div>' },
 
