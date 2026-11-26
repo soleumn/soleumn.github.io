@@ -546,7 +546,7 @@ The notebook on the wall, and the mascot costume staring blankly at me.
 
 And lastly...
 
-*―*DING!**
+**―DING!**
 
 The elevator doors opened, and the scenery of the second floor revealed itself before my eyes once again.
 
