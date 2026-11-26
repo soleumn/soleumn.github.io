@@ -280,9 +280,9 @@ And beneath that, the records of numerous people were written.
 [21. The strategy is the same as before.]<br>
 [AH SHIT ■■■■■■]
 
-[22. Found the exit.]
-[22. Unlike before, walk only when the lights are on. Don't chicken out. But don't be too brave either...]
-[22. Even if you get caught, you can survive if you sacrifice one arm. Probably. At least I survived that way.]
+[22. Found the exit.]<br>
+[22. Unlike before, walk only when the lights are on. Don't chicken out. But don't be too brave either...]<br>
+[22. Even if you get caught, you can survive if you sacrifice one arm. Probably. At least I survived that way.]<br>
 [22. And ■■■■■■.]
 
 [23. What the hell are those bastards above me talking about? I can't find it at all? For your reference, my ability is ■■■ ■■ ■■.]<br>
