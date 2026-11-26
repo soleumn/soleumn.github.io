@@ -181,7 +181,11 @@ As if it couldn't possibly do such a thing.
 
 That's a shame, then.
 
-* * *
+<br>
+
+***
+
+<br>
 
 No matter how I look at it, this place really is easy to get lost in.
 
@@ -363,7 +367,11 @@ The mascot costume turned its gaze toward me again, and after staring back at it
 
 It wasn't as if we had any other choice anyway.
 
-* * *
+<br>
+
+***
+
+<br>
 
 “….”
 
@@ -441,7 +449,7 @@ I felt a chilling sensation for only a brief moment.
 
 The mascot costume twisted its hands, and—
 
-*—*SNAP!**
+—*SNAP!*
 
 With the sound of something snapping in my neck, my consciousness instantly cut out.
 
@@ -461,7 +469,11 @@ A violation of what…?
 
 Along with crackling static, my consciousness sank once more.
 
-* * *
+<br>
+
+***
+
+<br>
 
 “….”
 
@@ -515,10 +527,8 @@ I hurriedly flipped through the notebook.
 
 Three entries that had caught my attention.
 
-[83. Seems like there's a bit of a pattern. But wandering around to find the way is the same either way... And walking is really tough because of the steam.]
-
-[121. I'm ■■, so I'm just keeping on walking. But when it gets past a certain level of heat, the pipes make way too much noise, don't they?]
-
+[83. Seems like there's a bit of a pattern. But wandering around to find the way is the same either way... And walking is really tough because of the steam.]<br>
+[121. I'm ■■, so I'm just keeping on walking. But when it gets past a certain level of heat, the pipes make way too much noise, don't they?]<br>
 [130. Feels like there might be cool areas, too. But I probably won't make it out.]
 
 Steam coming from the pipes.
