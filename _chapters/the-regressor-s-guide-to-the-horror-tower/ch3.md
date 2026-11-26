@@ -3,7 +3,7 @@ title: "Chapter 3"
 capitulo: 3
 ---
 
-&lt;br>Preparing took quite a bit of time.
+<br>Preparing took quite a bit of time.
 
 Or rather, it took that long for me to pull myself together.
 
