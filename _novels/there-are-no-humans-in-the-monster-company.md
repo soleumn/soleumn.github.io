@@ -11,3 +11,13 @@ tags: ["Horror","Mystery","Supernatural"]
 accent: "#960303"
 ---
 
+links:
+  - { name: Raws, url: "https://page.kakao.com/content/69131170/" }
+---
+There is always a reason for everything. 
+Then what on earth did I do wrong?
+Opening the blood-soaked isolation room door again today, I mutter softly, 
+
+"Fuck." 
+
+I want to quit.
