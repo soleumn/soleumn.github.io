@@ -203,8 +203,7 @@ Now that I've been kicked out this far, my only option is to check the notebook 
 
 I hastily flipped open the notebook and began checking the contents.
 
-[9. Did I escape first?
-
+[9. Did I escape first?<br>
 I'm just going to die here. Good luck to whoever comes next.]
 
 [11. Are we continuing with our own numbers? Anyway, you definitely shouldn't touch the steam coming from the pipes. The spot it just touched on me melted away.]
@@ -217,26 +216,20 @@ I'm just going to die here. Good luck to whoever comes next.]
 
 [21. Can't find the exit. The pipes aren't the problem—the layout here is just too complicated. From what I've walked so far, the path is as follows:]
 
-[22. Writing with one arm is damn hard. How the hell are we supposed to find it?]
-
+[22. Writing with one arm is damn hard. How the hell are we supposed to find it?]<br>
 [22. It's getting hotter and hotter, isn't it?]
 
-[24. Hello, I am ■■■ of the Management Bureau. If the 1st floor was basically a place to teach you the structure and rules of this location, then this place seems to test your adaptability.
-
-I tried to break through here using my ability, ■■, but it doesn't seem to work this time.
-
+[24. Hello, I am ■■■ of the Management Bureau. If the 1st floor was basically a place to teach you the structure and rules of this location, then this place seems to test your adaptability.<br>
+I tried to break through here using my ability, ■■, but it doesn't seem to work this time.<br>
 Also, please have hope. The path you have walked will become hope for others.]
 
 [24. For now, it seems the only way to find the exit is to wander until you stumble across it by chance. There are surely gimmicks I am unaware of, but for now, you will have to wander.]
 
 [28. Just like No. 21 said, finding the exit is pretty tough.]
 
-[30. This place is pretty rough. If you don't find the exit, the lights slowly start to dim. It's hot.]
-
-[30. It's hot.]
-
-[30. It's too hot. I want to die.]
-
+[30. This place is pretty rough. If you don't find the exit, the lights slowly start to dim. It's hot.]<br>
+[30. It's hot.]<br>
+[30. It's too hot. I want to die.]<br>
 [30. Hot.]
 
 [31. Think I found the exit. Like No. 24 said, you basically have to wander... I kept following the left wall. Isn't there some rule that says you'll eventually find the exit that way?]
