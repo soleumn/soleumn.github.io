@@ -133,7 +133,11 @@ Now that I thought about it, I hadn't eaten the sandwich or the juice after regr
 
 Accepting the juice and sandwich, the mascot suit gave me another thumbs-up.
 
-* * *
+<br>
+
+***
+
+<br>
 
 After finishing the job and drenched in sweat, I was back inside the NPC room.
 
