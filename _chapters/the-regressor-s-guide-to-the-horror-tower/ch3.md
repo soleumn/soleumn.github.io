@@ -289,7 +289,7 @@ Since I’d done everything I could do.
 
 First.
 
-&lt;s>[150. Watch out for the floor]&lt;/s>
+<s>[150. Watch out for the floor]</s>
 
 The floor didn't need watching out for anymore. Because…
 
