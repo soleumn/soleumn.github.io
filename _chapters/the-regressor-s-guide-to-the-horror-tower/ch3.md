@@ -3,7 +3,7 @@ title: "Chapter 3"
 capitulo: 3
 ---
 
-<br>Preparing took quite a bit of time.
+&lt;br>Preparing took quite a bit of time.
 
 Or rather, it took that long for me to pull myself together.
 
@@ -61,10 +61,10 @@ Alright.
 
 I slowly opened the notebook.
 
-[135. By the way, what kind of people usually get dragged here? I'm a college student. I go to K University.]<br>
-[136. I was just working at a construction site until a minute ago. I need to go take care of my mother.]<br>
-[137. I found No. 136 near the elevator. I moved them to the corner.]<br>
-[138. I cleaned things up a bit, though I'm not sure how much of a difference it made.]<br>
+[135. By the way, what kind of people usually get dragged here? I'm a college student. I go to K University.]&lt;br>
+[136. I was just working at a construction site until a minute ago. I need to go take care of my mother.]&lt;br>
+[137. I found No. 136 near the elevator. I moved them to the corner.]&lt;br>
+[138. I cleaned things up a bit, though I'm not sure how much of a difference it made.]&lt;br>
 [139. No. 138 must've cleaned up a little. It's pretty clean, huh?]
 
 There were the records of countless people.
@@ -289,7 +289,7 @@ Since I’d done everything I could do.
 
 First.
 
-<s>[150. Watch out for the floor]</s>
+&lt;s>[150. Watch out for the floor]&lt;/s>
 
 The floor didn't need watching out for anymore. Because…
 
@@ -479,7 +479,7 @@ That's the sound our elevator makes when it gives out an announcement or somethi
 
 Thinking that, I perked up my ears.
 
-<Congratulations.>
+&lt;Congratulations.>
 
 What reached my ears was an unexpected word of congratulations.
 
@@ -489,7 +489,7 @@ For what?
 
 Just as I was thinking that,
 
-<Congratulations.>
+&lt;Congratulations.>
 
 Once again, the voice continued.
 
@@ -497,11 +497,11 @@ It was a mechanical voice.
 
 A voice so heavily laced with static that it was impossible to tell whether it belonged to a man or a woman.
 
-<No. 150 has cleared the first floor at the fastest speed among all past users.>
+&lt;No. 150 has cleared the first floor at the fastest speed among all past users.>
 
-<Furthermore, you have laid the groundwork for others.>
+&lt;Furthermore, you have laid the groundwork for others.>
 
-<Due to your consideration, those who come after will be able to clear the floor much more easily.>
+&lt;Due to your consideration, those who come after will be able to clear the floor much more easily.>
 
 &lt;We present you with a reward accordingly.>
 
@@ -517,7 +517,7 @@ there was a next floor.
 
 Cold sweat trickled down.
 
-<This is the reward given to No. 150.>
+&lt;This is the reward given to No. 150.>
 
 With a ding, something dropped from the air.
 
@@ -527,7 +527,7 @@ A half-torn ticket.
 
 That thought lasted only a moment.
 
-<We give you something that will help you advance further.>
+&lt;We give you something that will help you advance further.>
 
 Its voice echoed out.
 
