@@ -293,9 +293,7 @@ Since I’d done everything I could do.
 
 First.
 
-<s>[150. Watch out for the floor]</s>
-
-<br>
+<s>[150. Watch out for the floor]</s><br>
 
 The floor didn't need watching out for anymore. Because…
 
