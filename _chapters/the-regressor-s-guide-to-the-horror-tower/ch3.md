@@ -295,6 +295,8 @@ First.
 
 <s>[150. Watch out for the floor]</s>
 
+<br>
+
 The floor didn't need watching out for anymore. Because…
 
 Scribbling out the text with heavy strokes of my pen, I began to write.
