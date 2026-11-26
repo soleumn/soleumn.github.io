@@ -61,10 +61,10 @@ Alright.
 
 I slowly opened the notebook.
 
-[135. By the way, what kind of people usually get dragged here? I'm a college student. I go to K University.]&lt;br>
-[136. I was just working at a construction site until a minute ago. I need to go take care of my mother.]&lt;br>
-[137. I found No. 136 near the elevator. I moved them to the corner.]&lt;br>
-[138. I cleaned things up a bit, though I'm not sure how much of a difference it made.]&lt;br>
+[135. By the way, what kind of people usually get dragged here? I'm a college student. I go to K University.]<br>
+[136. I was just working at a construction site until a minute ago. I need to go take care of my mother.]<br>
+[137. I found No. 136 near the elevator. I moved them to the corner.]<br>
+[138. I cleaned things up a bit, though I'm not sure how much of a difference it made.]<br>
 [139. No. 138 must've cleaned up a little. It's pretty clean, huh?]
 
 There were the records of countless people.
