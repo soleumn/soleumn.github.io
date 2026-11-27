@@ -680,3 +680,19 @@ html[data-theme="gruvbox"] .post-content .notebook {
    text-align: center;
    margin: 20px auto;
 }
+
+/* =========================================================
+   DUAS IMAGENS LADO A LADO (centralizadas e responsivas)
+   ========================================================= */
+.post-content .img-pair {
+  display: flex;
+  justify-content: center;   /* centraliza o par na página */
+  align-items: center;       /* alinha pelo meio se as alturas forem diferentes */
+  gap: 12px;                 /* espaço entre as duas imagens */
+  margin: 24px 0;
+}
+.post-content .img-pair img {
+  flex: 0 1 auto;            /* mantém o tamanho original, mas encolhe se faltar espaço */
+  max-width: calc(50% - 6px);/* nunca passa de metade da largura (menos metade do espaço) */
+  height: auto;              /* mantém a proporção */
+}
