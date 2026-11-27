@@ -111,6 +111,7 @@
     { g: 'misc', label: 'Pensamento (itálico)', tpl: '*@@thought@@*' },
     { g: 'misc', label: 'Link', tpl: '[@@link text@@](https://)' },
     { g: 'misc', label: 'Imagem', block: true, tpl: '![@@description@@](/assets/IMAGE.jpg)' },
+    { g: 'misc', label: 'Duas imagens', block: true, tpl: '<div class="img-pair">\n<img src="/assets/@@IMAGE1.jpg@@" alt="">\n<img src="/assets/IMAGE2.jpg" alt="">\n</div>' },
     { g: 'misc', label: 'Espaço em branco', block: true, tpl: '<div style="height:2rem"></div>' }
   ];
 
