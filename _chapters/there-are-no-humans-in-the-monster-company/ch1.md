@@ -54,6 +54,8 @@ They might just make our lives more beautiful.
 
 </div>
 
+<br>
+
 *'Fuck this. Fucking hell. It's all goddamn bullshit.'*
 
 <div style="height:2rem"></div>
