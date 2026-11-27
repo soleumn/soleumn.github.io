@@ -9,7 +9,6 @@ chapter_auto: true
 order: 5
 tags: ["Horror","Mystery","Supernatural"]
 accent: "#960303"
----
 
 links:
   - { name: Raws, url: "https://page.kakao.com/content/69131170/" }
